@@ -1,22 +1,22 @@
-## Champion submission
+<!--
+If you’re submitting a Champion entry, please use one of the dedicated templates:
 
-### Track(s)
-- [ ] Hacker
-- [ ] Insider
+- Hacker: .github/PULL_REQUEST_TEMPLATE/hacker.md
+- Insider: .github/PULL_REQUEST_TEMPLATE/insider.md
 
-### What I’m adding
-- [ ] I added my row to the correct 2026 table in `README.md`.
+For repo changes/bugfixes, use:
 
-### Hacker requirements (if applicable)
-- [ ] I built **one custom project** using the current/live version of OpenHands.
-- [ ] I published a public write-up/blog post.
-- [ ] I shared a demo (live or recorded).
-- [ ] My `Links` cell includes: repo (if applicable), write-up, and demo.
+- Maintenance: .github/PULL_REQUEST_TEMPLATE/maintenance.md
+-->
 
-### Insider requirements (if applicable)
-- [ ] I understand that Insider attendance details are private.
-- [ ] I understand verification is handled by the OpenHands team.
+## Summary
 
-### Notes for reviewers
+<!-- What does this PR do? -->
 
-<!-- Anything you want maintainers to know (context, edge cases, etc.). -->
+## Changes
+
+- 
+
+## How to test (if applicable)
+
+- 
