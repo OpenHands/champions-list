@@ -6,6 +6,7 @@ This repo is the public source of truth for OpenHands Champions. The way you bec
 
 - Your entry must be **publicly verifiable**.
 - You must open the PR **yourself** (Champions are volunteers; the OpenHands team reviews/merges, but doesn’t add people on their behalf).
+- If you’re using an AI coding agent to help prepare your PR, see [agent.md](agent.md).
 
 ## Add yourself to the list
 
