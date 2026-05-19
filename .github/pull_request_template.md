@@ -7,6 +7,10 @@ If you’re submitting a Champion entry, please use one of the dedicated templat
 For repo changes/bugfixes, use:
 
 - Maintenance: .github/PULL_REQUEST_TEMPLATE/maintenance.md
+
+If none apply:
+
+- Blank: .github/PULL_REQUEST_TEMPLATE/blank.md
 -->
 
 ## Summary
