@@ -37,7 +37,7 @@ export function GET(request: Request) {
   const requestUrl = new URL(request.url);
   const size = clampInt(requestUrl.searchParams.get("size"), 12, 48, 24);
   const gap = clampInt(requestUrl.searchParams.get("gap"), 0, 12, 2);
-  const maxColumns = clampInt(requestUrl.searchParams.get("cols"), 10, 80, 48);
+  const maxColumns = clampInt(requestUrl.searchParams.get("cols"), 1, 120, 48);
   const maxWidth = clampInt(requestUrl.searchParams.get("maxWidth"), 240, 4000, 1000);
 
   const { contributors } = getContributorDirectoryData();
