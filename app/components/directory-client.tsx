@@ -235,6 +235,10 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   const [isAccessibilityOpen, setIsAccessibilityOpen] = useState(false);
   const accessibilityRef = useRef<HTMLDivElement>(null);
 
+  const pageSizeOptions = [20, 50, 100, 200] as const;
+  const [pageSize, setPageSize] = useState<(typeof pageSizeOptions)[number]>(20);
+  const [page, setPage] = useState(1);
+
   useEffect(() => {
     const storedReduceMotion = window.localStorage.getItem("champions-reduce-motion");
     const storedHighContrast = window.localStorage.getItem("champions-high-contrast");
@@ -297,6 +301,27 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
       .sort((a, b) => compareContributors(a, b, sortKey, sortDirection));
   }, [data.contributors, query, sortDirection, sortKey]);
 
+  const pageCount = Math.max(1, Math.ceil(filteredContributors.length / pageSize));
+
+  useEffect(() => {
+    setPage(1);
+  }, [pageSize, query, sortDirection, sortKey]);
+
+  useEffect(() => {
+    if (page > pageCount) {
+      setPage(pageCount);
+    }
+  }, [page, pageCount]);
+
+  const pageStartIndex = (page - 1) * pageSize;
+  const pageEndIndex = Math.min(pageStartIndex + pageSize, filteredContributors.length);
+  const paginatedContributors = useMemo(() => {
+    return filteredContributors.slice(pageStartIndex, pageEndIndex);
+  }, [filteredContributors, pageEndIndex, pageStartIndex]);
+
+  const showingStart = filteredContributors.length === 0 ? 0 : pageStartIndex + 1;
+  const showingEnd = pageEndIndex;
+
   const newestTickerItems = useMemo(
     () => duplicateTickerItems(data.newestContributors.slice(0, 18)),
     [data.newestContributors]
@@ -308,7 +333,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
 
   const totalContributorCount = data.visibleContributorCount + data.hiddenContributorCount;
   const allExpanded =
-    filteredContributors.length > 0 && filteredContributors.every((contributor) => expandedIds.has(contributor.githubUserId));
+    paginatedContributors.length > 0 && paginatedContributors.every((contributor) => expandedIds.has(contributor.githubUserId));
 
   function handleSort(column: SortKey) {
     if (column === sortKey) {
@@ -333,7 +358,11 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   }
 
   function expandAll() {
-    setExpandedIds(new Set(filteredContributors.map((contributor) => contributor.githubUserId)));
+    setExpandedIds((current) => {
+      const next = new Set(current);
+      paginatedContributors.forEach((contributor) => next.add(contributor.githubUserId));
+      return next;
+    });
   }
 
   function collapseAll() {
@@ -373,7 +402,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <ul className="hero-list">
                 <li>Newest Champions shows unique people sorted by when their first merged PR landed.</li>
                 <li>Fresh Merges shows raw recent merged PR activity, even if the same person appears more than once.</li>
-                <li>Click any non-link area in a row to expand details, or expand every visible contributor at once.</li>
+                <li>Click any non-link area in a row to expand details, or expand every visible contributor on the current page at once.</li>
                 <li>
                   Want to add more context, hide your name, or update your entry? Open a PR in this repo: {" "}
                   <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
@@ -463,9 +492,9 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 type="button"
                 className="action-button"
                 onClick={expandAll}
-                disabled={filteredContributors.length === 0 || allExpanded}
+                disabled={paginatedContributors.length === 0 || allExpanded}
               >
-                Expand all
+                Expand page
               </button>
               <button
                 type="button"
@@ -481,13 +510,64 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
 
         <section className="results-meta">
           <p>
-            Showing <strong>{filteredContributors.length}</strong> of <strong>{totalContributorCount}</strong> contributors.{" "}
-            <strong>{data.hiddenContributorCount}</strong> hidden.
+            Showing <strong>{showingStart}</strong>–<strong>{showingEnd}</strong> of <strong>{filteredContributors.length}</strong>{" "}
+            {query ? "matching " : ""}contributors. <strong>{data.hiddenContributorCount}</strong> hidden.
           </p>
           <p>
             Sorted by <strong>{sortColumns.find((column) => column.key === sortKey)?.label}</strong> {sortDirection}.
           </p>
         </section>
+
+        {filteredContributors.length > 0 ? (
+          <section className="pagination-bar" aria-label="Pagination controls">
+            <label className="pagination-field">
+              <span>Rows per page</span>
+              <select
+                value={pageSize}
+                onChange={(event) => setPageSize(Number(event.target.value) as (typeof pageSizeOptions)[number])}
+              >
+                {pageSizeOptions.map((value) => (
+                  <option key={value} value={value}>
+                    {value}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <div className="pagination-controls">
+              <button
+                type="button"
+                className="action-button action-button-secondary pagination-button"
+                onClick={() => setPage((current) => Math.max(1, current - 1))}
+                disabled={page <= 1}
+              >
+                Prev
+              </button>
+
+              <label className="pagination-field pagination-field-page">
+                <span>Page</span>
+                <select value={page} onChange={(event) => setPage(Number(event.target.value))}>
+                  {Array.from({ length: pageCount }, (_, index) => index + 1).map((pageNumber) => (
+                    <option key={pageNumber} value={pageNumber}>
+                      {pageNumber}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <span className="pagination-of">of {pageCount}</span>
+
+              <button
+                type="button"
+                className="action-button action-button-secondary pagination-button"
+                onClick={() => setPage((current) => Math.min(pageCount, current + 1))}
+                disabled={page >= pageCount}
+              >
+                Next
+              </button>
+            </div>
+          </section>
+        ) : null}
 
         <section className="directory-table-card">
           <div className="table-scroll-wrap">
@@ -512,7 +592,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               </thead>
               <tbody>
                 {filteredContributors.length > 0 ? (
-                  filteredContributors.map((contributor) => {
+                  paginatedContributors.map((contributor) => {
                     const isExpanded = expandedIds.has(contributor.githubUserId);
                     return (
                       <Fragment key={contributor.githubUserId}>
