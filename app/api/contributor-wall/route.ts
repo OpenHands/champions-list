@@ -38,13 +38,15 @@ export function GET(request: Request) {
   const size = clampInt(requestUrl.searchParams.get("size"), 12, 48, 24);
   const gap = clampInt(requestUrl.searchParams.get("gap"), 0, 12, 2);
   const maxColumns = clampInt(requestUrl.searchParams.get("cols"), 10, 80, 48);
+  const maxWidth = clampInt(requestUrl.searchParams.get("maxWidth"), 240, 4000, 1000);
 
   const { contributors } = getContributorDirectoryData();
   const count = contributors.length;
 
-  const columns = Math.min(maxColumns, Math.max(1, count));
-  const rows = Math.max(1, Math.ceil(count / columns));
   const stride = size + gap;
+  const maxColumnsByWidth = Math.max(1, Math.floor((maxWidth + gap) / stride));
+  const columns = Math.min(maxColumns, maxColumnsByWidth, Math.max(1, count));
+  const rows = Math.max(1, Math.ceil(count / columns));
   const width = columns * stride - gap;
   const height = rows * stride - gap;
 
