@@ -37,6 +37,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/contributors.generated.json README.md
+          git add data/contributors.generated.json README.md public/contributor-wall.svg
           git commit -m "Sync contributor data"
           git push
