@@ -20,5 +20,4 @@ _Last synced: 2026-06-08_
 
 ## Contributor Wall
 
-<img src="https://champions.hub.openhands.dev/api/contributor-wall" alt="OpenHands Champions contributor avatar wall" />
-
+<img src="https://champions-list.vercel.app/contributor-wall.svg?v=2026-06-08" alt="OpenHands Champions contributor avatar wall" />
