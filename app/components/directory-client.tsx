@@ -306,6 +306,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
     [data.recentMergedPrs]
   );
 
+  const totalContributorCount = data.visibleContributorCount + data.hiddenContributorCount;
   const allExpanded =
     filteredContributors.length > 0 && filteredContributors.every((contributor) => expandedIds.has(contributor.githubUserId));
 
@@ -390,8 +391,8 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
 
         <section className="stats-grid" aria-label="Directory statistics">
           <div>
-            <span>Visible contributors</span>
-            <strong>{data.visibleContributorCount}</strong>
+            <span>Total contributors</span>
+            <strong>{totalContributorCount}</strong>
           </div>
           <div>
             <span>Merged PRs tracked</span>
@@ -400,10 +401,6 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
           <div>
             <span>Public repos scanned</span>
             <strong>{data.scannedRepoCount}</strong>
-          </div>
-          <div>
-            <span>Opt-out entries hidden</span>
-            <strong>{data.hiddenContributorCount}</strong>
           </div>
         </section>
 
@@ -484,8 +481,8 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
 
         <section className="results-meta">
           <p>
-            Showing <strong>{filteredContributors.length}</strong> of <strong>{data.visibleContributorCount}</strong>{" "}
-            contributors.
+            Showing <strong>{filteredContributors.length}</strong> of <strong>{totalContributorCount}</strong> contributors.{" "}
+            <strong>{data.hiddenContributorCount}</strong> hidden.
           </p>
           <p>
             Sorted by <strong>{sortColumns.find((column) => column.key === sortKey)?.label}</strong> {sortDirection}.
