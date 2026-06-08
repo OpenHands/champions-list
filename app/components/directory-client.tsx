@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import type {
   ContributorDirectoryData,
   ContributorRecord,
@@ -233,6 +233,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   const [reduceMotion, setReduceMotion] = useState(false);
   const [highContrast, setHighContrast] = useState(false);
   const [isAccessibilityOpen, setIsAccessibilityOpen] = useState(false);
+  const accessibilityRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const storedReduceMotion = window.localStorage.getItem("champions-reduce-motion");
@@ -260,6 +261,35 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   useEffect(() => {
     window.localStorage.setItem("champions-high-contrast", String(highContrast));
   }, [highContrast]);
+
+  useEffect(() => {
+    if (!isAccessibilityOpen) {
+      return;
+    }
+
+    function handlePointerDown(event: MouseEvent | TouchEvent) {
+      const target = event.target;
+      if (target instanceof Node && !accessibilityRef.current?.contains(target)) {
+        setIsAccessibilityOpen(false);
+      }
+    }
+
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsAccessibilityOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("touchstart", handlePointerDown);
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("touchstart", handlePointerDown);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [isAccessibilityOpen]);
 
   const filteredContributors = useMemo(() => {
     return [...data.contributors]
@@ -589,7 +619,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
         </section>
       </main>
 
-      <div className="accessibility-fab-wrap">
+      <div className="accessibility-fab-wrap" ref={accessibilityRef}>
         <button
           type="button"
           className="accessibility-fab accessibility-icon-button"
