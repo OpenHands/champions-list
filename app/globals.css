@@ -644,6 +644,64 @@ body:has(.directory-root.high-contrast)::after,
   color: var(--brand-fg);
 }
 
+.pagination-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 14px;
+  padding: 0 4px;
+}
+
+.pagination-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.pagination-field {
+  display: grid;
+  gap: 6px;
+  font-size: var(--body-sm);
+}
+
+.pagination-field span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-muted);
+}
+
+.pagination-field select {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--brand-border-strong);
+  border-radius: 14px;
+  background: var(--card-bg-strong);
+  color: var(--brand-fg);
+  outline: none;
+}
+
+.pagination-field select:focus-visible {
+  border-color: var(--brand-brown);
+  box-shadow: 0 0 0 4px rgba(138, 95, 69, 0.12);
+}
+
+.pagination-of {
+  padding: 0 6px 9px;
+  color: var(--brand-muted);
+  font-size: var(--body-sm);
+}
+
+.pagination-button {
+  min-height: 44px;
+  padding: 10px 16px;
+  font-size: 0.92rem;
+}
+
+
 .table-scroll-wrap {
   overflow-x: auto;
 }
@@ -1006,6 +1064,11 @@ body:has(.directory-root.high-contrast)::after,
   .action-button {
     width: 100%;
   }
+
+  .pagination-bar .action-button {
+    width: auto;
+  }
+
 
   .stats-grid {
     grid-template-columns: 1fr;
