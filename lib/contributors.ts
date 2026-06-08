@@ -19,6 +19,14 @@ export interface GeneratedContributor {
   totalMergedPrs: number;
 }
 
+export interface GeneratedRecentMergedPr {
+  githubUserId: string;
+  login: string;
+  avatarUrl: string;
+  profileUrl: string;
+  pullRequest: PullRequestSummary;
+}
+
 export interface GeneratedContributorsFile {
   generatedAt: string | null;
   organization: string;
@@ -26,6 +34,7 @@ export interface GeneratedContributorsFile {
   scannedRepoCount: number;
   totalMergedPrs: number;
   skippedRepos: Array<{ repo: string; reason: string }>;
+  recentMergedPrs?: GeneratedRecentMergedPr[];
   contributors: GeneratedContributor[];
 }
 
@@ -45,6 +54,10 @@ export interface ContributorRecord extends GeneratedContributor {
   hidden: boolean;
 }
 
+export interface RecentMergedPrRecord extends GeneratedRecentMergedPr {
+  name: string;
+}
+
 export interface ContributorDirectoryData {
   generatedAt: string | null;
   organization: string;
@@ -53,11 +66,28 @@ export interface ContributorDirectoryData {
   totalMergedPrs: number;
   hiddenContributorCount: number;
   visibleContributorCount: number;
+  newestContributors: ContributorRecord[];
+  recentMergedPrs: RecentMergedPrRecord[];
   contributors: ContributorRecord[];
 }
 
 function normalizeText(value: string | undefined): string {
   return value?.trim() ?? "";
+}
+
+function sortByNewestContributor(a: ContributorRecord, b: ContributorRecord): number {
+  return (
+    new Date(b.firstMergedPr.mergedAt).getTime() - new Date(a.firstMergedPr.mergedAt).getTime() ||
+    new Date(b.mostRecentMergedPr.mergedAt).getTime() - new Date(a.mostRecentMergedPr.mergedAt).getTime() ||
+    a.login.localeCompare(b.login)
+  );
+}
+
+function sortByRecentMergedPr(a: GeneratedRecentMergedPr, b: GeneratedRecentMergedPr): number {
+  return (
+    new Date(b.pullRequest.mergedAt).getTime() - new Date(a.pullRequest.mergedAt).getTime() ||
+    a.login.localeCompare(b.login)
+  );
 }
 
 export function getContributorDirectoryData(): ContributorDirectoryData {
@@ -76,6 +106,18 @@ export function getContributorDirectoryData(): ContributorDirectoryData {
   });
 
   const visibleContributors = contributors.filter((contributor) => !contributor.hidden);
+  const visibleContributorById = new Map(
+    visibleContributors.map((contributor) => [contributor.githubUserId, contributor])
+  );
+
+  const newestContributors = [...visibleContributors].sort(sortByNewestContributor);
+  const recentMergedPrs = (generated.recentMergedPrs ?? [])
+    .filter((item) => visibleContributorById.has(item.githubUserId))
+    .map((item) => ({
+      ...item,
+      name: visibleContributorById.get(item.githubUserId)?.name ?? "",
+    }))
+    .sort(sortByRecentMergedPr);
 
   const visibleMergedPrs = visibleContributors.reduce(
     (total, contributor) => total + contributor.totalMergedPrs,
@@ -90,6 +132,8 @@ export function getContributorDirectoryData(): ContributorDirectoryData {
     totalMergedPrs: visibleMergedPrs,
     hiddenContributorCount: contributors.length - visibleContributors.length,
     visibleContributorCount: visibleContributors.length,
+    newestContributors,
+    recentMergedPrs,
     contributors: visibleContributors,
   };
 }

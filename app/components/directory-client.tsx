@@ -1,46 +1,58 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
-import type { ContributorDirectoryData, ContributorRecord } from "@/lib/contributors";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
+import type {
+  ContributorDirectoryData,
+  ContributorRecord,
+  RecentMergedPrRecord,
+} from "@/lib/contributors";
 import { formatDate } from "@/lib/contributors";
 
-type SortKey = "recent" | "first" | "total" | "login" | "name";
+type SortKey = "login" | "name" | "first" | "recent" | "total";
+type SortDirection = "asc" | "desc";
 
-const sortOptions: Array<{ value: SortKey; label: string }> = [
-  { value: "recent", label: "Most recent merged PR" },
-  { value: "total", label: "Total merged PRs" },
-  { value: "first", label: "First merged PR" },
-  { value: "login", label: "GitHub handle" },
-  { value: "name", label: "Name" },
+const sortColumns: Array<{ key: SortKey; label: string }> = [
+  { key: "login", label: "GitHub" },
+  { key: "name", label: "Name" },
+  { key: "first", label: "First PR" },
+  { key: "recent", label: "Most recent PR" },
+  { key: "total", label: "Total merged PRs" },
 ];
 
-function compareContributors(a: ContributorRecord, b: ContributorRecord, sortKey: SortKey) {
-  if (sortKey === "total") {
-    return b.totalMergedPrs - a.totalMergedPrs || a.login.localeCompare(b.login);
-  }
+const defaultSortDirection: Record<SortKey, SortDirection> = {
+  login: "asc",
+  name: "asc",
+  first: "desc",
+  recent: "desc",
+  total: "desc",
+};
 
-  if (sortKey === "first") {
-    return (
-      new Date(a.firstMergedPr.mergedAt).getTime() - new Date(b.firstMergedPr.mergedAt).getTime() ||
-      a.login.localeCompare(b.login)
-    );
-  }
+function compareContributors(
+  a: ContributorRecord,
+  b: ContributorRecord,
+  sortKey: SortKey,
+  direction: SortDirection
+) {
+  let comparison = 0;
 
   if (sortKey === "login") {
-    return a.login.localeCompare(b.login);
+    comparison = a.login.localeCompare(b.login);
+  } else if (sortKey === "name") {
+    comparison = (a.name || a.login).localeCompare(b.name || b.login);
+  } else if (sortKey === "first") {
+    comparison = new Date(a.firstMergedPr.mergedAt).getTime() - new Date(b.firstMergedPr.mergedAt).getTime();
+  } else if (sortKey === "recent") {
+    comparison = new Date(a.mostRecentMergedPr.mergedAt).getTime() - new Date(b.mostRecentMergedPr.mergedAt).getTime();
+  } else if (sortKey === "total") {
+    comparison = a.totalMergedPrs - b.totalMergedPrs;
   }
 
-  if (sortKey === "name") {
-    const aName = a.name || a.login;
-    const bName = b.name || b.login;
-    return aName.localeCompare(bName);
+  if (comparison === 0) {
+    comparison = a.login.localeCompare(b.login);
   }
 
-  return (
-    new Date(b.mostRecentMergedPr.mergedAt).getTime() - new Date(a.mostRecentMergedPr.mergedAt).getTime() ||
-    a.login.localeCompare(b.login)
-  );
+  return direction === "asc" ? comparison : -comparison;
 }
 
 function matchesQuery(contributor: ContributorRecord, query: string) {
@@ -53,7 +65,9 @@ function matchesQuery(contributor: ContributorRecord, query: string) {
     contributor.name,
     contributor.note,
     contributor.firstMergedPr.repo,
+    contributor.firstMergedPr.title,
     contributor.mostRecentMergedPr.repo,
+    contributor.mostRecentMergedPr.title,
   ]
     .join(" ")
     .toLowerCase();
@@ -61,212 +75,516 @@ function matchesQuery(contributor: ContributorRecord, query: string) {
   return haystack.includes(query.toLowerCase());
 }
 
-function ContributorCard({ contributor }: { contributor: ContributorRecord }) {
+function duplicateTickerItems<T>(items: T[]): T[] {
+  return items.length > 0 ? [...items, ...items] : [];
+}
+
+function SortButton({
+  label,
+  column,
+  activeSortKey,
+  activeDirection,
+  onToggle,
+}: {
+  label: string;
+  column: SortKey;
+  activeSortKey: SortKey;
+  activeDirection: SortDirection;
+  onToggle: (key: SortKey) => void;
+}) {
+  const isActive = activeSortKey === column;
+  const indicator = isActive ? (activeDirection === "asc" ? "↑" : "↓") : "↕";
+
   return (
-    <article className="contributor-card">
-      <div className="contributor-heading">
-        <Image
-          src={contributor.avatarUrl}
-          alt={`${contributor.login} avatar`}
-          width={72}
-          height={72}
-          className="avatar"
-        />
+    <button type="button" className="sort-button" onClick={() => onToggle(column)}>
+      <span>{label}</span>
+      <span className="sort-indicator" aria-hidden="true">
+        {indicator}
+      </span>
+    </button>
+  );
+}
 
-        <div className="contributor-heading-copy">
-          <div className="contributor-title-row">
-            <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="handle-link">
-              @{contributor.login}
-            </a>
-            <span className="pill">{contributor.totalMergedPrs} merged PRs</span>
+function TickerItemNewest({ contributor }: { contributor: ContributorRecord }) {
+  return (
+    <div className="ticker-chip">
+      <Image
+        src={contributor.avatarUrl}
+        alt={`${contributor.login} avatar`}
+        width={28}
+        height={28}
+        className="ticker-avatar"
+      />
+      <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="ticker-handle">
+        @{contributor.login}
+      </a>
+      <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="ticker-pr-link">
+        {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
+      </a>
+    </div>
+  );
+}
+
+function TickerItemRecent({ item }: { item: RecentMergedPrRecord }) {
+  return (
+    <div className="ticker-chip">
+      <Image src={item.avatarUrl} alt={`${item.login} avatar`} width={28} height={28} className="ticker-avatar" />
+      <a href={item.profileUrl} target="_blank" rel="noreferrer" className="ticker-handle">
+        @{item.login}
+      </a>
+      <a href={item.pullRequest.url} target="_blank" rel="noreferrer" className="ticker-pr-link">
+        {item.pullRequest.repo} #{item.pullRequest.number}
+      </a>
+    </div>
+  );
+}
+
+function ExpandedRow({ contributor }: { contributor: ContributorRecord }) {
+  return (
+    <div className="row-detail-panel">
+      <div className="row-detail-top">
+        <div className="row-detail-identity">
+          <Image
+            src={contributor.avatarUrl}
+            alt={`${contributor.login} avatar`}
+            width={56}
+            height={56}
+            className="detail-avatar"
+          />
+          <div>
+            <div className="row-detail-heading">
+              <span className="row-detail-handle">@{contributor.login}</span>
+              {contributor.name ? <span className="row-detail-name">{contributor.name}</span> : null}
+            </div>
+            <div className="row-detail-meta">
+              <span className="meta-chip">GitHub ID {contributor.githubUserId}</span>
+              <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="meta-chip meta-chip-link">
+                Open profile
+              </a>
+            </div>
           </div>
+        </div>
 
-          <div className="name-line">{contributor.name || "Name not added yet"}</div>
-
-          <div className="meta-line">
-            <span className="meta-chip">GitHub ID {contributor.githubUserId}</span>
-            <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="meta-link">
-              View profile
-            </a>
-          </div>
+        <div className="row-detail-stat">
+          <span>Total merged PRs</span>
+          <strong>{contributor.totalMergedPrs}</strong>
         </div>
       </div>
 
-      <dl className="details-grid">
-        <div className="detail-panel">
-          <dt>First merged PR</dt>
-          <dd>
-            <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer">
-              {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
-            </a>
-            <span className="detail-title">{contributor.firstMergedPr.title}</span>
-            <span>{formatDate(contributor.firstMergedPr.mergedAt)}</span>
-          </dd>
-        </div>
+      <div className="row-detail-grid">
+        <section className="detail-card">
+          <p className="detail-eyebrow">First merged PR</p>
+          <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
+            {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
+          </a>
+          <p className="detail-copy">{contributor.firstMergedPr.title}</p>
+          <p className="detail-date">{formatDate(contributor.firstMergedPr.mergedAt)}</p>
+        </section>
 
-        <div className="detail-panel">
-          <dt>Most recent merged PR</dt>
-          <dd>
-            <a href={contributor.mostRecentMergedPr.url} target="_blank" rel="noreferrer">
-              {contributor.mostRecentMergedPr.repo} #{contributor.mostRecentMergedPr.number}
-            </a>
-            <span className="detail-title">{contributor.mostRecentMergedPr.title}</span>
-            <span>{formatDate(contributor.mostRecentMergedPr.mergedAt)}</span>
-          </dd>
-        </div>
-      </dl>
+        <section className="detail-card">
+          <p className="detail-eyebrow">Most recent merged PR</p>
+          <a href={contributor.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
+            {contributor.mostRecentMergedPr.repo} #{contributor.mostRecentMergedPr.number}
+          </a>
+          <p className="detail-copy">{contributor.mostRecentMergedPr.title}</p>
+          <p className="detail-date">{formatDate(contributor.mostRecentMergedPr.mergedAt)}</p>
+        </section>
 
-      <div className="note-block">
-        <span className="note-label">Notes</span>
-        <p>{contributor.note || "This contributor has not added a public note yet."}</p>
+        <section className="detail-card detail-card-note">
+          <p className="detail-eyebrow">Notes</p>
+          <p className="detail-copy">
+            {contributor.note || "This contributor has not added a public note yet."}
+          </p>
+        </section>
       </div>
-    </article>
+    </div>
   );
 }
 
 export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("recent");
+  const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
+  const [reduceMotion, setReduceMotion] = useState(false);
+  const [highContrast, setHighContrast] = useState(false);
+  const [isAccessibilityOpen, setIsAccessibilityOpen] = useState(false);
+
+  useEffect(() => {
+    const storedReduceMotion = window.localStorage.getItem("champions-reduce-motion");
+    const storedHighContrast = window.localStorage.getItem("champions-high-contrast");
+
+    if (storedReduceMotion === null) {
+      setReduceMotion(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    } else {
+      setReduceMotion(storedReduceMotion === "true");
+    }
+
+    if (storedHighContrast !== null) {
+      setHighContrast(storedHighContrast === "true");
+    }
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("champions-reduce-motion", String(reduceMotion));
+  }, [reduceMotion]);
+
+  useEffect(() => {
+    window.localStorage.setItem("champions-high-contrast", String(highContrast));
+  }, [highContrast]);
 
   const filteredContributors = useMemo(() => {
     return [...data.contributors]
       .filter((contributor) => matchesQuery(contributor, query))
-      .sort((a, b) => compareContributors(a, b, sortKey));
-  }, [data.contributors, query, sortKey]);
+      .sort((a, b) => compareContributors(a, b, sortKey, sortDirection));
+  }, [data.contributors, query, sortDirection, sortKey]);
+
+  const newestTickerItems = useMemo(
+    () => duplicateTickerItems(data.newestContributors.slice(0, 18)),
+    [data.newestContributors]
+  );
+  const recentMergeTickerItems = useMemo(
+    () => duplicateTickerItems(data.recentMergedPrs.slice(0, 24)),
+    [data.recentMergedPrs]
+  );
+
+  const allExpanded =
+    filteredContributors.length > 0 && filteredContributors.every((contributor) => expandedIds.has(contributor.githubUserId));
+
+  function handleSort(column: SortKey) {
+    if (column === sortKey) {
+      setSortDirection((current) => (current === "asc" ? "desc" : "asc"));
+      return;
+    }
+
+    setSortKey(column);
+    setSortDirection(defaultSortDirection[column]);
+  }
+
+  function toggleExpanded(githubUserId: string) {
+    setExpandedIds((current) => {
+      const next = new Set(current);
+      if (next.has(githubUserId)) {
+        next.delete(githubUserId);
+      } else {
+        next.add(githubUserId);
+      }
+      return next;
+    });
+  }
+
+  function expandAll() {
+    setExpandedIds(new Set(filteredContributors.map((contributor) => contributor.githubUserId)));
+  }
+
+  function collapseAll() {
+    setExpandedIds(new Set());
+  }
 
   return (
-    <main className="page-shell">
-      <section className="hero-card">
-        <div className="hero-grid">
-          <div>
-            <div className="hero-badge-row">
-              <p className="eyebrow">OpenHands Champions</p>
-              <p className="eyebrow eyebrow-muted">Merged PR contributor directory</p>
+    <div
+      className={`directory-root${highContrast ? " high-contrast" : ""}${reduceMotion ? " reduce-motion" : ""}`}
+    >
+      <main className="page-shell">
+        <section className="hero-card">
+          <div className="hero-grid">
+            <div>
+              <div className="hero-badge-row">
+                <p className="eyebrow">OpenHands Champions</p>
+                <p className="eyebrow eyebrow-muted">Merged PR contributor directory</p>
+              </div>
+
+              <h1>Track who joined recently, what merged most recently, and browse the full directory below.</h1>
+
+              <p className="hero-copy">
+                The top rails celebrate motion in the community. The table beneath keeps the actual directory fast to
+                scan, sortable like a spreadsheet, and expandable when you want the full contributor context.
+              </p>
+
+              <div className="hero-actions">
+                <a href="#ticker-newest" className="brand-button brand-button-primary">
+                  See newest champions
+                </a>
+                <a href="#directory" className="brand-button brand-button-secondary">
+                  Jump to directory table
+                </a>
+              </div>
             </div>
 
-            <h1>Every merged PR contributor across OpenHands public repos.</h1>
+            <aside className="hero-sidecard">
+              <p className="hero-side-eyebrow">How this view works</p>
+              <ul className="hero-list">
+                <li>Newest Champions shows unique people sorted by when their first merged PR landed.</li>
+                <li>Fresh Merges shows raw recent merged PR activity, even if the same person appears more than once.</li>
+                <li>Click a GitHub row to expand details, or expand every visible contributor at once.</li>
+              </ul>
+              <p className="hero-side-meta">
+                Last synced <strong>{data.generatedAt ? formatDate(data.generatedAt) : "Not synced yet"}</strong>
+              </p>
+            </aside>
+          </div>
+        </section>
 
-            <p className="hero-copy">
-              Styled to feel like the OpenHands company site, but scoped to a lightweight public directory.
-              The page stays JSON-backed, refreshes from public GitHub data, and lets contributors add their
-              name, note, or opt out through a small override file.
-            </p>
+        <section className="stats-grid" aria-label="Directory statistics">
+          <div>
+            <span>Visible contributors</span>
+            <strong>{data.visibleContributorCount}</strong>
+          </div>
+          <div>
+            <span>Merged PRs tracked</span>
+            <strong>{data.totalMergedPrs}</strong>
+          </div>
+          <div>
+            <span>Public repos scanned</span>
+            <strong>{data.scannedRepoCount}</strong>
+          </div>
+          <div>
+            <span>Opt-out entries hidden</span>
+            <strong>{data.hiddenContributorCount}</strong>
+          </div>
+        </section>
 
-            <div className="hero-actions">
-              <a href="#directory" className="brand-button brand-button-primary">
-                Browse directory
-              </a>
-              <a href="#personalize" className="brand-button brand-button-secondary">
-                Personalize your entry
-              </a>
+        <section className="ticker-stack">
+          <div className="ticker-card" id="ticker-newest" data-motion={reduceMotion ? "paused" : "running"}>
+            <div className="ticker-heading-row">
+              <div>
+                <p className="eyebrow eyebrow-dark">Newest Champions</p>
+                <h2 className="section-title">The latest people to earn a place in the directory.</h2>
+              </div>
+            </div>
+            <div className="ticker-viewport">
+              <div className="ticker-track">
+                {newestTickerItems.map((contributor, index) => (
+                  <TickerItemNewest key={`${contributor.githubUserId}-${index}`} contributor={contributor} />
+                ))}
+              </div>
             </div>
           </div>
 
-          <aside className="hero-sidecard">
-            <p className="hero-side-eyebrow">How v1 works</p>
-            <ul className="hero-list">
-              <li>Merged PRs only, deduped by stable GitHub user ID.</li>
-              <li>Employee, org-member, service-account, and bot exclusions are applied before publish.</li>
-              <li>Visible entries can be enriched or hidden via a small JSON override file in the repo.</li>
-            </ul>
-            <p className="hero-side-meta">
-              Last synced <strong>{data.generatedAt ? formatDate(data.generatedAt) : "Not synced yet"}</strong>
-            </p>
-          </aside>
-        </div>
-      </section>
+          <div className="ticker-card" data-motion={reduceMotion ? "paused" : "running"}>
+            <div className="ticker-heading-row">
+              <div>
+                <p className="eyebrow eyebrow-dark">Fresh Merges</p>
+                <h2 className="section-title">The most recent merged PR activity across OpenHands public repos.</h2>
+              </div>
+            </div>
+            <div className="ticker-viewport">
+              <div className="ticker-track ticker-track-reverse">
+                {recentMergeTickerItems.map((item, index) => (
+                  <TickerItemRecent
+                    key={`${item.githubUserId}-${item.pullRequest.repo}-${item.pullRequest.number}-${index}`}
+                    item={item}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <section className="stats-grid" aria-label="Directory statistics">
-        <div>
-          <span>Visible contributors</span>
-          <strong>{data.visibleContributorCount}</strong>
-        </div>
-        <div>
-          <span>Merged PRs tracked</span>
-          <strong>{data.totalMergedPrs}</strong>
-        </div>
-        <div>
-          <span>Public repos scanned</span>
-          <strong>{data.scannedRepoCount}</strong>
-        </div>
-        <div>
-          <span>Opt-out entries hidden</span>
-          <strong>{data.hiddenContributorCount}</strong>
-        </div>
-      </section>
-
-      <section className="cta-card" id="personalize">
-        <div className="cta-grid">
-          <div>
-            <p className="eyebrow eyebrow-dark">Self-serve enrichment</p>
-            <h2 className="section-title">Want to personalize your entry?</h2>
-            <p>
-              Open a PR editing <code>data/contributors.overrides.json</code> to add your full name, add a short
-              note, or set <code>hidden: true</code> if you prefer not to appear in the public directory. Each card
-              shows the GitHub user ID used as the override key.
+        <section className="toolbar-card" id="directory">
+          <div className="toolbar-copy">
+            <p className="eyebrow eyebrow-dark">Directory</p>
+            <h2 className="section-title">Browse the roster in a spreadsheet-style table.</h2>
+            <p className="toolbar-note">
+              Sort by any major column, search by handle, name, note, or repo, then expand a row whenever you want
+              the richer context.
             </p>
           </div>
 
-          <div className="cta-note">
-            <span className="cta-note-label">Override shape</span>
-            <code>{`"123456": { "name": "Ada Lovelace", "note": "Worked on docs.", "hidden": false }`}</code>
-          </div>
-        </div>
-      </section>
+          <div className="toolbar-controls">
+            <label className="search-field">
+              <span>Search contributors</span>
+              <input
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Search by handle, name, note, or repo"
+              />
+            </label>
 
-      <section className="toolbar-card" id="directory">
-        <div className="toolbar-copy">
-          <p className="eyebrow eyebrow-dark">Directory</p>
-          <h2 className="section-title">Search the contributor roster.</h2>
-          <p className="toolbar-note">
-            Filter by handle, name, note, or repo, then sort by recency, total merged PRs, first merge, or
-            alphabetically.
+            <div className="table-actions">
+              <button
+                type="button"
+                className="action-button"
+                onClick={expandAll}
+                disabled={filteredContributors.length === 0 || allExpanded}
+              >
+                Expand all
+              </button>
+              <button
+                type="button"
+                className="action-button action-button-secondary"
+                onClick={collapseAll}
+                disabled={expandedIds.size === 0}
+              >
+                Collapse all
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section className="results-meta">
+          <p>
+            Showing <strong>{filteredContributors.length}</strong> of <strong>{data.visibleContributorCount}</strong>{" "}
+            contributors.
           </p>
-        </div>
+          <p>
+            Sorted by <strong>{sortColumns.find((column) => column.key === sortKey)?.label}</strong> {sortDirection}.
+          </p>
+        </section>
 
-        <div className="toolbar-controls">
-          <label className="search-field">
-            <span>Search contributors</span>
-            <input
-              type="search"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="Search by handle, name, note, or repo"
-            />
-          </label>
-
-          <label className="sort-field">
-            <span>Sort by</span>
-            <select value={sortKey} onChange={(event) => setSortKey(event.target.value as SortKey)}>
-              {sortOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
-      </section>
-
-      <section className="results-meta">
-        <p>
-          Showing <strong>{filteredContributors.length}</strong> of <strong>{data.visibleContributorCount}</strong>{" "}
-          contributors.
-        </p>
-        {data.generatedAt ? <p>Last synced {formatDate(data.generatedAt)}</p> : <p>Sync has not run yet.</p>}
-      </section>
-
-      <section className="contributors-grid">
-        {filteredContributors.length > 0 ? (
-          filteredContributors.map((contributor) => (
-            <ContributorCard key={contributor.githubUserId} contributor={contributor} />
-          ))
-        ) : (
-          <div className="empty-state">
-            No contributors match your search yet. Try a different handle, repo, or note keyword.
+        <section className="directory-table-card">
+          <div className="table-scroll-wrap">
+            <table className="directory-table">
+              <thead>
+                <tr>
+                  {sortColumns.map((column) => (
+                    <th key={column.key} scope="col">
+                      <SortButton
+                        label={column.label}
+                        column={column.key}
+                        activeSortKey={sortKey}
+                        activeDirection={sortDirection}
+                        onToggle={handleSort}
+                      />
+                    </th>
+                  ))}
+                  <th scope="col">
+                    <span className="th-static">Details</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredContributors.length > 0 ? (
+                  filteredContributors.map((contributor) => {
+                    const isExpanded = expandedIds.has(contributor.githubUserId);
+                    return (
+                      <FragmentRows key={contributor.githubUserId}>
+                        <tr className={`directory-row${isExpanded ? " directory-row-expanded" : ""}`}>
+                          <td>
+                            <button
+                              type="button"
+                              className="identity-button"
+                              onClick={() => toggleExpanded(contributor.githubUserId)}
+                              aria-expanded={isExpanded}
+                            >
+                              <Image
+                                src={contributor.avatarUrl}
+                                alt={`${contributor.login} avatar`}
+                                width={32}
+                                height={32}
+                                className="table-avatar"
+                              />
+                              <span>@{contributor.login}</span>
+                            </button>
+                          </td>
+                          <td>{contributor.name || <span className="table-muted">—</span>}</td>
+                          <td>
+                            <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
+                              {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
+                            </a>
+                          </td>
+                          <td>
+                            <a
+                              href={contributor.mostRecentMergedPr.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="table-link"
+                            >
+                              {contributor.mostRecentMergedPr.repo} #{contributor.mostRecentMergedPr.number}
+                            </a>
+                          </td>
+                          <td>{contributor.totalMergedPrs}</td>
+                          <td>
+                            <button
+                              type="button"
+                              className="row-expand-button"
+                              onClick={() => toggleExpanded(contributor.githubUserId)}
+                              aria-expanded={isExpanded}
+                            >
+                              {isExpanded ? "Collapse" : "Expand"}
+                            </button>
+                          </td>
+                        </tr>
+                        {isExpanded ? (
+                          <tr className="directory-detail-row">
+                            <td colSpan={6}>
+                              <ExpandedRow contributor={contributor} />
+                            </td>
+                          </tr>
+                        ) : null}
+                      </FragmentRows>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td colSpan={6}>
+                      <div className="empty-state">
+                        No contributors match your search yet. Try a different handle, repo, or note keyword.
+                      </div>
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
           </div>
-        )}
-      </section>
-    </main>
+        </section>
+
+        <section className="cta-card" id="personalize">
+          <div className="cta-grid">
+            <div>
+              <p className="eyebrow eyebrow-dark">Self-serve enrichment</p>
+              <h2 className="section-title">Want to personalize your entry?</h2>
+              <p>
+                Open a PR editing <code>data/contributors.overrides.json</code> to add your full name, add a short
+                note, or set <code>hidden: true</code> if you prefer not to appear in the public directory.
+              </p>
+            </div>
+
+            <div className="cta-note">
+              <span className="cta-note-label">Override shape</span>
+              <code>{`"123456": { "name": "Ada Lovelace", "note": "Worked on docs.", "hidden": false }`}</code>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div className="accessibility-fab-wrap">
+        <button
+          type="button"
+          className="accessibility-fab"
+          onClick={() => setIsAccessibilityOpen((current) => !current)}
+          aria-expanded={isAccessibilityOpen}
+        >
+          Accessibility
+        </button>
+
+        {isAccessibilityOpen ? (
+          <div className="accessibility-panel">
+            <label className="accessibility-toggle">
+              <input
+                type="checkbox"
+                checked={reduceMotion}
+                onChange={(event) => setReduceMotion(event.target.checked)}
+              />
+              <span>Pause ticker motion</span>
+            </label>
+
+            <label className="accessibility-toggle">
+              <input
+                type="checkbox"
+                checked={highContrast}
+                onChange={(event) => setHighContrast(event.target.checked)}
+              />
+              <span>High contrast mode</span>
+            </label>
+          </div>
+        ) : null}
+      </div>
+    </div>
   );
+}
+
+function FragmentRows({ children }: { children: ReactNode }) {
+  return <>{children}</>;
 }

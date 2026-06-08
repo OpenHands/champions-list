@@ -1,11 +1,814 @@
 {
-  "generatedAt": "2026-06-08T18:02:02.807Z",
+  "generatedAt": "2026-06-08T18:54:28.752Z",
   "organization": "OpenHands",
   "repoCount": 42,
   "scannedRepoCount": 42,
-  "totalMergedPrs": 1729,
+  "totalMergedPrs": 1730,
   "skippedRepos": [],
+  "recentMergedPrs": [
+    {
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14451,
+        "title": "fix: _configure_llm now preserves user LLM settings",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14451",
+        "mergedAt": "2026-06-08T18:45:10Z"
+      }
+    },
+    {
+      "githubUserId": "51058514",
+      "login": "Sanjays2402",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/51058514?u=e7c046e3db8612d68a8a97bc7d9764fad0b8fbbf&v=4",
+      "profileUrl": "https://github.com/Sanjays2402",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3399,
+        "title": "fix(security): pin ACP npx launchers to reviewed versions (closes #3357)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3399",
+        "mergedAt": "2026-06-08T13:56:48Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 555,
+        "title": "docs: add Linux network binding warning for LM Studio with Docker",
+        "url": "https://github.com/OpenHands/docs/pull/555",
+        "mergedAt": "2026-06-06T20:45:20Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3546,
+        "title": "fix(agent-server): report OpenAI gateway token usage",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3546",
+        "mergedAt": "2026-06-06T12:42:25Z"
+      }
+    },
+    {
+      "githubUserId": "168134658",
+      "login": "kapelame",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/168134658?u=4779450ba4eda31f5deac61e60c97c8b95682993&v=4",
+      "profileUrl": "https://github.com/kapelame",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3461,
+        "title": "feat(llm): add minimax-m3 to verified MiniMax models",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3461",
+        "mergedAt": "2026-06-06T01:18:26Z"
+      }
+    },
+    {
+      "githubUserId": "286084693",
+      "login": "nehaprasad-dev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/286084693?u=47621fa6a168c64c391f607d8aa983432bf8fd7d&v=4",
+      "profileUrl": "https://github.com/nehaprasad-dev",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1113,
+        "title": "docs: sync README Docker tags with config/defaults.json",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1113",
+        "mergedAt": "2026-06-05T16:44:38Z"
+      }
+    },
+    {
+      "githubUserId": "29340368",
+      "login": "sjathin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/29340368?u=1f5b5527b0e1e3b9ee46ebe5ebc0be65eaba79ab&v=4",
+      "profileUrl": "https://github.com/sjathin",
+      "pullRequest": {
+        "repo": "automation",
+        "number": 156,
+        "title": "feat: add API and UI support to cancel automation runs",
+        "url": "https://github.com/OpenHands/automation/pull/156",
+        "mergedAt": "2026-06-05T14:22:19Z"
+      }
+    },
+    {
+      "githubUserId": "212606152",
+      "login": "StressTestor",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212606152?v=4",
+      "profileUrl": "https://github.com/StressTestor",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3446,
+        "title": "fix(sdk): make default current_datetime timezone-aware",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3446",
+        "mergedAt": "2026-06-04T22:55:38Z"
+      }
+    },
+    {
+      "githubUserId": "100782273",
+      "login": "Oxygen56",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/100782273?v=4",
+      "profileUrl": "https://github.com/Oxygen56",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3450,
+        "title": "Merge adjacent user messages for strict role alternation",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3450",
+        "mergedAt": "2026-06-04T21:04:54Z"
+      }
+    },
+    {
+      "githubUserId": "455140",
+      "login": "mvanhorn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
+      "profileUrl": "https://github.com/mvanhorn",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1118,
+        "title": "feat: persist selected workspace across navigation in the new-chat view",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1118",
+        "mergedAt": "2026-06-04T19:15:24Z"
+      }
+    },
+    {
+      "githubUserId": "92196705",
+      "login": "kirtanchandak",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/92196705?u=1f12bd7089c1d3bcf3dd4fa8c33691aeb1b720d3&v=4",
+      "profileUrl": "https://github.com/kirtanchandak",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1056,
+        "title": "feat: adds translations for \"Remote\" in multiple languages ",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1056",
+        "mergedAt": "2026-06-03T11:14:05Z"
+      }
+    },
+    {
+      "githubUserId": "56159332",
+      "login": "burakkeless",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/56159332?u=7eba53e351ea37e4a10efcd99dda0d22479e4525&v=4",
+      "profileUrl": "https://github.com/burakkeless",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 973,
+        "title": "fix: surface dynamic_context in Agent Tools & Metadata modal (#932)",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/973",
+        "mergedAt": "2026-06-03T09:36:42Z"
+      }
+    },
+    {
+      "githubUserId": "29340368",
+      "login": "sjathin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/29340368?u=1f5b5527b0e1e3b9ee46ebe5ebc0be65eaba79ab&v=4",
+      "profileUrl": "https://github.com/sjathin",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1007,
+        "title": "feat: expose event trigger details in automation UI",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1007",
+        "mergedAt": "2026-06-03T09:16:33Z"
+      }
+    },
+    {
+      "githubUserId": "64770682",
+      "login": "abhikb2005",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64770682?v=4",
+      "profileUrl": "https://github.com/abhikb2005",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 521,
+        "title": "docs: document ALLOW_INSECURE_GIT_ACCESS for trusted local git providers",
+        "url": "https://github.com/OpenHands/docs/pull/521",
+        "mergedAt": "2026-05-30T20:04:40Z"
+      }
+    },
+    {
+      "githubUserId": "170590558",
+      "login": "serejaris",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/170590558?u=c1e1418c3c583e413b1ed81ae962fbbbb3383ed0&v=4",
+      "profileUrl": "https://github.com/serejaris",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3394,
+        "title": "fix(terminal): reduce tmux session viewport",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3394",
+        "mergedAt": "2026-05-28T15:42:06Z"
+      }
+    },
+    {
+      "githubUserId": "56159332",
+      "login": "burakkeless",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/56159332?u=7eba53e351ea37e4a10efcd99dda0d22479e4525&v=4",
+      "profileUrl": "https://github.com/burakkeless",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3052,
+        "title": "feat(hooks): add HookType.AGENT for agent-based hook evaluation",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3052",
+        "mergedAt": "2026-05-27T20:58:23Z"
+      }
+    },
+    {
+      "githubUserId": "40085740",
+      "login": "he-yufeng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40085740?u=4969024dc6ba162593d9f35e4ca407a2ac33e33b&v=4",
+      "profileUrl": "https://github.com/he-yufeng",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3247,
+        "title": "fix: validate git repos with rev-parse",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3247",
+        "mergedAt": "2026-05-27T15:04:51Z"
+      }
+    },
+    {
+      "githubUserId": "51058514",
+      "login": "Sanjays2402",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/51058514?u=e7c046e3db8612d68a8a97bc7d9764fad0b8fbbf&v=4",
+      "profileUrl": "https://github.com/Sanjays2402",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14577,
+        "title": "chore: fix typos in comments, docstrings, and log messages",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14577",
+        "mergedAt": "2026-05-27T09:24:20Z"
+      }
+    },
+    {
+      "githubUserId": "286084693",
+      "login": "nehaprasad-dev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/286084693?u=47621fa6a168c64c391f607d8aa983432bf8fd7d&v=4",
+      "profileUrl": "https://github.com/nehaprasad-dev",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 722,
+        "title": "fix(chat): enable git PR/push/pull on local without provider_tokens_set",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/722",
+        "mergedAt": "2026-05-26T14:30:39Z"
+      }
+    },
+    {
+      "githubUserId": "38696052",
+      "login": "LuneZ99",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/38696052?u=0c362a109a92732f999d806abd41d62432d3bcc4&v=4",
+      "profileUrl": "https://github.com/LuneZ99",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3381,
+        "title": "Fix MCP Responses tool schema generation",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3381",
+        "mergedAt": "2026-05-26T01:51:19Z"
+      }
+    },
+    {
+      "githubUserId": "92238261",
+      "login": "SLEEPYBQ",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/92238261?u=52e3fb7cb075f719d9e552e009c28f2240b4e185&v=4",
+      "profileUrl": "https://github.com/SLEEPYBQ",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3342,
+        "title": "Fix planning agent PLAN.md path references",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3342",
+        "mergedAt": "2026-05-24T11:09:18Z"
+      }
+    },
+    {
+      "githubUserId": "286084693",
+      "login": "nehaprasad-dev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/286084693?u=47621fa6a168c64c391f607d8aa983432bf8fd7d&v=4",
+      "profileUrl": "https://github.com/nehaprasad-dev",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 729,
+        "title": "fix: keep panel resize drag working over files iframes",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/729",
+        "mergedAt": "2026-05-22T20:20:05Z"
+      }
+    },
+    {
+      "githubUserId": "202828230",
+      "login": "Fieldnote-Echo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=c04d4bd482ffd588f8c6378c6653c1b1625b371b&v=4",
+      "profileUrl": "https://github.com/Fieldnote-Echo",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14488,
+        "title": "ci: pin external third-party actions to commit SHAs + scope Dependabot to composite actions",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14488",
+        "mergedAt": "2026-05-22T16:38:00Z"
+      }
+    },
+    {
+      "githubUserId": "202828230",
+      "login": "Fieldnote-Echo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=c04d4bd482ffd588f8c6378c6653c1b1625b371b&v=4",
+      "profileUrl": "https://github.com/Fieldnote-Echo",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 433,
+        "title": "docs(security): document primary-surface-first extraction ordering",
+        "url": "https://github.com/OpenHands/docs/pull/433",
+        "mergedAt": "2026-05-22T14:11:56Z"
+      }
+    },
+    {
+      "githubUserId": "202828230",
+      "login": "Fieldnote-Echo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=c04d4bd482ffd588f8c6378c6653c1b1625b371b&v=4",
+      "profileUrl": "https://github.com/Fieldnote-Echo",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3307,
+        "title": "refactor(sdk): introduce shared tree-sitter-bash entry point",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3307",
+        "mergedAt": "2026-05-22T10:09:05Z"
+      }
+    },
+    {
+      "githubUserId": "286084693",
+      "login": "nehaprasad-dev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/286084693?u=47621fa6a168c64c391f607d8aa983432bf8fd7d&v=4",
+      "profileUrl": "https://github.com/nehaprasad-dev",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 683,
+        "title": "fix(settings): filter Autocomplete items when typing in settingsdropdown",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/683",
+        "mergedAt": "2026-05-21T07:59:16Z"
+      }
+    },
+    {
+      "githubUserId": "196466003",
+      "login": "DisabledAbel",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/196466003?u=a929c16a9a50244d987509611fe9b55925a736b9&v=4",
+      "profileUrl": "https://github.com/DisabledAbel",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14500,
+        "title": "Added Vercel deployment ",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14500",
+        "mergedAt": "2026-05-21T06:44:13Z"
+      }
+    },
+    {
+      "githubUserId": "202828230",
+      "login": "Fieldnote-Echo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=c04d4bd482ffd588f8c6378c6653c1b1625b371b&v=4",
+      "profileUrl": "https://github.com/Fieldnote-Echo",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3334,
+        "title": "ci: pin external third-party actions to commit SHAs",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3334",
+        "mergedAt": "2026-05-20T21:30:40Z"
+      }
+    },
+    {
+      "githubUserId": "455140",
+      "login": "mvanhorn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
+      "profileUrl": "https://github.com/mvanhorn",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 643,
+        "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/643",
+        "mergedAt": "2026-05-20T14:15:49Z"
+      }
+    },
+    {
+      "githubUserId": "39442065",
+      "login": "Kage18",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39442065?u=c615c0fc681124845a36ddbef31b15d01286555f&v=4",
+      "profileUrl": "https://github.com/Kage18",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14437,
+        "title": "fix: avoid rewriting provider credit errors",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14437",
+        "mergedAt": "2026-05-19T18:55:34Z"
+      }
+    },
+    {
+      "githubUserId": "202828230",
+      "login": "Fieldnote-Echo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=c04d4bd482ffd588f8c6378c6653c1b1625b371b&v=4",
+      "profileUrl": "https://github.com/Fieldnote-Echo",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3304,
+        "title": "test(security): xfail corpus for shell-parser bypass classes (#2721)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3304",
+        "mergedAt": "2026-05-19T17:03:50Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 608,
+        "title": "fix: update 15 broken docsUrl links in MCP marketplace",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/608",
+        "mergedAt": "2026-05-18T22:43:15Z"
+      }
+    },
+    {
+      "githubUserId": "39543393",
+      "login": "zerone0x",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39543393?u=17fa21edf9eaa1c3804ecddeec6ec45d88291655&v=4",
+      "profileUrl": "https://github.com/zerone0x",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 731,
+        "title": "fix: preserve unicode in JSON output",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/731",
+        "mergedAt": "2026-05-17T22:54:40Z"
+      }
+    },
+    {
+      "githubUserId": "39543393",
+      "login": "zerone0x",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39543393?u=17fa21edf9eaa1c3804ecddeec6ec45d88291655&v=4",
+      "profileUrl": "https://github.com/zerone0x",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 732,
+        "title": "fix(tui): disable markup in conversation notifications",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/732",
+        "mergedAt": "2026-05-17T17:16:41Z"
+      }
+    },
+    {
+      "githubUserId": "40085740",
+      "login": "he-yufeng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40085740?u=4969024dc6ba162593d9f35e4ca407a2ac33e33b&v=4",
+      "profileUrl": "https://github.com/he-yufeng",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3225,
+        "title": "fix: write remote completion logs as utf-8",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3225",
+        "mergedAt": "2026-05-17T13:14:10Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14444,
+        "title": "Add issue duplicate automation workflow",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14444",
+        "mergedAt": "2026-05-16T15:34:23Z"
+      }
+    },
+    {
+      "githubUserId": "40085740",
+      "login": "he-yufeng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40085740?u=4969024dc6ba162593d9f35e4ca407a2ac33e33b&v=4",
+      "profileUrl": "https://github.com/he-yufeng",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3248,
+        "title": "fix: guard litellm modify_params context",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3248",
+        "mergedAt": "2026-05-14T19:37:25Z"
+      }
+    },
+    {
+      "githubUserId": "877641",
+      "login": "cbagwell",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/877641?v=4",
+      "profileUrl": "https://github.com/cbagwell",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 715,
+        "title": "feat: Add workspace-specific prompt history with fuzzy search modal",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/715",
+        "mergedAt": "2026-05-13T17:40:43Z"
+      }
+    },
+    {
+      "githubUserId": "877641",
+      "login": "cbagwell",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/877641?v=4",
+      "profileUrl": "https://github.com/cbagwell",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 699,
+        "title": "tests: isolate persistence directories to prevent writes to user home",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/699",
+        "mergedAt": "2026-05-13T16:56:10Z"
+      }
+    },
+    {
+      "githubUserId": "877641",
+      "login": "cbagwell",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/877641?v=4",
+      "profileUrl": "https://github.com/cbagwell",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 698,
+        "title": "fix(tui): preserve typed character when auto-focusing input",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/698",
+        "mergedAt": "2026-05-13T13:29:42Z"
+      }
+    },
+    {
+      "githubUserId": "47117969",
+      "login": "dinmukhamedm",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/47117969?u=03680a5fcec389240a655f7b5e77f3e655d653be&v=4",
+      "profileUrl": "https://github.com/dinmukhamedm",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3008,
+        "title": "Fix/laminar/remove litellm callback",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3008",
+        "mergedAt": "2026-05-13T13:19:37Z"
+      }
+    },
+    {
+      "githubUserId": "877641",
+      "login": "cbagwell",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/877641?v=4",
+      "profileUrl": "https://github.com/cbagwell",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14363,
+        "title": "fix(bitbucket): Replace deprecated/deleted API",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14363",
+        "mergedAt": "2026-05-12T16:59:08Z"
+      }
+    },
+    {
+      "githubUserId": "202828230",
+      "login": "Fieldnote-Echo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=c04d4bd482ffd588f8c6378c6653c1b1625b371b&v=4",
+      "profileUrl": "https://github.com/Fieldnote-Echo",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 2709,
+        "title": "Primary-surface-first extraction ordering to prevent truncation-based bypass",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2709",
+        "mergedAt": "2026-05-12T15:11:34Z"
+      }
+    },
+    {
+      "githubUserId": "196466003",
+      "login": "DisabledAbel",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/196466003?u=a929c16a9a50244d987509611fe9b55925a736b9&v=4",
+      "profileUrl": "https://github.com/DisabledAbel",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14367,
+        "title": "Added stay logged in feature",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14367",
+        "mergedAt": "2026-05-12T08:54:19Z"
+      }
+    },
+    {
+      "githubUserId": "71692995",
+      "login": "Zheng-Lu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/71692995?u=6f496245ad06abb5c7bd366bd4a25108749fcbe2&v=4",
+      "profileUrl": "https://github.com/Zheng-Lu",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3114,
+        "title": "fix(sdk): enforce disabled skill model invocation",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3114",
+        "mergedAt": "2026-05-11T07:42:19Z"
+      }
+    },
+    {
+      "githubUserId": "176635150",
+      "login": "Cao-R",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/176635150?v=4",
+      "profileUrl": "https://github.com/Cao-R",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14261,
+        "title": "fix Windows compatibility: use cross-platform temp directory for sandbox",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14261",
+        "mergedAt": "2026-05-08T14:22:51Z"
+      }
+    },
+    {
+      "githubUserId": "275741325",
+      "login": "si-stip-tessl",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/275741325?v=4",
+      "profileUrl": "https://github.com/si-stip-tessl",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 717,
+        "title": "fix: emit valid JSONL from --json mode",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/717",
+        "mergedAt": "2026-05-08T05:09:15Z"
+      }
+    },
+    {
+      "githubUserId": "42798111",
+      "login": "mindbomber",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/42798111?u=55b455990d9fa413ae73a50432b60e2291165c40&v=4",
+      "profileUrl": "https://github.com/mindbomber",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3090,
+        "title": "Enable Gemini prompt cache markers",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3090",
+        "mergedAt": "2026-05-07T16:03:01Z"
+      }
+    },
+    {
+      "githubUserId": "71692995",
+      "login": "Zheng-Lu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/71692995?u=6f496245ad06abb5c7bd366bd4a25108749fcbe2&v=4",
+      "profileUrl": "https://github.com/Zheng-Lu",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 2552,
+        "title": "fix(sdk): resize Anthropic many-image inputs",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2552",
+        "mergedAt": "2026-05-05T15:52:48Z"
+      }
+    },
+    {
+      "githubUserId": "29340368",
+      "login": "sjathin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/29340368?u=1f5b5527b0e1e3b9ee46ebe5ebc0be65eaba79ab&v=4",
+      "profileUrl": "https://github.com/sjathin",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3027,
+        "title": "Fix ACPAgent dropping image content from user messages",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3027",
+        "mergedAt": "2026-05-03T17:59:55Z"
+      }
+    },
+    {
+      "githubUserId": "43346380",
+      "login": "09473ZH",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/43346380?u=a8b69facfc2d56326a8ed792cf9adf3947d8c1ec&v=4",
+      "profileUrl": "https://github.com/09473ZH",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 2771,
+        "title": "feat: add --import-modules CLI flag for preloading custom modules",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2771",
+        "mergedAt": "2026-05-03T14:33:26Z"
+      }
+    },
+    {
+      "githubUserId": "47117969",
+      "login": "dinmukhamedm",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/47117969?u=03680a5fcec389240a655f7b5e77f3e655d653be&v=4",
+      "profileUrl": "https://github.com/dinmukhamedm",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3007,
+        "title": "lazy load Laminar",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3007",
+        "mergedAt": "2026-05-01T22:06:53Z"
+      }
+    },
+    {
+      "githubUserId": "89523120",
+      "login": "AmyTao",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/89523120?u=7898434021cad33a5f0bd38a9f60e8e98bcff4f9&v=4",
+      "profileUrl": "https://github.com/AmyTao",
+      "pullRequest": {
+        "repo": "benchmarks",
+        "number": 641,
+        "title": "feat/add SkillsBench benchmark integration",
+        "url": "https://github.com/OpenHands/benchmarks/pull/641",
+        "mergedAt": "2026-05-01T01:23:45Z"
+      }
+    },
+    {
+      "githubUserId": "877641",
+      "login": "cbagwell",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/877641?v=4",
+      "profileUrl": "https://github.com/cbagwell",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 697,
+        "title": "settings: clear stale max tokens on model identity change",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/697",
+        "mergedAt": "2026-04-29T15:13:59Z"
+      }
+    },
+    {
+      "githubUserId": "64528476",
+      "login": "L0Z1K",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64528476?u=196423b94260585fb06f84036e5350502a2f29af&v=4",
+      "profileUrl": "https://github.com/L0Z1K",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 468,
+        "title": "docs: register_agent is in subagent, not in delegate",
+        "url": "https://github.com/OpenHands/docs/pull/468",
+        "mergedAt": "2026-04-28T18:23:48Z"
+      }
+    },
+    {
+      "githubUserId": "16169603",
+      "login": "gwerneckp",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16169603?u=a3b7d1ec84792dd078dcdf111e1a2fce64fc07d8&v=4",
+      "profileUrl": "https://github.com/gwerneckp",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 695,
+        "title": "fix(tui): resolve 'no running event loop' in RichLogVisualizer (fixes #696)",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/695",
+        "mergedAt": "2026-04-28T06:32:37Z"
+      }
+    },
+    {
+      "githubUserId": "877641",
+      "login": "cbagwell",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/877641?v=4",
+      "profileUrl": "https://github.com/cbagwell",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14173,
+        "title": "fix(settings): Only convert litellm_proxy/ to openhands/ for OpenHands proxy",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14173",
+        "mergedAt": "2026-04-27T23:27:41Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 2952,
+        "title": "docs: align README setup notes with current repo workflow",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2952",
+        "mergedAt": "2026-04-25T00:30:42Z"
+      }
+    },
+    {
+      "githubUserId": "159117309",
+      "login": "StatPan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/159117309?u=154ad6f8becbbec06535a44f18d1531db91d11e8&v=4",
+      "profileUrl": "https://github.com/StatPan",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 2936,
+        "title": "fix(state): warn when falling back to InMemoryFileStore without persistence_dir",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2936",
+        "mergedAt": "2026-04-24T14:17:37Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 471,
+        "title": "docs(local-llms): add community-reported model compatibility note",
+        "url": "https://github.com/OpenHands/docs/pull/471",
+        "mergedAt": "2026-04-23T18:36:55Z"
+      }
+    }
+  ],
   "contributors": [
+    {
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 12113,
+        "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
+        "url": "https://github.com/OpenHands/OpenHands/pull/12113",
+        "mergedAt": "2025-12-24T21:26:46Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 14451,
+        "title": "fix: _configure_llm now preserves user LLM settings",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14451",
+        "mergedAt": "2026-06-08T18:45:10Z"
+      },
+      "totalMergedPrs": 4
+    },
     {
       "githubUserId": "51058514",
       "login": "Sanjays2402",
@@ -2021,27 +2824,6 @@
         "mergedAt": "2026-01-20T01:47:00Z"
       },
       "totalMergedPrs": 1
-    },
-    {
-      "githubUserId": "156683457",
-      "login": "shanemort1982",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
-      "profileUrl": "https://github.com/shanemort1982",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 12113,
-        "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
-        "url": "https://github.com/OpenHands/OpenHands/pull/12113",
-        "mergedAt": "2025-12-24T21:26:46Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 1466,
-        "title": "Fix CORS to allow DOCKER_HOST_ADDR for remote browser access",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/1466",
-        "mergedAt": "2026-01-20T01:37:27Z"
-      },
-      "totalMergedPrs": 3
     },
     {
       "githubUserId": "128240629",

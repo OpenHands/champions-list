@@ -19,6 +19,7 @@ if (!token) {
 }
 
 const graphqlEndpoint = "https://api.github.com/graphql";
+const recentMergedPrLimit = Number(process.env.RECENT_MERGES_LIMIT ?? "60");
 
 async function readJson(filePath) {
   const content = await fs.readFile(filePath, "utf8");
@@ -184,6 +185,16 @@ function summarizePullRequest(repoName, pullRequest) {
   };
 }
 
+function summarizeRecentMergedPullRequest(repoName, pullRequest) {
+  return {
+    githubUserId: String(pullRequest.author.databaseId),
+    login: pullRequest.author.login,
+    avatarUrl: pullRequest.author.avatarUrl,
+    profileUrl: pullRequest.author.url,
+    pullRequest: summarizePullRequest(repoName, pullRequest),
+  };
+}
+
 function updateContributor(contributors, repoName, pullRequest) {
   const githubUserId = String(pullRequest.author.databaseId);
   const current = contributors.get(githubUserId) ?? {
@@ -222,6 +233,17 @@ function sortContributors(contributors) {
   });
 }
 
+function sortRecentMergedPullRequests(pullRequests) {
+  return [...pullRequests]
+    .sort((a, b) => {
+      return (
+        new Date(b.pullRequest.mergedAt) - new Date(a.pullRequest.mergedAt) ||
+        a.login.localeCompare(b.login)
+      );
+    })
+    .slice(0, recentMergedPrLimit);
+}
+
 function getVisibleContributors(contributors, overridesFile) {
   const overrides = overridesFile?.contributors ?? {};
   return contributors.filter((contributor) => !overrides[contributor.githubUserId]?.hidden);
@@ -242,6 +264,7 @@ async function main() {
 
   const repos = await fetchPublicRepos();
   const contributors = new Map();
+  const recentMergedPullRequests = [];
   const skippedRepos = [];
   let totalMergedPrs = 0;
 
@@ -255,6 +278,7 @@ async function main() {
 
         totalMergedPrs += 1;
         updateContributor(contributors, repo.name, pullRequest);
+        recentMergedPullRequests.push(summarizeRecentMergedPullRequest(repo.name, pullRequest));
       }
     } catch (error) {
       skippedRepos.push({
@@ -265,6 +289,7 @@ async function main() {
   }
 
   const contributorList = sortContributors(Array.from(contributors.values()));
+  const recentMergedPrs = sortRecentMergedPullRequests(recentMergedPullRequests);
   const visibleContributors = getVisibleContributors(contributorList, overridesFile);
   const visibleMergedPrs = visibleContributors.reduce(
     (total, contributor) => total + contributor.totalMergedPrs,
@@ -279,6 +304,7 @@ async function main() {
     scannedRepoCount: repos.length - skippedRepos.length,
     totalMergedPrs,
     skippedRepos,
+    recentMergedPrs,
     contributors: contributorList,
   };
 
