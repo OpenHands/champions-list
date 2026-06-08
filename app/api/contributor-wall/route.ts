@@ -56,12 +56,17 @@ export function GET(request: Request) {
       const y = Math.floor(index / columns) * stride;
       const src = escapeAttribute(withAvatarSize(contributor.avatarUrl, size * 2));
 
-      return `  <image href="${src}" x="${x}" y="${y}" width="${size}" height="${size}" />`;
+      return `  <image href="${src}" x="${x}" y="${y}" width="${size}" height="${size}" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice" />`;
     })
     .join("\n");
 
   const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+  <defs>
+    <clipPath id="avatarClip" clipPathUnits="objectBoundingBox">
+      <circle cx="0.5" cy="0.5" r="0.5" />
+    </clipPath>
+  </defs>
 ${images}
 </svg>
 `;
