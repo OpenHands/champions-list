@@ -18,16 +18,6 @@ The full searchable directory lives in the app in this repository. Want to add y
 
 _Last synced: 2026-06-08_
 
-<!-- BEGIN MANUAL -->
-## Hackers
-
-- _Add yourself here by opening a PR._
-
-## Testers
-
-- _Add yourself here by opening a PR._
-<!-- END MANUAL -->
-
 ## Contributor Wall
 
 <img src="https://champions.hub.openhands.dev/api/contributor-wall" alt="OpenHands Champions contributor avatar wall" />
