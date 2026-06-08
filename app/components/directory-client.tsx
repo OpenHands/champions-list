@@ -343,7 +343,13 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 <li>Newest Champions shows unique people sorted by when their first merged PR landed.</li>
                 <li>Fresh Merges shows raw recent merged PR activity, even if the same person appears more than once.</li>
                 <li>Click any non-link area in a row to expand details, or expand every visible contributor at once.</li>
-                <li>Want to add more context, hide your name, or update your entry? Open a PR.</li>
+                <li>
+                  Want to add more context, hide your name, or update your entry? Open a PR in this repo: {" "}
+                  <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
+                    OpenHands/champions-list
+                  </a>
+                  .
+                </li>
               </ul>
               <p className="hero-side-meta">
                 Last synced <strong>{data.generatedAt ? `${formatUtcTimestamp(data.generatedAt)} UTC` : "Not synced yet"}</strong>
