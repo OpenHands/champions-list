@@ -79,6 +79,14 @@ function duplicateTickerItems<T>(items: T[]): T[] {
   return items.length > 0 ? [...items, ...items] : [];
 }
 
+function formatUtcTimestamp(value: string) {
+  return new Intl.DateTimeFormat("en-US", {
+    dateStyle: "medium",
+    timeStyle: "short",
+    timeZone: "UTC",
+  }).format(new Date(value));
+}
+
 function isInteractiveTarget(target: EventTarget | null) {
   return target instanceof HTMLElement && Boolean(target.closest("a, button, input, select, label"));
 }
@@ -311,35 +319,34 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
             <div>
               <div className="hero-badge-row">
                 <p className="eyebrow">OpenHands Champions</p>
-                <p className="eyebrow eyebrow-muted">Merged PR contributor directory</p>
+                <p className="eyebrow eyebrow-muted">Contributor directory</p>
               </div>
 
-              <h1>Track who joined recently, what merged most recently, and browse the full directory below.</h1>
+              <h1>The Official Directory of Codebase Contributors</h1>
 
               <p className="hero-copy">
-                The top rails celebrate motion in the community. The table beneath keeps the actual directory fast to
-                scan, sortable like a spreadsheet, and expandable when you want the full contributor context.
+                Explore all the amazing community contributors to the OpenHands projects. Any contributor with a merged
+                pull request to an OpenHands’ public repository is listed below. These are verified entries using
+                OpenHands.
               </p>
 
               <div className="hero-actions">
-                <a href="#ticker-newest" className="brand-button brand-button-primary">
-                  See newest champions
-                </a>
-                <a href="#directory" className="brand-button brand-button-secondary">
+                <a href="#directory" className="brand-button brand-button-primary">
                   Jump to directory table
                 </a>
               </div>
             </div>
 
             <aside className="hero-sidecard">
-              <p className="hero-side-eyebrow">How this view works</p>
+              <p className="hero-side-eyebrow">How This Works</p>
               <ul className="hero-list">
                 <li>Newest Champions shows unique people sorted by when their first merged PR landed.</li>
                 <li>Fresh Merges shows raw recent merged PR activity, even if the same person appears more than once.</li>
                 <li>Click any non-link area in a row to expand details, or expand every visible contributor at once.</li>
+                <li>Want to add more context, hide your name, or update your entry? Open a PR.</li>
               </ul>
               <p className="hero-side-meta">
-                Last synced <strong>{data.generatedAt ? formatDate(data.generatedAt) : "Not synced yet"}</strong>
+                Last synced <strong>{data.generatedAt ? `${formatUtcTimestamp(data.generatedAt)} UTC` : "Not synced yet"}</strong>
               </p>
             </aside>
           </div>
@@ -369,7 +376,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
             <div className="ticker-heading-row">
               <div>
                 <p className="eyebrow eyebrow-dark">Newest Champions</p>
-                <h2 className="section-title">The latest people to earn a place in the directory.</h2>
+                <h2 className="section-title">Welcome to our first-time contributors.</h2>
               </div>
             </div>
             <div className="ticker-viewport" aria-live="off">
@@ -385,7 +392,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
             <div className="ticker-heading-row">
               <div>
                 <p className="eyebrow eyebrow-dark">Fresh Merges</p>
-                <h2 className="section-title">The most recent merged PR activity across OpenHands public repos.</h2>
+                <h2 className="section-title">Latest Merged PRs</h2>
               </div>
             </div>
             <div className="ticker-viewport" aria-live="off">
@@ -404,16 +411,12 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
         <section className="toolbar-card" id="directory">
           <div className="toolbar-copy">
             <p className="eyebrow eyebrow-dark">Directory</p>
-            <h2 className="section-title">Browse the roster in a spreadsheet-style table.</h2>
-            <p className="toolbar-note">
-              Sort by any major column, search by handle, name, note, or repo, then expand a row whenever you want
-              the richer context.
-            </p>
+            <h2 className="section-title">Official Contributor Directory</h2>
           </div>
 
           <div className="toolbar-controls">
             <label className="search-field">
-              <span>Search contributors</span>
+              <span>Search directory</span>
               <input
                 type="search"
                 value={query}
