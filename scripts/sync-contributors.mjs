@@ -244,6 +244,10 @@ function sortRecentMergedPullRequests(pullRequests) {
     .slice(0, recentMergedPrLimit);
 }
 
+const manualStartMarker = "<!-- BEGIN MANUAL -->";
+const manualEndMarker = "<!-- END MANUAL -->";
+const defaultSiteUrl = "https://champions.hub.openhands.dev";
+
 function getVisibleContributors(contributors, overridesFile) {
   const overrides = overridesFile?.contributors ?? {};
   return contributors.filter((contributor) => !overrides[contributor.githubUserId]?.hidden);
@@ -251,6 +255,44 @@ function getVisibleContributors(contributors, overridesFile) {
 
 function renderReadmeTeaser({ contributorCount, totalMergedPrs, repoCount, generatedAt, previewHandles }) {
   return `# OpenHands Champions\n\nOpenHands Champions is the public contributor directory for everyone who has landed a merged pull request in an OpenHands public repository.\n\nThis repository powers a lightweight, searchable contributor directory that:\n- tracks merged PR contributors across OpenHands public repos\n- preserves a stable GitHub user ID alongside current GitHub profile metadata\n- supports self-serve overrides for name, note, and visibility\n- highlights recent community momentum through newest contributors and fresh merges\n\n## Contributor Directory\n\nThe directory currently shows **${contributorCount}** visible contributors across **${repoCount}** public repos, representing **${totalMergedPrs}** merged PRs.\n\nA few recently active contributors: ${previewHandles.length ? previewHandles.map((handle) => `@${handle}`).join(", ") : "sync pending"}.\n\nThe full searchable directory lives in the app in this repository. Want to add your full name, add a note about what you worked on, or hide your public entry? Open a PR using the templates in ` + "`.github/PULL_REQUEST_TEMPLATE/`" + ` or edit ` + "`data/contributors.overrides.json`" + `.\n\n_Last synced: ${generatedAt}_\n`;
+}
+
+function renderContributorWallSection(siteUrl) {
+  const normalizedSiteUrl = siteUrl.replace(/\/+$/, "");
+  const wallUrl = `${normalizedSiteUrl}/api/contributor-wall`;
+
+  return `## Contributor Wall\n\n<img src="${wallUrl}" alt="OpenHands Champions contributor avatar wall" />\n`;
+}
+
+function createDefaultManualSection() {
+  return `${manualStartMarker}\n## Hackers\n\n- _Add yourself here by opening a PR._\n\n## Testers\n\n- _Add yourself here by opening a PR._\n${manualEndMarker}\n`;
+}
+
+function extractManualSection(existingReadme) {
+  const startIndex = existingReadme.indexOf(manualStartMarker);
+  const endIndex = existingReadme.indexOf(manualEndMarker);
+
+  if (startIndex === -1 || endIndex === -1 || endIndex < startIndex) {
+    return null;
+  }
+
+  const section = existingReadme.slice(startIndex, endIndex + manualEndMarker.length);
+  return `${section.trim()}\n`;
+}
+
+async function loadManualSection() {
+  try {
+    const existing = await fs.readFile(readmePath, "utf8");
+    const extracted = extractManualSection(existing);
+
+    if (extracted) {
+      return extracted;
+    }
+  } catch {
+    // ignore
+  }
+
+  return createDefaultManualSection();
 }
 
 async function main() {
@@ -311,13 +353,16 @@ async function main() {
   await fs.writeFile(generatedPath, `${JSON.stringify(payload, null, 2)}\n`);
 
   const previewHandles = visibleContributors.slice(0, 6).map((contributor) => contributor.login);
-  const readme = renderReadmeTeaser({
+  const manualSection = await loadManualSection();
+  const siteUrl = process.env.SITE_URL ?? defaultSiteUrl;
+
+  const readme = `${renderReadmeTeaser({
     contributorCount: visibleContributors.length,
     totalMergedPrs: visibleMergedPrs,
     repoCount: payload.scannedRepoCount,
     generatedAt: generatedAt.slice(0, 10),
     previewHandles,
-  });
+  })}\n${manualSection}\n${renderContributorWallSection(siteUrl)}`;
 
   await fs.writeFile(readmePath, readme);
 
