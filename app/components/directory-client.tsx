@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import type {
   ContributorDirectoryData,
   ContributorRecord,
@@ -79,6 +79,10 @@ function duplicateTickerItems<T>(items: T[]): T[] {
   return items.length > 0 ? [...items, ...items] : [];
 }
 
+function isInteractiveTarget(target: EventTarget | null) {
+  return target instanceof HTMLElement && Boolean(target.closest("a, button, input, select, label"));
+}
+
 function SortButton({
   label,
   column,
@@ -102,6 +106,18 @@ function SortButton({
         {indicator}
       </span>
     </button>
+  );
+}
+
+function AccessibilityIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="accessibility-icon">
+      <circle cx="12" cy="4.5" r="2.5" fill="currentColor" />
+      <path
+        fill="currentColor"
+        d="M18.5 8.5h-4v-1.4h-5V8.5h-4v2h4V21h2.2v-5h.8L15.6 21H18l-3.3-6.4V10.5h3.8z"
+      />
+    </svg>
   );
 }
 
@@ -213,6 +229,8 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   useEffect(() => {
     const storedReduceMotion = window.localStorage.getItem("champions-reduce-motion");
     const storedHighContrast = window.localStorage.getItem("champions-high-contrast");
+    const prefersMoreContrast =
+      window.matchMedia("(prefers-contrast: more)").matches || window.matchMedia("(forced-colors: active)").matches;
 
     if (storedReduceMotion === null) {
       setReduceMotion(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -220,7 +238,9 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
       setReduceMotion(storedReduceMotion === "true");
     }
 
-    if (storedHighContrast !== null) {
+    if (storedHighContrast === null) {
+      setHighContrast(prefersMoreContrast);
+    } else {
       setHighContrast(storedHighContrast === "true");
     }
   }, []);
@@ -316,7 +336,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <ul className="hero-list">
                 <li>Newest Champions shows unique people sorted by when their first merged PR landed.</li>
                 <li>Fresh Merges shows raw recent merged PR activity, even if the same person appears more than once.</li>
-                <li>Click a GitHub row to expand details, or expand every visible contributor at once.</li>
+                <li>Click any non-link area in a row to expand details, or expand every visible contributor at once.</li>
               </ul>
               <p className="hero-side-meta">
                 Last synced <strong>{data.generatedAt ? formatDate(data.generatedAt) : "Not synced yet"}</strong>
@@ -352,7 +372,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 <h2 className="section-title">The latest people to earn a place in the directory.</h2>
               </div>
             </div>
-            <div className="ticker-viewport">
+            <div className="ticker-viewport" aria-live="off">
               <div className="ticker-track">
                 {newestTickerItems.map((contributor, index) => (
                   <TickerItemNewest key={`${contributor.githubUserId}-${index}`} contributor={contributor} />
@@ -368,7 +388,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 <h2 className="section-title">The most recent merged PR activity across OpenHands public repos.</h2>
               </div>
             </div>
-            <div className="ticker-viewport">
+            <div className="ticker-viewport" aria-live="off">
               <div className="ticker-track ticker-track-reverse">
                 {recentMergeTickerItems.map((item, index) => (
                   <TickerItemRecent
@@ -459,15 +479,26 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                   filteredContributors.map((contributor) => {
                     const isExpanded = expandedIds.has(contributor.githubUserId);
                     return (
-                      <FragmentRows key={contributor.githubUserId}>
-                        <tr className={`directory-row${isExpanded ? " directory-row-expanded" : ""}`}>
+                      <Fragment key={contributor.githubUserId}>
+                        <tr
+                          className={`directory-row${isExpanded ? " directory-row-expanded" : ""}`}
+                          tabIndex={0}
+                          aria-expanded={isExpanded}
+                          onClick={(event) => {
+                            if (isInteractiveTarget(event.target)) {
+                              return;
+                            }
+                            toggleExpanded(contributor.githubUserId);
+                          }}
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                              event.preventDefault();
+                              toggleExpanded(contributor.githubUserId);
+                            }
+                          }}
+                        >
                           <td>
-                            <button
-                              type="button"
-                              className="identity-button"
-                              onClick={() => toggleExpanded(contributor.githubUserId)}
-                              aria-expanded={isExpanded}
-                            >
+                            <div className="identity-cell">
                               <Image
                                 src={contributor.avatarUrl}
                                 alt={`${contributor.login} avatar`}
@@ -476,7 +507,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                                 className="table-avatar"
                               />
                               <span>@{contributor.login}</span>
-                            </button>
+                            </div>
                           </td>
                           <td>{contributor.name || <span className="table-muted">—</span>}</td>
                           <td>
@@ -513,7 +544,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                             </td>
                           </tr>
                         ) : null}
-                      </FragmentRows>
+                      </Fragment>
                     );
                   })
                 ) : (
@@ -552,15 +583,23 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
       <div className="accessibility-fab-wrap">
         <button
           type="button"
-          className="accessibility-fab"
+          className="accessibility-fab accessibility-icon-button"
           onClick={() => setIsAccessibilityOpen((current) => !current)}
+          aria-label="Open accessibility options"
           aria-expanded={isAccessibilityOpen}
         >
-          Accessibility
+          <AccessibilityIcon />
+          <span className="sr-only">Accessibility options</span>
         </button>
 
         {isAccessibilityOpen ? (
           <div className="accessibility-panel">
+            <p className="accessibility-panel-title">Accessibility options</p>
+            <p className="accessibility-panel-copy">
+              Motion honors reduced-motion preferences. Contrast mode increases foreground/background separation and
+              removes translucent surfaces for stronger readability.
+            </p>
+
             <label className="accessibility-toggle">
               <input
                 type="checkbox"
@@ -576,15 +615,11 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 checked={highContrast}
                 onChange={(event) => setHighContrast(event.target.checked)}
               />
-              <span>High contrast mode</span>
+              <span>High contrast palette</span>
             </label>
           </div>
         ) : null}
       </div>
     </div>
   );
-}
-
-function FragmentRows({ children }: { children: ReactNode }) {
-  return <>{children}</>;
 }
