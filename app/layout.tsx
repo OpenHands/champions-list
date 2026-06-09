@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "OpenHands Champions",
-  description: "A searchable directory of merged PR contributors across OpenHands public repositories.",
+  description:
+    "Search OpenHands public-repo champions across merged PRs, issues opened, and issue comments.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

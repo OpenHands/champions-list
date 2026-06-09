@@ -4,35 +4,38 @@ import Image from "next/image";
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { AccessibilityControls } from "@/app/components/accessibility-controls";
 import { PageNav } from "@/app/components/page-nav";
-import type {
-  ContributorDirectoryData,
-  ContributorRecord,
-  RecentMergedPrRecord,
-} from "@/lib/contributors";
 import { formatDate } from "@/lib/contributors";
+import type {
+  IssueCommentReference,
+  IssueChampionRecord,
+  IssueDirectoryData,
+  RecentIssueActivityRecord,
+} from "@/lib/issues";
 
-type SortKey = "login" | "name" | "first" | "recent" | "total";
+type SortKey = "login" | "name" | "opened" | "commented" | "firstActivity" | "recentActivity";
 type SortDirection = "asc" | "desc";
 
 const sortColumns: Array<{ key: SortKey; label: string }> = [
   { key: "login", label: "GitHub" },
   { key: "name", label: "Name" },
-  { key: "first", label: "First PR" },
-  { key: "recent", label: "Most recent PR" },
-  { key: "total", label: "Total merged PRs" },
+  { key: "opened", label: "Issues opened" },
+  { key: "commented", label: "Issue comments" },
+  { key: "firstActivity", label: "First activity" },
+  { key: "recentActivity", label: "Most recent activity" },
 ];
 
 const defaultSortDirection: Record<SortKey, SortDirection> = {
   login: "asc",
   name: "asc",
-  first: "desc",
-  recent: "desc",
-  total: "desc",
+  opened: "desc",
+  commented: "desc",
+  firstActivity: "desc",
+  recentActivity: "desc",
 };
 
-function compareContributors(
-  a: ContributorRecord,
-  b: ContributorRecord,
+function compareIssueChampions(
+  a: IssueChampionRecord,
+  b: IssueChampionRecord,
   sortKey: SortKey,
   direction: SortDirection
 ) {
@@ -42,12 +45,14 @@ function compareContributors(
     comparison = a.login.localeCompare(b.login);
   } else if (sortKey === "name") {
     comparison = (a.name || a.login).localeCompare(b.name || b.login);
-  } else if (sortKey === "first") {
-    comparison = new Date(a.firstMergedPr.mergedAt).getTime() - new Date(b.firstMergedPr.mergedAt).getTime();
-  } else if (sortKey === "recent") {
-    comparison = new Date(a.mostRecentMergedPr.mergedAt).getTime() - new Date(b.mostRecentMergedPr.mergedAt).getTime();
-  } else if (sortKey === "total") {
-    comparison = a.totalMergedPrs - b.totalMergedPrs;
+  } else if (sortKey === "opened") {
+    comparison = a.issuesOpenedCount - b.issuesOpenedCount;
+  } else if (sortKey === "commented") {
+    comparison = a.issueCommentsCount - b.issueCommentsCount;
+  } else if (sortKey === "firstActivity") {
+    comparison = new Date(a.firstActivityAt).getTime() - new Date(b.firstActivityAt).getTime();
+  } else if (sortKey === "recentActivity") {
+    comparison = new Date(a.mostRecentActivityAt).getTime() - new Date(b.mostRecentActivityAt).getTime();
   }
 
   if (comparison === 0) {
@@ -57,20 +62,22 @@ function compareContributors(
   return direction === "asc" ? comparison : -comparison;
 }
 
-function matchesQuery(contributor: ContributorRecord, query: string) {
+function matchesQuery(champion: IssueChampionRecord, query: string) {
   if (!query) {
     return true;
   }
 
   const haystack = [
-    contributor.login,
-    contributor.name,
-    contributor.note,
-    contributor.firstMergedPr.repo,
-    contributor.firstMergedPr.title,
-    contributor.mostRecentMergedPr.repo,
-    contributor.mostRecentMergedPr.title,
+    champion.login,
+    champion.name,
+    champion.firstIssue?.repo,
+    champion.firstIssue?.title,
+    champion.mostRecentIssue?.repo,
+    champion.mostRecentIssue?.title,
+    champion.mostRecentComment?.repo,
+    champion.mostRecentComment?.title,
   ]
+    .filter(Boolean)
     .join(" ")
     .toLowerCase();
 
@@ -91,6 +98,20 @@ function formatUtcTimestamp(value: string) {
 
 function isInteractiveTarget(target: EventTarget | null) {
   return target instanceof HTMLElement && Boolean(target.closest("a, button, input, select, label"));
+}
+
+function formatIssueTitle(title: string) {
+  return title.trim() || "Untitled issue";
+}
+
+function activityHref(activity: RecentIssueActivityRecord) {
+  return activity.commentUrl ?? activity.issue.url;
+}
+
+function activityLabel(activity: RecentIssueActivityRecord) {
+  return activity.type === "issueComment"
+    ? `Comment on ${activity.issue.repo} #${activity.issue.number}`
+    : `${activity.issue.repo} #${activity.issue.number}`;
 }
 
 function SortButton({
@@ -119,60 +140,83 @@ function SortButton({
   );
 }
 
-function TickerItemNewest({ contributor }: { contributor: ContributorRecord }) {
+function NewestIssueTickerItem({ champion }: { champion: IssueChampionRecord }) {
+  const totalActivities = champion.issuesOpenedCount + champion.issueCommentsCount;
+
   return (
     <div className="ticker-chip">
-      <Image
-        src={contributor.avatarUrl}
-        alt={`${contributor.login} avatar`}
-        width={28}
-        height={28}
-        className="ticker-avatar"
-      />
-      <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="ticker-handle">
-        @{contributor.login}
+      <Image src={champion.avatarUrl} alt={`${champion.login} avatar`} width={28} height={28} className="ticker-avatar" />
+      <a href={champion.profileUrl} target="_blank" rel="noreferrer" className="ticker-handle">
+        @{champion.login}
       </a>
-      <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="ticker-pr-link">
-        {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
+      <span className="ticker-pr-link">{totalActivities} issue activities</span>
+    </div>
+  );
+}
+
+function RecentIssueActivityTickerItem({ activity }: { activity: RecentIssueActivityRecord }) {
+  return (
+    <div className="ticker-chip">
+      <Image src={activity.avatarUrl} alt={`${activity.login} avatar`} width={28} height={28} className="ticker-avatar" />
+      <a href={activity.profileUrl} target="_blank" rel="noreferrer" className="ticker-handle">
+        @{activity.login}
+      </a>
+      <a href={activityHref(activity)} target="_blank" rel="noreferrer" className="ticker-pr-link">
+        {activityLabel(activity)}
       </a>
     </div>
   );
 }
 
-function TickerItemRecent({ item }: { item: RecentMergedPrRecord }) {
+function DetailReferenceCard({
+  eyebrow,
+  reference,
+  href,
+  emptyCopy,
+}: {
+  eyebrow: string;
+  reference: IssueCommentReference | IssueChampionRecord["firstIssue"] | IssueChampionRecord["mostRecentIssue"];
+  href?: string;
+  emptyCopy: string;
+}) {
   return (
-    <div className="ticker-chip">
-      <Image src={item.avatarUrl} alt={`${item.login} avatar`} width={28} height={28} className="ticker-avatar" />
-      <a href={item.profileUrl} target="_blank" rel="noreferrer" className="ticker-handle">
-        @{item.login}
-      </a>
-      <a href={item.pullRequest.url} target="_blank" rel="noreferrer" className="ticker-pr-link">
-        {item.pullRequest.repo} #{item.pullRequest.number}
-      </a>
-    </div>
+    <section className="detail-card">
+      <p className="detail-eyebrow">{eyebrow}</p>
+      {reference ? (
+        <>
+          <a href={href ?? reference.url} target="_blank" rel="noreferrer" className="detail-pr-link">
+            {reference.repo} #{reference.number}
+          </a>
+          <p className="detail-copy">{formatIssueTitle(reference.title)}</p>
+          <p className="detail-date">{formatDate(reference.createdAt)}</p>
+        </>
+      ) : (
+        <p className="detail-copy">{emptyCopy}</p>
+      )}
+    </section>
   );
 }
 
-function ExpandedRow({ contributor }: { contributor: ContributorRecord }) {
+function ExpandedIssueRow({ champion }: { champion: IssueChampionRecord }) {
+  const totalActivities = champion.issuesOpenedCount + champion.issueCommentsCount;
+
   return (
     <div className="row-detail-panel">
       <div className="row-detail-top">
         <div className="row-detail-identity">
-          <Image
-            src={contributor.avatarUrl}
-            alt={`${contributor.login} avatar`}
-            width={56}
-            height={56}
-            className="detail-avatar"
-          />
+          <Image src={champion.avatarUrl} alt={`${champion.login} avatar`} width={56} height={56} className="detail-avatar" />
           <div>
             <div className="row-detail-heading">
-              <span className="row-detail-handle">@{contributor.login}</span>
-              {contributor.name ? <span className="row-detail-name">{contributor.name}</span> : null}
+              <span className="row-detail-handle">@{champion.login}</span>
+              {champion.name ? <span className="row-detail-name">{champion.name}</span> : null}
             </div>
             <div className="row-detail-meta">
-              <span className="meta-chip">GitHub ID {contributor.githubUserId}</span>
-              <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="meta-chip meta-chip-link">
+              <span className="meta-chip">GitHub ID {champion.githubUserId}</span>
+              <span className="meta-chip">Opened {champion.issuesOpenedCount}</span>
+              <span className="meta-chip">Commented {champion.issueCommentsCount}</span>
+              <span className="meta-chip">First activity {formatDate(champion.firstActivityAt)}</span>
+              <span className="meta-chip">Most recent {formatDate(champion.mostRecentActivityAt)}</span>
+              <a href={champion.profileUrl} target="_blank" rel="noreferrer" className="meta-chip meta-chip-link">
                 Open profile
               </a>
             </div>
@@ -180,44 +224,38 @@ function ExpandedRow({ contributor }: { contributor: ContributorRecord }) {
         </div>
 
         <div className="row-detail-stat">
-          <span>Total merged PRs</span>
-          <strong>{contributor.totalMergedPrs}</strong>
+          <span>Total activities</span>
+          <strong>{totalActivities}</strong>
         </div>
       </div>
 
       <div className="row-detail-grid">
-        <section className="detail-card">
-          <p className="detail-eyebrow">First merged PR</p>
-          <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
-            {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
-          </a>
-          <p className="detail-copy">{contributor.firstMergedPr.title}</p>
-          <p className="detail-date">{formatDate(contributor.firstMergedPr.mergedAt)}</p>
-        </section>
+        <DetailReferenceCard
+          eyebrow="First opened issue"
+          reference={champion.firstIssue}
+          emptyCopy="No opened issue from this user is tracked inside the current 365-day window."
+        />
 
-        <section className="detail-card">
-          <p className="detail-eyebrow">Most recent merged PR</p>
-          <a href={contributor.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
-            {contributor.mostRecentMergedPr.repo} #{contributor.mostRecentMergedPr.number}
-          </a>
-          <p className="detail-copy">{contributor.mostRecentMergedPr.title}</p>
-          <p className="detail-date">{formatDate(contributor.mostRecentMergedPr.mergedAt)}</p>
-        </section>
+        <DetailReferenceCard
+          eyebrow="Most recent opened issue"
+          reference={champion.mostRecentIssue}
+          emptyCopy="No opened issue from this user is tracked inside the current 365-day window."
+        />
 
-        <section className="detail-card detail-card-note">
-          <p className="detail-eyebrow">Notes</p>
-          <p className="detail-copy">
-            {contributor.note || "This contributor has not added a public note yet."}
-          </p>
-        </section>
+        <DetailReferenceCard
+          eyebrow="Most recent comment"
+          reference={champion.mostRecentComment}
+          href={champion.mostRecentComment?.commentUrl}
+          emptyCopy="No issue comments from this user are tracked inside the current 365-day window."
+        />
       </div>
     </div>
   );
 }
 
-export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
+export function IssuesDirectoryClient({ data }: { data: IssueDirectoryData }) {
   const [query, setQuery] = useState("");
-  const [sortKey, setSortKey] = useState<SortKey>("recent");
+  const [sortKey, setSortKey] = useState<SortKey>("recentActivity");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
   const [reduceMotion, setReduceMotion] = useState(false);
@@ -255,13 +293,13 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
     window.localStorage.setItem("champions-high-contrast", String(highContrast));
   }, [highContrast]);
 
-  const filteredContributors = useMemo(() => {
-    return [...data.contributors]
-      .filter((contributor) => matchesQuery(contributor, query))
-      .sort((a, b) => compareContributors(a, b, sortKey, sortDirection));
-  }, [data.contributors, query, sortDirection, sortKey]);
+  const filteredUsers = useMemo(() => {
+    return [...data.users]
+      .filter((champion) => matchesQuery(champion, query))
+      .sort((a, b) => compareIssueChampions(a, b, sortKey, sortDirection));
+  }, [data.users, query, sortDirection, sortKey]);
 
-  const pageCount = Math.max(1, Math.ceil(filteredContributors.length / pageSize));
+  const pageCount = Math.max(1, Math.ceil(filteredUsers.length / pageSize));
 
   useEffect(() => {
     setPage(1);
@@ -274,26 +312,24 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   }, [page, pageCount]);
 
   const pageStartIndex = (page - 1) * pageSize;
-  const pageEndIndex = Math.min(pageStartIndex + pageSize, filteredContributors.length);
-  const paginatedContributors = useMemo(() => {
-    return filteredContributors.slice(pageStartIndex, pageEndIndex);
-  }, [filteredContributors, pageEndIndex, pageStartIndex]);
+  const pageEndIndex = Math.min(pageStartIndex + pageSize, filteredUsers.length);
+  const paginatedUsers = useMemo(() => {
+    return filteredUsers.slice(pageStartIndex, pageEndIndex);
+  }, [filteredUsers, pageEndIndex, pageStartIndex]);
 
-  const showingStart = filteredContributors.length === 0 ? 0 : pageStartIndex + 1;
+  const showingStart = filteredUsers.length === 0 ? 0 : pageStartIndex + 1;
   const showingEnd = pageEndIndex;
 
   const newestTickerItems = useMemo(
-    () => duplicateTickerItems(data.newestContributors.slice(0, 18)),
-    [data.newestContributors]
+    () => duplicateTickerItems(data.newestIssueChampions.slice(0, 18)),
+    [data.newestIssueChampions]
   );
-  const recentMergeTickerItems = useMemo(
-    () => duplicateTickerItems(data.recentMergedPrs.slice(0, 24)),
-    [data.recentMergedPrs]
+  const recentActivityTickerItems = useMemo(
+    () => duplicateTickerItems(data.recentActivities.slice(0, 24)),
+    [data.recentActivities]
   );
 
-  const totalContributorCount = data.visibleContributorCount + data.hiddenContributorCount;
-  const allExpanded =
-    paginatedContributors.length > 0 && paginatedContributors.every((contributor) => expandedIds.has(contributor.githubUserId));
+  const allExpanded = paginatedUsers.length > 0 && paginatedUsers.every((champion) => expandedIds.has(champion.githubUserId));
 
   function handleSort(column: SortKey) {
     if (column === sortKey) {
@@ -320,7 +356,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   function expandAll() {
     setExpandedIds((current) => {
       const next = new Set(current);
-      paginatedContributors.forEach((contributor) => next.add(contributor.githubUserId));
+      paginatedUsers.forEach((champion) => next.add(champion.githubUserId));
       return next;
     });
   }
@@ -330,34 +366,32 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   }
 
   return (
-    <div
-      className={`directory-root${highContrast ? " high-contrast" : ""}${reduceMotion ? " reduce-motion" : ""}`}
-    >
+    <div className={`directory-root${highContrast ? " high-contrast" : ""}${reduceMotion ? " reduce-motion" : ""}`}>
       <main className="page-shell">
-        <PageNav current="contributors" />
+        <PageNav current="issues" />
 
         <section className="hero-card">
           <div className="hero-grid">
             <div>
               <div className="hero-badge-row">
                 <p className="eyebrow">OpenHands Champions</p>
-                <p className="eyebrow eyebrow-muted">Contributor directory</p>
+                <p className="eyebrow eyebrow-muted">Issue Champions</p>
               </div>
 
-              <h1>The Official Directory of Codebase Contributors</h1>
+              <h1>The Official Directory of Issue Creators and Commenters</h1>
 
               <p className="hero-copy">
-                Explore all the amazing community contributors to the OpenHands projects. Any contributor with a merged
-                pull request to an OpenHands’ public repository is listed below. These are verified entries using
-                OpenHands.
+                Explore the people opening issues and keeping conversations moving across OpenHands public repositories.
+                This view tracks the rolling last 365 days of issues opened and issue comments for external community
+                contributors.
               </p>
 
               <div className="hero-actions">
-                <a href="#directory" className="brand-button brand-button-primary">
-                  Jump to directory table
+                <a href="#issues-directory" className="brand-button brand-button-primary">
+                  Jump to issue table
                 </a>
-                <a href="/issues" className="brand-button brand-button-secondary">
-                  View Issue Champions
+                <a href="/" className="brand-button brand-button-secondary">
+                  View PR Champions
                 </a>
               </div>
             </div>
@@ -365,11 +399,11 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
             <aside className="hero-sidecard">
               <p className="hero-side-eyebrow">How This Works</p>
               <ul className="hero-list">
-                <li>Newest Champions shows unique people sorted by when their first merged PR landed.</li>
-                <li>Fresh Merges shows raw recent merged PR activity, even if the same person appears more than once.</li>
-                <li>Click any non-link area in a row to expand details, or expand every visible contributor on the current page at once.</li>
+                <li>Issue Champions counts issues opened and issue comments from the last 365 days only.</li>
+                <li>Fresh Issues + Comments shows raw recent issue activity, including repeat appearances.</li>
+                <li>Bot accounts, non-user actors, and internal excluded logins are filtered out.</li>
                 <li>
-                  Want to add more context, hide your name, or update your entry? Open a PR in this repo: {" "}
+                  Want your public name updated or entry hidden across the site? Open a PR in {" "}
                   <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
                     OpenHands/champions-list
                   </a>
@@ -379,18 +413,25 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <p className="hero-side-meta">
                 Last synced <strong>{data.generatedAt ? `${formatUtcTimestamp(data.generatedAt)} UTC` : "Not synced yet"}</strong>
               </p>
+              <p className="hero-side-meta">
+                Window <strong>{formatDate(data.windowStart)}</strong> → <strong>{formatDate(data.windowEnd)}</strong>
+              </p>
             </aside>
           </div>
         </section>
 
-        <section className="stats-grid" aria-label="Directory statistics">
+        <section className="stats-grid" aria-label="Issue champion statistics">
           <div>
-            <span>Total contributors</span>
-            <strong>{totalContributorCount}</strong>
+            <span>Issue champions</span>
+            <strong>{data.visibleChampionCount}</strong>
           </div>
           <div>
-            <span>Merged PRs tracked</span>
-            <strong>{data.totalMergedPrs}</strong>
+            <span>Issues opened</span>
+            <strong>{data.totalIssuesOpened}</strong>
+          </div>
+          <div>
+            <span>Issue comments</span>
+            <strong>{data.totalIssueComments}</strong>
           </div>
           <div>
             <span>Public repos scanned</span>
@@ -399,17 +440,17 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
         </section>
 
         <section className="ticker-stack">
-          <div className="ticker-card" id="ticker-newest" data-motion={reduceMotion ? "paused" : "running"}>
+          <div className="ticker-card" data-motion={reduceMotion ? "paused" : "running"}>
             <div className="ticker-heading-row">
               <div>
-                <p className="eyebrow eyebrow-dark">Newest Champions</p>
-                <h2 className="section-title">Welcome to our first-time contributors.</h2>
+                <p className="eyebrow eyebrow-dark">Newest Issue Champions</p>
+                <h2 className="section-title">People with fresh first issue activity</h2>
               </div>
             </div>
             <div className="ticker-viewport" aria-live="off">
               <div className="ticker-track">
-                {newestTickerItems.map((contributor, index) => (
-                  <TickerItemNewest key={`${contributor.githubUserId}-${index}`} contributor={contributor} />
+                {newestTickerItems.map((champion, index) => (
+                  <NewestIssueTickerItem key={`${champion.githubUserId}-${index}`} champion={champion} />
                 ))}
               </div>
             </div>
@@ -418,16 +459,16 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
           <div className="ticker-card" data-motion={reduceMotion ? "paused" : "running"}>
             <div className="ticker-heading-row">
               <div>
-                <p className="eyebrow eyebrow-dark">Fresh Merges</p>
-                <h2 className="section-title">Latest Merged PRs</h2>
+                <p className="eyebrow eyebrow-dark">Fresh Issues + Comments</p>
+                <h2 className="section-title">Latest issue conversations</h2>
               </div>
             </div>
             <div className="ticker-viewport" aria-live="off">
               <div className="ticker-track ticker-track-reverse">
-                {recentMergeTickerItems.map((item, index) => (
-                  <TickerItemRecent
-                    key={`${item.githubUserId}-${item.pullRequest.repo}-${item.pullRequest.number}-${index}`}
-                    item={item}
+                {recentActivityTickerItems.map((activity, index) => (
+                  <RecentIssueActivityTickerItem
+                    key={`${activity.githubUserId}-${activity.type}-${activity.issue.repo}-${activity.issue.number}-${index}`}
+                    activity={activity}
                   />
                 ))}
               </div>
@@ -435,10 +476,10 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
           </div>
         </section>
 
-        <section className="toolbar-card" id="directory">
+        <section className="toolbar-card" id="issues-directory">
           <div className="toolbar-copy">
             <p className="eyebrow eyebrow-dark">Directory</p>
-            <h2 className="section-title">Official Contributor Directory</h2>
+            <h2 className="section-title">Official Issue Champions Directory</h2>
           </div>
 
           <div className="toolbar-controls">
@@ -448,7 +489,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 type="search"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
-                placeholder="Search by handle, name, note, or repo"
+                placeholder="Search by handle, repo, or issue title"
               />
             </label>
 
@@ -457,7 +498,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 type="button"
                 className="action-button"
                 onClick={expandAll}
-                disabled={paginatedContributors.length === 0 || allExpanded}
+                disabled={paginatedUsers.length === 0 || allExpanded}
               >
                 Expand page
               </button>
@@ -475,15 +516,15 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
 
         <section className="results-meta">
           <p>
-            Showing <strong>{showingStart}</strong>–<strong>{showingEnd}</strong> of <strong>{filteredContributors.length}</strong>{" "}
-            {query ? "matching " : ""}contributors. <strong>{data.hiddenContributorCount}</strong> hidden.
+            Showing <strong>{showingStart}</strong>–<strong>{showingEnd}</strong> of <strong>{filteredUsers.length}</strong>{" "}
+            {query ? "matching " : ""}issue champions. <strong>{data.hiddenChampionCount}</strong> hidden.
           </p>
           <p>
             Sorted by <strong>{sortColumns.find((column) => column.key === sortKey)?.label}</strong> {sortDirection}.
           </p>
         </section>
 
-        {filteredContributors.length > 0 ? (
+        {filteredUsers.length > 0 ? (
           <section className="pagination-bar" aria-label="Pagination controls">
             <label className="pagination-field">
               <span>Rows per page</span>
@@ -556,11 +597,11 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 </tr>
               </thead>
               <tbody>
-                {filteredContributors.length > 0 ? (
-                  paginatedContributors.map((contributor) => {
-                    const isExpanded = expandedIds.has(contributor.githubUserId);
+                {filteredUsers.length > 0 ? (
+                  paginatedUsers.map((champion) => {
+                    const isExpanded = expandedIds.has(champion.githubUserId);
                     return (
-                      <Fragment key={contributor.githubUserId}>
+                      <Fragment key={champion.githubUserId}>
                         <tr
                           className={`directory-row${isExpanded ? " directory-row-expanded" : ""}`}
                           tabIndex={0}
@@ -569,49 +610,37 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                             if (isInteractiveTarget(event.target)) {
                               return;
                             }
-                            toggleExpanded(contributor.githubUserId);
+                            toggleExpanded(champion.githubUserId);
                           }}
                           onKeyDown={(event) => {
                             if (event.key === "Enter" || event.key === " ") {
                               event.preventDefault();
-                              toggleExpanded(contributor.githubUserId);
+                              toggleExpanded(champion.githubUserId);
                             }
                           }}
                         >
                           <td>
                             <div className="identity-cell">
                               <Image
-                                src={contributor.avatarUrl}
-                                alt={`${contributor.login} avatar`}
+                                src={champion.avatarUrl}
+                                alt={`${champion.login} avatar`}
                                 width={32}
                                 height={32}
                                 className="table-avatar"
                               />
-                              <span>@{contributor.login}</span>
+                              <span>@{champion.login}</span>
                             </div>
                           </td>
-                          <td>{contributor.name || <span className="table-muted">—</span>}</td>
-                          <td>
-                            <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
-                              {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
-                            </a>
-                          </td>
-                          <td>
-                            <a
-                              href={contributor.mostRecentMergedPr.url}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="table-link"
-                            >
-                              {contributor.mostRecentMergedPr.repo} #{contributor.mostRecentMergedPr.number}
-                            </a>
-                          </td>
-                          <td>{contributor.totalMergedPrs}</td>
+                          <td>{champion.name || <span className="table-muted">—</span>}</td>
+                          <td>{champion.issuesOpenedCount}</td>
+                          <td>{champion.issueCommentsCount}</td>
+                          <td>{formatDate(champion.firstActivityAt)}</td>
+                          <td>{formatDate(champion.mostRecentActivityAt)}</td>
                           <td>
                             <button
                               type="button"
                               className="row-expand-button"
-                              onClick={() => toggleExpanded(contributor.githubUserId)}
+                              onClick={() => toggleExpanded(champion.githubUserId)}
                               aria-expanded={isExpanded}
                             >
                               {isExpanded ? "Collapse" : "Expand"}
@@ -620,8 +649,8 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                         </tr>
                         {isExpanded ? (
                           <tr className="directory-detail-row">
-                            <td colSpan={6}>
-                              <ExpandedRow contributor={contributor} />
+                            <td colSpan={7}>
+                              <ExpandedIssueRow champion={champion} />
                             </td>
                           </tr>
                         ) : null}
@@ -630,9 +659,9 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                   })
                 ) : (
                   <tr>
-                    <td colSpan={6}>
+                    <td colSpan={7}>
                       <div className="empty-state">
-                        No contributors match your search yet. Try a different handle, repo, or note keyword.
+                        No issue champions match your search yet. Try a different handle, repo, or issue keyword.
                       </div>
                     </td>
                   </tr>
@@ -645,17 +674,17 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
         <section className="cta-card" id="personalize">
           <div className="cta-grid">
             <div>
-              <p className="eyebrow eyebrow-dark">Self-serve enrichment</p>
-              <h2 className="section-title">Want to personalize your entry?</h2>
+              <p className="eyebrow eyebrow-dark">Shared profile controls</p>
+              <h2 className="section-title">Need to personalize or hide your public entry?</h2>
               <p>
-                Open a PR editing <code>data/contributors.overrides.json</code> to add your full name, add a short
-                note, or set <code>hidden: true</code> if you prefer not to appear in the public directory.
+                Open a PR editing <code>data/contributors.overrides.json</code> to add your full name or set
+                <code> hidden: true</code>. The same override powers both the PR Champions and Issue Champions views.
               </p>
             </div>
 
             <div className="cta-note">
               <span className="cta-note-label">Override shape</span>
-              <code>{`"123456": { "name": "Ada Lovelace", "note": "Worked on docs.", "hidden": false }`}</code>
+              <code>{`"123456": { "name": "Ada Lovelace", "hidden": false }`}</code>
             </div>
           </div>
         </section>
