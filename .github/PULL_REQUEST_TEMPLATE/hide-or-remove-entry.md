@@ -1,9 +1,9 @@
 ## Hide or remove my public directory entry
 
-Use this template when you want your OpenHands Champions directory entry hidden from the public table.
+Use this template when you want your OpenHands Champions presence hidden across the entire public directory. Setting `hidden: true` removes your entry from all public directory surfaces powered by this repository, including PR Champions, Issue Champions, ticker rails, and generated directory assets.
 
 ### What this PR changes
-- [ ] Hides my public directory entry
+- [ ] Hides my public directory entry across the entire OpenHands Champions directory
 - [ ] Sets `hidden` to `true` in `data/contributors.overrides.json`
 - [ ] Only updates my own contributor record
 
@@ -17,6 +17,7 @@ Use this template when you want your OpenHands Champions directory entry hidden 
 - [ ] I used my numeric `githubUserId` as the key under `contributors`
 - [ ] I only changed my own entry
 - [ ] I set `hidden` to `true`
+- [ ] I understand this opt-out applies across all public directory pages and generated assets
 
 ### Example override
 ```json
