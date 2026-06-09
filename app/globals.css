@@ -170,6 +170,51 @@ body:has(.directory-root.high-contrast)::after,
   margin-top: 20px;
 }
 
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.page-nav-link {
+  display: grid;
+  gap: 4px;
+  min-width: min(100%, 240px);
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--brand-border);
+  background: var(--card-bg-strong);
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.page-nav-link:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand-border-strong);
+}
+
+.page-nav-link-current {
+  border-color: var(--card-dark-border);
+  background: var(--card-dark);
+  color: var(--brand-bg);
+}
+
+.page-nav-label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.page-nav-copy {
+  color: var(--brand-muted);
+  font-size: 0.88rem;
+}
+
+.page-nav-link-current .page-nav-copy {
+  color: var(--card-dark-muted);
+}
+
+
 .hero-card {
   position: relative;
   overflow: hidden;

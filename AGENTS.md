@@ -15,5 +15,9 @@
 - Generated contributor data now also includes a `recentMergedPrs` feed for the Fresh Merges ticker; newest contributors are derived from each contributor's `firstMergedPr` timestamp.
 - Primary UI is now a sortable expandable table with two marquee-style ticker rails (`Newest Champions` and `Fresh Merges`) plus a floating accessibility control for motion/contrast.
 - Contributor self-serve PR flows live in `.github/PULL_REQUEST_TEMPLATE/` with separate templates for profile enrichment and hide/remove requests.
+- Issue champions are now tracked separately from merged-PR champions via `data/issues.generated.json`, produced by `npm run sync:issues` (or `npm run sync:all`) from GitHub issues + issue comments over a rolling 365-day window.
+- The new `/issues` route mirrors the main directory UX with shared search/sort/pagination/ticker/accessibility patterns and uses the same `data/contributors.overrides.json` file for display-name and hide overrides.
+- `.github/workflows/sync-contributors.yml` now syncs both contributor and issue datasets in one run and commits `data/issues.generated.json` alongside the existing contributor assets.
+
 
 

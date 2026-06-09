@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "sync:contributors": "node scripts/sync-contributors.mjs"
+    "sync:contributors": "node scripts/sync-contributors.mjs",
+    "sync:issues": "node scripts/sync-issues.mjs",
+    "sync:all": "npm run sync:contributors && npm run sync:issues"
   },
   "dependencies": {
     "next": "^16.2.7",
