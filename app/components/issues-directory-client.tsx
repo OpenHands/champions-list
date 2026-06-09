@@ -402,6 +402,7 @@ export function IssuesDirectoryClient({ data }: { data: IssueDirectoryData }) {
                 <li>Issue Champions counts issues opened and issue comments from the last 365 days only.</li>
                 <li>Fresh Issues + Comments shows raw recent issue activity, including repeat appearances.</li>
                 <li>Bot accounts, non-user actors, and internal excluded logins are filtered out.</li>
+                <li>Issues from 21 public repos under the OpenHands org.</li>
                 <li>
                   Want your public name updated or entry hidden across the site? Open a PR in {" "}
                   <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
@@ -432,10 +433,6 @@ export function IssuesDirectoryClient({ data }: { data: IssueDirectoryData }) {
           <div>
             <span>Issue comments</span>
             <strong>{data.totalIssueComments}</strong>
-          </div>
-          <div>
-            <span>Public repos scanned</span>
-            <strong>{data.scannedRepoCount}</strong>
           </div>
         </section>
 
