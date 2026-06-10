@@ -743,8 +743,12 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <p className="eyebrow eyebrow-dark">Self-serve enrichment</p>
               <h2 className="section-title">Want to personalize your entry?</h2>
               <p>
-                Open a PR editing <code>data/contributors.overrides.json</code> to add your full name, add a short
-                note, or set <code>hidden: true</code> if you prefer not to appear in the public directory.
+                Open a PR in{" "}
+                <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
+                  OpenHands/champions-list
+                </a>{" "}
+                and edit <code>data/contributors.overrides.json</code> to add your full name, add a short note, or set
+                <code> hidden: true</code> if you prefer not to appear in the public directory.
               </p>
             </div>
 
