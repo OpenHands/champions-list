@@ -16,6 +16,7 @@ type SortDirection = "asc" | "desc";
 type ContributorDisplayStats = Pick<ContributorRecord, "totalMergedPrs" | "firstMergedPr" | "mostRecentMergedPr">;
 
 const ALL_YEARS_VALUE = "all";
+const DEFAULT_CONTRIBUTION_YEAR = "2026";
 
 const sortColumns: Array<{ key: SortKey; label: string }> = [
   { key: "login", label: "GitHub" },
@@ -272,7 +273,9 @@ function ExpandedRow({ contributor, selectedYear }: { contributor: ContributorRe
 
 export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   const [query, setQuery] = useState("");
-  const [selectedYear, setSelectedYear] = useState(ALL_YEARS_VALUE);
+  const [selectedYear, setSelectedYear] = useState(
+    data.availableYears.includes(DEFAULT_CONTRIBUTION_YEAR) ? DEFAULT_CONTRIBUTION_YEAR : ALL_YEARS_VALUE
+  );
   const [sortKey, setSortKey] = useState<SortKey>("recent");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
