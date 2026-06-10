@@ -674,7 +674,11 @@ export function IssuesDirectoryClient({ data }: { data: IssueDirectoryData }) {
               <p className="eyebrow eyebrow-dark">Shared profile controls</p>
               <h2 className="section-title">Need to personalize or hide your public entry?</h2>
               <p>
-                Open a PR editing <code>data/contributors.overrides.json</code> to add your full name or set
+                Open a PR in{" "}
+                <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
+                  OpenHands/champions-list
+                </a>{" "}
+                and edit <code>data/contributors.overrides.json</code> to add your full name or set
                 <code> hidden: true</code>. The same override powers both the PR Champions and Issue Champions views.
               </p>
             </div>

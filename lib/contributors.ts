@@ -9,6 +9,12 @@ export interface PullRequestSummary {
   mergedAt: string;
 }
 
+export interface YearlyMergedPrStats {
+  totalMergedPrs: number;
+  firstMergedPr: PullRequestSummary;
+  mostRecentMergedPr: PullRequestSummary;
+}
+
 export interface GeneratedContributor {
   githubUserId: string;
   login: string;
@@ -17,6 +23,8 @@ export interface GeneratedContributor {
   firstMergedPr: PullRequestSummary;
   mostRecentMergedPr: PullRequestSummary;
   totalMergedPrs: number;
+  contributionYears?: string[];
+  yearly?: Record<string, YearlyMergedPrStats>;
 }
 
 export interface GeneratedRecentMergedPr {
@@ -48,10 +56,12 @@ export interface ContributorOverridesFile {
   contributors: Record<string, ContributorOverride>;
 }
 
-export interface ContributorRecord extends GeneratedContributor {
+export interface ContributorRecord extends Omit<GeneratedContributor, "contributionYears" | "yearly"> {
   name: string;
   note: string;
   hidden: boolean;
+  contributionYears: string[];
+  yearly: Record<string, YearlyMergedPrStats>;
 }
 
 export interface RecentMergedPrRecord extends GeneratedRecentMergedPr {
@@ -66,6 +76,7 @@ export interface ContributorDirectoryData {
   totalMergedPrs: number;
   hiddenContributorCount: number;
   visibleContributorCount: number;
+  availableYears: string[];
   newestContributors: ContributorRecord[];
   recentMergedPrs: RecentMergedPrRecord[];
   contributors: ContributorRecord[];
@@ -73,6 +84,31 @@ export interface ContributorDirectoryData {
 
 function normalizeText(value: string | undefined): string {
   return value?.trim() ?? "";
+}
+
+function sortYearsDesc(years: Iterable<string>): string[] {
+  return [...new Set(years)]
+    .filter(Boolean)
+    .sort((a, b) => Number(b) - Number(a) || b.localeCompare(a));
+}
+
+export function mergedPrYear(value: string): string {
+  return String(new Date(value).getUTCFullYear());
+}
+
+function normalizeContributorYearlyStats(contributor: GeneratedContributor): Record<string, YearlyMergedPrStats> {
+  return contributor.yearly ?? {};
+}
+
+function fallbackContributionYears(contributor: GeneratedContributor): string[] {
+  return sortYearsDesc([mergedPrYear(contributor.firstMergedPr.mergedAt), mergedPrYear(contributor.mostRecentMergedPr.mergedAt)]);
+}
+
+export function getContributorYearStats(
+  contributor: Pick<ContributorRecord, "yearly">,
+  year: string
+): YearlyMergedPrStats | null {
+  return contributor.yearly[year] ?? null;
 }
 
 function sortByNewestContributor(a: ContributorRecord, b: ContributorRecord): number {
@@ -96,12 +132,16 @@ export function getContributorDirectoryData(): ContributorDirectoryData {
 
   const contributors = generated.contributors.map((contributor) => {
     const override = overrides.contributors[contributor.githubUserId] ?? {};
+    const yearly = normalizeContributorYearlyStats(contributor);
+    const contributionYears = sortYearsDesc(contributor.contributionYears ?? [...Object.keys(yearly), ...fallbackContributionYears(contributor)]);
 
     return {
       ...contributor,
       name: normalizeText(override.name),
       note: normalizeText(override.note),
       hidden: Boolean(override.hidden),
+      contributionYears,
+      yearly,
     } satisfies ContributorRecord;
   });
 
@@ -132,6 +172,7 @@ export function getContributorDirectoryData(): ContributorDirectoryData {
     totalMergedPrs: visibleMergedPrs,
     hiddenContributorCount: contributors.length - visibleContributors.length,
     visibleContributorCount: visibleContributors.length,
+    availableYears: sortYearsDesc(visibleContributors.flatMap((contributor) => contributor.contributionYears)),
     newestContributors,
     recentMergedPrs,
     contributors: visibleContributors,

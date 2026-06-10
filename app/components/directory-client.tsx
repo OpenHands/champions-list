@@ -9,17 +9,21 @@ import type {
   ContributorRecord,
   RecentMergedPrRecord,
 } from "@/lib/contributors";
-import { formatDate } from "@/lib/contributors";
+import { formatDate, getContributorYearStats } from "@/lib/contributors";
 
 type SortKey = "login" | "name" | "first" | "recent" | "total";
 type SortDirection = "asc" | "desc";
+type ContributorDisplayStats = Pick<ContributorRecord, "totalMergedPrs" | "firstMergedPr" | "mostRecentMergedPr">;
+
+const ALL_YEARS_VALUE = "all";
+const DEFAULT_CONTRIBUTION_YEAR = "2026";
 
 const sortColumns: Array<{ key: SortKey; label: string }> = [
   { key: "login", label: "GitHub" },
   { key: "name", label: "Name" },
   { key: "first", label: "First PR" },
   { key: "recent", label: "Most recent PR" },
-  { key: "total", label: "Total merged PRs" },
+  { key: "total", label: "Merged PRs" },
 ];
 
 const defaultSortDirection: Record<SortKey, SortDirection> = {
@@ -30,12 +34,43 @@ const defaultSortDirection: Record<SortKey, SortDirection> = {
   total: "desc",
 };
 
+function isAllYearsSelected(selectedYear: string): boolean {
+  return selectedYear === ALL_YEARS_VALUE;
+}
+
+function getContributorDisplayStats(
+  contributor: ContributorRecord,
+  selectedYear: string
+): ContributorDisplayStats | null {
+  if (isAllYearsSelected(selectedYear)) {
+    return {
+      totalMergedPrs: contributor.totalMergedPrs,
+      firstMergedPr: contributor.firstMergedPr,
+      mostRecentMergedPr: contributor.mostRecentMergedPr,
+    };
+  }
+
+  return getContributorYearStats(contributor, selectedYear);
+}
+
+function getContributionFilterLabel(selectedYear: string): string {
+  return isAllYearsSelected(selectedYear) ? "all years" : selectedYear;
+}
+
 function compareContributors(
   a: ContributorRecord,
   b: ContributorRecord,
   sortKey: SortKey,
-  direction: SortDirection
+  direction: SortDirection,
+  selectedYear: string
 ) {
+  const aStats = getContributorDisplayStats(a, selectedYear);
+  const bStats = getContributorDisplayStats(b, selectedYear);
+
+  if (!aStats || !bStats) {
+    return a.login.localeCompare(b.login);
+  }
+
   let comparison = 0;
 
   if (sortKey === "login") {
@@ -43,11 +78,12 @@ function compareContributors(
   } else if (sortKey === "name") {
     comparison = (a.name || a.login).localeCompare(b.name || b.login);
   } else if (sortKey === "first") {
-    comparison = new Date(a.firstMergedPr.mergedAt).getTime() - new Date(b.firstMergedPr.mergedAt).getTime();
+    comparison = new Date(aStats.firstMergedPr.mergedAt).getTime() - new Date(bStats.firstMergedPr.mergedAt).getTime();
   } else if (sortKey === "recent") {
-    comparison = new Date(a.mostRecentMergedPr.mergedAt).getTime() - new Date(b.mostRecentMergedPr.mergedAt).getTime();
+    comparison =
+      new Date(aStats.mostRecentMergedPr.mergedAt).getTime() - new Date(bStats.mostRecentMergedPr.mergedAt).getTime();
   } else if (sortKey === "total") {
-    comparison = a.totalMergedPrs - b.totalMergedPrs;
+    comparison = aStats.totalMergedPrs - bStats.totalMergedPrs;
   }
 
   if (comparison === 0) {
@@ -57,20 +93,23 @@ function compareContributors(
   return direction === "asc" ? comparison : -comparison;
 }
 
-function matchesQuery(contributor: ContributorRecord, query: string) {
+function matchesQuery(contributor: ContributorRecord, query: string, selectedYear: string) {
   if (!query) {
     return true;
   }
 
+  const displayStats = getContributorDisplayStats(contributor, selectedYear);
   const haystack = [
     contributor.login,
     contributor.name,
     contributor.note,
-    contributor.firstMergedPr.repo,
-    contributor.firstMergedPr.title,
-    contributor.mostRecentMergedPr.repo,
-    contributor.mostRecentMergedPr.title,
+    contributor.contributionYears.join(" "),
+    displayStats?.firstMergedPr.repo,
+    displayStats?.firstMergedPr.title,
+    displayStats?.mostRecentMergedPr.repo,
+    displayStats?.mostRecentMergedPr.title,
   ]
+    .filter(Boolean)
     .join(" ")
     .toLowerCase();
 
@@ -153,7 +192,15 @@ function TickerItemRecent({ item }: { item: RecentMergedPrRecord }) {
   );
 }
 
-function ExpandedRow({ contributor }: { contributor: ContributorRecord }) {
+function ExpandedRow({ contributor, selectedYear }: { contributor: ContributorRecord; selectedYear: string }) {
+  const displayStats = getContributorDisplayStats(contributor, selectedYear);
+
+  if (!displayStats) {
+    return null;
+  }
+
+  const filterLabel = getContributionFilterLabel(selectedYear);
+
   return (
     <div className="row-detail-panel">
       <div className="row-detail-top">
@@ -172,6 +219,15 @@ function ExpandedRow({ contributor }: { contributor: ContributorRecord }) {
             </div>
             <div className="row-detail-meta">
               <span className="meta-chip">GitHub ID {contributor.githubUserId}</span>
+              <span className="meta-chip">Lifetime merged PRs {contributor.totalMergedPrs}</span>
+              {contributor.contributionYears.map((year) => (
+                <span
+                  key={`${contributor.githubUserId}-${year}`}
+                  className={`meta-chip${year === selectedYear ? " meta-chip-active" : ""}`}
+                >
+                  {year}
+                </span>
+              ))}
               <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="meta-chip meta-chip-link">
                 Open profile
               </a>
@@ -180,28 +236,28 @@ function ExpandedRow({ contributor }: { contributor: ContributorRecord }) {
         </div>
 
         <div className="row-detail-stat">
-          <span>Total merged PRs</span>
-          <strong>{contributor.totalMergedPrs}</strong>
+          <span>{isAllYearsSelected(selectedYear) ? "Total merged PRs" : `Merged PRs in ${filterLabel}`}</span>
+          <strong>{displayStats.totalMergedPrs}</strong>
         </div>
       </div>
 
       <div className="row-detail-grid">
         <section className="detail-card">
-          <p className="detail-eyebrow">First merged PR</p>
-          <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
-            {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
+          <p className="detail-eyebrow">{isAllYearsSelected(selectedYear) ? "First merged PR" : `First merged PR in ${filterLabel}`}</p>
+          <a href={displayStats.firstMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
+            {displayStats.firstMergedPr.repo} #{displayStats.firstMergedPr.number}
           </a>
-          <p className="detail-copy">{contributor.firstMergedPr.title}</p>
-          <p className="detail-date">{formatDate(contributor.firstMergedPr.mergedAt)}</p>
+          <p className="detail-copy">{displayStats.firstMergedPr.title}</p>
+          <p className="detail-date">{formatDate(displayStats.firstMergedPr.mergedAt)}</p>
         </section>
 
         <section className="detail-card">
-          <p className="detail-eyebrow">Most recent merged PR</p>
-          <a href={contributor.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
-            {contributor.mostRecentMergedPr.repo} #{contributor.mostRecentMergedPr.number}
+          <p className="detail-eyebrow">{isAllYearsSelected(selectedYear) ? "Most recent merged PR" : `Most recent merged PR in ${filterLabel}`}</p>
+          <a href={displayStats.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
+            {displayStats.mostRecentMergedPr.repo} #{displayStats.mostRecentMergedPr.number}
           </a>
-          <p className="detail-copy">{contributor.mostRecentMergedPr.title}</p>
-          <p className="detail-date">{formatDate(contributor.mostRecentMergedPr.mergedAt)}</p>
+          <p className="detail-copy">{displayStats.mostRecentMergedPr.title}</p>
+          <p className="detail-date">{formatDate(displayStats.mostRecentMergedPr.mergedAt)}</p>
         </section>
 
         <section className="detail-card detail-card-note">
@@ -217,6 +273,9 @@ function ExpandedRow({ contributor }: { contributor: ContributorRecord }) {
 
 export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   const [query, setQuery] = useState("");
+  const [selectedYear, setSelectedYear] = useState(
+    data.availableYears.includes(DEFAULT_CONTRIBUTION_YEAR) ? DEFAULT_CONTRIBUTION_YEAR : ALL_YEARS_VALUE
+  );
   const [sortKey, setSortKey] = useState<SortKey>("recent");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
@@ -255,17 +314,25 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
     window.localStorage.setItem("champions-high-contrast", String(highContrast));
   }, [highContrast]);
 
+  const contributorsForYear = useMemo(() => {
+    return data.contributors.filter((contributor) => Boolean(getContributorDisplayStats(contributor, selectedYear)));
+  }, [data.contributors, selectedYear]);
+
   const filteredContributors = useMemo(() => {
-    return [...data.contributors]
-      .filter((contributor) => matchesQuery(contributor, query))
-      .sort((a, b) => compareContributors(a, b, sortKey, sortDirection));
-  }, [data.contributors, query, sortDirection, sortKey]);
+    return [...contributorsForYear]
+      .filter((contributor) => matchesQuery(contributor, query, selectedYear))
+      .sort((a, b) => compareContributors(a, b, sortKey, sortDirection, selectedYear));
+  }, [contributorsForYear, query, selectedYear, sortDirection, sortKey]);
 
   const pageCount = Math.max(1, Math.ceil(filteredContributors.length / pageSize));
 
   useEffect(() => {
     setPage(1);
-  }, [pageSize, query, sortDirection, sortKey]);
+  }, [pageSize, query, selectedYear, sortDirection, sortKey]);
+
+  useEffect(() => {
+    setExpandedIds(new Set());
+  }, [selectedYear]);
 
   useEffect(() => {
     if (page > pageCount) {
@@ -291,7 +358,15 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
     [data.recentMergedPrs]
   );
 
-  const totalContributorCount = data.visibleContributorCount + data.hiddenContributorCount;
+  const selectedYearMergedPrs = useMemo(() => {
+    return contributorsForYear.reduce(
+      (total, contributor) => total + (getContributorDisplayStats(contributor, selectedYear)?.totalMergedPrs ?? 0),
+      0
+    );
+  }, [contributorsForYear, selectedYear]);
+
+  const latestTrackedYear = data.availableYears[0] ?? null;
+  const oldestTrackedYear = data.availableYears.length > 0 ? data.availableYears[data.availableYears.length - 1] : null;
   const allExpanded =
     paginatedContributors.length > 0 && paginatedContributors.every((contributor) => expandedIds.has(contributor.githubUserId));
 
@@ -347,9 +422,8 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <h1>The Official Directory of Codebase Contributors</h1>
 
               <p className="hero-copy">
-                Explore all the amazing community contributors to the OpenHands projects. Any contributor with a merged
-                pull request to an OpenHands’ public repository is listed below. These are verified entries using
-                OpenHands.
+                Browse the merged PR contributors across OpenHands projects, or use the year filter to focus on a single
+                contribution year. Expand any row to see every year that person has contributed.
               </p>
 
               <div className="hero-actions">
@@ -367,7 +441,8 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <ul className="hero-list">
                 <li>Newest Champions shows unique people sorted by when their first merged PR landed.</li>
                 <li>Fresh Merges shows raw recent merged PR activity, even if the same person appears more than once.</li>
-                <li>Click any non-link area in a row to expand details, or expand every visible contributor on the current page at once.</li>
+                <li>Use the year filter to narrow the table to a single contribution year, or choose All years.</li>
+                <li>Expanded rows reveal every year a contributor has landed merged PRs.</li>
                 <li>
                   Want to add more context, hide your name, or update your entry? Open a PR in this repo: {" "}
                   <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
@@ -379,18 +454,21 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <p className="hero-side-meta">
                 Last synced <strong>{data.generatedAt ? `${formatUtcTimestamp(data.generatedAt)} UTC` : "Not synced yet"}</strong>
               </p>
+              <p className="hero-side-meta">
+                Years tracked <strong>{latestTrackedYear && oldestTrackedYear ? `${oldestTrackedYear} → ${latestTrackedYear}` : "Sync pending"}</strong>
+              </p>
             </aside>
           </div>
         </section>
 
         <section className="stats-grid" aria-label="Directory statistics">
           <div>
-            <span>Total contributors</span>
-            <strong>{totalContributorCount}</strong>
+            <span>{isAllYearsSelected(selectedYear) ? "Total contributors" : `Contributors in ${selectedYear}`}</span>
+            <strong>{contributorsForYear.length}</strong>
           </div>
           <div>
-            <span>Merged PRs tracked</span>
-            <strong>{data.totalMergedPrs}</strong>
+            <span>{isAllYearsSelected(selectedYear) ? "Merged PRs tracked" : `Merged PRs in ${selectedYear}`}</span>
+            <strong>{selectedYearMergedPrs}</strong>
           </div>
           <div>
             <span>Public repos scanned</span>
@@ -439,18 +517,36 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
           <div className="toolbar-copy">
             <p className="eyebrow eyebrow-dark">Directory</p>
             <h2 className="section-title">Official Contributor Directory</h2>
+            <p className="toolbar-note">
+              Filter by year when you want a specific slice of contributors, or leave it on All years to search the full
+              directory.
+            </p>
           </div>
 
           <div className="toolbar-controls">
-            <label className="search-field">
-              <span>Search directory</span>
-              <input
-                type="search"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Search by handle, name, note, or repo"
-              />
-            </label>
+            <div className="toolbar-filter-grid">
+              <label className="search-field">
+                <span>Search directory</span>
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Search by handle, name, note, or repo"
+                />
+              </label>
+
+              <label className="search-field">
+                <span>Contribution year</span>
+                <select value={selectedYear} onChange={(event) => setSelectedYear(event.target.value)}>
+                  <option value={ALL_YEARS_VALUE}>All years</option>
+                  {data.availableYears.map((year) => (
+                    <option key={year} value={year}>
+                      {year}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
 
             <div className="table-actions">
               <button
@@ -476,7 +572,8 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
         <section className="results-meta">
           <p>
             Showing <strong>{showingStart}</strong>–<strong>{showingEnd}</strong> of <strong>{filteredContributors.length}</strong>{" "}
-            {query ? "matching " : ""}contributors. <strong>{data.hiddenContributorCount}</strong> hidden.
+            {query ? "matching " : ""}contributors{isAllYearsSelected(selectedYear) ? "" : <> in <strong>{selectedYear}</strong></>}. <strong>{data.hiddenContributorCount}</strong>{" "}
+            hidden overall.
           </p>
           <p>
             Sorted by <strong>{sortColumns.find((column) => column.key === sortKey)?.label}</strong> {sortDirection}.
@@ -559,6 +656,12 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 {filteredContributors.length > 0 ? (
                   paginatedContributors.map((contributor) => {
                     const isExpanded = expandedIds.has(contributor.githubUserId);
+                    const displayStats = getContributorDisplayStats(contributor, selectedYear);
+
+                    if (!displayStats) {
+                      return null;
+                    }
+
                     return (
                       <Fragment key={contributor.githubUserId}>
                         <tr
@@ -592,21 +695,16 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                           </td>
                           <td>{contributor.name || <span className="table-muted">—</span>}</td>
                           <td>
-                            <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
-                              {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
+                            <a href={displayStats.firstMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
+                              {displayStats.firstMergedPr.repo} #{displayStats.firstMergedPr.number}
                             </a>
                           </td>
                           <td>
-                            <a
-                              href={contributor.mostRecentMergedPr.url}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="table-link"
-                            >
-                              {contributor.mostRecentMergedPr.repo} #{contributor.mostRecentMergedPr.number}
+                            <a href={displayStats.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
+                              {displayStats.mostRecentMergedPr.repo} #{displayStats.mostRecentMergedPr.number}
                             </a>
                           </td>
-                          <td>{contributor.totalMergedPrs}</td>
+                          <td>{displayStats.totalMergedPrs}</td>
                           <td>
                             <button
                               type="button"
@@ -621,7 +719,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                         {isExpanded ? (
                           <tr className="directory-detail-row">
                             <td colSpan={6}>
-                              <ExpandedRow contributor={contributor} />
+                              <ExpandedRow contributor={contributor} selectedYear={selectedYear} />
                             </td>
                           </tr>
                         ) : null}
@@ -648,8 +746,12 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <p className="eyebrow eyebrow-dark">Self-serve enrichment</p>
               <h2 className="section-title">Want to personalize your entry?</h2>
               <p>
-                Open a PR editing <code>data/contributors.overrides.json</code> to add your full name, add a short
-                note, or set <code>hidden: true</code> if you prefer not to appear in the public directory.
+                Open a PR in{" "}
+                <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
+                  OpenHands/champions-list
+                </a>{" "}
+                and edit <code>data/contributors.overrides.json</code> to add your full name, add a short note, or set
+                <code> hidden: true</code> if you prefer not to appear in the public directory.
               </p>
             </div>
 
