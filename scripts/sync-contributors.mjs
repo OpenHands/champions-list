@@ -198,16 +198,23 @@ function summarizeRecentMergedPullRequest(repoName, pullRequest) {
   };
 }
 
+function mergedPrYear(mergedAt) {
+  return String(new Date(mergedAt).getUTCFullYear());
+}
+
 function updateContributor(contributors, repoName, pullRequest) {
   const githubUserId = String(pullRequest.author.databaseId);
+  const pullRequestSummary = summarizePullRequest(repoName, pullRequest);
   const current = contributors.get(githubUserId) ?? {
     githubUserId,
     login: pullRequest.author.login,
     avatarUrl: pullRequest.author.avatarUrl,
     profileUrl: pullRequest.author.url,
-    firstMergedPr: summarizePullRequest(repoName, pullRequest),
-    mostRecentMergedPr: summarizePullRequest(repoName, pullRequest),
+    firstMergedPr: pullRequestSummary,
+    mostRecentMergedPr: pullRequestSummary,
     totalMergedPrs: 0,
+    contributionYears: [],
+    yearly: {},
   };
 
   current.login = pullRequest.author.login;
@@ -216,12 +223,32 @@ function updateContributor(contributors, repoName, pullRequest) {
   current.totalMergedPrs += 1;
 
   if (new Date(pullRequest.mergedAt) < new Date(current.firstMergedPr.mergedAt)) {
-    current.firstMergedPr = summarizePullRequest(repoName, pullRequest);
+    current.firstMergedPr = pullRequestSummary;
   }
 
   if (new Date(pullRequest.mergedAt) > new Date(current.mostRecentMergedPr.mergedAt)) {
-    current.mostRecentMergedPr = summarizePullRequest(repoName, pullRequest);
+    current.mostRecentMergedPr = pullRequestSummary;
   }
+
+  const year = mergedPrYear(pullRequest.mergedAt);
+  const yearlyStats = current.yearly[year] ?? {
+    totalMergedPrs: 0,
+    firstMergedPr: pullRequestSummary,
+    mostRecentMergedPr: pullRequestSummary,
+  };
+
+  yearlyStats.totalMergedPrs += 1;
+
+  if (new Date(pullRequest.mergedAt) < new Date(yearlyStats.firstMergedPr.mergedAt)) {
+    yearlyStats.firstMergedPr = pullRequestSummary;
+  }
+
+  if (new Date(pullRequest.mergedAt) > new Date(yearlyStats.mostRecentMergedPr.mergedAt)) {
+    yearlyStats.mostRecentMergedPr = pullRequestSummary;
+  }
+
+  current.yearly[year] = yearlyStats;
+  current.contributionYears = Object.keys(current.yearly).sort((a, b) => Number(b) - Number(a));
 
   contributors.set(githubUserId, current);
 }

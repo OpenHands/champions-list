@@ -13,7 +13,8 @@
 - UI reads local JSON at build time and provides client-side search/sort across merged PR contributors.
 - Visual styling intentionally mirrors `OpenHands/company-website`: cream background, dark brown feature surfaces, yellow accent, and rounded card system.
 - Generated contributor data now also includes a `recentMergedPrs` feed for the Fresh Merges ticker; newest contributors are derived from each contributor's `firstMergedPr` timestamp.
-- Primary UI is now a sortable expandable table with two marquee-style ticker rails (`Newest Champions` and `Fresh Merges`) plus a floating accessibility control for motion/contrast.
+- `data/contributors.generated.json` now stores `contributionYears` plus a `yearly` map per contributor so the PR Champions view can treat each calendar year as its own champion season.
+- Primary UI is now a sortable expandable table with a contributor-year season filter, season-scoped ticker rails, expanded-row year tags, and a floating accessibility control for motion/contrast.
 - Contributor self-serve PR flows live in `.github/PULL_REQUEST_TEMPLATE/` with separate templates for profile enrichment and hide/remove requests.
 - Issue champions are now tracked separately from merged-PR champions via `data/issues.generated.json`, produced by `npm run sync:issues` (or `npm run sync:all`) from GitHub issues + issue comments over a rolling 365-day window.
 - The new `/issues` route mirrors the main directory UX with shared search/sort/pagination/ticker/accessibility patterns and uses the same `data/contributors.overrides.json` file for display-name and hide overrides.
