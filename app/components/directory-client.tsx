@@ -9,10 +9,13 @@ import type {
   ContributorRecord,
   RecentMergedPrRecord,
 } from "@/lib/contributors";
-import { formatDate, getContributorYearStats, mergedPrYear } from "@/lib/contributors";
+import { formatDate, getContributorYearStats } from "@/lib/contributors";
 
 type SortKey = "login" | "name" | "first" | "recent" | "total";
 type SortDirection = "asc" | "desc";
+type ContributorDisplayStats = Pick<ContributorRecord, "totalMergedPrs" | "firstMergedPr" | "mostRecentMergedPr">;
+
+const ALL_YEARS_VALUE = "all";
 
 const sortColumns: Array<{ key: SortKey; label: string }> = [
   { key: "login", label: "GitHub" },
@@ -30,6 +33,29 @@ const defaultSortDirection: Record<SortKey, SortDirection> = {
   total: "desc",
 };
 
+function isAllYearsSelected(selectedYear: string): boolean {
+  return selectedYear === ALL_YEARS_VALUE;
+}
+
+function getContributorDisplayStats(
+  contributor: ContributorRecord,
+  selectedYear: string
+): ContributorDisplayStats | null {
+  if (isAllYearsSelected(selectedYear)) {
+    return {
+      totalMergedPrs: contributor.totalMergedPrs,
+      firstMergedPr: contributor.firstMergedPr,
+      mostRecentMergedPr: contributor.mostRecentMergedPr,
+    };
+  }
+
+  return getContributorYearStats(contributor, selectedYear);
+}
+
+function getContributionFilterLabel(selectedYear: string): string {
+  return isAllYearsSelected(selectedYear) ? "all years" : selectedYear;
+}
+
 function compareContributors(
   a: ContributorRecord,
   b: ContributorRecord,
@@ -37,8 +63,8 @@ function compareContributors(
   direction: SortDirection,
   selectedYear: string
 ) {
-  const aStats = getContributorYearStats(a, selectedYear);
-  const bStats = getContributorYearStats(b, selectedYear);
+  const aStats = getContributorDisplayStats(a, selectedYear);
+  const bStats = getContributorDisplayStats(b, selectedYear);
 
   if (!aStats || !bStats) {
     return a.login.localeCompare(b.login);
@@ -71,17 +97,16 @@ function matchesQuery(contributor: ContributorRecord, query: string, selectedYea
     return true;
   }
 
-  const yearStats = getContributorYearStats(contributor, selectedYear);
+  const displayStats = getContributorDisplayStats(contributor, selectedYear);
   const haystack = [
     contributor.login,
     contributor.name,
     contributor.note,
-    selectedYear,
     contributor.contributionYears.join(" "),
-    yearStats?.firstMergedPr.repo,
-    yearStats?.firstMergedPr.title,
-    yearStats?.mostRecentMergedPr.repo,
-    yearStats?.mostRecentMergedPr.title,
+    displayStats?.firstMergedPr.repo,
+    displayStats?.firstMergedPr.title,
+    displayStats?.mostRecentMergedPr.repo,
+    displayStats?.mostRecentMergedPr.title,
   ]
     .filter(Boolean)
     .join(" ")
@@ -132,13 +157,7 @@ function SortButton({
   );
 }
 
-function TickerItemSeason({ contributor, selectedYear }: { contributor: ContributorRecord; selectedYear: string }) {
-  const yearStats = getContributorYearStats(contributor, selectedYear);
-
-  if (!yearStats) {
-    return null;
-  }
-
+function TickerItemNewest({ contributor }: { contributor: ContributorRecord }) {
   return (
     <div className="ticker-chip">
       <Image
@@ -151,8 +170,8 @@ function TickerItemSeason({ contributor, selectedYear }: { contributor: Contribu
       <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="ticker-handle">
         @{contributor.login}
       </a>
-      <a href={yearStats.firstMergedPr.url} target="_blank" rel="noreferrer" className="ticker-pr-link">
-        {yearStats.firstMergedPr.repo} #{yearStats.firstMergedPr.number}
+      <a href={contributor.firstMergedPr.url} target="_blank" rel="noreferrer" className="ticker-pr-link">
+        {contributor.firstMergedPr.repo} #{contributor.firstMergedPr.number}
       </a>
     </div>
   );
@@ -173,11 +192,13 @@ function TickerItemRecent({ item }: { item: RecentMergedPrRecord }) {
 }
 
 function ExpandedRow({ contributor, selectedYear }: { contributor: ContributorRecord; selectedYear: string }) {
-  const yearStats = getContributorYearStats(contributor, selectedYear);
+  const displayStats = getContributorDisplayStats(contributor, selectedYear);
 
-  if (!yearStats) {
+  if (!displayStats) {
     return null;
   }
+
+  const filterLabel = getContributionFilterLabel(selectedYear);
 
   return (
     <div className="row-detail-panel">
@@ -203,7 +224,7 @@ function ExpandedRow({ contributor, selectedYear }: { contributor: ContributorRe
                   key={`${contributor.githubUserId}-${year}`}
                   className={`meta-chip${year === selectedYear ? " meta-chip-active" : ""}`}
                 >
-                  {year === selectedYear ? `${year} season` : year}
+                  {year}
                 </span>
               ))}
               <a href={contributor.profileUrl} target="_blank" rel="noreferrer" className="meta-chip meta-chip-link">
@@ -214,28 +235,28 @@ function ExpandedRow({ contributor, selectedYear }: { contributor: ContributorRe
         </div>
 
         <div className="row-detail-stat">
-          <span>Merged PRs in {selectedYear}</span>
-          <strong>{yearStats.totalMergedPrs}</strong>
+          <span>{isAllYearsSelected(selectedYear) ? "Total merged PRs" : `Merged PRs in ${filterLabel}`}</span>
+          <strong>{displayStats.totalMergedPrs}</strong>
         </div>
       </div>
 
       <div className="row-detail-grid">
         <section className="detail-card">
-          <p className="detail-eyebrow">First merged PR in {selectedYear}</p>
-          <a href={yearStats.firstMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
-            {yearStats.firstMergedPr.repo} #{yearStats.firstMergedPr.number}
+          <p className="detail-eyebrow">{isAllYearsSelected(selectedYear) ? "First merged PR" : `First merged PR in ${filterLabel}`}</p>
+          <a href={displayStats.firstMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
+            {displayStats.firstMergedPr.repo} #{displayStats.firstMergedPr.number}
           </a>
-          <p className="detail-copy">{yearStats.firstMergedPr.title}</p>
-          <p className="detail-date">{formatDate(yearStats.firstMergedPr.mergedAt)}</p>
+          <p className="detail-copy">{displayStats.firstMergedPr.title}</p>
+          <p className="detail-date">{formatDate(displayStats.firstMergedPr.mergedAt)}</p>
         </section>
 
         <section className="detail-card">
-          <p className="detail-eyebrow">Most recent merged PR in {selectedYear}</p>
-          <a href={yearStats.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
-            {yearStats.mostRecentMergedPr.repo} #{yearStats.mostRecentMergedPr.number}
+          <p className="detail-eyebrow">{isAllYearsSelected(selectedYear) ? "Most recent merged PR" : `Most recent merged PR in ${filterLabel}`}</p>
+          <a href={displayStats.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="detail-pr-link">
+            {displayStats.mostRecentMergedPr.repo} #{displayStats.mostRecentMergedPr.number}
           </a>
-          <p className="detail-copy">{yearStats.mostRecentMergedPr.title}</p>
-          <p className="detail-date">{formatDate(yearStats.mostRecentMergedPr.mergedAt)}</p>
+          <p className="detail-copy">{displayStats.mostRecentMergedPr.title}</p>
+          <p className="detail-date">{formatDate(displayStats.mostRecentMergedPr.mergedAt)}</p>
         </section>
 
         <section className="detail-card detail-card-note">
@@ -251,7 +272,7 @@ function ExpandedRow({ contributor, selectedYear }: { contributor: ContributorRe
 
 export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   const [query, setQuery] = useState("");
-  const [selectedYear, setSelectedYear] = useState(data.availableYears[0] ?? "");
+  const [selectedYear, setSelectedYear] = useState(ALL_YEARS_VALUE);
   const [sortKey, setSortKey] = useState<SortKey>("recent");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
@@ -283,14 +304,6 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   }, []);
 
   useEffect(() => {
-    if (selectedYear || data.availableYears.length === 0) {
-      return;
-    }
-
-    setSelectedYear(data.availableYears[0]);
-  }, [data.availableYears, selectedYear]);
-
-  useEffect(() => {
     window.localStorage.setItem("champions-reduce-motion", String(reduceMotion));
   }, [reduceMotion]);
 
@@ -299,7 +312,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   }, [highContrast]);
 
   const contributorsForYear = useMemo(() => {
-    return data.contributors.filter((contributor) => Boolean(getContributorYearStats(contributor, selectedYear)));
+    return data.contributors.filter((contributor) => Boolean(getContributorDisplayStats(contributor, selectedYear)));
   }, [data.contributors, selectedYear]);
 
   const filteredContributors = useMemo(() => {
@@ -333,34 +346,18 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
   const showingStart = filteredContributors.length === 0 ? 0 : pageStartIndex + 1;
   const showingEnd = pageEndIndex;
 
-  const seasonTickerItems = useMemo(() => {
-    const seasonContributors = [...contributorsForYear].sort((a, b) => {
-      const aStats = getContributorYearStats(a, selectedYear);
-      const bStats = getContributorYearStats(b, selectedYear);
-
-      if (!aStats || !bStats) {
-        return a.login.localeCompare(b.login);
-      }
-
-      return (
-        new Date(aStats.firstMergedPr.mergedAt).getTime() - new Date(bStats.firstMergedPr.mergedAt).getTime() ||
-        new Date(bStats.mostRecentMergedPr.mergedAt).getTime() - new Date(aStats.mostRecentMergedPr.mergedAt).getTime() ||
-        a.login.localeCompare(b.login)
-      );
-    });
-
-    return duplicateTickerItems(seasonContributors.slice(0, 18));
-  }, [contributorsForYear, selectedYear]);
-
-  const recentMergeTickerItems = useMemo(() => {
-    return duplicateTickerItems(
-      data.recentMergedPrs.filter((item) => mergedPrYear(item.pullRequest.mergedAt) === selectedYear).slice(0, 24)
-    );
-  }, [data.recentMergedPrs, selectedYear]);
+  const newestTickerItems = useMemo(
+    () => duplicateTickerItems(data.newestContributors.slice(0, 18)),
+    [data.newestContributors]
+  );
+  const recentMergeTickerItems = useMemo(
+    () => duplicateTickerItems(data.recentMergedPrs.slice(0, 24)),
+    [data.recentMergedPrs]
+  );
 
   const selectedYearMergedPrs = useMemo(() => {
     return contributorsForYear.reduce(
-      (total, contributor) => total + (getContributorYearStats(contributor, selectedYear)?.totalMergedPrs ?? 0),
+      (total, contributor) => total + (getContributorDisplayStats(contributor, selectedYear)?.totalMergedPrs ?? 0),
       0
     );
   }, [contributorsForYear, selectedYear]);
@@ -422,8 +419,8 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               <h1>The Official Directory of Codebase Contributors</h1>
 
               <p className="hero-copy">
-                Every calendar year is its own champion season. Pick a year to see who landed merged PRs in that season,
-                then expand a row to see every season a contributor has renewed their status.
+                Browse the merged PR contributors across OpenHands projects, or use the year filter to focus on a single
+                contribution year. Expand any row to see every year that person has contributed.
               </p>
 
               <div className="hero-actions">
@@ -439,10 +436,10 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
             <aside className="hero-sidecard">
               <p className="hero-side-eyebrow">How This Works</p>
               <ul className="hero-list">
-                <li>Use the Champion season filter to treat each year as a fresh leaderboard.</li>
-                <li>Season Openers shows the earliest merged PRs from the selected season.</li>
-                <li>Fresh Merges shows raw merged PR activity from that same season.</li>
-                <li>Expanded rows reveal every year a contributor has come back and contributed.</li>
+                <li>Newest Champions shows unique people sorted by when their first merged PR landed.</li>
+                <li>Fresh Merges shows raw recent merged PR activity, even if the same person appears more than once.</li>
+                <li>Use the year filter to narrow the table to a single contribution year, or choose All years.</li>
+                <li>Expanded rows reveal every year a contributor has landed merged PRs.</li>
                 <li>
                   Want to add more context, hide your name, or update your entry? Open a PR in this repo: {" "}
                   <a href="https://github.com/OpenHands/champions-list" target="_blank" rel="noreferrer">
@@ -455,7 +452,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 Last synced <strong>{data.generatedAt ? `${formatUtcTimestamp(data.generatedAt)} UTC` : "Not synced yet"}</strong>
               </p>
               <p className="hero-side-meta">
-                Seasons tracked <strong>{latestTrackedYear && oldestTrackedYear ? `${oldestTrackedYear} → ${latestTrackedYear}` : "Sync pending"}</strong>
+                Years tracked <strong>{latestTrackedYear && oldestTrackedYear ? `${oldestTrackedYear} → ${latestTrackedYear}` : "Sync pending"}</strong>
               </p>
             </aside>
           </div>
@@ -463,16 +460,12 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
 
         <section className="stats-grid" aria-label="Directory statistics">
           <div>
-            <span>{selectedYear || "Current"} champions</span>
+            <span>{isAllYearsSelected(selectedYear) ? "Total contributors" : `Contributors in ${selectedYear}`}</span>
             <strong>{contributorsForYear.length}</strong>
           </div>
           <div>
-            <span>Merged PRs in {selectedYear || "season"}</span>
+            <span>{isAllYearsSelected(selectedYear) ? "Merged PRs tracked" : `Merged PRs in ${selectedYear}`}</span>
             <strong>{selectedYearMergedPrs}</strong>
-          </div>
-          <div>
-            <span>Champion seasons tracked</span>
-            <strong>{data.availableYears.length}</strong>
           </div>
           <div>
             <span>Public repos scanned</span>
@@ -484,18 +477,14 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
           <div className="ticker-card" id="ticker-newest" data-motion={reduceMotion ? "paused" : "running"}>
             <div className="ticker-heading-row">
               <div>
-                <p className="eyebrow eyebrow-dark">Season Openers</p>
-                <h2 className="section-title">Earliest merged PRs from {selectedYear || "this season"}</h2>
+                <p className="eyebrow eyebrow-dark">Newest Champions</p>
+                <h2 className="section-title">Welcome to our first-time contributors.</h2>
               </div>
             </div>
             <div className="ticker-viewport" aria-live="off">
               <div className="ticker-track">
-                {seasonTickerItems.map((contributor, index) => (
-                  <TickerItemSeason
-                    key={`${contributor.githubUserId}-${selectedYear}-${index}`}
-                    contributor={contributor}
-                    selectedYear={selectedYear}
-                  />
+                {newestTickerItems.map((contributor, index) => (
+                  <TickerItemNewest key={`${contributor.githubUserId}-${index}`} contributor={contributor} />
                 ))}
               </div>
             </div>
@@ -505,14 +494,14 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
             <div className="ticker-heading-row">
               <div>
                 <p className="eyebrow eyebrow-dark">Fresh Merges</p>
-                <h2 className="section-title">Latest merged PRs from {selectedYear || "the selected season"}</h2>
+                <h2 className="section-title">Latest Merged PRs</h2>
               </div>
             </div>
             <div className="ticker-viewport" aria-live="off">
               <div className="ticker-track ticker-track-reverse">
                 {recentMergeTickerItems.map((item, index) => (
                   <TickerItemRecent
-                    key={`${item.githubUserId}-${item.pullRequest.repo}-${item.pullRequest.number}-${selectedYear}-${index}`}
+                    key={`${item.githubUserId}-${item.pullRequest.repo}-${item.pullRequest.number}-${index}`}
                     item={item}
                   />
                 ))}
@@ -524,10 +513,10 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
         <section className="toolbar-card" id="directory">
           <div className="toolbar-copy">
             <p className="eyebrow eyebrow-dark">Directory</p>
-            <h2 className="section-title">Official Contributor Directory — {selectedYear || "Season"}</h2>
+            <h2 className="section-title">Official Contributor Directory</h2>
             <p className="toolbar-note">
-              Each season is a new shot at champion status. Filter by year to focus on that class, then expand any row
-              to see the full set of years a contributor has shown up.
+              Filter by year when you want a specific slice of contributors, or leave it on All years to search the full
+              directory.
             </p>
           </div>
 
@@ -544,8 +533,9 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
               </label>
 
               <label className="search-field">
-                <span>Champion season</span>
+                <span>Contribution year</span>
                 <select value={selectedYear} onChange={(event) => setSelectedYear(event.target.value)}>
+                  <option value={ALL_YEARS_VALUE}>All years</option>
                   {data.availableYears.map((year) => (
                     <option key={year} value={year}>
                       {year}
@@ -579,7 +569,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
         <section className="results-meta">
           <p>
             Showing <strong>{showingStart}</strong>–<strong>{showingEnd}</strong> of <strong>{filteredContributors.length}</strong>{" "}
-            {query ? "matching " : ""}contributors in <strong>{selectedYear || "the selected season"}</strong>. <strong>{data.hiddenContributorCount}</strong>{" "}
+            {query ? "matching " : ""}contributors{isAllYearsSelected(selectedYear) ? "" : <> in <strong>{selectedYear}</strong></>}. <strong>{data.hiddenContributorCount}</strong>{" "}
             hidden overall.
           </p>
           <p>
@@ -663,9 +653,9 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                 {filteredContributors.length > 0 ? (
                   paginatedContributors.map((contributor) => {
                     const isExpanded = expandedIds.has(contributor.githubUserId);
-                    const yearStats = getContributorYearStats(contributor, selectedYear);
+                    const displayStats = getContributorDisplayStats(contributor, selectedYear);
 
-                    if (!yearStats) {
+                    if (!displayStats) {
                       return null;
                     }
 
@@ -702,16 +692,16 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                           </td>
                           <td>{contributor.name || <span className="table-muted">—</span>}</td>
                           <td>
-                            <a href={yearStats.firstMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
-                              {yearStats.firstMergedPr.repo} #{yearStats.firstMergedPr.number}
+                            <a href={displayStats.firstMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
+                              {displayStats.firstMergedPr.repo} #{displayStats.firstMergedPr.number}
                             </a>
                           </td>
                           <td>
-                            <a href={yearStats.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
-                              {yearStats.mostRecentMergedPr.repo} #{yearStats.mostRecentMergedPr.number}
+                            <a href={displayStats.mostRecentMergedPr.url} target="_blank" rel="noreferrer" className="table-link">
+                              {displayStats.mostRecentMergedPr.repo} #{displayStats.mostRecentMergedPr.number}
                             </a>
                           </td>
-                          <td>{yearStats.totalMergedPrs}</td>
+                          <td>{displayStats.totalMergedPrs}</td>
                           <td>
                             <button
                               type="button"
@@ -737,8 +727,7 @@ export function DirectoryClient({ data }: { data: ContributorDirectoryData }) {
                   <tr>
                     <td colSpan={6}>
                       <div className="empty-state">
-                        No contributors match your search for the {selectedYear || "selected"} season yet. Try a different handle,
-                        repo, or note keyword.
+                        No contributors match your search yet. Try a different handle, repo, or note keyword.
                       </div>
                     </td>
                   </tr>
