@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-06-10T17:43:02.113Z",
+  "generatedAt": "2026-06-11T05:32:30.005Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2434,
+  "totalMergedPrs": 2438,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands-CLI",
+        "number": 770,
+        "title": "settings: keep OpenHands provider models public",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/770",
+        "mergedAt": "2026-06-10T22:59:47Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3626,
+        "title": "feat(agent-server): harden OpenAI gateway client compatibility",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3626",
+        "mergedAt": "2026-06-10T19:56:46Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 563,
+        "title": "docs: expand OpenAI-compatible endpoint recipes",
+        "url": "https://github.com/OpenHands/docs/pull/563",
+        "mergedAt": "2026-06-10T18:39:44Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3639,
+        "title": "Skip PR description check for release PRs",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3639",
+        "mergedAt": "2026-06-10T17:49:04Z"
+      }
+    },
     {
       "githubUserId": "167847",
       "login": "Hades32",
@@ -733,104 +785,9 @@
         "url": "https://github.com/OpenHands/agent-canvas/pull/722",
         "mergedAt": "2026-05-26T14:30:39Z"
       }
-    },
-    {
-      "githubUserId": "38696052",
-      "login": "LuneZ99",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/38696052?u=0c362a109a92732f999d806abd41d62432d3bcc4&v=4",
-      "profileUrl": "https://github.com/LuneZ99",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3381,
-        "title": "Fix MCP Responses tool schema generation",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3381",
-        "mergedAt": "2026-05-26T01:51:19Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3383,
-        "title": "ci: use MiniMax M2.7 in integration default matrix",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3383",
-        "mergedAt": "2026-05-25T18:07:00Z"
-      }
-    },
-    {
-      "githubUserId": "92238261",
-      "login": "SLEEPYBQ",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/92238261?u=52e3fb7cb075f719d9e552e009c28f2240b4e185&v=4",
-      "profileUrl": "https://github.com/SLEEPYBQ",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3342,
-        "title": "Fix planning agent PLAN.md path references",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3342",
-        "mergedAt": "2026-05-24T11:09:18Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "extensions",
-        "number": 262,
-        "title": "fix: restrict github repo monitor triggers by login",
-        "url": "https://github.com/OpenHands/extensions/pull/262",
-        "mergedAt": "2026-05-23T13:40:09Z"
-      }
     }
   ],
   "contributors": [
-    {
-      "githubUserId": "167847",
-      "login": "Hades32",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/167847?u=f09f5f226b16b1bfb0b3f2f1cc220b2d277dfb11&v=4",
-      "profileUrl": "https://github.com/Hades32",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3558,
-        "title": "fix(sdk): URL-encode session_api_key in WebSocket query parameter",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3558",
-        "mergedAt": "2026-06-09T06:45:17Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3556,
-        "title": "fix(sdk): Support ACP model switching for custom/unknown providers via set_config_option",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3556",
-        "mergedAt": "2026-06-10T17:27:59Z"
-      },
-      "totalMergedPrs": 2,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 2,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3558,
-            "title": "fix(sdk): URL-encode session_api_key in WebSocket query parameter",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3558",
-            "mergedAt": "2026-06-09T06:45:17Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3556,
-            "title": "fix(sdk): Support ACP model switching for custom/unknown providers via set_config_option",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3556",
-            "mergedAt": "2026-06-10T17:27:59Z"
-          }
-        }
-      }
-    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -844,13 +801,13 @@
         "mergedAt": "2024-03-27T03:03:23Z"
       },
       "mostRecentMergedPr": {
-        "repo": "docs",
-        "number": 554,
-        "title": "docs: add OpenAI-compatible agent-server gateway guide",
-        "url": "https://github.com/OpenHands/docs/pull/554",
-        "mergedAt": "2026-06-10T17:10:23Z"
+        "repo": "OpenHands-CLI",
+        "number": 770,
+        "title": "settings: keep OpenHands provider models public",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/pull/770",
+        "mergedAt": "2026-06-10T22:59:47Z"
       },
-      "totalMergedPrs": 697,
+      "totalMergedPrs": 701,
       "contributionYears": [
         "2026",
         "2025",
@@ -892,7 +849,7 @@
           }
         },
         "2026": {
-          "totalMergedPrs": 259,
+          "totalMergedPrs": 263,
           "firstMergedPr": {
             "repo": "OpenHands",
             "number": 12234,
@@ -901,11 +858,54 @@
             "mergedAt": "2026-01-01T18:28:05Z"
           },
           "mostRecentMergedPr": {
-            "repo": "docs",
-            "number": 554,
-            "title": "docs: add OpenAI-compatible agent-server gateway guide",
-            "url": "https://github.com/OpenHands/docs/pull/554",
-            "mergedAt": "2026-06-10T17:10:23Z"
+            "repo": "OpenHands-CLI",
+            "number": 770,
+            "title": "settings: keep OpenHands provider models public",
+            "url": "https://github.com/OpenHands/OpenHands-CLI/pull/770",
+            "mergedAt": "2026-06-10T22:59:47Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "167847",
+      "login": "Hades32",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/167847?u=f09f5f226b16b1bfb0b3f2f1cc220b2d277dfb11&v=4",
+      "profileUrl": "https://github.com/Hades32",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3558,
+        "title": "fix(sdk): URL-encode session_api_key in WebSocket query parameter",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3558",
+        "mergedAt": "2026-06-09T06:45:17Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3556,
+        "title": "fix(sdk): Support ACP model switching for custom/unknown providers via set_config_option",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3556",
+        "mergedAt": "2026-06-10T17:27:59Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 3558,
+            "title": "fix(sdk): URL-encode session_api_key in WebSocket query parameter",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3558",
+            "mergedAt": "2026-06-09T06:45:17Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 3556,
+            "title": "fix(sdk): Support ACP model switching for custom/unknown providers via set_config_option",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3556",
+            "mergedAt": "2026-06-10T17:27:59Z"
           }
         }
       }
