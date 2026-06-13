@@ -1,11 +1,102 @@
 {
-  "generatedAt": "2026-06-12T05:32:40.384Z",
+  "generatedAt": "2026-06-13T05:29:07.034Z",
   "organization": "OpenHands",
-  "repoCount": 42,
-  "scannedRepoCount": 42,
-  "totalMergedPrs": 2454,
+  "repoCount": 41,
+  "scannedRepoCount": 41,
+  "totalMergedPrs": 2461,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "automation",
+        "number": 191,
+        "title": "chore: add PR artifact cleanup workflow",
+        "url": "https://github.com/OpenHands/automation/pull/191",
+        "mergedAt": "2026-06-13T03:14:10Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1347,
+        "title": "fix: preserve hidden LLM base URL on basic saves",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1347",
+        "mergedAt": "2026-06-13T03:05:26Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1280,
+        "title": "settings: trust public OpenHands provider models",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1280",
+        "mergedAt": "2026-06-13T01:56:11Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3687,
+        "title": "ci: accept cloud-proxy REST API breakage",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3687",
+        "mergedAt": "2026-06-13T00:02:49Z"
+      }
+    },
+    {
+      "githubUserId": "56265583",
+      "login": "fengjikui",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/56265583?u=7edcad5a622e553128f7d929726f207d4af5e482&v=4",
+      "profileUrl": "https://github.com/fengjikui",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14700,
+        "title": "fix: delete LiteLLM user on personal org reset",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14700",
+        "mergedAt": "2026-06-12T22:47:23Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14766,
+        "title": "fix(enterprise): litellm_proxy/ → openhands/ on settings load",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14766",
+        "mergedAt": "2026-06-12T22:04:46Z"
+      }
+    },
+    {
+      "githubUserId": "40085740",
+      "login": "he-yufeng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40085740?u=4969024dc6ba162593d9f35e4ca407a2ac33e33b&v=4",
+      "profileUrl": "https://github.com/he-yufeng",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14776,
+        "title": "fix: preserve LLM base URL on basic saves",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14776",
+        "mergedAt": "2026-06-12T20:19:38Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -694,97 +785,6 @@
         "url": "https://github.com/OpenHands/automation/pull/156",
         "mergedAt": "2026-06-05T14:22:19Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3527,
-        "title": "Add PR description readiness check",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3527",
-        "mergedAt": "2026-06-05T11:27:27Z"
-      }
-    },
-    {
-      "githubUserId": "212606152",
-      "login": "StressTestor",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/212606152?v=4",
-      "profileUrl": "https://github.com/StressTestor",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3446,
-        "title": "fix(sdk): make default current_datetime timezone-aware",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3446",
-        "mergedAt": "2026-06-04T22:55:38Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3519,
-        "title": "ci: treat Field default_factory changes as behavioral",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3519",
-        "mergedAt": "2026-06-04T22:23:42Z"
-      }
-    },
-    {
-      "githubUserId": "100782273",
-      "login": "Oxygen56",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/100782273?v=4",
-      "profileUrl": "https://github.com/Oxygen56",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3450,
-        "title": "Merge adjacent user messages for strict role alternation",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3450",
-        "mergedAt": "2026-06-04T21:04:54Z"
-      }
-    },
-    {
-      "githubUserId": "455140",
-      "login": "mvanhorn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
-      "profileUrl": "https://github.com/mvanhorn",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1118,
-        "title": "feat: persist selected workspace across navigation in the new-chat view",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1118",
-        "mergedAt": "2026-06-04T19:15:24Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1103,
-        "title": "Default onboarding LLM to OpenAI GPT-5.5",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1103",
-        "mergedAt": "2026-06-04T18:19:36Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1105,
-        "title": "test: add onboarding regression E2E coverage",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1105",
-        "mergedAt": "2026-06-03T22:32:30Z"
-      }
     }
   ],
   "contributors": [
@@ -801,13 +801,13 @@
         "mergedAt": "2024-03-27T03:03:23Z"
       },
       "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 14771,
-        "title": "fix: Pin duplicate checker action to extensions release",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14771",
-        "mergedAt": "2026-06-12T00:47:15Z"
+        "repo": "automation",
+        "number": 191,
+        "title": "chore: add PR artifact cleanup workflow",
+        "url": "https://github.com/OpenHands/automation/pull/191",
+        "mergedAt": "2026-06-13T03:14:10Z"
       },
-      "totalMergedPrs": 714,
+      "totalMergedPrs": 718,
       "contributionYears": [
         "2026",
         "2025",
@@ -849,7 +849,7 @@
           }
         },
         "2026": {
-          "totalMergedPrs": 276,
+          "totalMergedPrs": 280,
           "firstMergedPr": {
             "repo": "OpenHands",
             "number": 12234,
@@ -858,11 +858,54 @@
             "mergedAt": "2026-01-01T18:28:05Z"
           },
           "mostRecentMergedPr": {
+            "repo": "automation",
+            "number": 191,
+            "title": "chore: add PR artifact cleanup workflow",
+            "url": "https://github.com/OpenHands/automation/pull/191",
+            "mergedAt": "2026-06-13T03:14:10Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "56265583",
+      "login": "fengjikui",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/56265583?u=7edcad5a622e553128f7d929726f207d4af5e482&v=4",
+      "profileUrl": "https://github.com/fengjikui",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 14700,
+        "title": "fix: delete LiteLLM user on personal org reset",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14700",
+        "mergedAt": "2026-06-12T22:47:23Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 14700,
+        "title": "fix: delete LiteLLM user on personal org reset",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14700",
+        "mergedAt": "2026-06-12T22:47:23Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
             "repo": "OpenHands",
-            "number": 14771,
-            "title": "fix: Pin duplicate checker action to extensions release",
-            "url": "https://github.com/OpenHands/OpenHands/pull/14771",
-            "mergedAt": "2026-06-12T00:47:15Z"
+            "number": 14700,
+            "title": "fix: delete LiteLLM user on personal org reset",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14700",
+            "mergedAt": "2026-06-12T22:47:23Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 14700,
+            "title": "fix: delete LiteLLM user on personal org reset",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14700",
+            "mergedAt": "2026-06-12T22:47:23Z"
           }
         }
       }
@@ -880,19 +923,19 @@
         "mergedAt": "2026-02-12T01:10:56Z"
       },
       "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3535,
-        "title": "feat: add SOUL.md support for agent identity customization",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3535",
-        "mergedAt": "2026-06-11T22:19:01Z"
+        "repo": "OpenHands",
+        "number": 14766,
+        "title": "fix(enterprise): litellm_proxy/ → openhands/ on settings load",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14766",
+        "mergedAt": "2026-06-12T22:04:46Z"
       },
-      "totalMergedPrs": 10,
+      "totalMergedPrs": 11,
       "contributionYears": [
         "2026"
       ],
       "yearly": {
         "2026": {
-          "totalMergedPrs": 10,
+          "totalMergedPrs": 11,
           "firstMergedPr": {
             "repo": "software-agent-sdk",
             "number": 2019,
@@ -901,11 +944,54 @@
             "mergedAt": "2026-02-12T01:10:56Z"
           },
           "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 14766,
+            "title": "fix(enterprise): litellm_proxy/ → openhands/ on settings load",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14766",
+            "mergedAt": "2026-06-12T22:04:46Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "40085740",
+      "login": "he-yufeng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40085740?u=4969024dc6ba162593d9f35e4ca407a2ac33e33b&v=4",
+      "profileUrl": "https://github.com/he-yufeng",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3248,
+        "title": "fix: guard litellm modify_params context",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3248",
+        "mergedAt": "2026-05-14T19:37:25Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 14776,
+        "title": "fix: preserve LLM base URL on basic saves",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14776",
+        "mergedAt": "2026-06-12T20:19:38Z"
+      },
+      "totalMergedPrs": 4,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 4,
+          "firstMergedPr": {
             "repo": "software-agent-sdk",
-            "number": 3535,
-            "title": "feat: add SOUL.md support for agent identity customization",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3535",
-            "mergedAt": "2026-06-11T22:19:01Z"
+            "number": 3248,
+            "title": "fix: guard litellm modify_params context",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3248",
+            "mergedAt": "2026-05-14T19:37:25Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 14776,
+            "title": "fix: preserve LLM base URL on basic saves",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14776",
+            "mergedAt": "2026-06-12T20:19:38Z"
           }
         }
       }
@@ -1569,49 +1655,6 @@
             "title": "fix(terminal): reduce tmux session viewport",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/3394",
             "mergedAt": "2026-05-28T15:42:06Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "40085740",
-      "login": "he-yufeng",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/40085740?u=4969024dc6ba162593d9f35e4ca407a2ac33e33b&v=4",
-      "profileUrl": "https://github.com/he-yufeng",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3248,
-        "title": "fix: guard litellm modify_params context",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3248",
-        "mergedAt": "2026-05-14T19:37:25Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3247,
-        "title": "fix: validate git repos with rev-parse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3247",
-        "mergedAt": "2026-05-27T15:04:51Z"
-      },
-      "totalMergedPrs": 3,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 3,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3248,
-            "title": "fix: guard litellm modify_params context",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3248",
-            "mergedAt": "2026-05-14T19:37:25Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3247,
-            "title": "fix: validate git repos with rev-parse",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3247",
-            "mergedAt": "2026-05-27T15:04:51Z"
           }
         }
       }
@@ -16771,9 +16814,9 @@
     },
     {
       "githubUserId": "47461841",
-      "login": "ronch99",
+      "login": "ziruch99",
       "avatarUrl": "https://avatars.githubusercontent.com/u/47461841?u=683c45c6bef3df4e695981ea7736bb073a0d6b99&v=4",
-      "profileUrl": "https://github.com/ronch99",
+      "profileUrl": "https://github.com/ziruch99",
       "firstMergedPr": {
         "repo": "OpenHands",
         "number": 4645,

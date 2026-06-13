@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-12T05:45:16.320Z",
-  "windowStart": "2025-06-12T05:33:40.627Z",
-  "windowEnd": "2026-06-12T05:33:40.627Z",
+  "generatedAt": "2026-06-13T05:40:57.235Z",
+  "windowStart": "2025-06-13T05:30:03.189Z",
+  "windowEnd": "2026-06-13T05:30:03.189Z",
   "organization": "OpenHands",
-  "repoCount": 42,
-  "scannedRepoCount": 42,
-  "totalIssuesOpened": 1102,
-  "totalIssueComments": 3432,
+  "repoCount": 41,
+  "scannedRepoCount": 41,
+  "totalIssuesOpened": 1103,
+  "totalIssueComments": 3430,
   "skippedRepos": [],
   "repos": [
     {
@@ -21,7 +21,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 19,
-      "issueCommentsCount": 79
+      "issueCommentsCount": 81
     },
     {
       "repo": "automation",
@@ -147,7 +147,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 647,
-      "issueCommentsCount": 2130
+      "issueCommentsCount": 2125
     },
     {
       "repo": "openhands-aci",
@@ -213,13 +213,6 @@
       "issueCommentsCount": 1
     },
     {
-      "repo": "OpenHands-Web",
-      "isArchived": false,
-      "isFork": false,
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 0
-    },
-    {
       "repo": "rbren-sdk-experiments",
       "isArchived": false,
       "isFork": false,
@@ -251,8 +244,8 @@
       "repo": "software-agent-sdk",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 279,
-      "issueCommentsCount": 835
+      "issuesOpenedCount": 280,
+      "issueCommentsCount": 836
     },
     {
       "repo": "terraform-gcp-datadog-integration",
@@ -305,6 +298,115 @@
     }
   ],
   "recentActivities": [
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-06-12T22:07:43Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1337,
+        "title": "Schedule deletion of the legacy/compatibility surface (drain-once-then-delete)",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1337",
+        "createdAt": "2026-06-12T18:41:09Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1337#issuecomment-4695818892"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-06-12T20:13:34Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1337,
+        "title": "Schedule deletion of the legacy/compatibility surface (drain-once-then-delete)",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1337",
+        "createdAt": "2026-06-12T18:41:09Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1337#issuecomment-4694961695"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "78901685",
+      "login": "Dpk376",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/78901685?v=4",
+      "profileUrl": "https://github.com/Dpk376",
+      "createdAt": "2026-06-12T20:05:39Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14784,
+        "title": "[Bug]: V1 git pagination drops one item at every page boundary; search endpoints advertise next pages that duplicate or 400",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14784",
+        "createdAt": "2026-06-12T20:05:39Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "203236246",
+      "login": "sakiko-toyokawa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/203236246?v=4",
+      "profileUrl": "https://github.com/sakiko-toyokawa",
+      "createdAt": "2026-06-12T13:25:48Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14779,
+        "title": "[Bug]: agent-server Docker image: browser-use launches Chromium without --no-sandbox, causing BrowserLaunchEvent timeout and \"Root CDP client not initialized\"",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14779",
+        "createdAt": "2026-06-12T13:12:59Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14779#issuecomment-4691679458"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "203236246",
+      "login": "sakiko-toyokawa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/203236246?v=4",
+      "profileUrl": "https://github.com/sakiko-toyokawa",
+      "createdAt": "2026-06-12T13:12:59Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14779,
+        "title": "[Bug]: agent-server Docker image: browser-use launches Chromium without --no-sandbox, causing BrowserLaunchEvent timeout and \"Root CDP client not initialized\"",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14779",
+        "createdAt": "2026-06-12T13:12:59Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-06-12T11:24:50Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 3569,
+        "title": "Proposal: Add /goal command for persistent, auto-continuing objectives",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3569",
+        "createdAt": "2026-06-08T11:46:34Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3569#issuecomment-4690779664"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "createdAt": "2026-06-12T06:01:48Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 3678,
+        "title": "[Bug]: file_editor truncates a file to 0 bytes (data loss) when the detected encoding can't encode newly written content",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3678",
+        "createdAt": "2026-06-12T06:01:48Z"
+      }
+    },
     {
       "type": "issueComment",
       "githubUserId": "281532558",
@@ -1135,134 +1237,144 @@
         "createdAt": "2026-06-05T19:14:58Z"
       },
       "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3540#issuecomment-4659273789"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T11:19:25Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3540,
-        "title": "feat: OpenAI-compatible /v1/chat/completions gateway for the agent-server",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3540",
-        "createdAt": "2026-06-05T19:14:58Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3540#issuecomment-4659208027"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "99911918",
-      "login": "reallyticsai",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/99911918?v=4",
-      "profileUrl": "https://github.com/reallyticsai",
-      "createdAt": "2026-06-09T10:54:33Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 14717,
-        "title": "perf: page poll_agent_servers conversation read in batches to bound peak memory",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14717",
-        "createdAt": "2026-06-08T17:20:42Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14717#issuecomment-4659031100"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T09:21:00Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3585,
-        "title": "Gemini prompt caching regression: explicit cache_control markers (#3090) freeze cache at static prefix (~6–14× cost)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3585",
-        "createdAt": "2026-06-09T08:57:02Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3585#issuecomment-4658312798"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T08:55:26Z",
-      "issue": {
-        "repo": "agent-canvas",
-        "number": 481,
-        "title": "Request for Shaping Feedback: Extensions for Agent Canvas UI",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/481",
-        "createdAt": "2026-05-15T16:04:22Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/481#issuecomment-4658100889"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "140971685",
-      "login": "Dr1985",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/140971685?v=4",
-      "profileUrl": "https://github.com/Dr1985",
-      "createdAt": "2026-06-09T06:59:22Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3574,
-        "title": "[Bug]: Web UI: X-Session-API-Key header missing on POST requests to agent-server (401 on all POST)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3574",
-        "createdAt": "2026-06-08T17:07:16Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3574#issuecomment-4657036024"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "177978136",
-      "login": "Lwoxs",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/177978136?v=4",
-      "profileUrl": "https://github.com/Lwoxs",
-      "createdAt": "2026-06-09T03:17:49Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 14721,
-        "title": "[Feature]: Add Starveri API as an OpenAI-compatible LLM endpoint example",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14721",
-        "createdAt": "2026-06-09T03:17:49Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "255485898",
-      "login": "norika1207-lab",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255485898?v=4",
-      "profileUrl": "https://github.com/norika1207-lab",
-      "createdAt": "2026-06-09T02:33:24Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 14416,
-        "title": "Security: OWASP Agent Memory Guard integration for memory poisoning defense",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14416",
-        "createdAt": "2026-05-14T16:45:20Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14416#issuecomment-4655474391"
     }
   ],
   "yearlyTotals": {
     "2025": {
-      "issuesOpened": 579,
-      "issueComments": 1756,
+      "issuesOpened": 577,
+      "issueComments": 1750,
       "uniqueIssueOpeners": 301,
-      "uniqueCommenters": 400
+      "uniqueCommenters": 399
     },
     "2026": {
-      "issuesOpened": 523,
-      "issueComments": 1676,
-      "uniqueIssueOpeners": 244,
-      "uniqueCommenters": 331
+      "issuesOpened": 526,
+      "issueComments": 1680,
+      "uniqueIssueOpeners": 246,
+      "uniqueCommenters": 332
     }
   },
   "users": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "issuesOpenedCount": 252,
+      "issueCommentsCount": 1204,
+      "firstActivityAt": "2025-06-13T10:54:02Z",
+      "mostRecentActivityAt": "2026-06-12T22:07:43Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 9105,
+        "title": "ValidationError on context_window after condensing",
+        "url": "https://github.com/OpenHands/OpenHands/issues/9105",
+        "createdAt": "2025-06-13T10:54:02Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 3672,
+        "title": "Add ask_oracle tool backed by a configured LLM profile",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3672",
+        "createdAt": "2026-06-11T20:26:12Z"
+      },
+      "mostRecentComment": {
+        "repo": "agent-canvas",
+        "number": 1337,
+        "title": "Schedule deletion of the legacy/compatibility surface (drain-once-then-delete)",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1337",
+        "createdAt": "2026-06-12T22:07:43Z",
+        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1337#issuecomment-4695818892"
+      }
+    },
+    {
+      "githubUserId": "78901685",
+      "login": "Dpk376",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/78901685?v=4",
+      "profileUrl": "https://github.com/Dpk376",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-06-12T20:05:39Z",
+      "mostRecentActivityAt": "2026-06-12T20:05:39Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 14784,
+        "title": "[Bug]: V1 git pagination drops one item at every page boundary; search endpoints advertise next pages that duplicate or 400",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14784",
+        "createdAt": "2026-06-12T20:05:39Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 14784,
+        "title": "[Bug]: V1 git pagination drops one item at every page boundary; search endpoints advertise next pages that duplicate or 400",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14784",
+        "createdAt": "2026-06-12T20:05:39Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "203236246",
+      "login": "sakiko-toyokawa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/203236246?v=4",
+      "profileUrl": "https://github.com/sakiko-toyokawa",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-06-12T13:12:59Z",
+      "mostRecentActivityAt": "2026-06-12T13:25:48Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 14779,
+        "title": "[Bug]: agent-server Docker image: browser-use launches Chromium without --no-sandbox, causing BrowserLaunchEvent timeout and \"Root CDP client not initialized\"",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14779",
+        "createdAt": "2026-06-12T13:12:59Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 14779,
+        "title": "[Bug]: agent-server Docker image: browser-use launches Chromium without --no-sandbox, causing BrowserLaunchEvent timeout and \"Root CDP client not initialized\"",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14779",
+        "createdAt": "2026-06-12T13:12:59Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 14779,
+        "title": "[Bug]: agent-server Docker image: browser-use launches Chromium without --no-sandbox, causing BrowserLaunchEvent timeout and \"Root CDP client not initialized\"",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14779",
+        "createdAt": "2026-06-12T13:25:48Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14779#issuecomment-4691679458"
+      }
+    },
+    {
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "issuesOpenedCount": 9,
+      "issueCommentsCount": 8,
+      "firstActivityAt": "2025-12-27T07:26:56Z",
+      "mostRecentActivityAt": "2026-06-12T06:01:48Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 12175,
+        "title": "Remote setup: CORS errors prevent file uploads in v1.0 (agent-server missing CORS support)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/12175",
+        "createdAt": "2025-12-27T07:26:56Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 3678,
+        "title": "[Bug]: file_editor truncates a file to 0 bytes (data loss) when the detected encoding can't encode newly written content",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3678",
+        "createdAt": "2026-06-12T06:01:48Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 14698,
+        "title": "[Bug]: User message on finished/idle conversation never triggers /run, agent loop stays dormant (regression on main)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14698",
+        "createdAt": "2026-06-07T10:45:38Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14698#issuecomment-4642253531"
+      }
+    },
     {
       "githubUserId": "281532558",
       "login": "1795771535y-cell",
@@ -1281,38 +1393,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/14686",
         "createdAt": "2026-06-12T04:53:41Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14686#issuecomment-4687588571"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "issuesOpenedCount": 252,
-      "issueCommentsCount": 1202,
-      "firstActivityAt": "2025-06-13T02:03:03Z",
-      "mostRecentActivityAt": "2026-06-11T22:30:48Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9105,
-        "title": "ValidationError on context_window after condensing",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9105",
-        "createdAt": "2025-06-13T10:54:02Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 3672,
-        "title": "Add ask_oracle tool backed by a configured LLM profile",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3672",
-        "createdAt": "2026-06-11T20:26:12Z"
-      },
-      "mostRecentComment": {
-        "repo": "software-agent-sdk",
-        "number": 3658,
-        "title": "Start agent-canvas frontend from this repository",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3658",
-        "createdAt": "2026-06-11T22:30:48Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3658#issuecomment-4685654166"
       }
     },
     {
@@ -1747,38 +1827,6 @@
         "createdAt": "2026-06-07T18:32:06Z"
       },
       "mostRecentComment": null
-    },
-    {
-      "githubUserId": "156683457",
-      "login": "shanemort1982",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
-      "profileUrl": "https://github.com/shanemort1982",
-      "issuesOpenedCount": 8,
-      "issueCommentsCount": 8,
-      "firstActivityAt": "2025-12-27T07:26:56Z",
-      "mostRecentActivityAt": "2026-06-07T11:35:44Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 12175,
-        "title": "Remote setup: CORS errors prevent file uploads in v1.0 (agent-server missing CORS support)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/12175",
-        "createdAt": "2025-12-27T07:26:56Z"
-      },
-      "mostRecentIssue": {
-        "repo": "agent-canvas",
-        "number": 1211,
-        "title": "Boss (CTO) orchestrator: one chat that manages a fleet of worker conversations across backends",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1211",
-        "createdAt": "2026-06-07T11:35:44Z"
-      },
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 14698,
-        "title": "[Bug]: User message on finished/idle conversation never triggers /run, agent loop stays dormant (regression on main)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14698",
-        "createdAt": "2026-06-07T10:45:38Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14698#issuecomment-4642253531"
-      }
     },
     {
       "githubUserId": "167847",
@@ -14277,16 +14325,16 @@
       "login": "krishgcek",
       "avatarUrl": "https://avatars.githubusercontent.com/u/135853251?v=4",
       "profileUrl": "https://github.com/krishgcek",
-      "issuesOpenedCount": 2,
+      "issuesOpenedCount": 1,
       "issueCommentsCount": 1,
-      "firstActivityAt": "2025-06-13T02:34:20Z",
+      "firstActivityAt": "2025-07-29T11:07:02Z",
       "mostRecentActivityAt": "2025-11-24T09:00:53Z",
       "firstIssue": {
         "repo": "OpenHands",
-        "number": 9103,
-        "title": "[Bug]: Unexpected error while running action: ClosedResourceError: during http MCP",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9103",
-        "createdAt": "2025-06-13T02:34:20Z"
+        "number": 11803,
+        "title": "support session-id and keep alive for mcp tools",
+        "url": "https://github.com/OpenHands/OpenHands/issues/11803",
+        "createdAt": "2025-11-24T09:00:53Z"
       },
       "mostRecentIssue": {
         "repo": "OpenHands",
@@ -15691,16 +15739,16 @@
       "login": "bartlettroscoe",
       "avatarUrl": "https://avatars.githubusercontent.com/u/1959736?v=4",
       "profileUrl": "https://github.com/bartlettroscoe",
-      "issuesOpenedCount": 2,
+      "issuesOpenedCount": 1,
       "issueCommentsCount": 32,
-      "firstActivityAt": "2025-06-12T22:27:07Z",
+      "firstActivityAt": "2025-06-15T00:07:48Z",
       "mostRecentActivityAt": "2025-10-27T18:51:38Z",
       "firstIssue": {
         "repo": "OpenHands",
-        "number": 9098,
-        "title": "What is best way to set up OpenHands container running locally to access compilers in different container?",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9098",
-        "createdAt": "2025-06-12T22:27:07Z"
+        "number": 9950,
+        "title": "Is it possible to defer context gathering to an MCP server?",
+        "url": "https://github.com/OpenHands/OpenHands/issues/9950",
+        "createdAt": "2025-07-28T23:20:57Z"
       },
       "mostRecentIssue": {
         "repo": "OpenHands",
@@ -16573,8 +16621,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/213239228?v=4",
       "profileUrl": "https://github.com/llamantino",
       "issuesOpenedCount": 3,
-      "issueCommentsCount": 43,
-      "firstActivityAt": "2025-06-12T14:05:01Z",
+      "issueCommentsCount": 41,
+      "firstActivityAt": "2025-06-17T12:24:38Z",
       "mostRecentActivityAt": "2025-10-13T23:32:58Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -24415,8 +24463,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/11680858?v=4",
       "profileUrl": "https://github.com/joyol",
       "issuesOpenedCount": 1,
-      "issueCommentsCount": 3,
-      "firstActivityAt": "2025-06-13T02:00:18Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-06-13T10:01:30Z",
       "mostRecentActivityAt": "2025-06-13T11:05:20Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -24439,26 +24487,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/9105",
         "createdAt": "2025-06-13T11:05:20Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9105#issuecomment-2969985040"
-      }
-    },
-    {
-      "githubUserId": "213460684",
-      "login": "shabbir-shakudo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/213460684?v=4",
-      "profileUrl": "https://github.com/shabbir-shakudo",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-06-12T18:58:37Z",
-      "mostRecentActivityAt": "2025-06-12T18:58:37Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 8920,
-        "title": "[Bug]:  timeout during MCP stdio  fetch",
-        "url": "https://github.com/OpenHands/OpenHands/issues/8920",
-        "createdAt": "2025-06-12T18:58:37Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/8920#issuecomment-2967861540"
       }
     }
   ]
