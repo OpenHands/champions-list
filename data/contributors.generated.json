@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-06-14T05:32:27.289Z",
+  "generatedAt": "2026-06-15T05:45:08.872Z",
   "organization": "OpenHands",
   "repoCount": 41,
   "scannedRepoCount": 41,
-  "totalMergedPrs": 2461,
+  "totalMergedPrs": 2462,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3679,
+        "title": "fix(file_editor): write atomically and fall back to UTF-8 to prevent data loss",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3679",
+        "mergedAt": "2026-06-14T12:27:13Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -772,22 +785,70 @@
         "url": "https://github.com/OpenHands/agent-canvas/pull/1113",
         "mergedAt": "2026-06-05T16:44:38Z"
       }
-    },
-    {
-      "githubUserId": "29340368",
-      "login": "sjathin",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/29340368?u=1f5b5527b0e1e3b9ee46ebe5ebc0be65eaba79ab&v=4",
-      "profileUrl": "https://github.com/sjathin",
-      "pullRequest": {
-        "repo": "automation",
-        "number": 156,
-        "title": "feat: add API and UI support to cancel automation runs",
-        "url": "https://github.com/OpenHands/automation/pull/156",
-        "mergedAt": "2026-06-05T14:22:19Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 12113,
+        "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
+        "url": "https://github.com/OpenHands/OpenHands/pull/12113",
+        "mergedAt": "2025-12-24T21:26:46Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3679,
+        "title": "fix(file_editor): write atomically and fall back to UTF-8 to prevent data loss",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3679",
+        "mergedAt": "2026-06-14T12:27:13Z"
+      },
+      "totalMergedPrs": 5,
+      "contributionYears": [
+        "2026",
+        "2025"
+      ],
+      "yearly": {
+        "2025": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 12113,
+            "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12113",
+            "mergedAt": "2025-12-24T21:26:46Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 12113,
+            "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12113",
+            "mergedAt": "2025-12-24T21:26:46Z"
+          }
+        },
+        "2026": {
+          "totalMergedPrs": 4,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 12255,
+            "title": "feat: Add configurable sandbox host_port and container_url_pattern for remote access",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12255",
+            "mergedAt": "2026-01-05T03:26:17Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 3679,
+            "title": "fix(file_editor): write atomically and fall back to UTF-8 to prevent data loss",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3679",
+            "mergedAt": "2026-06-14T12:27:13Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -1121,67 +1182,6 @@
             "title": "fix: require I18nKey for translation calls",
             "url": "https://github.com/OpenHands/agent-canvas/pull/1230",
             "mergedAt": "2026-06-09T12:13:06Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "156683457",
-      "login": "shanemort1982",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
-      "profileUrl": "https://github.com/shanemort1982",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 12113,
-        "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
-        "url": "https://github.com/OpenHands/OpenHands/pull/12113",
-        "mergedAt": "2025-12-24T21:26:46Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 14451,
-        "title": "fix: _configure_llm now preserves user LLM settings",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14451",
-        "mergedAt": "2026-06-08T18:45:10Z"
-      },
-      "totalMergedPrs": 4,
-      "contributionYears": [
-        "2026",
-        "2025"
-      ],
-      "yearly": {
-        "2025": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 12113,
-            "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12113",
-            "mergedAt": "2025-12-24T21:26:46Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 12113,
-            "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12113",
-            "mergedAt": "2025-12-24T21:26:46Z"
-          }
-        },
-        "2026": {
-          "totalMergedPrs": 3,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 12255,
-            "title": "feat: Add configurable sandbox host_port and container_url_pattern for remote access",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12255",
-            "mergedAt": "2026-01-05T03:26:17Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 14451,
-            "title": "fix: _configure_llm now preserves user LLM settings",
-            "url": "https://github.com/OpenHands/OpenHands/pull/14451",
-            "mergedAt": "2026-06-08T18:45:10Z"
           }
         }
       }

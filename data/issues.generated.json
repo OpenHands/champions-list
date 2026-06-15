@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-14T05:43:51.174Z",
-  "windowStart": "2025-06-14T05:33:21.642Z",
-  "windowEnd": "2026-06-14T05:33:21.642Z",
+  "generatedAt": "2026-06-15T05:57:12.005Z",
+  "windowStart": "2025-06-15T05:46:09.611Z",
+  "windowEnd": "2026-06-15T05:46:09.611Z",
   "organization": "OpenHands",
   "repoCount": 41,
   "scannedRepoCount": 41,
   "totalIssuesOpened": 1107,
-  "totalIssueComments": 3434,
+  "totalIssueComments": 3433,
   "skippedRepos": [],
   "repos": [
     {
@@ -20,8 +20,8 @@
       "repo": "agent-canvas",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 19,
-      "issueCommentsCount": 82
+      "issuesOpenedCount": 20,
+      "issueCommentsCount": 83
     },
     {
       "repo": "automation",
@@ -146,8 +146,8 @@
       "repo": "OpenHands",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 649,
-      "issueCommentsCount": 2128
+      "issuesOpenedCount": 647,
+      "issueCommentsCount": 2127
     },
     {
       "repo": "openhands-aci",
@@ -174,7 +174,7 @@
       "repo": "OpenHands-CLI",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 73,
+      "issuesOpenedCount": 74,
       "issueCommentsCount": 242
     },
     {
@@ -182,7 +182,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 17,
-      "issueCommentsCount": 45
+      "issueCommentsCount": 44
     },
     {
       "repo": "openhands-custom-image",
@@ -298,6 +298,114 @@
     }
   ],
   "recentActivities": [
+    {
+      "type": "issueComment",
+      "githubUserId": "280464918",
+      "login": "maxpetrusenkoagent",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/280464918?v=4",
+      "profileUrl": "https://github.com/maxpetrusenkoagent",
+      "createdAt": "2026-06-15T02:26:37Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14129,
+        "title": "[Bug]: Missing required parameters for function 'execute_bash': {'security_risk'}",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14129",
+        "createdAt": "2026-04-25T05:26:29Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14129#issuecomment-4703994625"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "280464918",
+      "login": "maxpetrusenkoagent",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/280464918?v=4",
+      "profileUrl": "https://github.com/maxpetrusenkoagent",
+      "createdAt": "2026-06-15T02:26:24Z",
+      "issue": {
+        "repo": "OpenHands-CLI",
+        "number": 776,
+        "title": "Missing required security_risk parameter for execute_bash with DeepSeek Reasoner",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/issues/776",
+        "createdAt": "2026-06-15T02:26:24Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "209381052",
+      "login": "emhamitay",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/209381052?v=4",
+      "profileUrl": "https://github.com/emhamitay",
+      "createdAt": "2026-06-14T20:28:56Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14806,
+        "title": "[Feature]: Add --port flag to openhands serve",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14806",
+        "createdAt": "2026-06-14T20:28:56Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "1393979",
+      "login": "nikpopesku",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1393979?v=4",
+      "profileUrl": "https://github.com/nikpopesku",
+      "createdAt": "2026-06-14T15:37:13Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14807,
+        "title": "Qwen3.6-35B-A3B: recommended model not in FUNCTION_CALLING_PATTERNS, causes agent to fail",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14807",
+        "createdAt": "2026-06-14T15:37:13Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "1479804",
+      "login": "kripper",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
+      "profileUrl": "https://github.com/kripper",
+      "createdAt": "2026-06-14T11:31:39Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1209,
+        "title": "Unified conversations view across all registered backends",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1209",
+        "createdAt": "2026-06-07T10:14:06Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1209#issuecomment-4701611329"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "1479804",
+      "login": "kripper",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
+      "profileUrl": "https://github.com/kripper",
+      "createdAt": "2026-06-14T11:26:47Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1351,
+        "title": "Feature Request: Group Conversations by Backend, Container, and Workspace",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1351",
+        "createdAt": "2026-06-14T11:26:47Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "7388889",
+      "login": "Startouf",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7388889?v=4",
+      "profileUrl": "https://github.com/Startouf",
+      "createdAt": "2026-06-14T09:40:11Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14800,
+        "title": "[Bug]: Editing an LLM Profile overwrites the model (and api_key) of other profiles",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14800",
+        "createdAt": "2026-06-13T16:42:53Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14800#issuecomment-4701357741"
+    },
     {
       "type": "issueOpened",
       "githubUserId": "9061871",
@@ -1130,129 +1238,169 @@
         "createdAt": "2026-05-15T16:04:22Z"
       },
       "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/481#issuecomment-4664253200"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T21:07:58Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3604,
-        "title": "Reject client tool names that collide with existing tools",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3604",
-        "createdAt": "2026-06-09T21:07:58Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T20:00:54Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3540,
-        "title": "feat: OpenAI-compatible /v1/chat/completions gateway for the agent-server",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3540",
-        "createdAt": "2026-06-05T19:14:58Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3540#issuecomment-4663529805"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T19:58:36Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3602,
-        "title": "feat(agent-server): evaluate opt-in tool-call streaming for OpenAI gateway",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3602",
-        "createdAt": "2026-06-09T19:58:36Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T19:58:35Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3601,
-        "title": "feat(agent-server): add Responses API gateway if client demand justifies it",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3601",
-        "createdAt": "2026-06-09T19:58:35Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T19:58:35Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3600,
-        "title": "feat(agent-server): add final-answer streaming to OpenAI chat completions gateway",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3600",
-        "createdAt": "2026-06-09T19:58:35Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T19:58:34Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3599,
-        "title": "feat(agent-server): add operational polish to OpenAI gateway",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3599",
-        "createdAt": "2026-06-09T19:58:34Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-06-09T19:58:33Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3597,
-        "title": "feat(agent-server): harden OpenAI gateway compatibility for common clients",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3597",
-        "createdAt": "2026-06-09T19:58:33Z"
-      }
     }
   ],
   "yearlyTotals": {
     "2025": {
-      "issuesOpened": 575,
-      "issueComments": 1745,
-      "uniqueIssueOpeners": 300,
+      "issuesOpened": 571,
+      "issueComments": 1741,
+      "uniqueIssueOpeners": 297,
       "uniqueCommenters": 397
     },
     "2026": {
-      "issuesOpened": 532,
-      "issueComments": 1689,
-      "uniqueIssueOpeners": 250,
-      "uniqueCommenters": 333
+      "issuesOpened": 536,
+      "issueComments": 1692,
+      "uniqueIssueOpeners": 253,
+      "uniqueCommenters": 335
     }
   },
   "users": [
+    {
+      "githubUserId": "280464918",
+      "login": "maxpetrusenkoagent",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/280464918?v=4",
+      "profileUrl": "https://github.com/maxpetrusenkoagent",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-06-15T02:26:24Z",
+      "mostRecentActivityAt": "2026-06-15T02:26:37Z",
+      "firstIssue": {
+        "repo": "OpenHands-CLI",
+        "number": 776,
+        "title": "Missing required security_risk parameter for execute_bash with DeepSeek Reasoner",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/issues/776",
+        "createdAt": "2026-06-15T02:26:24Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands-CLI",
+        "number": 776,
+        "title": "Missing required security_risk parameter for execute_bash with DeepSeek Reasoner",
+        "url": "https://github.com/OpenHands/OpenHands-CLI/issues/776",
+        "createdAt": "2026-06-15T02:26:24Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 14129,
+        "title": "[Bug]: Missing required parameters for function 'execute_bash': {'security_risk'}",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14129",
+        "createdAt": "2026-06-15T02:26:37Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14129#issuecomment-4703994625"
+      }
+    },
+    {
+      "githubUserId": "209381052",
+      "login": "emhamitay",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/209381052?v=4",
+      "profileUrl": "https://github.com/emhamitay",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-06-14T20:28:56Z",
+      "mostRecentActivityAt": "2026-06-14T20:28:56Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 14806,
+        "title": "[Feature]: Add --port flag to openhands serve",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14806",
+        "createdAt": "2026-06-14T20:28:56Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 14806,
+        "title": "[Feature]: Add --port flag to openhands serve",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14806",
+        "createdAt": "2026-06-14T20:28:56Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "1393979",
+      "login": "nikpopesku",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1393979?v=4",
+      "profileUrl": "https://github.com/nikpopesku",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-06-14T15:37:13Z",
+      "mostRecentActivityAt": "2026-06-14T15:37:13Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 14807,
+        "title": "Qwen3.6-35B-A3B: recommended model not in FUNCTION_CALLING_PATTERNS, causes agent to fail",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14807",
+        "createdAt": "2026-06-14T15:37:13Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 14807,
+        "title": "Qwen3.6-35B-A3B: recommended model not in FUNCTION_CALLING_PATTERNS, causes agent to fail",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14807",
+        "createdAt": "2026-06-14T15:37:13Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "1479804",
+      "login": "kripper",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
+      "profileUrl": "https://github.com/kripper",
+      "issuesOpenedCount": 21,
+      "issueCommentsCount": 75,
+      "firstActivityAt": "2025-06-25T13:08:33Z",
+      "mostRecentActivityAt": "2026-06-14T11:31:39Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 9858,
+        "title": "[Bug]: Reload updated MCP tools in a restored conversation",
+        "url": "https://github.com/OpenHands/OpenHands/issues/9858",
+        "createdAt": "2025-07-22T19:46:25Z"
+      },
+      "mostRecentIssue": {
+        "repo": "agent-canvas",
+        "number": 1351,
+        "title": "Feature Request: Group Conversations by Backend, Container, and Workspace",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1351",
+        "createdAt": "2026-06-14T11:26:47Z"
+      },
+      "mostRecentComment": {
+        "repo": "agent-canvas",
+        "number": 1209,
+        "title": "Unified conversations view across all registered backends",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1209",
+        "createdAt": "2026-06-14T11:31:39Z",
+        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1209#issuecomment-4701611329"
+      }
+    },
+    {
+      "githubUserId": "7388889",
+      "login": "Startouf",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7388889?v=4",
+      "profileUrl": "https://github.com/Startouf",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-06-13T16:42:53Z",
+      "mostRecentActivityAt": "2026-06-14T09:40:11Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 14800,
+        "title": "[Bug]: Editing an LLM Profile overwrites the model (and api_key) of other profiles",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14800",
+        "createdAt": "2026-06-13T16:42:53Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 14800,
+        "title": "[Bug]: Editing an LLM Profile overwrites the model (and api_key) of other profiles",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14800",
+        "createdAt": "2026-06-13T16:42:53Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 14800,
+        "title": "[Bug]: Editing an LLM Profile overwrites the model (and api_key) of other profiles",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14800",
+        "createdAt": "2026-06-14T09:40:11Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14800#issuecomment-4701357741"
+      }
+    },
     {
       "githubUserId": "9061871",
       "login": "connerlambden",
@@ -1324,31 +1472,6 @@
         "createdAt": "2026-06-14T01:07:13Z",
         "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/129#issuecomment-4700298580"
       }
-    },
-    {
-      "githubUserId": "7388889",
-      "login": "Startouf",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/7388889?v=4",
-      "profileUrl": "https://github.com/Startouf",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 0,
-      "firstActivityAt": "2026-06-13T16:42:53Z",
-      "mostRecentActivityAt": "2026-06-13T16:42:53Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 14800,
-        "title": "[Bug]: Editing an LLM Profile overwrites the model (and api_key) of other profiles",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14800",
-        "createdAt": "2026-06-13T16:42:53Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 14800,
-        "title": "[Bug]: Editing an LLM Profile overwrites the model (and api_key) of other profiles",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14800",
-        "createdAt": "2026-06-13T16:42:53Z"
-      },
-      "mostRecentComment": null
     },
     {
       "githubUserId": "193317664",
@@ -1430,38 +1553,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/14569",
         "createdAt": "2026-06-13T13:42:37Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14569#issuecomment-4698689854"
-      }
-    },
-    {
-      "githubUserId": "1479804",
-      "login": "kripper",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
-      "profileUrl": "https://github.com/kripper",
-      "issuesOpenedCount": 20,
-      "issueCommentsCount": 74,
-      "firstActivityAt": "2025-06-25T13:08:33Z",
-      "mostRecentActivityAt": "2026-06-13T09:46:28Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9858,
-        "title": "[Bug]: Reload updated MCP tools in a restored conversation",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9858",
-        "createdAt": "2025-07-22T19:46:25Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 3690,
-        "title": "Move Current DateTime Block to the End of the Initial Prompt to Improve Prompt Cache Reuse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3690",
-        "createdAt": "2026-06-13T09:46:28Z"
-      },
-      "mostRecentComment": {
-        "repo": "agent-canvas",
-        "number": 1269,
-        "title": "[Feature] Isolated containers for each conversation",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1269",
-        "createdAt": "2026-06-10T16:51:04Z",
-        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1269#issuecomment-4672401604"
       }
     },
     {
@@ -15846,8 +15937,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/1959736?v=4",
       "profileUrl": "https://github.com/bartlettroscoe",
       "issuesOpenedCount": 1,
-      "issueCommentsCount": 32,
-      "firstActivityAt": "2025-06-15T00:07:48Z",
+      "issueCommentsCount": 31,
+      "firstActivityAt": "2025-06-16T18:58:07Z",
       "mostRecentActivityAt": "2025-10-27T18:51:38Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -20188,8 +20279,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/160164118?v=4",
       "profileUrl": "https://github.com/jpshack-at-palomar",
       "issuesOpenedCount": 4,
-      "issueCommentsCount": 4,
-      "firstActivityAt": "2025-06-14T20:21:16Z",
+      "issueCommentsCount": 3,
+      "firstActivityAt": "2025-06-17T20:57:59Z",
       "mostRecentActivityAt": "2025-08-15T18:04:30Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -22292,24 +22383,12 @@
       "login": "abda11ah",
       "avatarUrl": "https://avatars.githubusercontent.com/u/1699034?v=4",
       "profileUrl": "https://github.com/abda11ah",
-      "issuesOpenedCount": 1,
+      "issuesOpenedCount": 0,
       "issueCommentsCount": 3,
-      "firstActivityAt": "2025-06-14T17:20:09Z",
+      "firstActivityAt": "2025-07-10T09:17:58Z",
       "mostRecentActivityAt": "2025-07-11T04:25:09Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9133,
-        "title": "configure OH so it can interact with local hosted website and test it",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9133",
-        "createdAt": "2025-06-14T17:20:09Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 9133,
-        "title": "configure OH so it can interact with local hosted website and test it",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9133",
-        "createdAt": "2025-06-14T17:20:09Z"
-      },
+      "firstIssue": null,
+      "mostRecentIssue": null,
       "mostRecentComment": {
         "repo": "OpenHands",
         "number": 9138,
@@ -22681,8 +22760,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/215185388?v=4",
       "profileUrl": "https://github.com/matty-fortune",
       "issuesOpenedCount": 2,
-      "issueCommentsCount": 17,
-      "firstActivityAt": "2025-06-14T18:54:50Z",
+      "issueCommentsCount": 16,
+      "firstActivityAt": "2025-06-15T18:36:46Z",
       "mostRecentActivityAt": "2025-07-07T19:54:58Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -23608,24 +23687,12 @@
       "login": "luochen1990",
       "avatarUrl": "https://avatars.githubusercontent.com/u/2309868?v=4",
       "profileUrl": "https://github.com/luochen1990",
-      "issuesOpenedCount": 1,
+      "issuesOpenedCount": 0,
       "issueCommentsCount": 2,
-      "firstActivityAt": "2025-06-14T13:36:29Z",
+      "firstActivityAt": "2025-06-16T00:52:05Z",
       "mostRecentActivityAt": "2025-06-25T04:10:50Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9130,
-        "title": "Document a minimal available sandbox Dockerfile",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9130",
-        "createdAt": "2025-06-14T13:36:29Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 9130,
-        "title": "Document a minimal available sandbox Dockerfile",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9130",
-        "createdAt": "2025-06-14T13:36:29Z"
-      },
+      "firstIssue": null,
+      "mostRecentIssue": null,
       "mostRecentComment": {
         "repo": "OpenHands",
         "number": 9130,
@@ -24491,24 +24558,12 @@
       "login": "arun-mani-j",
       "avatarUrl": "https://avatars.githubusercontent.com/u/49952138?v=4",
       "profileUrl": "https://github.com/arun-mani-j",
-      "issuesOpenedCount": 2,
-      "issueCommentsCount": 2,
-      "firstActivityAt": "2025-06-14T09:06:47Z",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-06-16T15:02:11Z",
       "mostRecentActivityAt": "2025-06-16T15:02:11Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9126,
-        "title": "[Bug]: Can't instantiate abstract class E2BRuntime without an implementation for abstract methods",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9126",
-        "createdAt": "2025-06-14T09:06:47Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 9127,
-        "title": "[Bug]: Modal runtime fails with `Server disconnected without sending a response`",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9127",
-        "createdAt": "2025-06-14T09:29:42Z"
-      },
+      "firstIssue": null,
+      "mostRecentIssue": null,
       "mostRecentComment": {
         "repo": "OpenHands",
         "number": 9127,
