@@ -104,6 +104,48 @@ function fallbackContributionYears(contributor: GeneratedContributor): string[] 
   return sortYearsDesc([mergedPrYear(contributor.firstMergedPr.mergedAt), mergedPrYear(contributor.mostRecentMergedPr.mergedAt)]);
 }
 
+function buildContributorRecords(): {
+  generated: GeneratedContributorsFile;
+  contributors: ContributorRecord[];
+  visibleContributors: ContributorRecord[];
+  visibleContributorById: Map<string, ContributorRecord>;
+} {
+  const generated = generatedData as GeneratedContributorsFile;
+  const overrides = overridesData as ContributorOverridesFile;
+
+  const contributors = generated.contributors.map((contributor) => {
+    const override = overrides.contributors[contributor.githubUserId] ?? {};
+    const yearly = normalizeContributorYearlyStats(contributor);
+    const contributionYears = sortYearsDesc(contributor.contributionYears ?? [...Object.keys(yearly), ...fallbackContributionYears(contributor)]);
+
+    return {
+      ...contributor,
+      name: normalizeText(override.name),
+      note: normalizeText(override.note),
+      hidden: Boolean(override.hidden),
+      contributionYears,
+      yearly,
+    } satisfies ContributorRecord;
+  });
+
+  const visibleContributors = contributors.filter((contributor) => !contributor.hidden);
+  const visibleContributorById = new Map(
+    visibleContributors.map((contributor) => [contributor.githubUserId, contributor])
+  );
+
+  return {
+    generated,
+    contributors,
+    visibleContributors,
+    visibleContributorById,
+  };
+}
+
+export function getContributorRecords(options: { includeHidden?: boolean } = {}): ContributorRecord[] {
+  const { contributors, visibleContributors } = buildContributorRecords();
+  return options.includeHidden ? contributors : visibleContributors;
+}
+
 export function getContributorYearStats(
   contributor: Pick<ContributorRecord, "yearly">,
   year: string
@@ -127,28 +169,7 @@ function sortByRecentMergedPr(a: GeneratedRecentMergedPr, b: GeneratedRecentMerg
 }
 
 export function getContributorDirectoryData(): ContributorDirectoryData {
-  const generated = generatedData as GeneratedContributorsFile;
-  const overrides = overridesData as ContributorOverridesFile;
-
-  const contributors = generated.contributors.map((contributor) => {
-    const override = overrides.contributors[contributor.githubUserId] ?? {};
-    const yearly = normalizeContributorYearlyStats(contributor);
-    const contributionYears = sortYearsDesc(contributor.contributionYears ?? [...Object.keys(yearly), ...fallbackContributionYears(contributor)]);
-
-    return {
-      ...contributor,
-      name: normalizeText(override.name),
-      note: normalizeText(override.note),
-      hidden: Boolean(override.hidden),
-      contributionYears,
-      yearly,
-    } satisfies ContributorRecord;
-  });
-
-  const visibleContributors = contributors.filter((contributor) => !contributor.hidden);
-  const visibleContributorById = new Map(
-    visibleContributors.map((contributor) => [contributor.githubUserId, contributor])
-  );
+  const { generated, contributors, visibleContributors, visibleContributorById } = buildContributorRecords();
 
   const newestContributors = [...visibleContributors].sort(sortByNewestContributor);
   const recentMergedPrs = (generated.recentMergedPrs ?? [])
