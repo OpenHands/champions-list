@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type PageKind = "contributors" | "issues";
+type PageKind = "contributors" | "detailed" | "issues";
 
 const navItems: Array<{
   key: PageKind;

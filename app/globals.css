@@ -1145,7 +1145,7 @@ body:has(.directory-root.high-contrast)::after,
   }
 }
 
-.internal-toolbar-filter-grid {
+.detailed-toolbar-filter-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -1223,13 +1223,13 @@ body:has(.directory-root.high-contrast)::after,
 }
 
 @media (max-width: 1120px) {
-  .internal-toolbar-filter-grid {
+  .detailed-toolbar-filter-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
-  .internal-toolbar-filter-grid {
+  .detailed-toolbar-filter-grid {
     grid-template-columns: 1fr;
   }
 
