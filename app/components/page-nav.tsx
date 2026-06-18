@@ -15,12 +15,6 @@ const navItems: Array<{
     copy: "Merged PR contributors",
   },
   {
-    key: "detailed",
-    href: "/detailed",
-    label: "Detailed",
-    copy: "Granular PR query view",
-  },
-  {
     key: "issues",
     href: "/issues",
     label: "Issue Champions",

@@ -19,7 +19,7 @@
 - Issue champions are now tracked separately from merged-PR champions via `data/issues.generated.json`, produced by `npm run sync:issues` (or `npm run sync:all`) from GitHub issues + issue comments over a rolling 365-day window.
 - The new `/issues` route mirrors the main directory UX with shared search/sort/pagination/ticker/accessibility patterns and uses the same `data/contributors.overrides.json` file for display-name and hide overrides.
 - `.github/workflows/sync-contributors.yml` now syncs both contributor and issue datasets in one run and commits `data/issues.generated.json` alongside the existing contributor assets.
-- The public detailed merged-PR query view now lives at `/detailed`; `/internal` and `/interal` permanently redirect there. The detailed page includes hidden contributors as fully anonymized rows appended after visible matches, while the main public directory continues to omit hidden contributors entirely.
+- The public detailed merged-PR query view now lives at `/detailed`; `/internal` and `/interal` permanently redirect there. The route is intentionally not linked from the top nav. The detailed page includes hidden contributors as fully anonymized rows appended after visible matches, while the main public directory continues to omit hidden contributors entirely.
 
 
 
