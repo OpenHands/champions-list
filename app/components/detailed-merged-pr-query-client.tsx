@@ -3,23 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState, type FormEvent } from "react";
-import type { ContributorRecord, PullRequestSummary } from "@/lib/contributors";
-import { formatDate, mergedPrYear } from "@/lib/contributors";
+import { PageNav } from "@/app/components/page-nav";
+import {
+  formatDate,
+  HIDDEN_USER_LABEL,
+  mergedPrYear,
+  type ContributorRecord,
+  type DetailedContributorDirectoryData,
+  type PullRequestSummary,
+} from "@/lib/contributors";
 
 type MilestoneField = "firstMergedPr" | "mostRecentMergedPr";
 type SortOption = "matched-desc" | "matched-asc" | "login-asc" | "name-asc" | "total-desc";
-
-interface InternalMergedPrQueryData {
-  generatedAt: string | null;
-  organization: string;
-  repoCount: number;
-  scannedRepoCount: number;
-  totalMergedPrs: number;
-  hiddenContributorCount: number;
-  visibleContributorCount: number;
-  availableYears: string[];
-  contributors: ContributorRecord[];
-}
 
 interface SubmittedFilters {
   milestone: MilestoneField;
@@ -28,7 +23,6 @@ interface SubmittedFilters {
   year: string;
   query: string;
   sort: SortOption;
-  includeHidden: boolean;
 }
 
 const ALL_YEARS_VALUE = "all";
@@ -93,29 +87,39 @@ function matchesTextQuery(contributor: ContributorRecord, query: string, milesto
   return haystack.includes(query.toLowerCase());
 }
 
-function sortContributors(contributors: ContributorRecord[], milestone: MilestoneField, sort: SortOption): ContributorRecord[] {
-  return [...contributors].sort((a, b) => {
-    const aMatched = getMilestone(a, milestone);
-    const bMatched = getMilestone(b, milestone);
+function compareContributors(a: ContributorRecord, b: ContributorRecord, milestone: MilestoneField, sort: SortOption): number {
+  const aMatched = getMilestone(a, milestone);
+  const bMatched = getMilestone(b, milestone);
 
-    if (sort === "matched-asc") {
-      return new Date(aMatched.mergedAt).getTime() - new Date(bMatched.mergedAt).getTime() || a.login.localeCompare(b.login);
-    }
+  if (sort === "matched-asc") {
+    return new Date(aMatched.mergedAt).getTime() - new Date(bMatched.mergedAt).getTime() || a.login.localeCompare(b.login);
+  }
 
-    if (sort === "matched-desc") {
-      return new Date(bMatched.mergedAt).getTime() - new Date(aMatched.mergedAt).getTime() || a.login.localeCompare(b.login);
-    }
+  if (sort === "matched-desc") {
+    return new Date(bMatched.mergedAt).getTime() - new Date(aMatched.mergedAt).getTime() || a.login.localeCompare(b.login);
+  }
 
-    if (sort === "name-asc") {
-      return (a.name || a.login).localeCompare(b.name || b.login) || a.login.localeCompare(b.login);
-    }
+  if (sort === "name-asc") {
+    return (a.name || a.login).localeCompare(b.name || b.login) || a.login.localeCompare(b.login);
+  }
 
-    if (sort === "total-desc") {
-      return b.totalMergedPrs - a.totalMergedPrs || a.login.localeCompare(b.login);
-    }
+  if (sort === "total-desc") {
+    return b.totalMergedPrs - a.totalMergedPrs || a.login.localeCompare(b.login);
+  }
 
-    return a.login.localeCompare(b.login);
-  });
+  return a.login.localeCompare(b.login);
+}
+
+function sortDetailedContributors(
+  contributors: ContributorRecord[],
+  milestone: MilestoneField,
+  sort: SortOption
+): ContributorRecord[] {
+  const visible = contributors.filter((contributor) => !contributor.hidden);
+  const hidden = contributors.filter((contributor) => contributor.hidden);
+  const sortGroup = (items: ContributorRecord[]) => [...items].sort((a, b) => compareContributors(a, b, milestone, sort));
+
+  return [...sortGroup(visible), ...sortGroup(hidden)];
 }
 
 function getMilestoneLabel(milestone: MilestoneField): string {
@@ -139,24 +143,19 @@ function buildResultSummary(filters: SubmittedFilters): string {
   }
 
   if (filters.query) {
-    rangeParts.push(`matching “${filters.query}”`);
-  }
-
-  if (!filters.includeHidden) {
-    rangeParts.push("excluding hidden contributors");
+    rangeParts.push(`matching "${filters.query}"`);
   }
 
   return rangeParts.length > 0 ? `${milestoneLabel} ${rangeParts.join(" • ")}` : `${milestoneLabel} across all tracked contributors`;
 }
 
-export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQueryData }) {
+export function DetailedMergedPrQueryClient({ data }: { data: DetailedContributorDirectoryData }) {
   const [milestone, setMilestone] = useState<MilestoneField>("firstMergedPr");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
   const [year, setYear] = useState<string>(ALL_YEARS_VALUE);
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<SortOption>("matched-desc");
-  const [includeHidden, setIncludeHidden] = useState(true);
   const [submittedFilters, setSubmittedFilters] = useState<SubmittedFilters | null>(null);
   const [formError, setFormError] = useState("");
 
@@ -166,10 +165,6 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
     }
 
     const filtered = data.contributors.filter((contributor) => {
-      if (!submittedFilters.includeHidden && contributor.hidden) {
-        return false;
-      }
-
       const matchedPr = getMilestone(contributor, submittedFilters.milestone);
       const matchedDate = new Date(matchedPr.mergedAt);
 
@@ -188,7 +183,7 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
       return matchesTextQuery(contributor, submittedFilters.query, submittedFilters.milestone);
     });
 
-    return sortContributors(filtered, submittedFilters.milestone, submittedFilters.sort);
+    return sortDetailedContributors(filtered, submittedFilters.milestone, submittedFilters.sort);
   }, [data.contributors, submittedFilters]);
 
   const hiddenMatches = matchedContributors.filter((contributor) => contributor.hidden).length;
@@ -215,7 +210,6 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
       year,
       query: query.trim(),
       sort,
-      includeHidden,
     });
   }
 
@@ -226,27 +220,28 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
     setYear(ALL_YEARS_VALUE);
     setQuery("");
     setSort("matched-desc");
-    setIncludeHidden(true);
     setSubmittedFilters(null);
     setFormError("");
   }
 
   return (
-    <div className="directory-root internal-directory-root">
+    <div className="directory-root detailed-directory-root">
       <main className="page-shell">
+        <PageNav current="detailed" />
+
         <section className="hero-card">
           <div className="hero-grid">
             <div>
               <div className="hero-badge-row">
-                <p className="eyebrow">Internal</p>
-                <p className="eyebrow eyebrow-muted">Merged PR query view</p>
+                <p className="eyebrow">OpenHands Champions</p>
+                <p className="eyebrow eyebrow-muted">Detailed merged PR view</p>
               </div>
 
-              <h1>Query PR champions without touching the public leaderboard</h1>
+              <h1>Query PR champions with public detailed results</h1>
 
               <p className="hero-copy">
-                Start with a blank slate, then filter contributors by their first or most recent merged PR date, narrow by
-                milestone year, and search by person or repo context.
+                Filter contributors by first or most recent merged PR date, narrow by milestone year, and search by public
+                contributor context. Hidden contributors stay counted here as anonymized rows at the end of the results.
               </p>
 
               <div className="hero-actions">
@@ -263,8 +258,8 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
               <p className="hero-side-eyebrow">Scope</p>
               <ul className="hero-list">
                 <li>Query contributor milestones only: first merged PR or most recent merged PR.</li>
-                <li>Run precise date windows without exposing extra controls on the public directory.</li>
-                <li>Include hidden contributors when you need the full internal dataset.</li>
+                <li>Run precise date windows without changing the main public leaderboard.</li>
+                <li>Hidden contributors remain counted here as fully anonymized rows.</li>
               </ul>
               <p className="hero-side-meta">
                 Last synced <strong>{data.generatedAt ? `${formatUtcTimestamp(data.generatedAt)} UTC` : "Not synced yet"}</strong>
@@ -276,7 +271,7 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
           </div>
         </section>
 
-        <section className="stats-grid" aria-label="Merged PR query data summary">
+        <section className="stats-grid" aria-label="Detailed merged PR query data summary">
           <div>
             <span>Tracked contributors</span>
             <strong>{data.contributors.length}</strong>
@@ -293,16 +288,15 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
 
         <section className="toolbar-card" id="query-console">
           <div className="toolbar-copy">
-            <p className="eyebrow eyebrow-dark">Query console</p>
+            <p className="eyebrow eyebrow-dark">Detailed query console</p>
             <h2 className="section-title">Run a structured merged PR query</h2>
             <p className="toolbar-note">
-              Pick the contributor milestone you care about, add a date range when needed, and only then render the
-              matching rows.
+              Pick the contributor milestone you care about, add a date range when needed, and render detailed public rows.
             </p>
           </div>
 
           <form className="toolbar-controls" onSubmit={handleRunQuery}>
-            <div className="toolbar-filter-grid internal-toolbar-filter-grid">
+            <div className="toolbar-filter-grid detailed-toolbar-filter-grid">
               <label className="search-field">
                 <span>Milestone</span>
                 <select value={milestone} onChange={(event) => setMilestone(event.target.value as MilestoneField)}>
@@ -349,16 +343,11 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
                   <option value="matched-desc">Matched date: newest first</option>
                   <option value="matched-asc">Matched date: oldest first</option>
                   <option value="total-desc">Merged PRs: highest first</option>
-                  <option value="login-asc">GitHub login: A → Z</option>
-                  <option value="name-asc">Name: A → Z</option>
+                  <option value="login-asc">GitHub login: A-Z</option>
+                  <option value="name-asc">Name: A-Z</option>
                 </select>
               </label>
             </div>
-
-            <label className="checkbox-field">
-              <input type="checkbox" checked={includeHidden} onChange={(event) => setIncludeHidden(event.target.checked)} />
-              <span>Include hidden contributors in the internal query results</span>
-            </label>
 
             {formError ? <p className="query-callout query-callout-error">{formError}</p> : null}
 
@@ -380,11 +369,11 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
                 <strong>{matchedContributors.length}</strong> contributors matched <strong>{buildResultSummary(submittedFilters)}</strong>.
               </p>
               <p>
-                Showing <strong>{hiddenMatches}</strong> hidden matches and <strong>{totalMergedPrsAcrossMatches}</strong> lifetime merged PRs across the result set.
+                Showing <strong>{hiddenMatches}</strong> anonymized hidden matches and <strong>{totalMergedPrsAcrossMatches}</strong> lifetime merged PRs across the result set.
               </p>
             </section>
 
-            <section className="stats-grid" aria-label="Merged PR query result summary">
+            <section className="stats-grid" aria-label="Detailed merged PR query result summary">
               <div>
                 <span>Matches</span>
                 <strong>{matchedContributors.length}</strong>
@@ -395,7 +384,7 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
               </div>
               <div>
                 <span>Years represented</span>
-                <strong>{matchingYears || "—"}</strong>
+                <strong>{matchingYears || "-"}</strong>
               </div>
             </section>
 
@@ -433,6 +422,27 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
                   <tbody>
                     {matchedContributors.length > 0 ? (
                       matchedContributors.map((contributor) => {
+                        if (contributor.hidden) {
+                          return (
+                            <tr key={contributor.githubUserId} className="directory-row">
+                              <td>
+                                <div className="identity-cell">
+                                  <span>{HIDDEN_USER_LABEL}</span>
+                                </div>
+                              </td>
+                              <td>{HIDDEN_USER_LABEL}</td>
+                              <td>{HIDDEN_USER_LABEL}</td>
+                              <td className="query-table-date">{HIDDEN_USER_LABEL}</td>
+                              <td>{HIDDEN_USER_LABEL}</td>
+                              <td>{HIDDEN_USER_LABEL}</td>
+                              <td>{HIDDEN_USER_LABEL}</td>
+                              <td>
+                                <span className="status-pill status-pill-hidden">Hidden</span>
+                              </td>
+                            </tr>
+                          );
+                        }
+
                         const matchedPr = getMilestone(contributor, submittedFilters.milestone);
 
                         return (
@@ -449,7 +459,7 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
                                 <span>@{contributor.login}</span>
                               </div>
                             </td>
-                            <td>{contributor.name || <span className="table-muted">—</span>}</td>
+                            <td>{contributor.name || <span className="table-muted">-</span>}</td>
                             <td>
                               <a href={matchedPr.url} target="_blank" rel="noreferrer" className="table-link">
                                 {matchedPr.repo} #{matchedPr.number}
@@ -469,9 +479,7 @@ export function InternalMergedPrQueryClient({ data }: { data: InternalMergedPrQu
                             </td>
                             <td>{contributor.totalMergedPrs}</td>
                             <td>
-                              <span className={`status-pill${contributor.hidden ? " status-pill-hidden" : ""}`}>
-                                {contributor.hidden ? "Hidden" : "Public"}
-                              </span>
+                              <span className="status-pill">Public</span>
                             </td>
                           </tr>
                         );

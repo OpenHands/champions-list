@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type PageKind = "contributors" | "issues";
+type PageKind = "contributors" | "detailed" | "issues";
 
 const navItems: Array<{
   key: PageKind;
@@ -13,6 +13,12 @@ const navItems: Array<{
     href: "/",
     label: "PR Champions",
     copy: "Merged PR contributors",
+  },
+  {
+    key: "detailed",
+    href: "/detailed",
+    label: "Detailed",
+    copy: "Granular PR query view",
   },
   {
     key: "issues",

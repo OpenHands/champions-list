@@ -82,6 +82,20 @@ export interface ContributorDirectoryData {
   contributors: ContributorRecord[];
 }
 
+export interface DetailedContributorDirectoryData {
+  generatedAt: string | null;
+  organization: string;
+  repoCount: number;
+  scannedRepoCount: number;
+  totalMergedPrs: number;
+  hiddenContributorCount: number;
+  visibleContributorCount: number;
+  availableYears: string[];
+  contributors: ContributorRecord[];
+}
+
+export const HIDDEN_USER_LABEL = "Hidden user";
+
 function normalizeText(value: string | undefined): string {
   return value?.trim() ?? "";
 }
@@ -166,6 +180,70 @@ function sortByRecentMergedPr(a: GeneratedRecentMergedPr, b: GeneratedRecentMerg
     new Date(b.pullRequest.mergedAt).getTime() - new Date(a.pullRequest.mergedAt).getTime() ||
     a.login.localeCompare(b.login)
   );
+}
+
+function anonymizePullRequestSummary(summary: PullRequestSummary): PullRequestSummary {
+  return {
+    repo: HIDDEN_USER_LABEL,
+    number: 0,
+    title: HIDDEN_USER_LABEL,
+    url: "",
+    mergedAt: summary.mergedAt,
+  };
+}
+
+function anonymizeYearlyStats(yearly: Record<string, YearlyMergedPrStats>): Record<string, YearlyMergedPrStats> {
+  return Object.fromEntries(
+    Object.entries(yearly).map(([year, stats]) => [
+      year,
+      {
+        totalMergedPrs: stats.totalMergedPrs,
+        firstMergedPr: anonymizePullRequestSummary(stats.firstMergedPr),
+        mostRecentMergedPr: anonymizePullRequestSummary(stats.mostRecentMergedPr),
+      },
+    ])
+  );
+}
+
+function anonymizeContributorRecord(contributor: ContributorRecord, hiddenIndex: number): ContributorRecord {
+  return {
+    ...contributor,
+    githubUserId: `hidden-user-${hiddenIndex}`,
+    login: HIDDEN_USER_LABEL,
+    avatarUrl: "",
+    profileUrl: "",
+    name: HIDDEN_USER_LABEL,
+    note: HIDDEN_USER_LABEL,
+    firstMergedPr: anonymizePullRequestSummary(contributor.firstMergedPr),
+    mostRecentMergedPr: anonymizePullRequestSummary(contributor.mostRecentMergedPr),
+    yearly: anonymizeYearlyStats(contributor.yearly),
+  };
+}
+
+export function getDetailedContributorDirectoryData(): DetailedContributorDirectoryData {
+  const { generated, contributors, visibleContributors } = buildContributorRecords();
+  let hiddenIndex = 0;
+
+  const detailedContributors = contributors.map((contributor) => {
+    if (!contributor.hidden) {
+      return contributor;
+    }
+
+    hiddenIndex += 1;
+    return anonymizeContributorRecord(contributor, hiddenIndex);
+  });
+
+  return {
+    generatedAt: generated.generatedAt,
+    organization: generated.organization,
+    repoCount: generated.repoCount,
+    scannedRepoCount: generated.scannedRepoCount,
+    totalMergedPrs: contributors.reduce((total, contributor) => total + contributor.totalMergedPrs, 0),
+    hiddenContributorCount: contributors.length - visibleContributors.length,
+    visibleContributorCount: visibleContributors.length,
+    availableYears: sortYearsDesc(contributors.flatMap((contributor) => contributor.contributionYears)),
+    contributors: detailedContributors,
+  };
 }
 
 export function getContributorDirectoryData(): ContributorDirectoryData {
