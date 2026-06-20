@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-06-19T05:41:05.079Z",
+  "generatedAt": "2026-06-20T05:27:52.747Z",
   "organization": "OpenHands",
   "repoCount": 42,
   "scannedRepoCount": 42,
-  "totalMergedPrs": 2473,
+  "totalMergedPrs": 2477,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "41357160",
+      "login": "kimnamu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/41357160?u=50073bf4feaf177169d05e3fd71185ea7fa31708&v=4",
+      "profileUrl": "https://github.com/kimnamu",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3695,
+        "title": "fix(llm): recognize claude-opus-4-8 as a reasoning model on Bedrock",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3695",
+        "mergedAt": "2026-06-20T02:50:53Z"
+      }
+    },
+    {
+      "githubUserId": "71692995",
+      "login": "Zheng-Lu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/71692995?u=6f496245ad06abb5c7bd366bd4a25108749fcbe2&v=4",
+      "profileUrl": "https://github.com/Zheng-Lu",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3206,
+        "title": "Move mixed marketplace skills example",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3206",
+        "mergedAt": "2026-06-19T22:23:07Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 581,
+        "title": "Document conversation goal endpoints",
+        "url": "https://github.com/OpenHands/docs/pull/581",
+        "mergedAt": "2026-06-19T15:18:36Z"
+      }
+    },
+    {
+      "githubUserId": "290846905",
+      "login": "lexcodes-dev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/290846905?u=df022dffa57f00b9dc4d90ccc6ffbb2097826b53&v=4",
+      "profileUrl": "https://github.com/lexcodes-dev",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14907,
+        "title": "docs: fix broken README urls",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14907",
+        "mergedAt": "2026-06-19T11:19:34Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -733,61 +785,95 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/3457",
         "mergedAt": "2026-06-09T12:31:45Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3554,
-        "title": "fix(llm): gate Responses reasoning options by model support",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3554",
-        "mergedAt": "2026-06-09T12:30:31Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3551,
-        "title": "Clarify required HUMAN placeholders in PR template",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3551",
-        "mergedAt": "2026-06-09T12:19:29Z"
-      }
-    },
-    {
-      "githubUserId": "210140076",
-      "login": "muff-c",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/210140076?v=4",
-      "profileUrl": "https://github.com/muff-c",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1230,
-        "title": "fix: require I18nKey for translation calls",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1230",
-        "mergedAt": "2026-06-09T12:13:06Z"
-      }
-    },
-    {
-      "githubUserId": "202828230",
-      "login": "Fieldnote-Echo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=c04d4bd482ffd588f8c6378c6653c1b1625b371b&v=4",
-      "profileUrl": "https://github.com/Fieldnote-Echo",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3578,
-        "title": "refactor(tools): reuse shared shell parser in terminal command utilities",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3578",
-        "mergedAt": "2026-06-09T06:47:46Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "41357160",
+      "login": "kimnamu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/41357160?u=50073bf4feaf177169d05e3fd71185ea7fa31708&v=4",
+      "profileUrl": "https://github.com/kimnamu",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3695,
+        "title": "fix(llm): recognize claude-opus-4-8 as a reasoning model on Bedrock",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3695",
+        "mergedAt": "2026-06-20T02:50:53Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3695,
+        "title": "fix(llm): recognize claude-opus-4-8 as a reasoning model on Bedrock",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3695",
+        "mergedAt": "2026-06-20T02:50:53Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 3695,
+            "title": "fix(llm): recognize claude-opus-4-8 as a reasoning model on Bedrock",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3695",
+            "mergedAt": "2026-06-20T02:50:53Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 3695,
+            "title": "fix(llm): recognize claude-opus-4-8 as a reasoning model on Bedrock",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3695",
+            "mergedAt": "2026-06-20T02:50:53Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "71692995",
+      "login": "Zheng-Lu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/71692995?u=6f496245ad06abb5c7bd366bd4a25108749fcbe2&v=4",
+      "profileUrl": "https://github.com/Zheng-Lu",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 2552,
+        "title": "fix(sdk): resize Anthropic many-image inputs",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2552",
+        "mergedAt": "2026-05-05T15:52:48Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3206,
+        "title": "Move mixed marketplace skills example",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3206",
+        "mergedAt": "2026-06-19T22:23:07Z"
+      },
+      "totalMergedPrs": 3,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 3,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 2552,
+            "title": "fix(sdk): resize Anthropic many-image inputs",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2552",
+            "mergedAt": "2026-05-05T15:52:48Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 3206,
+            "title": "Move mixed marketplace skills example",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3206",
+            "mergedAt": "2026-06-19T22:23:07Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -801,13 +887,13 @@
         "mergedAt": "2024-03-27T03:03:23Z"
       },
       "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3788,
-        "title": "feat: API design: launched agent profile provenance names",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3788",
-        "mergedAt": "2026-06-18T13:41:58Z"
+        "repo": "docs",
+        "number": 581,
+        "title": "Document conversation goal endpoints",
+        "url": "https://github.com/OpenHands/docs/pull/581",
+        "mergedAt": "2026-06-19T15:18:36Z"
       },
-      "totalMergedPrs": 722,
+      "totalMergedPrs": 723,
       "contributionYears": [
         "2026",
         "2025",
@@ -849,7 +935,7 @@
           }
         },
         "2026": {
-          "totalMergedPrs": 284,
+          "totalMergedPrs": 285,
           "firstMergedPr": {
             "repo": "OpenHands",
             "number": 12234,
@@ -858,11 +944,54 @@
             "mergedAt": "2026-01-01T18:28:05Z"
           },
           "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3788,
-            "title": "feat: API design: launched agent profile provenance names",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3788",
-            "mergedAt": "2026-06-18T13:41:58Z"
+            "repo": "docs",
+            "number": 581,
+            "title": "Document conversation goal endpoints",
+            "url": "https://github.com/OpenHands/docs/pull/581",
+            "mergedAt": "2026-06-19T15:18:36Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "290846905",
+      "login": "lexcodes-dev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/290846905?u=df022dffa57f00b9dc4d90ccc6ffbb2097826b53&v=4",
+      "profileUrl": "https://github.com/lexcodes-dev",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 14907,
+        "title": "docs: fix broken README urls",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14907",
+        "mergedAt": "2026-06-19T11:19:34Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 14907,
+        "title": "docs: fix broken README urls",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14907",
+        "mergedAt": "2026-06-19T11:19:34Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 14907,
+            "title": "docs: fix broken README urls",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14907",
+            "mergedAt": "2026-06-19T11:19:34Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 14907,
+            "title": "docs: fix broken README urls",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14907",
+            "mergedAt": "2026-06-19T11:19:34Z"
           }
         }
       }
@@ -2311,49 +2440,6 @@
             "title": "Fix/laminar/remove litellm callback",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/3008",
             "mergedAt": "2026-05-13T13:19:37Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "71692995",
-      "login": "Zheng-Lu",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/71692995?u=6f496245ad06abb5c7bd366bd4a25108749fcbe2&v=4",
-      "profileUrl": "https://github.com/Zheng-Lu",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 2552,
-        "title": "fix(sdk): resize Anthropic many-image inputs",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2552",
-        "mergedAt": "2026-05-05T15:52:48Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3114,
-        "title": "fix(sdk): enforce disabled skill model invocation",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3114",
-        "mergedAt": "2026-05-11T07:42:19Z"
-      },
-      "totalMergedPrs": 2,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 2,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2552,
-            "title": "fix(sdk): resize Anthropic many-image inputs",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2552",
-            "mergedAt": "2026-05-05T15:52:48Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3114,
-            "title": "fix(sdk): enforce disabled skill model invocation",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3114",
-            "mergedAt": "2026-05-11T07:42:19Z"
           }
         }
       }
