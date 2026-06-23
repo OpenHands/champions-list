@@ -22,7 +22,7 @@ This automation runs daily to welcome first-time contributors when their first P
 
 ## Repositories Monitored
 
-Hardcoded list of OpenHands public repositories. Can be extended.
+Dynamically discovered at runtime via GitHub GraphQL API — all public repositories in the OpenHands organization.
 
 ## Environment Variables Required
 

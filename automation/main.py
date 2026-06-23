@@ -27,19 +27,6 @@ class ContributorPR:
     merged_at: datetime
 
 
-def get_repos_to_monitor() -> list[str]:
-    """List of OpenHands public repositories to monitor."""
-    return [
-        "OpenHands/OpenHands",
-        "OpenHands/software-agent-sdk",
-        "OpenHands/extensions",
-        "OpenHands/docs",
-        "OpenHands/agent-canvas",
-        "OpenHands/automation",
-        "OpenHands/champions-list",
-    ]
-
-
 def run_automation():
     """Main automation logic."""
     github_token = os.environ.get("GITHUB_TOKEN")
@@ -55,8 +42,15 @@ def run_automation():
     
     print(f"[{now.isoformat()}] Starting welcome automation")
     print(f"Looking for PRs merged since {since.isoformat()}")
-
-    repos = get_repos_to_monitor()
+    
+    # Dynamically discover all public repos in the org
+    print("\nDiscovering public repositories...")
+    try:
+        repos = client.get_org_public_repos()
+        print(f"Found {len(repos)} public repositories")
+    except Exception as e:
+        print(f"ERROR discovering repositories: {e}")
+        sys.exit(1)
     
     # Track contributors we've welcomed in this run (in-memory dedup)
     welcomed_this_run: set[int] = set()

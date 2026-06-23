@@ -3,33 +3,62 @@
 GitHub API client for the welcome automation.
 """
 
-import os
 import time
-from datetime import datetime, timezone
-from dataclasses import dataclass
+from datetime import datetime
 from typing import Optional
 import urllib.request
 import urllib.error
 import json
 
 
-@dataclass
-class ContributorPR:
-    repo: str
-    pr_number: int
-    pr_url: str
-    pr_title: str
-    contributor_login: str
-    contributor_id: int
-    merged_at: datetime
-
-
 class GitHubClient:
+    ORG = "OpenHands"
+
     def __init__(self, token: str):
         self.token = token
         self.base_url = "https://api.github.com"
         self.rate_limit_remaining = None
         self.rate_limit_reset = None
+
+    def get_org_public_repos(self) -> list[str]:
+        """Get all public repository names for the OpenHands org."""
+        repos = []
+        end_cursor = None
+        
+        while True:
+            after_clause = f', after: "{end_cursor}"' if end_cursor else ""
+            
+            query = """
+            {
+              organization(login: "OpenHands") {
+                repositories(first: 100%s, privacy: PUBLIC) {
+                  pageInfo { hasNextPage endCursor }
+                  nodes { name }
+                }
+              }
+            }
+            """ % after_clause
+            
+            data = self._request_graphql(query)
+            
+            org = data.get("data", {}).get("organization")
+            if not org:
+                break
+                
+            page = org.get("repositories", {})
+            for repo in page.get("nodes", []):
+                repos.append(f"OpenHands/{repo['name']}")
+            
+            page_info = page.get("pageInfo", {})
+            if not page_info.get("hasNextPage"):
+                break
+            end_cursor = page_info.get("endCursor")
+        
+        return repos
+
+    def _request_graphql(self, query: str) -> dict:
+        """Make a GraphQL request to the GitHub API."""
+        return self._request("POST", "/graphql", {"query": query})
 
     def _request(self, method: str, endpoint: str, data: Optional[dict] = None) -> dict:
         """Make an authenticated request to the GitHub API."""
