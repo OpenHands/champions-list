@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""
-GitHub API client for the welcome automation.
-"""
+"""GitHub API client for the welcome automation."""
 
-import time
-from datetime import datetime
-from typing import Optional
-import urllib.request
-import urllib.error
+from __future__ import annotations
+
 import json
+import time
+import urllib.error
+import urllib.request
+from datetime import datetime, timezone
+from typing import Any, Optional
+
+from .models import ContributorPR
 
 
 class GitHubClient:
@@ -17,184 +19,136 @@ class GitHubClient:
     def __init__(self, token: str):
         self.token = token
         self.base_url = "https://api.github.com"
-        self.rate_limit_remaining = None
-        self.rate_limit_reset = None
+        self.rate_limit_remaining: Optional[int] = None
+        self.rate_limit_reset: Optional[int] = None
+        self.rate_limit_resource: Optional[str] = None
 
     def get_org_public_repos(self) -> list[str]:
         """Get all public repository names for the OpenHands org."""
-        repos = []
-        end_cursor = None
-        
-        while True:
-            after_clause = f', after: "{end_cursor}"' if end_cursor else ""
-            
-            query = """
-            {
-              organization(login: "OpenHands") {
-                repositories(first: 100%s, privacy: PUBLIC) {
-                  pageInfo { hasNextPage endCursor }
-                  nodes { name }
-                }
-              }
+        query = """
+        query PublicRepos($org: String!, $cursor: String) {
+          organization(login: $org) {
+            repositories(first: 100, after: $cursor, privacy: PUBLIC, orderBy: { field: NAME, direction: ASC }) {
+              nodes { name }
+              pageInfo { hasNextPage endCursor }
             }
-            """ % after_clause
-            
-            data = self._request_graphql(query)
-            
-            org = data.get("data", {}).get("organization")
-            if not org:
+          }
+        }
+        """
+
+        repos: list[str] = []
+        cursor = None
+
+        while True:
+            data = self._request_graphql(query, {"org": self.ORG, "cursor": cursor})
+            page = data.get("data", {}).get("organization", {}).get("repositories")
+            if not page:
                 break
-                
-            page = org.get("repositories", {})
-            for repo in page.get("nodes", []):
-                repos.append(f"OpenHands/{repo['name']}")
-            
+
+            repos.extend(f"{self.ORG}/{repo['name']}" for repo in page.get("nodes", []))
+
             page_info = page.get("pageInfo", {})
             if not page_info.get("hasNextPage"):
                 break
-            end_cursor = page_info.get("endCursor")
-        
+            cursor = page_info.get("endCursor")
+
         return repos
 
-    def _request_graphql(self, query: str) -> dict:
-        """Make a GraphQL request to the GitHub API."""
-        return self._request("POST", "/graphql", {"query": query})
-
-    def _request(self, method: str, endpoint: str, data: Optional[dict] = None) -> dict:
-        """Make an authenticated request to the GitHub API."""
-        url = f"{self.base_url}{endpoint}"
-        
-        headers = {
-            "Authorization": f"Bearer {self.token}",
-            "Accept": "application/vnd.github.v3+json",
-            "X-GitHub-Api-Version": "2022-11-28",
-        }
-        
-        request_data = json.dumps(data).encode() if data else None
-        if request_data:
-            headers["Content-Type"] = "application/json"
-        
-        req = urllib.request.Request(url, data=request_data, headers=headers, method=method)
-        
-        try:
-            with urllib.request.urlopen(req) as response:
-                self._update_rate_limits(response)
-                return json.loads(response.read().decode())
-        except urllib.error.HTTPError as e:
-            self._update_rate_limits_from_headers(e)
-            
-            if e.code == 403:
-                if self.rate_limit_remaining == 0:
-                    reset_time = self.rate_limit_reset or time.time() + 3600
-                    wait_seconds = max(1, reset_time - time.time())
-                    print(f"  Rate limited. Waiting {wait_seconds:.0f} seconds...")
-                    time.sleep(wait_seconds)
-                    return self._request(method, endpoint, data)
-            
-            raise GitHubAPIError(f"HTTP {e.code}: {e.reason}", e.code)
-        except urllib.error.URLError as e:
-            raise GitHubAPIError(f"Network error: {e.reason}")
-
-    def _update_rate_limits(self, response):
-        """Extract rate limit info from response headers."""
-        self.rate_limit_remaining = int(response.headers.get("X-RateLimit-Remaining", 0))
-        reset_header = response.headers.get("X-RateLimit-Reset")
-        if reset_header:
-            self.rate_limit_reset = int(reset_header)
-
-    def _update_rate_limits_from_headers(self, error: urllib.error.HTTPError):
-        """Extract rate limit info from error response headers."""
-        self.rate_limit_remaining = int(error.headers.get("X-RateLimit-Remaining", 0))
-        reset_header = error.headers.get("X-RateLimit-Reset")
-        if reset_header:
-            self.rate_limit_reset = int(reset_header)
-
     def get_merged_prs_since(self, repo: str, since: datetime) -> list[ContributorPR]:
-        """Get all merged PRs for a repo since the given datetime."""
-        # Use search API to find merged PRs in time range
-        since_iso = since.strftime("%Y-%m-%dT%H:%M:%SZ")
-        
-        # Search for PRs merged since the given time
-        query = f"repo:{repo} is:pr is:merged merged:>={since_iso}"
-        encoded_query = urllib.request.quote(query)
-        
-        results = []
-        page = 1
-        per_page = 100
-        
+        """Get merged PRs for a repo whose merge timestamp falls within the time window."""
+        query = """
+        query RepoRecentMergedPullRequests($org: String!, $repo: String!, $cursor: String) {
+          repository(owner: $org, name: $repo) {
+            pullRequests(first: 100, after: $cursor, states: MERGED, orderBy: { field: UPDATED_AT, direction: DESC }) {
+              nodes {
+                number
+                title
+                url
+                mergedAt
+                updatedAt
+                author {
+                  __typename
+                  login
+                  ... on User {
+                    databaseId
+                  }
+                }
+              }
+              pageInfo {
+                hasNextPage
+                endCursor
+              }
+            }
+          }
+        }
+        """
+
+        results: list[ContributorPR] = []
+        cursor = None
+
         while True:
-            data = self._request(
-                "GET", 
-                f"/search/issues?q={encoded_query}&sort=updated&order=desc&per_page={per_page}&page={page}"
-            )
-            
-            for item in data.get("items", []):
-                if item["pull_request"] is None:
+            data = self._request_graphql(query, {"org": self.ORG, "repo": repo.split("/", 1)[1], "cursor": cursor})
+            page = data.get("data", {}).get("repository", {}).get("pullRequests")
+            if not page:
+                break
+
+            nodes = page.get("nodes", [])
+            for node in nodes:
+                merged_at_str = node.get("mergedAt")
+                if not merged_at_str:
                     continue
-                    
-                # Get the merged event from timeline
-                merged_at = self._get_merged_at(repo, item["number"])
-                if merged_at and merged_at >= since:
-                    pr = ContributorPR(
+
+                merged_at = self._parse_datetime(merged_at_str)
+                if merged_at < since:
+                    continue
+
+                author = node.get("author") or {}
+                results.append(
+                    ContributorPR(
                         repo=repo,
-                        pr_number=item["number"],
-                        pr_url=item["html_url"],
-                        pr_title=item["title"],
-                        contributor_login=item["user"]["login"],
-                        contributor_id=item["user"]["id"],
+                        pr_number=node["number"],
+                        pr_url=node["url"],
+                        pr_title=node["title"],
+                        contributor_login=author.get("login", ""),
+                        contributor_id=author.get("databaseId"),
+                        contributor_type=author.get("__typename", ""),
                         merged_at=merged_at,
                     )
-                    results.append(pr)
-            
-            # Check if there are more pages
-            if len(data.get("items", [])) < per_page:
+                )
+
+            page_info = page.get("pageInfo", {})
+            if not page_info.get("hasNextPage"):
                 break
-            
-            page += 1
-            
-            # Respect rate limits
-            if self.rate_limit_remaining is not None and self.rate_limit_remaining < 10:
-                print(f"  Rate limit low ({self.rate_limit_remaining}), waiting...")
-                time.sleep(5)
-        
+
+            if self._page_is_older_than_window(nodes, since):
+                break
+
+            cursor = page_info.get("endCursor")
+            if not cursor:
+                break
+
         return results
 
-    def _get_merged_at(self, repo: str, pr_number: int) -> Optional[datetime]:
-        """Get the merged_at timestamp for a PR."""
-        data = self._request("GET", f"/repos/{repo}/pulls/{pr_number}")
-        merged_at_str = data.get("merged_at")
-        
-        if merged_at_str:
-            return datetime.fromisoformat(merged_at_str.replace("Z", "+00:00"))
-        return None
-
-    def get_contributor_merged_prs(self, repo: str, username: str, before: datetime) -> list[dict]:
-        """Get all merged PRs by a specific contributor to a repo, before a given time."""
-        query = f"repo:{repo} author:{username} is:pr is:merged merged:<{before.strftime('%Y-%m-%dT%H:%M:%SZ')}"
-        encoded_query = urllib.request.quote(query)
-        
-        data = self._request(
-            "GET",
-            f"/search/issues?q={encoded_query}&sort=updated&order=desc&per_page=1"
-        )
-        
-        # If we find any, they're a returning contributor
-        return data.get("items", [])
-
-    def get_org_merged_prs_count(self, username: str) -> int:
+    def has_prior_org_merged_pr(self, username: str, before: datetime) -> bool:
+        """Return True when the contributor has any earlier merged PR in the org."""
+        query = """
+        query PriorMergedPullRequest($query: String!) {
+          search(query: $query, type: ISSUE, first: 1) {
+            nodes {
+              ... on PullRequest {
+                number
+              }
+            }
+          }
+        }
         """
-        Get total count of merged PRs by a user across all OpenHands repos.
-        This is a quick check to see if they've contributed before.
-        """
-        query = f"org:OpenHands author:{username} is:pr is:merged"
-        encoded_query = urllib.request.quote(query)
-        
-        data = self._request(
-            "GET",
-            f"/search/issues?q={encoded_query}&per_page=1"
+        search_query = (
+            f"org:{self.ORG} author:{username} is:pr is:merged "
+            f"merged:<{before.strftime('%Y-%m-%dT%H:%M:%SZ')}"
         )
-        
-        return data.get("total_count", 0)
+        data = self._request_graphql(query, {"query": search_query})
+        nodes = data.get("data", {}).get("search", {}).get("nodes", [])
+        return len(nodes) > 0
 
     def post_comment(self, repo: str, pr_number: int, body: str) -> bool:
         """Post a comment on a PR."""
@@ -202,11 +156,126 @@ class GitHubClient:
             self._request(
                 "POST",
                 f"/repos/{repo}/issues/{pr_number}/comments",
-                {"body": body}
+                {"body": body},
             )
             return True
         except GitHubAPIError:
             return False
+
+    def _request_graphql(self, query: str, variables: Optional[dict[str, object]] = None) -> dict[str, Any]:
+        """Make a GraphQL request to the GitHub API."""
+        payload: dict[str, object] = {"query": query}
+        if variables is not None:
+            payload["variables"] = variables
+
+        data = self._request("POST", "/graphql", payload)
+        errors = data.get("errors")
+        if errors:
+            message = "; ".join(error.get("message", "Unknown GraphQL error") for error in errors)
+            raise GitHubAPIError(message)
+        return data
+
+    def _request(self, method: str, endpoint: str, data: Optional[dict[str, object]] = None) -> dict[str, Any]:
+        """Make an authenticated request to the GitHub API with bounded rate-limit retries."""
+        url = f"{self.base_url}{endpoint}"
+        headers = {
+            "Authorization": f"Bearer {self.token}",
+            "Accept": "application/vnd.github.v3+json",
+            "User-Agent": "OpenHands Champions Welcome Automation",
+            "X-GitHub-Api-Version": "2022-11-28",
+        }
+
+        request_data = json.dumps(data).encode() if data else None
+        if request_data:
+            headers["Content-Type"] = "application/json"
+
+        for attempt in range(2):
+            req = urllib.request.Request(url, data=request_data, headers=headers, method=method)
+            try:
+                with urllib.request.urlopen(req) as response:
+                    self._update_rate_limits(response)
+                    return json.loads(response.read().decode())
+            except urllib.error.HTTPError as error:
+                self._update_rate_limits(error)
+                error_body = self._read_error_body(error)
+                retry_after = self._get_retry_after_seconds(error, error_body)
+                if retry_after is not None and attempt == 0:
+                    resource = self.rate_limit_resource or "api"
+                    print(f"  {resource.capitalize()} rate limited. Waiting {retry_after:.0f} seconds...")
+                    time.sleep(retry_after)
+                    continue
+
+                raise GitHubAPIError(self._build_http_error_message(error, error_body), error.code) from error
+            except urllib.error.URLError as error:
+                raise GitHubAPIError(f"Network error: {error.reason}") from error
+
+        raise GitHubAPIError("Request failed after retry")
+
+    def _update_rate_limits(self, response: Any) -> None:
+        """Extract rate limit info from response headers."""
+        self.rate_limit_remaining = self._parse_int(response.headers.get("X-RateLimit-Remaining"))
+        self.rate_limit_reset = self._parse_int(response.headers.get("X-RateLimit-Reset"))
+        self.rate_limit_resource = response.headers.get("X-RateLimit-Resource")
+
+    def _get_retry_after_seconds(
+        self,
+        error: urllib.error.HTTPError,
+        error_body: str,
+    ) -> Optional[float]:
+        """Return a bounded retry delay when the error looks rate-limit related."""
+        if error.code not in {403, 429}:
+            return None
+
+        retry_after = self._parse_int(error.headers.get("Retry-After"))
+        if retry_after is not None:
+            return max(1.0, float(retry_after))
+
+        message = error_body.lower()
+        if self.rate_limit_remaining == 0 or "rate limit" in message or "secondary rate limit" in message:
+            reset_time = self.rate_limit_reset or int(time.time()) + 60
+            return max(1.0, min(float(reset_time - time.time()), 300.0))
+
+        return None
+
+    def _build_http_error_message(
+        self,
+        error: urllib.error.HTTPError,
+        error_body: str,
+    ) -> str:
+        """Create a readable error message from an HTTP error."""
+        body = error_body.strip()
+        if body:
+            return f"HTTP {error.code}: {error.reason} - {body}"
+        return f"HTTP {error.code}: {error.reason}"
+
+    def _read_error_body(self, error: urllib.error.HTTPError) -> str:
+        """Safely read the HTTP error body without raising secondary errors."""
+        try:
+            return error.read().decode("utf-8", errors="replace")
+        except Exception:
+            return ""
+
+    def _page_is_older_than_window(self, nodes: list[dict[str, Any]], since: datetime) -> bool:
+        """Return True when an entire page is older than the requested time window."""
+        updated_at_values = [
+            self._parse_datetime(node["updatedAt"])
+            for node in nodes
+            if node.get("updatedAt")
+        ]
+        return bool(updated_at_values) and all(updated_at < since for updated_at in updated_at_values)
+
+    @staticmethod
+    def _parse_int(value: Optional[str]) -> Optional[int]:
+        if value is None:
+            return None
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            return None
+
+    @staticmethod
+    def _parse_datetime(value: str) -> datetime:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
 
 
 class GitHubAPIError(Exception):
