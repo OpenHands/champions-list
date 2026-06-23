@@ -17,14 +17,14 @@ Congratulations on your first merged PR! You're a part of the [OpenHands Champio
 
 Looking forward to your next contribution!
 
-P.S. Prefer not to appear? Set `hidden: true` for your entry in the repo."""
+P.S. Prefer not to appear? Open a PR to set `hidden: true` in the repo."""
 
 
 WELCOME_MESSAGE_MINIMAL = """🎉 **Welcome to OpenHands!** 🎉
 
 Your first PR is merged — you're now in our [contributor directory](https://champions.hub.openhands.dev/).
 
-Add your name and a note (LinkedIn, links, etc.) by opening a PR to [openhands/champions-list](https://github.com/openhands/champions-list). Prefer not to appear? Set `hidden: true`.
+Add your name and a note (LinkedIn, links, etc.) by opening a PR to [openhands/champions-list](https://github.com/openhands/champions-list). Prefer not to appear? Open a PR to set `hidden: true`.
 
 Join us on [Slack](https://go.openhands.dev) to meet the community!"""
 

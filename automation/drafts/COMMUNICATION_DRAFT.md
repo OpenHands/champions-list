@@ -19,7 +19,7 @@ Congratulations on your first merged PR! You're a part of the [OpenHands Champio
 
 Looking forward to your next contribution!
 
-P.S. Prefer not to appear? Set `hidden: true` for your entry in the repo.
+P.S. Prefer not to appear? Open a PR to set `hidden: true` in the repo.
 ```
 
 ---
