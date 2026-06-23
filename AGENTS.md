@@ -7,6 +7,7 @@
   - `data/excluded-logins.json` for manually excluded employee/service-account logins
 - Sync command: `npm run sync:contributors` (requires `GITHUB_TOKEN`).
 - Daily sync is handled by `.github/workflows/sync-contributors.yml` and rewrites `README.md` as a teaser plus updates generated data.
+- `automation/` contains the separate OpenHands Cloud welcome-comment automation (`python automation/main.py`, cron `0 12 * * *`) that scans recent merged PRs, skips denylisted/bot/service-account authors via `data/excluded-logins.json`, and posts the first-time contributor welcome comment.
 - README regeneration preserves any content between `<!-- BEGIN MANUAL -->` and `<!-- END MANUAL -->` markers (intended for manual Hackers/Testers lists).
 - Contributor avatar wall is rendered via the Next.js route `app/api/contributor-wall` (served at `/api/contributor-wall`) using the synced contributor dataset and omitting hidden contributors.
 
@@ -20,6 +21,3 @@
 - The new `/issues` route mirrors the main directory UX with shared search/sort/pagination/ticker/accessibility patterns and uses the same `data/contributors.overrides.json` file for display-name and hide overrides.
 - `.github/workflows/sync-contributors.yml` now syncs both contributor and issue datasets in one run and commits `data/issues.generated.json` alongside the existing contributor assets.
 - The public detailed merged-PR query view now lives at `/detailed`; `/internal` and `/interal` permanently redirect there. The route is intentionally not linked from the top nav. The detailed page includes hidden contributors as fully anonymized rows appended after visible matches, while the main public directory continues to omit hidden contributors entirely.
-
-
-
