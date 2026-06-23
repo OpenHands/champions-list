@@ -8,14 +8,14 @@ Comment posted on a contributor's **first merged PR** to any OpenHands public re
 ## Welcome Message
 
 ```markdown
-🎉 **Welcome as a contributor!** 🎉
+🎉 **Welcome as a Merged PR contributor!** 🎉
 
-We're thrilled to have your first PR merged! You're now part of the [OpenHands Champions](https://champions.hub.openhands.dev/) — our public contributor directory.
+Congratulations on your first merged PR! You're a part of the [OpenHands Champions](https://champions.hub.openhands.dev/) — our public contributor directory.
 
 **Next steps:**
 - 🌟 Add your name and a note about what you're working on by opening a PR to [openhands/champions-list](https://github.com/openhands/champions-list) and editing `data/contributors.overrides.json`
 - 💬 Join the conversation on [Slack](https://go.openhands.dev) to meet other community members and maintainers
-- 🐛 Browse [open issues](https://github.com/search?q=repo%3AOpenHands%2F*+is%3Aissue+is%3Aopen&type=issues) to find your next contribution
+- 🐛 Browse [open issues](https://github.com/search?q=org%3AOpenHands+is%3Aissue+is%3Aopen&type=issues) to find your next contribution
 
 Looking forward to your next contribution!
 ```
