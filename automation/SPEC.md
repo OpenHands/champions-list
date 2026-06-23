@@ -46,10 +46,10 @@ automation/
 ## Scheduling
 
 ```
-0 10 * * *  # 10:00 UTC daily
+0 12 * * *  # 12:00 UTC daily
 ```
 
-In cron syntax: minute=0, hour=10, day=*, month=*, weekday=*
+In cron syntax: minute=0, hour=12, day=*, month=*, weekday=*
 
 ## Error Handling
 
