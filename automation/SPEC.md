@@ -17,7 +17,7 @@ This automation runs daily to welcome first-time contributors when their first P
 |----------|-----------|
 | No persistent state | Simplifies automation; missed welcomes aren't backfilled |
 | Check first PR date per contributor | Ensures we only welcome true first-timers |
-| Daily cron at 10 UTC | Allows GitHub sync to run first; reasonable business hours |
+| Daily cron at 12 UTC | Allows GitHub sync to run first; reasonable business hours |
 | Deduplicate per run | In-memory set prevents multiple comments if same contributor has multiple PRs |
 
 ## Repositories Monitored
