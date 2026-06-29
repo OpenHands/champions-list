@@ -1,11 +1,50 @@
 {
-  "generatedAt": "2026-06-28T05:28:23.755Z",
+  "generatedAt": "2026-06-29T05:32:55.077Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2504,
+  "totalMergedPrs": 2507,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "extensions",
+        "number": 376,
+        "title": "feat: add plain English content skill",
+        "url": "https://github.com/OpenHands/extensions/pull/376",
+        "mergedAt": "2026-06-29T02:40:41Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3904,
+        "title": "Accept additive REST response type widenings with release notes",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3904",
+        "mergedAt": "2026-06-29T02:33:10Z"
+      }
+    },
+    {
+      "githubUserId": "133221941",
+      "login": "ysinghc",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/133221941?u=7090d497d9977df85ea10e407e9c6ab93693e31c&v=4",
+      "profileUrl": "https://github.com/ysinghc",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 14699,
+        "title": "feat: implement semantic file chunking using tree-sitter AST parsing",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14699",
+        "mergedAt": "2026-06-28T18:53:58Z"
+      }
+    },
     {
       "githubUserId": "29340368",
       "login": "sjathin",
@@ -746,48 +785,131 @@
         "url": "https://github.com/OpenHands/agent-canvas/pull/1303",
         "mergedAt": "2026-06-11T18:22:52Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1304,
-        "title": "fix: stabilize snapshot consent handling",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1304",
-        "mergedAt": "2026-06-11T17:55:52Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3662,
-        "title": "fix(sdk): pin lmnr below incompatible release",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3662",
-        "mergedAt": "2026-06-11T17:53:47Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 14725,
-        "title": "refactor(llm): clean up reverse-mapping OpenHands provider models",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14725",
-        "mergedAt": "2026-06-11T17:38:40Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 232,
+        "title": "Make lint happy",
+        "url": "https://github.com/OpenHands/OpenHands/pull/232",
+        "mergedAt": "2024-03-27T03:03:23Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "extensions",
+        "number": 376,
+        "title": "feat: add plain English content skill",
+        "url": "https://github.com/OpenHands/extensions/pull/376",
+        "mergedAt": "2026-06-29T02:40:41Z"
+      },
+      "totalMergedPrs": 745,
+      "contributionYears": [
+        "2026",
+        "2025",
+        "2024"
+      ],
+      "yearly": {
+        "2024": {
+          "totalMergedPrs": 152,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 232,
+            "title": "Make lint happy",
+            "url": "https://github.com/OpenHands/OpenHands/pull/232",
+            "mergedAt": "2024-03-27T03:03:23Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 5948,
+            "title": "Load the event stream fix after it's no longer a dataclass",
+            "url": "https://github.com/OpenHands/OpenHands/pull/5948",
+            "mergedAt": "2024-12-31T22:03:57Z"
+          }
+        },
+        "2025": {
+          "totalMergedPrs": 286,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 5992,
+            "title": "Enable/disable function calling by user configuration",
+            "url": "https://github.com/OpenHands/OpenHands/pull/5992",
+            "mergedAt": "2025-01-03T00:40:49Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 12165,
+            "title": "chore: Mark V0 legacy files with clear headers and V1 pointers",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12165",
+            "mergedAt": "2025-12-29T23:21:29Z"
+          }
+        },
+        "2026": {
+          "totalMergedPrs": 307,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 12234,
+            "title": "Remove VSCode extension integration from OpenHands repo",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12234",
+            "mergedAt": "2026-01-01T18:28:05Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "extensions",
+            "number": 376,
+            "title": "feat: add plain English content skill",
+            "url": "https://github.com/OpenHands/extensions/pull/376",
+            "mergedAt": "2026-06-29T02:40:41Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "133221941",
+      "login": "ysinghc",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/133221941?u=7090d497d9977df85ea10e407e9c6ab93693e31c&v=4",
+      "profileUrl": "https://github.com/ysinghc",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 14699,
+        "title": "feat: implement semantic file chunking using tree-sitter AST parsing",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14699",
+        "mergedAt": "2026-06-28T18:53:58Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 14699,
+        "title": "feat: implement semantic file chunking using tree-sitter AST parsing",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14699",
+        "mergedAt": "2026-06-28T18:53:58Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 14699,
+            "title": "feat: implement semantic file chunking using tree-sitter AST parsing",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14699",
+            "mergedAt": "2026-06-28T18:53:58Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 14699,
+            "title": "feat: implement semantic file chunking using tree-sitter AST parsing",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14699",
+            "mergedAt": "2026-06-28T18:53:58Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "29340368",
       "login": "sjathin",
@@ -913,85 +1035,6 @@
             "title": "fix(examples): inherit acp-docker image from config/defaults.json",
             "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
             "mergedAt": "2026-06-26T23:21:33Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 232,
-        "title": "Make lint happy",
-        "url": "https://github.com/OpenHands/OpenHands/pull/232",
-        "mergedAt": "2024-03-27T03:03:23Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "typescript-client",
-        "number": 234,
-        "title": "ci: add release ready gate",
-        "url": "https://github.com/OpenHands/typescript-client/pull/234",
-        "mergedAt": "2026-06-26T15:52:33Z"
-      },
-      "totalMergedPrs": 743,
-      "contributionYears": [
-        "2026",
-        "2025",
-        "2024"
-      ],
-      "yearly": {
-        "2024": {
-          "totalMergedPrs": 152,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 232,
-            "title": "Make lint happy",
-            "url": "https://github.com/OpenHands/OpenHands/pull/232",
-            "mergedAt": "2024-03-27T03:03:23Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 5948,
-            "title": "Load the event stream fix after it's no longer a dataclass",
-            "url": "https://github.com/OpenHands/OpenHands/pull/5948",
-            "mergedAt": "2024-12-31T22:03:57Z"
-          }
-        },
-        "2025": {
-          "totalMergedPrs": 286,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 5992,
-            "title": "Enable/disable function calling by user configuration",
-            "url": "https://github.com/OpenHands/OpenHands/pull/5992",
-            "mergedAt": "2025-01-03T00:40:49Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 12165,
-            "title": "chore: Mark V0 legacy files with clear headers and V1 pointers",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12165",
-            "mergedAt": "2025-12-29T23:21:29Z"
-          }
-        },
-        "2026": {
-          "totalMergedPrs": 305,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 12234,
-            "title": "Remove VSCode extension integration from OpenHands repo",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12234",
-            "mergedAt": "2026-01-01T18:28:05Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "typescript-client",
-            "number": 234,
-            "title": "ci: add release ready gate",
-            "url": "https://github.com/OpenHands/typescript-client/pull/234",
-            "mergedAt": "2026-06-26T15:52:33Z"
           }
         }
       }
@@ -3164,7 +3207,7 @@
     {
       "githubUserId": "202552852",
       "login": "ixchio",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=f6fcd96f95dd7a336c96988fca78ff11b424a5f3&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=03c500bdb15d0a540f898ed1eec43989857e06ce&v=4",
       "profileUrl": "https://github.com/ixchio",
       "firstMergedPr": {
         "repo": "software-agent-sdk",
