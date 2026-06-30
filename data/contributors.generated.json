@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-06-29T05:32:55.077Z",
+  "generatedAt": "2026-06-30T05:21:12.997Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2507,
+  "totalMergedPrs": 2509,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "145739220",
+      "login": "wgu9",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/145739220?u=82420353b7bcfb19a5804fb1913fac4fe638b447&v=4",
+      "profileUrl": "https://github.com/wgu9",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 15004,
+        "title": "fix(enterprise): log automation HTTP response failures as errors",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15004",
+        "mergedAt": "2026-06-29T19:34:31Z"
+      }
+    },
+    {
+      "githubUserId": "455140",
+      "login": "mvanhorn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
+      "profileUrl": "https://github.com/mvanhorn",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3504,
+        "title": "fix: cap effective_max_output_tokens for non-Bedrock custom base_url providers",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3504",
+        "mergedAt": "2026-06-29T14:58:31Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -529,7 +555,7 @@
     {
       "githubUserId": "145739220",
       "login": "wgu9",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/145739220?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/145739220?u=82420353b7bcfb19a5804fb1913fac4fe638b447&v=4",
       "profileUrl": "https://github.com/wgu9",
       "pullRequest": {
         "repo": "OpenHands",
@@ -759,35 +785,95 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/3535",
         "mergedAt": "2026-06-11T22:19:01Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 14724,
-        "title": "Fix OpenHands LLM key access for credited orgs",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14724",
-        "mergedAt": "2026-06-11T18:30:17Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1303,
-        "title": "chore: align package version with npm RC",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1303",
-        "mergedAt": "2026-06-11T18:22:52Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "145739220",
+      "login": "wgu9",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/145739220?u=82420353b7bcfb19a5804fb1913fac4fe638b447&v=4",
+      "profileUrl": "https://github.com/wgu9",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 14810,
+        "title": "fix: write trajectory exports as utf-8",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14810",
+        "mergedAt": "2026-06-16T05:22:50Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 15004,
+        "title": "fix(enterprise): log automation HTTP response failures as errors",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15004",
+        "mergedAt": "2026-06-29T19:34:31Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 14810,
+            "title": "fix: write trajectory exports as utf-8",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14810",
+            "mergedAt": "2026-06-16T05:22:50Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 15004,
+            "title": "fix(enterprise): log automation HTTP response failures as errors",
+            "url": "https://github.com/OpenHands/OpenHands/pull/15004",
+            "mergedAt": "2026-06-29T19:34:31Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "455140",
+      "login": "mvanhorn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
+      "profileUrl": "https://github.com/mvanhorn",
+      "firstMergedPr": {
+        "repo": "agent-canvas",
+        "number": 643,
+        "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/643",
+        "mergedAt": "2026-05-20T14:15:49Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3504,
+        "title": "fix: cap effective_max_output_tokens for non-Bedrock custom base_url providers",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3504",
+        "mergedAt": "2026-06-29T14:58:31Z"
+      },
+      "totalMergedPrs": 3,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 3,
+          "firstMergedPr": {
+            "repo": "agent-canvas",
+            "number": 643,
+            "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/643",
+            "mergedAt": "2026-05-20T14:15:49Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 3504,
+            "title": "fix: cap effective_max_output_tokens for non-Bedrock custom base_url providers",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3504",
+            "mergedAt": "2026-06-29T14:58:31Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -1488,49 +1574,6 @@
       }
     },
     {
-      "githubUserId": "145739220",
-      "login": "wgu9",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/145739220?v=4",
-      "profileUrl": "https://github.com/wgu9",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 14810,
-        "title": "fix: write trajectory exports as utf-8",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14810",
-        "mergedAt": "2026-06-16T05:22:50Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 14810,
-        "title": "fix: write trajectory exports as utf-8",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14810",
-        "mergedAt": "2026-06-16T05:22:50Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 14810,
-            "title": "fix: write trajectory exports as utf-8",
-            "url": "https://github.com/OpenHands/OpenHands/pull/14810",
-            "mergedAt": "2026-06-16T05:22:50Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 14810,
-            "title": "fix: write trajectory exports as utf-8",
-            "url": "https://github.com/OpenHands/OpenHands/pull/14810",
-            "mergedAt": "2026-06-16T05:22:50Z"
-          }
-        }
-      }
-    },
-    {
       "githubUserId": "258741235",
       "login": "nanookclaw",
       "avatarUrl": "https://avatars.githubusercontent.com/u/258741235?v=4",
@@ -2146,49 +2189,6 @@
             "title": "Merge adjacent user messages for strict role alternation",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/3450",
             "mergedAt": "2026-06-04T21:04:54Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "455140",
-      "login": "mvanhorn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
-      "profileUrl": "https://github.com/mvanhorn",
-      "firstMergedPr": {
-        "repo": "agent-canvas",
-        "number": 643,
-        "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/643",
-        "mergedAt": "2026-05-20T14:15:49Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1118,
-        "title": "feat: persist selected workspace across navigation in the new-chat view",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1118",
-        "mergedAt": "2026-06-04T19:15:24Z"
-      },
-      "totalMergedPrs": 2,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 2,
-          "firstMergedPr": {
-            "repo": "agent-canvas",
-            "number": 643,
-            "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/643",
-            "mergedAt": "2026-05-20T14:15:49Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1118,
-            "title": "feat: persist selected workspace across navigation in the new-chat view",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1118",
-            "mergedAt": "2026-06-04T19:15:24Z"
           }
         }
       }
@@ -3207,7 +3207,7 @@
     {
       "githubUserId": "202552852",
       "login": "ixchio",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=03c500bdb15d0a540f898ed1eec43989857e06ce&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=1b47eac85f0a2853425f43f3b48864c9cfd1741e&v=4",
       "profileUrl": "https://github.com/ixchio",
       "firstMergedPr": {
         "repo": "software-agent-sdk",
