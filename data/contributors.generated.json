@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-06-30T05:21:12.997Z",
+  "generatedAt": "2026-07-01T05:30:31.185Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2509,
+  "totalMergedPrs": 2510,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "230283659",
+      "login": "tomsen-ai",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/230283659?v=4",
+      "profileUrl": "https://github.com/tomsen-ai",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 3927,
+        "title": "fix(sdk): accept 6+ digit event indices in EventLog filename regex",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3927",
+        "mergedAt": "2026-06-30T12:36:01Z"
+      }
+    },
     {
       "githubUserId": "145739220",
       "login": "wgu9",
@@ -772,22 +785,52 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/3674",
         "mergedAt": "2026-06-11T22:38:25Z"
       }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3535,
-        "title": "feat: add SOUL.md support for agent identity customization",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3535",
-        "mergedAt": "2026-06-11T22:19:01Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "230283659",
+      "login": "tomsen-ai",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/230283659?v=4",
+      "profileUrl": "https://github.com/tomsen-ai",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 14975,
+        "title": "docs: fix dead link to self-hosting guide in README",
+        "url": "https://github.com/OpenHands/OpenHands/pull/14975",
+        "mergedAt": "2026-06-25T07:20:38Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 3927,
+        "title": "fix(sdk): accept 6+ digit event indices in EventLog filename regex",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3927",
+        "mergedAt": "2026-06-30T12:36:01Z"
+      },
+      "totalMergedPrs": 3,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 3,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 14975,
+            "title": "docs: fix dead link to self-hosting guide in README",
+            "url": "https://github.com/OpenHands/OpenHands/pull/14975",
+            "mergedAt": "2026-06-25T07:20:38Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 3927,
+            "title": "fix(sdk): accept 6+ digit event indices in EventLog filename regex",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3927",
+            "mergedAt": "2026-06-30T12:36:01Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "145739220",
       "login": "wgu9",
@@ -1035,49 +1078,6 @@
             "title": "fix(tui): Preserve Rich Text styling in collapsible content for diff highlighting",
             "url": "https://github.com/OpenHands/OpenHands-CLI/pull/661",
             "mergedAt": "2026-06-27T05:08:05Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "230283659",
-      "login": "tomsen-ai",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/230283659?v=4",
-      "profileUrl": "https://github.com/tomsen-ai",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 14975,
-        "title": "docs: fix dead link to self-hosting guide in README",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14975",
-        "mergedAt": "2026-06-25T07:20:38Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3882,
-        "title": "fix(file_editor): preserve new_str whitespace in str_replace fallback",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3882",
-        "mergedAt": "2026-06-27T04:12:01Z"
-      },
-      "totalMergedPrs": 2,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 2,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 14975,
-            "title": "docs: fix dead link to self-hosting guide in README",
-            "url": "https://github.com/OpenHands/OpenHands/pull/14975",
-            "mergedAt": "2026-06-25T07:20:38Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3882,
-            "title": "fix(file_editor): preserve new_str whitespace in str_replace fallback",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3882",
-            "mergedAt": "2026-06-27T04:12:01Z"
           }
         }
       }
@@ -3207,7 +3207,7 @@
     {
       "githubUserId": "202552852",
       "login": "ixchio",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=1b47eac85f0a2853425f43f3b48864c9cfd1741e&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=a876be5392a98ddc71e6bbb0bedc22fab619153d&v=4",
       "profileUrl": "https://github.com/ixchio",
       "firstMergedPr": {
         "repo": "software-agent-sdk",
