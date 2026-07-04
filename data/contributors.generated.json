@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-07-03T05:16:01.107Z",
+  "generatedAt": "2026-07-04T05:14:24.169Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2522,
+  "totalMergedPrs": 2523,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 15108,
+        "title": "fix(frontend): stop streamed deltas rendering twice and fragmenting in V1 chat",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15108",
+        "mergedAt": "2026-07-03T12:01:43Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -772,22 +785,70 @@
         "url": "https://github.com/OpenHands/agent-canvas/pull/1354",
         "mergedAt": "2026-06-15T13:36:25Z"
       }
-    },
-    {
-      "githubUserId": "345446",
-      "login": "mturac",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/345446?u=31ae09827b297600204430664f416d52c9c3ac69&v=4",
-      "profileUrl": "https://github.com/mturac",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 14812,
-        "title": "fix(frontend): avoid dirty language filter input",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14812",
-        "mergedAt": "2026-06-15T12:13:51Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 12113,
+        "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
+        "url": "https://github.com/OpenHands/OpenHands/pull/12113",
+        "mergedAt": "2025-12-24T21:26:46Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 15108,
+        "title": "fix(frontend): stop streamed deltas rendering twice and fragmenting in V1 chat",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15108",
+        "mergedAt": "2026-07-03T12:01:43Z"
+      },
+      "totalMergedPrs": 6,
+      "contributionYears": [
+        "2026",
+        "2025"
+      ],
+      "yearly": {
+        "2025": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 12113,
+            "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12113",
+            "mergedAt": "2025-12-24T21:26:46Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 12113,
+            "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12113",
+            "mergedAt": "2025-12-24T21:26:46Z"
+          }
+        },
+        "2026": {
+          "totalMergedPrs": 5,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 12255,
+            "title": "feat: Add configurable sandbox host_port and container_url_pattern for remote access",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12255",
+            "mergedAt": "2026-01-05T03:26:17Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 15108,
+            "title": "fix(frontend): stop streamed deltas rendering twice and fragmenting in V1 chat",
+            "url": "https://github.com/OpenHands/OpenHands/pull/15108",
+            "mergedAt": "2026-07-03T12:01:43Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -1827,67 +1888,6 @@
             "title": "fix(frontend): avoid dirty language filter input",
             "url": "https://github.com/OpenHands/OpenHands/pull/14812",
             "mergedAt": "2026-06-15T12:13:51Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "156683457",
-      "login": "shanemort1982",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
-      "profileUrl": "https://github.com/shanemort1982",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 12113,
-        "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
-        "url": "https://github.com/OpenHands/OpenHands/pull/12113",
-        "mergedAt": "2025-12-24T21:26:46Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3679,
-        "title": "fix(file_editor): write atomically and fall back to UTF-8 to prevent data loss",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3679",
-        "mergedAt": "2026-06-14T12:27:13Z"
-      },
-      "totalMergedPrs": 5,
-      "contributionYears": [
-        "2026",
-        "2025"
-      ],
-      "yearly": {
-        "2025": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 12113,
-            "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12113",
-            "mergedAt": "2025-12-24T21:26:46Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 12113,
-            "title": "Fix WebSocket localhost bug by passing DOCKER_HOST_ADDR to runtime containers",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12113",
-            "mergedAt": "2025-12-24T21:26:46Z"
-          }
-        },
-        "2026": {
-          "totalMergedPrs": 4,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 12255,
-            "title": "feat: Add configurable sandbox host_port and container_url_pattern for remote access",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12255",
-            "mergedAt": "2026-01-05T03:26:17Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3679,
-            "title": "fix(file_editor): write atomically and fall back to UTF-8 to prevent data loss",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3679",
-            "mergedAt": "2026-06-14T12:27:13Z"
           }
         }
       }
