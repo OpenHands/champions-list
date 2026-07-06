@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-05T05:29:46.721Z",
-  "windowStart": "2025-07-05T05:18:57.315Z",
-  "windowEnd": "2026-07-05T05:18:57.315Z",
+  "generatedAt": "2026-07-06T05:39:44.626Z",
+  "windowStart": "2025-07-06T05:26:27.999Z",
+  "windowEnd": "2026-07-06T05:26:27.999Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalIssuesOpened": 1094,
-  "totalIssueComments": 3399,
+  "totalIssuesOpened": 1098,
+  "totalIssueComments": 3393,
   "skippedRepos": [],
   "repos": [
     {
@@ -160,8 +160,8 @@
       "repo": "OpenHands",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 603,
-      "issueCommentsCount": 2025
+      "issuesOpenedCount": 607,
+      "issueCommentsCount": 2018
     },
     {
       "repo": "openhands-aci",
@@ -259,7 +259,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 307,
-      "issueCommentsCount": 867
+      "issueCommentsCount": 868
     },
     {
       "repo": "terraform-gcp-datadog-integration",
@@ -312,6 +312,175 @@
     }
   ],
   "recentActivities": [
+    {
+      "type": "issueOpened",
+      "githubUserId": "54832625",
+      "login": "weensy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/54832625?v=4",
+      "profileUrl": "https://github.com/weensy",
+      "createdAt": "2026-07-06T03:06:32Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15134,
+        "title": "[Enterprise]: Fix typos in enterprise README",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15134",
+        "createdAt": "2026-07-06T03:06:32Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "287332690",
+      "login": "zentradev-rabih",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/287332690?v=4",
+      "profileUrl": "https://github.com/zentradev-rabih",
+      "createdAt": "2026-07-05T23:31:42Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15133,
+        "title": "OpenHands Fork Audit - MEDIUM: Verify tenant isolation in multi-user agent-server (per-UID sandbox / mTLS)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15133",
+        "createdAt": "2026-07-05T23:31:42Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "287332690",
+      "login": "zentradev-rabih",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/287332690?v=4",
+      "profileUrl": "https://github.com/zentradev-rabih",
+      "createdAt": "2026-07-05T23:31:33Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15132,
+        "title": "OpenHands Fork Audit - MEDIUM: Fork-delta maintenance risk — carried patches must survive upstream merges",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15132",
+        "createdAt": "2026-07-05T23:31:33Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "287332690",
+      "login": "zentradev-rabih",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/287332690?v=4",
+      "profileUrl": "https://github.com/zentradev-rabih",
+      "createdAt": "2026-07-05T23:30:55Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15131,
+        "title": "OpenHands Fork Audit - HIGH: Stale duplicate build/lib/ directories under vendor/ could be shipped",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15131",
+        "createdAt": "2026-07-05T23:30:55Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "287332690",
+      "login": "zentradev-rabih",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/287332690?v=4",
+      "profileUrl": "https://github.com/zentradev-rabih",
+      "createdAt": "2026-07-05T23:30:46Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15130,
+        "title": "OpenHands Fork Audit - HIGH: get_litellm_model_info makes unvalidated httpx.get call at LLM init",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15130",
+        "createdAt": "2026-07-05T23:30:46Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "287332690",
+      "login": "zentradev-rabih",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/287332690?v=4",
+      "profileUrl": "https://github.com/zentradev-rabih",
+      "createdAt": "2026-07-05T23:30:35Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15129,
+        "title": "OpenHands Fork Audit - CRITICAL: No regression tests prove air-gap works; verifier is source-scan only",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15129",
+        "createdAt": "2026-07-05T23:30:35Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "287332690",
+      "login": "zentradev-rabih",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/287332690?v=4",
+      "profileUrl": "https://github.com/zentradev-rabih",
+      "createdAt": "2026-07-05T23:30:24Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15128,
+        "title": "OpenHands Fork Audit - CRITICAL: RemoteWorkspace host validation gap enables unvalidated egress",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15128",
+        "createdAt": "2026-07-05T23:30:24Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "142182177",
+      "login": "Code-weaver1",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/142182177?v=4",
+      "profileUrl": "https://github.com/Code-weaver1",
+      "createdAt": "2026-07-05T20:37:23Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 3992,
+        "title": "Asymmetric handling of content-without-tool-call responses terminates agents driven by weaker/local models",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3992",
+        "createdAt": "2026-07-04T18:31:10Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3992#issuecomment-4887514158"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "184596155",
+      "login": "KHARSHAVARDHAN-eng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/184596155?v=4",
+      "profileUrl": "https://github.com/KHARSHAVARDHAN-eng",
+      "createdAt": "2026-07-05T17:51:22Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15115,
+        "title": "Support cloud-side OAuth credential capture for MCP installs",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15115",
+        "createdAt": "2026-07-03T19:49:47Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15115#issuecomment-4887035578"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "246244354",
+      "login": "minh2416294",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/246244354?v=4",
+      "profileUrl": "https://github.com/minh2416294",
+      "createdAt": "2026-07-05T13:02:24Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14563,
+        "title": "[Bug]: New added Global Skills dont get loaded into OpenHands (CLI install) and not available in WebUI",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14563",
+        "createdAt": "2026-05-26T08:31:17Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14563#issuecomment-4886132626"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "184596155",
+      "login": "KHARSHAVARDHAN-eng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/184596155?v=4",
+      "profileUrl": "https://github.com/KHARSHAVARDHAN-eng",
+      "createdAt": "2026-07-05T12:07:36Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15117,
+        "title": "Pass repository metadata to observability traces",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15117",
+        "createdAt": "2026-07-03T21:17:51Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15117#issuecomment-4885976769"
+    },
     {
       "type": "issueComment",
       "githubUserId": "1479804",
@@ -1079,194 +1248,133 @@
         "createdAt": "2025-04-07T19:53:09Z"
       },
       "commentUrl": "https://github.com/OpenHands/OpenHands/issues/7752#issuecomment-4853515151"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "34623886",
-      "login": "mrbeandev",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/34623886?v=4",
-      "profileUrl": "https://github.com/mrbeandev",
-      "createdAt": "2026-07-01T10:34:14Z",
-      "issue": {
-        "repo": "agent-canvas",
-        "number": 1565,
-        "title": "[Bug]: the folders shown in the \"Add Workspaces\" is not the complete list !",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1565",
-        "createdAt": "2026-07-01T10:21:23Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1565#issuecomment-4853404376"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "50862890",
-      "login": "model-collapse",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/50862890?v=4",
-      "profileUrl": "https://github.com/model-collapse",
-      "createdAt": "2026-07-01T10:27:43Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3940,
-        "title": "initial_message.run is ignored on conversation start (hardcoded to True)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3940",
-        "createdAt": "2026-07-01T10:27:43Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "34623886",
-      "login": "mrbeandev",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/34623886?v=4",
-      "profileUrl": "https://github.com/mrbeandev",
-      "createdAt": "2026-07-01T10:21:23Z",
-      "issue": {
-        "repo": "agent-canvas",
-        "number": 1565,
-        "title": "[Bug]: the folders shown in the \"Add Workspaces\" is not the complete list !",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1565",
-        "createdAt": "2026-07-01T10:21:23Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-07-01T10:17:30Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 7752,
-        "title": "[Enhancement] Allow for selection of multiple Git repositories",
-        "url": "https://github.com/OpenHands/OpenHands/issues/7752",
-        "createdAt": "2025-04-07T19:53:09Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/7752#issuecomment-4853273432"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "7574816",
-      "login": "ferhimedamine",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/7574816?v=4",
-      "profileUrl": "https://github.com/ferhimedamine",
-      "createdAt": "2026-07-01T10:09:42Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15076,
-        "title": "feat: Add DakeraConversationSecretEnricher for persistent long-term agent memory",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15076",
-        "createdAt": "2026-07-01T10:09:42Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "56022539",
-      "login": "Aarkin7",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/56022539?v=4",
-      "profileUrl": "https://github.com/Aarkin7",
-      "createdAt": "2026-07-01T10:09:28Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15046,
-        "title": "OHE - Organization shared secrets and MCP servers",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15046",
-        "createdAt": "2026-06-30T12:19:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15046#issuecomment-4853209847"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "154639991",
-      "login": "henrique-milli",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/154639991?v=4",
-      "profileUrl": "https://github.com/henrique-milli",
-      "createdAt": "2026-07-01T09:01:50Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 7752,
-        "title": "[Enhancement] Allow for selection of multiple Git repositories",
-        "url": "https://github.com/OpenHands/OpenHands/issues/7752",
-        "createdAt": "2025-04-07T19:53:09Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/7752#issuecomment-4852430746"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "7574816",
-      "login": "ferhimedamine",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/7574816?v=4",
-      "profileUrl": "https://github.com/ferhimedamine",
-      "createdAt": "2026-07-01T08:37:31Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15075,
-        "title": "Feature: Long-term memory via Dakera — agents recall past tasks and codebase conventions",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15075",
-        "createdAt": "2026-07-01T08:37:31Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "7574816",
-      "login": "ferhimedamine",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/7574816?v=4",
-      "profileUrl": "https://github.com/ferhimedamine",
-      "createdAt": "2026-07-01T08:37:00Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15074,
-        "title": "Test",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15074",
-        "createdAt": "2026-07-01T08:37:00Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "157218861",
-      "login": "adanaamir",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/157218861?v=4",
-      "profileUrl": "https://github.com/adanaamir",
-      "createdAt": "2026-07-01T08:24:11Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15063,
-        "title": "Architecture: complete conversation mutation cache centralization",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15063",
-        "createdAt": "2026-06-30T18:30:30Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15063#issuecomment-4852089833"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-07-01T08:12:02Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 1824,
-        "title": "Proposal: don't use full events history in the OH ecosystem",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/1824",
-        "createdAt": "2026-01-26T09:04:58Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/1824#issuecomment-4851968056"
     }
   ],
   "yearlyTotals": {
     "2025": {
-      "issuesOpened": 489,
-      "issueComments": 1525,
-      "uniqueIssueOpeners": 245,
-      "uniqueCommenters": 356
+      "issuesOpened": 486,
+      "issueComments": 1515,
+      "uniqueIssueOpeners": 243,
+      "uniqueCommenters": 353
     },
     "2026": {
-      "issuesOpened": 605,
-      "issueComments": 1874,
-      "uniqueIssueOpeners": 291,
-      "uniqueCommenters": 382
+      "issuesOpened": 612,
+      "issueComments": 1878,
+      "uniqueIssueOpeners": 293,
+      "uniqueCommenters": 384
     }
   },
   "users": [
+    {
+      "githubUserId": "54832625",
+      "login": "weensy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/54832625?v=4",
+      "profileUrl": "https://github.com/weensy",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-06T03:06:32Z",
+      "mostRecentActivityAt": "2026-07-06T03:06:32Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 15134,
+        "title": "[Enterprise]: Fix typos in enterprise README",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15134",
+        "createdAt": "2026-07-06T03:06:32Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 15134,
+        "title": "[Enterprise]: Fix typos in enterprise README",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15134",
+        "createdAt": "2026-07-06T03:06:32Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "287332690",
+      "login": "zentradev-rabih",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/287332690?v=4",
+      "profileUrl": "https://github.com/zentradev-rabih",
+      "issuesOpenedCount": 6,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-05T23:30:24Z",
+      "mostRecentActivityAt": "2026-07-05T23:31:42Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 15128,
+        "title": "OpenHands Fork Audit - CRITICAL: RemoteWorkspace host validation gap enables unvalidated egress",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15128",
+        "createdAt": "2026-07-05T23:30:24Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 15133,
+        "title": "OpenHands Fork Audit - MEDIUM: Verify tenant isolation in multi-user agent-server (per-UID sandbox / mTLS)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15133",
+        "createdAt": "2026-07-05T23:31:42Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "142182177",
+      "login": "Code-weaver1",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/142182177?v=4",
+      "profileUrl": "https://github.com/Code-weaver1",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-07-05T20:37:23Z",
+      "mostRecentActivityAt": "2026-07-05T20:37:23Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 3992,
+        "title": "Asymmetric handling of content-without-tool-call responses terminates agents driven by weaker/local models",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3992",
+        "createdAt": "2026-07-05T20:37:23Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3992#issuecomment-4887514158"
+      }
+    },
+    {
+      "githubUserId": "184596155",
+      "login": "KHARSHAVARDHAN-eng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/184596155?v=4",
+      "profileUrl": "https://github.com/KHARSHAVARDHAN-eng",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 4,
+      "firstActivityAt": "2026-07-01T12:35:19Z",
+      "mostRecentActivityAt": "2026-07-05T17:51:22Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15115,
+        "title": "Support cloud-side OAuth credential capture for MCP installs",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15115",
+        "createdAt": "2026-07-05T17:51:22Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15115#issuecomment-4887035578"
+      }
+    },
+    {
+      "githubUserId": "246244354",
+      "login": "minh2416294",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/246244354?v=4",
+      "profileUrl": "https://github.com/minh2416294",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-07-05T13:02:24Z",
+      "mostRecentActivityAt": "2026-07-05T13:02:24Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 14563,
+        "title": "[Bug]: New added Global Skills dont get loaded into OpenHands (CLI install) and not available in WebUI",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14563",
+        "createdAt": "2026-07-05T13:02:24Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14563#issuecomment-4886132626"
+      }
+    },
     {
       "githubUserId": "1479804",
       "login": "kripper",
@@ -1751,26 +1859,6 @@
         "url": "https://github.com/OpenHands/extensions/issues/386",
         "createdAt": "2026-07-01T19:28:02Z",
         "commentUrl": "https://github.com/OpenHands/extensions/issues/386#issuecomment-4863246468"
-      }
-    },
-    {
-      "githubUserId": "184596155",
-      "login": "KHARSHAVARDHAN-eng",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/184596155?v=4",
-      "profileUrl": "https://github.com/KHARSHAVARDHAN-eng",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 2,
-      "firstActivityAt": "2026-07-01T12:35:19Z",
-      "mostRecentActivityAt": "2026-07-01T18:56:56Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "extensions",
-        "number": 386,
-        "title": "[Feature]: Add Cross-Modal Leak Detection for Agent Skills",
-        "url": "https://github.com/OpenHands/extensions/issues/386",
-        "createdAt": "2026-07-01T18:56:56Z",
-        "commentUrl": "https://github.com/OpenHands/extensions/issues/386#issuecomment-4863246444"
       }
     },
     {
@@ -2508,8 +2596,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/5833034?v=4",
       "profileUrl": "https://github.com/erkinalp",
       "issuesOpenedCount": 5,
-      "issueCommentsCount": 61,
-      "firstActivityAt": "2025-07-05T06:19:43Z",
+      "issueCommentsCount": 60,
+      "firstActivityAt": "2025-07-14T10:34:23Z",
       "mostRecentActivityAt": "2026-06-25T20:17:42Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -18392,8 +18480,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/213239228?v=4",
       "profileUrl": "https://github.com/llamantino",
       "issuesOpenedCount": 3,
-      "issueCommentsCount": 25,
-      "firstActivityAt": "2025-07-05T18:36:19Z",
+      "issueCommentsCount": 23,
+      "firstActivityAt": "2025-07-08T13:27:07Z",
       "mostRecentActivityAt": "2025-10-13T23:32:58Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -19075,8 +19163,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/49247372?v=4",
       "profileUrl": "https://github.com/npneeraj",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 5,
-      "firstActivityAt": "2025-07-05T07:51:01Z",
+      "issueCommentsCount": 4,
+      "firstActivityAt": "2025-07-14T15:50:51Z",
       "mostRecentActivityAt": "2025-09-28T16:31:53Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -21995,16 +22083,16 @@
       "login": "insop",
       "avatarUrl": "https://avatars.githubusercontent.com/u/1240382?v=4",
       "profileUrl": "https://github.com/insop",
-      "issuesOpenedCount": 5,
+      "issuesOpenedCount": 4,
       "issueCommentsCount": 11,
-      "firstActivityAt": "2025-07-05T21:23:20Z",
+      "firstActivityAt": "2025-07-07T19:43:07Z",
       "mostRecentActivityAt": "2025-08-13T06:36:53Z",
       "firstIssue": {
         "repo": "OpenHands",
-        "number": 9569,
-        "title": "❓  Question on SWE-bench-verified",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9569",
-        "createdAt": "2025-07-05T21:23:20Z"
+        "number": 10110,
+        "title": "[Bug]: docker image build failing during swe-bench eval run",
+        "url": "https://github.com/OpenHands/OpenHands/issues/10110",
+        "createdAt": "2025-08-06T02:56:24Z"
       },
       "mostRecentIssue": {
         "repo": "OpenHands",
@@ -24237,8 +24325,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/215185388?v=4",
       "profileUrl": "https://github.com/matty-fortune",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 5,
-      "firstActivityAt": "2025-07-05T15:05:16Z",
+      "issueCommentsCount": 4,
+      "firstActivityAt": "2025-07-07T16:36:15Z",
       "mostRecentActivityAt": "2025-07-07T19:54:58Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24372,8 +24460,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/144419979?v=4",
       "profileUrl": "https://github.com/ItsUjjwalGoel",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 3,
-      "firstActivityAt": "2025-07-05T12:46:24Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-07-07T02:20:34Z",
       "mostRecentActivityAt": "2025-07-07T02:20:34Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24405,103 +24493,6 @@
         "createdAt": "2025-07-06T22:02:19Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9571#issuecomment-3042817645"
       }
-    },
-    {
-      "githubUserId": "117230893",
-      "login": "mirchez",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/117230893?v=4",
-      "profileUrl": "https://github.com/mirchez",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-07-05T23:09:24Z",
-      "mostRecentActivityAt": "2025-07-05T23:09:24Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 9534,
-        "title": "Bug: Jupyter tab not showing input commands",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9534",
-        "createdAt": "2025-07-05T23:09:24Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9534#issuecomment-3040391093"
-      }
-    },
-    {
-      "githubUserId": "61008932",
-      "login": "nalanshi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/61008932?v=4",
-      "profileUrl": "https://github.com/nalanshi",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-07-05T09:35:34Z",
-      "mostRecentActivityAt": "2025-07-05T19:59:49Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9564,
-        "title": "[Bug]:",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9564",
-        "createdAt": "2025-07-05T09:35:34Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 9564,
-        "title": "[Bug]:",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9564",
-        "createdAt": "2025-07-05T09:35:34Z"
-      },
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 9564,
-        "title": "[Bug]:",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9564",
-        "createdAt": "2025-07-05T19:59:49Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9564#issuecomment-3039818972"
-      }
-    },
-    {
-      "githubUserId": "215867929",
-      "login": "TPO-Code",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/215867929?v=4",
-      "profileUrl": "https://github.com/TPO-Code",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-07-05T15:10:26Z",
-      "mostRecentActivityAt": "2025-07-05T15:10:26Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 8632,
-        "title": "Simple directions for dockerless install",
-        "url": "https://github.com/OpenHands/OpenHands/issues/8632",
-        "createdAt": "2025-07-05T15:10:26Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/8632#issuecomment-3039097200"
-      }
-    },
-    {
-      "githubUserId": "27996739",
-      "login": "cywan1998",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/27996739?v=4",
-      "profileUrl": "https://github.com/cywan1998",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 0,
-      "firstActivityAt": "2025-07-05T10:05:24Z",
-      "mostRecentActivityAt": "2025-07-05T10:05:24Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9565,
-        "title": "[Bug]: Incomplete results and performance issues in S3FileStore list method",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9565",
-        "createdAt": "2025-07-05T10:05:24Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 9565,
-        "title": "[Bug]: Incomplete results and performance issues in S3FileStore list method",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9565",
-        "createdAt": "2025-07-05T10:05:24Z"
-      },
-      "mostRecentComment": null
     }
   ]
 }
