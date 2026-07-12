@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-07-11T05:00:51.585Z",
+  "generatedAt": "2026-07-12T05:02:43.843Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2537,
+  "totalMergedPrs": 2541,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1666,
+        "title": "chore: bump agent-server SDK to 1.35.0 and automation to 1.1.6",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1666",
+        "mergedAt": "2026-07-11T20:55:04Z"
+      }
+    },
+    {
+      "githubUserId": "744063",
+      "login": "georgeglarson",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
+      "profileUrl": "https://github.com/georgeglarson",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1368,
+        "title": "feat(home): group workspace folders by parent in the dropdown (#129)",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1368",
+        "mergedAt": "2026-07-11T15:37:11Z"
+      }
+    },
+    {
+      "githubUserId": "186447053",
+      "login": "Sujit-1509",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/186447053?u=3a80f764ea9ec54e27af8de1d60bc40dc66c6019&v=4",
+      "profileUrl": "https://github.com/Sujit-1509",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 15243,
+        "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15243",
+        "mergedAt": "2026-07-11T13:52:10Z"
+      }
+    },
+    {
+      "githubUserId": "455140",
+      "login": "mvanhorn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
+      "profileUrl": "https://github.com/mvanhorn",
+      "pullRequest": {
+        "repo": "agent-canvas",
+        "number": 1660,
+        "title": "feat(automations): export and import automations as portable JSON files",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1660",
+        "mergedAt": "2026-07-11T13:49:34Z"
+      }
+    },
     {
       "githubUserId": "294240611",
       "login": "dylan-openhands",
@@ -35,7 +87,7 @@
     {
       "githubUserId": "155808914",
       "login": "hxaxd",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/155808914?u=c64b29c95178336a4a110ba62cd1f5f2508df3e3&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/155808914?u=c61fffe48e0ba5b0b553b9583767aaa96dd12c0a&v=4",
       "profileUrl": "https://github.com/hxaxd",
       "pullRequest": {
         "repo": "OpenHands",
@@ -733,61 +785,181 @@
         "url": "https://github.com/OpenHands/extensions/pull/348",
         "mergedAt": "2026-06-21T22:20:51Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "extensions",
-        "number": 347,
-        "title": "fix: align nested plugin skill names",
-        "url": "https://github.com/OpenHands/extensions/pull/347",
-        "mergedAt": "2026-06-21T22:20:17Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3817,
-        "title": "Document OpenRouter attribution URL stability",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3817",
-        "mergedAt": "2026-06-21T15:55:47Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "docs",
-        "number": 583,
-        "title": "Remove obsolete OpenHands state migration notes",
-        "url": "https://github.com/OpenHands/docs/pull/583",
-        "mergedAt": "2026-06-21T12:20:15Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3789,
-        "title": "Add REST API contract summaries to PR descriptions",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3789",
-        "mergedAt": "2026-06-20T20:14:55Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 2019,
+        "title": "docs: trim blustery wording in docs update prompt",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+        "mergedAt": "2026-02-12T01:10:56Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "agent-canvas",
+        "number": 1666,
+        "title": "chore: bump agent-server SDK to 1.35.0 and automation to 1.1.6",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1666",
+        "mergedAt": "2026-07-11T20:55:04Z"
+      },
+      "totalMergedPrs": 14,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 14,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 2019,
+            "title": "docs: trim blustery wording in docs update prompt",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+            "mergedAt": "2026-02-12T01:10:56Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "agent-canvas",
+            "number": 1666,
+            "title": "chore: bump agent-server SDK to 1.35.0 and automation to 1.1.6",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/1666",
+            "mergedAt": "2026-07-11T20:55:04Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "744063",
+      "login": "georgeglarson",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
+      "profileUrl": "https://github.com/georgeglarson",
+      "firstMergedPr": {
+        "repo": "agent-canvas",
+        "number": 1434,
+        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
+        "mergedAt": "2026-06-26T23:21:33Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "agent-canvas",
+        "number": 1368,
+        "title": "feat(home): group workspace folders by parent in the dropdown (#129)",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1368",
+        "mergedAt": "2026-07-11T15:37:11Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "agent-canvas",
+            "number": 1434,
+            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
+            "mergedAt": "2026-06-26T23:21:33Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "agent-canvas",
+            "number": 1368,
+            "title": "feat(home): group workspace folders by parent in the dropdown (#129)",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/1368",
+            "mergedAt": "2026-07-11T15:37:11Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "186447053",
+      "login": "Sujit-1509",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/186447053?u=3a80f764ea9ec54e27af8de1d60bc40dc66c6019&v=4",
+      "profileUrl": "https://github.com/Sujit-1509",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 15243,
+        "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15243",
+        "mergedAt": "2026-07-11T13:52:10Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 15243,
+        "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15243",
+        "mergedAt": "2026-07-11T13:52:10Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 15243,
+            "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
+            "url": "https://github.com/OpenHands/OpenHands/pull/15243",
+            "mergedAt": "2026-07-11T13:52:10Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 15243,
+            "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
+            "url": "https://github.com/OpenHands/OpenHands/pull/15243",
+            "mergedAt": "2026-07-11T13:52:10Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "455140",
+      "login": "mvanhorn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
+      "profileUrl": "https://github.com/mvanhorn",
+      "firstMergedPr": {
+        "repo": "agent-canvas",
+        "number": 643,
+        "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/643",
+        "mergedAt": "2026-05-20T14:15:49Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "agent-canvas",
+        "number": 1660,
+        "title": "feat(automations): export and import automations as portable JSON files",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1660",
+        "mergedAt": "2026-07-11T13:49:34Z"
+      },
+      "totalMergedPrs": 5,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 5,
+          "firstMergedPr": {
+            "repo": "agent-canvas",
+            "number": 643,
+            "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/643",
+            "mergedAt": "2026-05-20T14:15:49Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "agent-canvas",
+            "number": 1660,
+            "title": "feat(automations): export and import automations as portable JSON files",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/1660",
+            "mergedAt": "2026-07-11T13:49:34Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "294240611",
       "login": "dylan-openhands",
@@ -913,7 +1085,7 @@
     {
       "githubUserId": "155808914",
       "login": "hxaxd",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/155808914?u=c64b29c95178336a4a110ba62cd1f5f2508df3e3&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/155808914?u=c61fffe48e0ba5b0b553b9583767aaa96dd12c0a&v=4",
       "profileUrl": "https://github.com/hxaxd",
       "firstMergedPr": {
         "repo": "OpenHands",
@@ -1035,49 +1207,6 @@
             "title": "fix(security): add a secret-disclosure consent rule to the agent security policy",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/3823",
             "mergedAt": "2026-07-09T23:17:48Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 2019,
-        "title": "docs: trim blustery wording in docs update prompt",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-        "mergedAt": "2026-02-12T01:10:56Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4042,
-        "title": "ci: add release security-scan",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4042",
-        "mergedAt": "2026-07-09T21:47:21Z"
-      },
-      "totalMergedPrs": 13,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 13,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2019,
-            "title": "docs: trim blustery wording in docs update prompt",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-            "mergedAt": "2026-02-12T01:10:56Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4042,
-            "title": "ci: add release security-scan",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4042",
-            "mergedAt": "2026-07-09T21:47:21Z"
           }
         }
       }
@@ -1311,49 +1440,6 @@
             "title": "fix(frontend): stop streamed deltas rendering twice and fragmenting in V1 chat",
             "url": "https://github.com/OpenHands/OpenHands/pull/15108",
             "mergedAt": "2026-07-03T12:01:43Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "455140",
-      "login": "mvanhorn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
-      "profileUrl": "https://github.com/mvanhorn",
-      "firstMergedPr": {
-        "repo": "agent-canvas",
-        "number": 643,
-        "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/643",
-        "mergedAt": "2026-05-20T14:15:49Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3505,
-        "title": "fix: restore Claude Sonnet to the integration/behavior default model matrix",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3505",
-        "mergedAt": "2026-07-03T02:23:13Z"
-      },
-      "totalMergedPrs": 4,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 4,
-          "firstMergedPr": {
-            "repo": "agent-canvas",
-            "number": 643,
-            "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/643",
-            "mergedAt": "2026-05-20T14:15:49Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3505,
-            "title": "fix: restore Claude Sonnet to the integration/behavior default model matrix",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3505",
-            "mergedAt": "2026-07-03T02:23:13Z"
           }
         }
       }
@@ -1655,49 +1741,6 @@
             "title": "fix(tui): Preserve Rich Text styling in collapsible content for diff highlighting",
             "url": "https://github.com/OpenHands/OpenHands-CLI/pull/661",
             "mergedAt": "2026-06-27T05:08:05Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "firstMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1434,
-        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-        "mergedAt": "2026-06-26T23:21:33Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1434,
-        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-        "mergedAt": "2026-06-26T23:21:33Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1434,
-            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-            "mergedAt": "2026-06-26T23:21:33Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1434,
-            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-            "mergedAt": "2026-06-26T23:21:33Z"
           }
         }
       }
