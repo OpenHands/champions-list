@@ -1,11 +1,50 @@
 {
-  "generatedAt": "2026-07-13T05:08:04.789Z",
+  "generatedAt": "2026-07-14T04:58:41.348Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2544,
+  "totalMergedPrs": 2546,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "202552852",
+      "login": "ixchio",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=a876be5392a98ddc71e6bbb0bedc22fab619153d&v=4",
+      "profileUrl": "https://github.com/ixchio",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4011,
+        "title": "fix(mcp): preserve nested object properties in LLM-facing tool schema",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4011",
+        "mergedAt": "2026-07-13T15:16:21Z"
+      }
+    },
+    {
+      "githubUserId": "183583132",
+      "login": "rsd-darshan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/183583132?u=545e9075c9e66cc48d09c79e8709b5716ac2e8b5&v=4",
+      "profileUrl": "https://github.com/rsd-darshan",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4087,
+        "title": "fix(skills): make marketplaces additive to public skills",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
+        "mergedAt": "2026-07-13T11:58:30Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "extensions",
+        "number": 402,
+        "title": "feat(iterate): keep generated .pr/ artifacts fresh during PR iteration",
+        "url": "https://github.com/OpenHands/extensions/pull/402",
+        "mergedAt": "2026-07-13T10:50:53Z"
+      }
+    },
     {
       "githubUserId": "255025612",
       "login": "smolpaws",
@@ -69,19 +108,6 @@
         "title": "feat(home): group workspace folders by parent in the dropdown (#129)",
         "url": "https://github.com/OpenHands/agent-canvas/pull/1368",
         "mergedAt": "2026-07-11T15:37:11Z"
-      }
-    },
-    {
-      "githubUserId": "186447053",
-      "login": "Sujit-1509",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/186447053?u=3a80f764ea9ec54e27af8de1d60bc40dc66c6019&v=4",
-      "profileUrl": "https://github.com/Sujit-1509",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 15243,
-        "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
-        "url": "https://github.com/OpenHands/OpenHands/pull/15243",
-        "mergedAt": "2026-07-11T13:52:10Z"
       }
     },
     {
@@ -759,35 +785,113 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/3859",
         "mergedAt": "2026-06-23T17:25:05Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "automation",
-        "number": 190,
-        "title": "Align test automation SDK version with service",
-        "url": "https://github.com/OpenHands/automation/pull/190",
-        "mergedAt": "2026-06-23T16:39:50Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3854,
-        "title": "Collapse integration report details in PR comments",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3854",
-        "mergedAt": "2026-06-23T14:49:09Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "202552852",
+      "login": "ixchio",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=a876be5392a98ddc71e6bbb0bedc22fab619153d&v=4",
+      "profileUrl": "https://github.com/ixchio",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 1433,
+        "title": "feat: add early stopping/pruner for behavior tests cost optimization",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/1433",
+        "mergedAt": "2025-12-28T21:16:56Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4011,
+        "title": "fix(mcp): preserve nested object properties in LLM-facing tool schema",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4011",
+        "mergedAt": "2026-07-13T15:16:21Z"
+      },
+      "totalMergedPrs": 11,
+      "contributionYears": [
+        "2026",
+        "2025"
+      ],
+      "yearly": {
+        "2025": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 1433,
+            "title": "feat: add early stopping/pruner for behavior tests cost optimization",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/1433",
+            "mergedAt": "2025-12-28T21:16:56Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 1433,
+            "title": "feat: add early stopping/pruner for behavior tests cost optimization",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/1433",
+            "mergedAt": "2025-12-28T21:16:56Z"
+          }
+        },
+        "2026": {
+          "totalMergedPrs": 10,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 1539,
+            "title": "feat: add pause() and resume() methods to workspace classes",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/1539",
+            "mergedAt": "2026-01-01T14:55:59Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4011,
+            "title": "fix(mcp): preserve nested object properties in LLM-facing tool schema",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4011",
+            "mergedAt": "2026-07-13T15:16:21Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "183583132",
+      "login": "rsd-darshan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/183583132?u=545e9075c9e66cc48d09c79e8709b5716ac2e8b5&v=4",
+      "profileUrl": "https://github.com/rsd-darshan",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4087,
+        "title": "fix(skills): make marketplaces additive to public skills",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
+        "mergedAt": "2026-07-13T11:58:30Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4087,
+        "title": "fix(skills): make marketplaces additive to public skills",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
+        "mergedAt": "2026-07-13T11:58:30Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4087,
+            "title": "fix(skills): make marketplaces additive to public skills",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
+            "mergedAt": "2026-07-13T11:58:30Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4087,
+            "title": "fix(skills): make marketplaces additive to public skills",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
+            "mergedAt": "2026-07-13T11:58:30Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "255025612",
       "login": "smolpaws",
@@ -802,18 +906,18 @@
       },
       "mostRecentMergedPr": {
         "repo": "extensions",
-        "number": 405,
-        "title": "feat: add technical-writing skill",
-        "url": "https://github.com/OpenHands/extensions/pull/405",
-        "mergedAt": "2026-07-13T03:22:47Z"
+        "number": 402,
+        "title": "feat(iterate): keep generated .pr/ artifacts fresh during PR iteration",
+        "url": "https://github.com/OpenHands/extensions/pull/402",
+        "mergedAt": "2026-07-13T10:50:53Z"
       },
-      "totalMergedPrs": 15,
+      "totalMergedPrs": 16,
       "contributionYears": [
         "2026"
       ],
       "yearly": {
         "2026": {
-          "totalMergedPrs": 15,
+          "totalMergedPrs": 16,
           "firstMergedPr": {
             "repo": "software-agent-sdk",
             "number": 2019,
@@ -823,10 +927,10 @@
           },
           "mostRecentMergedPr": {
             "repo": "extensions",
-            "number": 405,
-            "title": "feat: add technical-writing skill",
-            "url": "https://github.com/OpenHands/extensions/pull/405",
-            "mergedAt": "2026-07-13T03:22:47Z"
+            "number": 402,
+            "title": "feat(iterate): keep generated .pr/ artifacts fresh during PR iteration",
+            "url": "https://github.com/OpenHands/extensions/pull/402",
+            "mergedAt": "2026-07-13T10:50:53Z"
           }
         }
       }
@@ -956,49 +1060,6 @@
             "title": "feat(home): group workspace folders by parent in the dropdown (#129)",
             "url": "https://github.com/OpenHands/agent-canvas/pull/1368",
             "mergedAt": "2026-07-11T15:37:11Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "186447053",
-      "login": "Sujit-1509",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/186447053?u=3a80f764ea9ec54e27af8de1d60bc40dc66c6019&v=4",
-      "profileUrl": "https://github.com/Sujit-1509",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 15243,
-        "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
-        "url": "https://github.com/OpenHands/OpenHands/pull/15243",
-        "mergedAt": "2026-07-11T13:52:10Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 15243,
-        "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
-        "url": "https://github.com/OpenHands/OpenHands/pull/15243",
-        "mergedAt": "2026-07-11T13:52:10Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 15243,
-            "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
-            "url": "https://github.com/OpenHands/OpenHands/pull/15243",
-            "mergedAt": "2026-07-11T13:52:10Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 15243,
-            "title": "fix(app-server): preserve conversation created_at across lifecycle webhooks",
-            "url": "https://github.com/OpenHands/OpenHands/pull/15243",
-            "mergedAt": "2026-07-11T13:52:10Z"
           }
         }
       }
@@ -3673,67 +3734,6 @@
             "title": "feat: add agent-creator skill",
             "url": "https://github.com/OpenHands/extensions/pull/122",
             "mergedAt": "2026-04-21T08:12:29Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "202552852",
-      "login": "ixchio",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=a876be5392a98ddc71e6bbb0bedc22fab619153d&v=4",
-      "profileUrl": "https://github.com/ixchio",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 1433,
-        "title": "feat: add early stopping/pruner for behavior tests cost optimization",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/1433",
-        "mergedAt": "2025-12-28T21:16:56Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 2688,
-        "title": "feat(workspace): make health_check_timeout configurable on DockerWorkspace and ApptainerWorkspace",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2688",
-        "mergedAt": "2026-04-20T07:13:52Z"
-      },
-      "totalMergedPrs": 10,
-      "contributionYears": [
-        "2026",
-        "2025"
-      ],
-      "yearly": {
-        "2025": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 1433,
-            "title": "feat: add early stopping/pruner for behavior tests cost optimization",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/1433",
-            "mergedAt": "2025-12-28T21:16:56Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 1433,
-            "title": "feat: add early stopping/pruner for behavior tests cost optimization",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/1433",
-            "mergedAt": "2025-12-28T21:16:56Z"
-          }
-        },
-        "2026": {
-          "totalMergedPrs": 9,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 1539,
-            "title": "feat: add pause() and resume() methods to workspace classes",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/1539",
-            "mergedAt": "2026-01-01T14:55:59Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2688,
-            "title": "feat(workspace): make health_check_timeout configurable on DockerWorkspace and ApptainerWorkspace",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2688",
-            "mergedAt": "2026-04-20T07:13:52Z"
           }
         }
       }
@@ -23136,7 +23136,7 @@
     {
       "githubUserId": "15326932",
       "login": "Mineru98",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/15326932?u=45914d86fb794dfa6f9728c0d706328a7e6db2f0&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/15326932?u=a1ac7704a009b7b9a1b9093b4be2f574337ea493&v=4",
       "profileUrl": "https://github.com/Mineru98",
       "firstMergedPr": {
         "repo": "OpenHands",

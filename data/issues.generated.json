@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-13T05:20:52.852Z",
-  "windowStart": "2025-07-13T05:09:13.043Z",
-  "windowEnd": "2026-07-13T05:09:13.043Z",
+  "generatedAt": "2026-07-14T05:11:03.655Z",
+  "windowStart": "2025-07-14T04:59:44.618Z",
+  "windowEnd": "2026-07-14T04:59:44.618Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalIssuesOpened": 1109,
-  "totalIssueComments": 3347,
+  "totalIssuesOpened": 1115,
+  "totalIssueComments": 3343,
   "skippedRepos": [],
   "repos": [
     {
@@ -21,7 +21,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 37,
-      "issueCommentsCount": 118
+      "issueCommentsCount": 121
     },
     {
       "repo": "amd-openhands-playbook",
@@ -160,8 +160,8 @@
       "repo": "OpenHands",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 597,
-      "issueCommentsCount": 1954
+      "issuesOpenedCount": 599,
+      "issueCommentsCount": 1946
     },
     {
       "repo": "openhands-aci",
@@ -189,7 +189,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 74,
-      "issueCommentsCount": 238
+      "issueCommentsCount": 237
     },
     {
       "repo": "OpenHands-Cloud",
@@ -258,8 +258,8 @@
       "repo": "software-agent-sdk",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 321,
-      "issueCommentsCount": 878
+      "issuesOpenedCount": 325,
+      "issueCommentsCount": 880
     },
     {
       "repo": "terraform-gcp-datadog-integration",
@@ -312,6 +312,176 @@
     }
   ],
   "recentActivities": [
+    {
+      "type": "issueOpened",
+      "githubUserId": "56993850",
+      "login": "Ulysses-Gaia",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/56993850?v=4",
+      "profileUrl": "https://github.com/Ulysses-Gaia",
+      "createdAt": "2026-07-14T01:27:04Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15260,
+        "title": "[Bug]: [Windows] agent-server started via uvx crashes with ModuleNotFoundError (libtmux / openhands.tools not installed)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15260",
+        "createdAt": "2026-07-14T01:27:04Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "146391559",
+      "login": "berylm1",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/146391559?v=4",
+      "profileUrl": "https://github.com/berylm1",
+      "createdAt": "2026-07-13T23:25:11Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15259,
+        "title": "[Bug]: AssertionError in openhands/sdk/llm/llm.py at line 1965 during _atransport_call",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15259",
+        "createdAt": "2026-07-13T23:25:11Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "75247",
+      "login": "arikon",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/75247?v=4",
+      "profileUrl": "https://github.com/arikon",
+      "createdAt": "2026-07-13T23:21:03Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4109,
+        "title": "Support Unix domain socket binding in openhands-agent-server",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4109",
+        "createdAt": "2026-07-13T23:21:03Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "99661288",
+      "login": "saisharan0103",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/99661288?v=4",
+      "profileUrl": "https://github.com/saisharan0103",
+      "createdAt": "2026-07-13T18:17:23Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 3835,
+        "title": "meta-profiles ignore OH_PERSISTENCE_DIR — host ~/.openhands/meta-profiles leaks into isolated agent-servers",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3835",
+        "createdAt": "2026-06-22T08:06:17Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3835#issuecomment-4961175315"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-07-13T18:01:41Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1694,
+        "title": "[Bug] OpenHands LLM Provider error with various LLM Models",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1694",
+        "createdAt": "2026-07-13T16:27:48Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1694#issuecomment-4961041728"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "55096905",
+      "login": "bozhnyukAlex",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/55096905?v=4",
+      "profileUrl": "https://github.com/bozhnyukAlex",
+      "createdAt": "2026-07-13T15:51:14Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4107,
+        "title": "[Bug]: TaskToolSet does not propagate parent interruption to active subagents",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4107",
+        "createdAt": "2026-07-13T15:51:14Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "3790163",
+      "login": "shubhank008",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3790163?v=4",
+      "profileUrl": "https://github.com/shubhank008",
+      "createdAt": "2026-07-13T15:48:03Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1647,
+        "title": "[Suggestion] UI improvements for showing message timestamp, token/cost data per message and Conversation grouping",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1647",
+        "createdAt": "2026-07-10T00:53:16Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1647#issuecomment-4959827755"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "createdAt": "2026-07-13T14:37:54Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4106,
+        "title": "RFC: structured way for the agent to declare a task infeasible (distinct from success)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4106",
+        "createdAt": "2026-07-13T14:37:54Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "createdAt": "2026-07-13T14:37:08Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4105,
+        "title": "Visualizer metrics subtitle shows only cumulative token usage, easily mistaken for per-request usage",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4105",
+        "createdAt": "2026-07-13T14:37:08Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "190713195",
+      "login": "sivaranjinee123",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/190713195?v=4",
+      "profileUrl": "https://github.com/sivaranjinee123",
+      "createdAt": "2026-07-13T10:39:56Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 877,
+        "title": "Documentation doesn't explain sandboxing differences between Docker and npm installation methods",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/877",
+        "createdAt": "2026-05-28T17:20:07Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/877#issuecomment-4957076412"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "99661288",
+      "login": "saisharan0103",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/99661288?v=4",
+      "profileUrl": "https://github.com/saisharan0103",
+      "createdAt": "2026-07-13T08:23:18Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4032,
+        "title": "[Bug]: LLM profile timeout is reset after agent-server restart",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4032",
+        "createdAt": "2026-07-08T15:34:45Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4032#issuecomment-4955919404"
+    },
     {
       "type": "issueComment",
       "githubUserId": "6080905",
@@ -1066,206 +1236,127 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/15160",
         "createdAt": "2026-07-07T11:00:40Z"
       }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "50232924",
-      "login": "teamplayer3",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/50232924?v=4",
-      "profileUrl": "https://github.com/teamplayer3",
-      "createdAt": "2026-07-07T09:51:40Z",
-      "issue": {
-        "repo": "agent-canvas",
-        "number": 1610,
-        "title": "[Bug]: ACP PromptRequest validation error — session_id/prompt fields swapped when connecting to Hermes Agent via custom ACP command",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1610",
-        "createdAt": "2026-07-06T18:35:05Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1610#issuecomment-4902462944"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "5391645",
-      "login": "marcinkuk",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/5391645?v=4",
-      "profileUrl": "https://github.com/marcinkuk",
-      "createdAt": "2026-07-07T09:02:30Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15158,
-        "title": "[Bug]: Can't pull 1.9.0 image",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15158",
-        "createdAt": "2026-07-07T09:02:30Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "3652353",
-      "login": "polfeliu",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/3652353?v=4",
-      "profileUrl": "https://github.com/polfeliu",
-      "createdAt": "2026-07-07T07:18:49Z",
-      "issue": {
-        "repo": "agent-canvas",
-        "number": 1611,
-        "title": "New-conversation compose form hardcodes agent_settings.llm.stream=true, ignoring the Settings LLM Stream toggle",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1611",
-        "createdAt": "2026-07-07T07:18:49Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "1479804",
-      "login": "kripper",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
-      "profileUrl": "https://github.com/kripper",
-      "createdAt": "2026-07-07T03:45:13Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3690,
-        "title": "Move Current DateTime Block to the End of the Initial Prompt to Improve Prompt Cache Reuse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3690",
-        "createdAt": "2026-06-13T09:46:28Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3690#issuecomment-4899907223"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "1479804",
-      "login": "kripper",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
-      "profileUrl": "https://github.com/kripper",
-      "createdAt": "2026-07-07T03:37:21Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3690,
-        "title": "Move Current DateTime Block to the End of the Initial Prompt to Improve Prompt Cache Reuse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3690",
-        "createdAt": "2026-06-13T09:46:28Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3690#issuecomment-4899871740"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-07-07T03:20:29Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3690,
-        "title": "Move Current DateTime Block to the End of the Initial Prompt to Improve Prompt Cache Reuse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3690",
-        "createdAt": "2026-06-13T09:46:28Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3690#issuecomment-4899795590"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "1479804",
-      "login": "kripper",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
-      "profileUrl": "https://github.com/kripper",
-      "createdAt": "2026-07-07T02:27:18Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3690,
-        "title": "Move Current DateTime Block to the End of the Initial Prompt to Improve Prompt Cache Reuse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3690",
-        "createdAt": "2026-06-13T09:46:28Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3690#issuecomment-4899527019"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "1479804",
-      "login": "kripper",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
-      "profileUrl": "https://github.com/kripper",
-      "createdAt": "2026-07-07T02:23:37Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3690,
-        "title": "Move Current DateTime Block to the End of the Initial Prompt to Improve Prompt Cache Reuse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3690",
-        "createdAt": "2026-06-13T09:46:28Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3690#issuecomment-4899507887"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "1479804",
-      "login": "kripper",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
-      "profileUrl": "https://github.com/kripper",
-      "createdAt": "2026-07-07T01:22:08Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 3690,
-        "title": "Move Current DateTime Block to the End of the Initial Prompt to Improve Prompt Cache Reuse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3690",
-        "createdAt": "2026-06-13T09:46:28Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3690#issuecomment-4899185085"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "84140999",
-      "login": "ChetanyaRathi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/84140999?v=4",
-      "profileUrl": "https://github.com/ChetanyaRathi",
-      "createdAt": "2026-07-06T23:35:24Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15150,
-        "title": "Jira Data Center: Connect button permanently disabled in email-match mode with a managed service account",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15150",
-        "createdAt": "2026-07-06T20:29:08Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15150#issuecomment-4898582145"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "84140999",
-      "login": "ChetanyaRathi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/84140999?v=4",
-      "profileUrl": "https://github.com/ChetanyaRathi",
-      "createdAt": "2026-07-06T22:05:44Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15150,
-        "title": "Jira Data Center: Connect button permanently disabled in email-match mode with a managed service account",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15150",
-        "createdAt": "2026-07-06T20:29:08Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15150#issuecomment-4898028767"
     }
   ],
   "yearlyTotals": {
     "2025": {
       "issuesOpened": 463,
-      "issueComments": 1440,
+      "issueComments": 1434,
       "uniqueIssueOpeners": 228,
-      "uniqueCommenters": 331
+      "uniqueCommenters": 330
     },
     "2026": {
-      "issuesOpened": 646,
-      "issueComments": 1907,
-      "uniqueIssueOpeners": 308,
-      "uniqueCommenters": 395
+      "issuesOpened": 652,
+      "issueComments": 1909,
+      "uniqueIssueOpeners": 312,
+      "uniqueCommenters": 396
     }
   },
   "users": [
+    {
+      "githubUserId": "56993850",
+      "login": "Ulysses-Gaia",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/56993850?v=4",
+      "profileUrl": "https://github.com/Ulysses-Gaia",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-14T01:27:04Z",
+      "mostRecentActivityAt": "2026-07-14T01:27:04Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 15260,
+        "title": "[Bug]: [Windows] agent-server started via uvx crashes with ModuleNotFoundError (libtmux / openhands.tools not installed)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15260",
+        "createdAt": "2026-07-14T01:27:04Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 15260,
+        "title": "[Bug]: [Windows] agent-server started via uvx crashes with ModuleNotFoundError (libtmux / openhands.tools not installed)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15260",
+        "createdAt": "2026-07-14T01:27:04Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "146391559",
+      "login": "berylm1",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/146391559?v=4",
+      "profileUrl": "https://github.com/berylm1",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-13T23:25:11Z",
+      "mostRecentActivityAt": "2026-07-13T23:25:11Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 15259,
+        "title": "[Bug]: AssertionError in openhands/sdk/llm/llm.py at line 1965 during _atransport_call",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15259",
+        "createdAt": "2026-07-13T23:25:11Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 15259,
+        "title": "[Bug]: AssertionError in openhands/sdk/llm/llm.py at line 1965 during _atransport_call",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15259",
+        "createdAt": "2026-07-13T23:25:11Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "75247",
+      "login": "arikon",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/75247?v=4",
+      "profileUrl": "https://github.com/arikon",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-13T23:21:03Z",
+      "mostRecentActivityAt": "2026-07-13T23:21:03Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4109,
+        "title": "Support Unix domain socket binding in openhands-agent-server",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4109",
+        "createdAt": "2026-07-13T23:21:03Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4109,
+        "title": "Support Unix domain socket binding in openhands-agent-server",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4109",
+        "createdAt": "2026-07-13T23:21:03Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "99661288",
+      "login": "saisharan0103",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/99661288?v=4",
+      "profileUrl": "https://github.com/saisharan0103",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 2,
+      "firstActivityAt": "2026-07-13T08:23:18Z",
+      "mostRecentActivityAt": "2026-07-13T18:17:23Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 3835,
+        "title": "meta-profiles ignore OH_PERSISTENCE_DIR — host ~/.openhands/meta-profiles leaks into isolated agent-servers",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3835",
+        "createdAt": "2026-07-13T18:17:23Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3835#issuecomment-4961175315"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
       "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
       "profileUrl": "https://github.com/enyst",
       "issuesOpenedCount": 255,
-      "issueCommentsCount": 1212,
+      "issueCommentsCount": 1213,
       "firstActivityAt": "2025-07-14T14:55:26Z",
-      "mostRecentActivityAt": "2026-07-12T23:25:07Z",
+      "mostRecentActivityAt": "2026-07-13T18:01:41Z",
       "firstIssue": {
         "repo": "OpenHands",
         "number": 9745,
@@ -1281,12 +1372,114 @@
         "createdAt": "2026-07-08T20:36:16Z"
       },
       "mostRecentComment": {
+        "repo": "agent-canvas",
+        "number": 1694,
+        "title": "[Bug] OpenHands LLM Provider error with various LLM Models",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1694",
+        "createdAt": "2026-07-13T18:01:41Z",
+        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1694#issuecomment-4961041728"
+      }
+    },
+    {
+      "githubUserId": "55096905",
+      "login": "bozhnyukAlex",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/55096905?v=4",
+      "profileUrl": "https://github.com/bozhnyukAlex",
+      "issuesOpenedCount": 5,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-06-16T20:06:45Z",
+      "mostRecentActivityAt": "2026-07-13T15:51:14Z",
+      "firstIssue": {
         "repo": "software-agent-sdk",
-        "number": 4096,
-        "title": "[Bug]: agent-server crash / Input should be a valid string [type=string_type, input_value=SecretStr('**********'), input_type=SecretStr]",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4096",
-        "createdAt": "2026-07-12T23:25:07Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4096#issuecomment-4953192503"
+        "number": 3765,
+        "title": "[Bug]: Empty assistant message serializes to non-string content for Chat Completions",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3765",
+        "createdAt": "2026-06-16T20:06:45Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4107,
+        "title": "[Bug]: TaskToolSet does not propagate parent interruption to active subagents",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4107",
+        "createdAt": "2026-07-13T15:51:14Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "3790163",
+      "login": "shubhank008",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3790163?v=4",
+      "profileUrl": "https://github.com/shubhank008",
+      "issuesOpenedCount": 2,
+      "issueCommentsCount": 6,
+      "firstActivityAt": "2026-05-25T12:50:12Z",
+      "mostRecentActivityAt": "2026-07-13T15:48:03Z",
+      "firstIssue": {
+        "repo": "agent-canvas",
+        "number": 1625,
+        "title": "How do we use GIT in the new UI ?",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1625",
+        "createdAt": "2026-07-08T14:19:33Z"
+      },
+      "mostRecentIssue": {
+        "repo": "agent-canvas",
+        "number": 1647,
+        "title": "[Suggestion] UI improvements for showing message timestamp, token/cost data per message and Conversation grouping",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1647",
+        "createdAt": "2026-07-10T00:53:16Z"
+      },
+      "mostRecentComment": {
+        "repo": "agent-canvas",
+        "number": 1647,
+        "title": "[Suggestion] UI improvements for showing message timestamp, token/cost data per message and Conversation grouping",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1647",
+        "createdAt": "2026-07-13T15:48:03Z",
+        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1647#issuecomment-4959827755"
+      }
+    },
+    {
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "issuesOpenedCount": 2,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-13T14:37:08Z",
+      "mostRecentActivityAt": "2026-07-13T14:37:54Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4105,
+        "title": "Visualizer metrics subtitle shows only cumulative token usage, easily mistaken for per-request usage",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4105",
+        "createdAt": "2026-07-13T14:37:08Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4106,
+        "title": "RFC: structured way for the agent to declare a task infeasible (distinct from success)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4106",
+        "createdAt": "2026-07-13T14:37:54Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "190713195",
+      "login": "sivaranjinee123",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/190713195?v=4",
+      "profileUrl": "https://github.com/sivaranjinee123",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-07-13T10:39:56Z",
+      "mostRecentActivityAt": "2026-07-13T10:39:56Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "agent-canvas",
+        "number": 877,
+        "title": "Documentation doesn't explain sandboxing differences between Docker and npm installation methods",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/877",
+        "createdAt": "2026-07-13T10:39:56Z",
+        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/877#issuecomment-4957076412"
       }
     },
     {
@@ -1464,38 +1657,6 @@
       }
     },
     {
-      "githubUserId": "3790163",
-      "login": "shubhank008",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/3790163?v=4",
-      "profileUrl": "https://github.com/shubhank008",
-      "issuesOpenedCount": 2,
-      "issueCommentsCount": 5,
-      "firstActivityAt": "2026-05-25T12:50:12Z",
-      "mostRecentActivityAt": "2026-07-11T15:26:06Z",
-      "firstIssue": {
-        "repo": "agent-canvas",
-        "number": 1625,
-        "title": "How do we use GIT in the new UI ?",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1625",
-        "createdAt": "2026-07-08T14:19:33Z"
-      },
-      "mostRecentIssue": {
-        "repo": "agent-canvas",
-        "number": 1647,
-        "title": "[Suggestion] UI improvements for showing message timestamp, token/cost data per message and Conversation grouping",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1647",
-        "createdAt": "2026-07-10T00:53:16Z"
-      },
-      "mostRecentComment": {
-        "repo": "agent-canvas",
-        "number": 1647,
-        "title": "[Suggestion] UI improvements for showing message timestamp, token/cost data per message and Conversation grouping",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1647",
-        "createdAt": "2026-07-11T15:26:06Z",
-        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1647#issuecomment-4947106096"
-      }
-    },
-    {
       "githubUserId": "183583132",
       "login": "rsd-darshan",
       "avatarUrl": "https://avatars.githubusercontent.com/u/183583132?v=4",
@@ -1577,31 +1738,6 @@
         "title": "Suggestion: monetize this MCP server with x402 micropayments",
         "url": "https://github.com/OpenHands/agent-canvas/issues/1652",
         "createdAt": "2026-07-10T11:40:13Z"
-      },
-      "mostRecentComment": null
-    },
-    {
-      "githubUserId": "55096905",
-      "login": "bozhnyukAlex",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/55096905?v=4",
-      "profileUrl": "https://github.com/bozhnyukAlex",
-      "issuesOpenedCount": 4,
-      "issueCommentsCount": 0,
-      "firstActivityAt": "2026-06-16T20:06:45Z",
-      "mostRecentActivityAt": "2026-07-10T06:41:28Z",
-      "firstIssue": {
-        "repo": "software-agent-sdk",
-        "number": 3765,
-        "title": "[Bug]: Empty assistant message serializes to non-string content for Chat Completions",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3765",
-        "createdAt": "2026-06-16T20:06:45Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 4064,
-        "title": "[Feature]: Support run-scoped LLM extra headers in Conversation and Agent Server APIs",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4064",
-        "createdAt": "2026-07-10T06:41:28Z"
       },
       "mostRecentComment": null
     },
@@ -2770,26 +2906,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/15063",
         "createdAt": "2026-07-01T08:24:11Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15063#issuecomment-4852089833"
-      }
-    },
-    {
-      "githubUserId": "24449799",
-      "login": "hiSandog",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/24449799?v=4",
-      "profileUrl": "https://github.com/hiSandog",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 3,
-      "firstActivityAt": "2026-06-27T01:20:41Z",
-      "mostRecentActivityAt": "2026-07-01T02:46:21Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 15071,
-        "title": "[Bug]: Conversation list panel shows raw error string with no fallback UI on failed request",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15071",
-        "createdAt": "2026-07-01T02:46:21Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15071#issuecomment-4849806150"
       }
     },
     {
@@ -11034,9 +11150,9 @@
     },
     {
       "githubUserId": "130913840",
-      "login": "ai-nurmamat",
+      "login": "RewFa-CEO",
       "avatarUrl": "https://avatars.githubusercontent.com/u/130913840?v=4",
-      "profileUrl": "https://github.com/ai-nurmamat",
+      "profileUrl": "https://github.com/RewFa-CEO",
       "issuesOpenedCount": 1,
       "issueCommentsCount": 0,
       "firstActivityAt": "2026-03-10T16:52:12Z",
@@ -14953,8 +15069,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/58927531?v=4",
       "profileUrl": "https://github.com/BradKML",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 64,
-      "firstActivityAt": "2025-07-14T04:25:53Z",
+      "issueCommentsCount": 62,
+      "firstActivityAt": "2025-07-14T07:25:53Z",
       "mostRecentActivityAt": "2026-01-05T06:04:18Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -23699,8 +23815,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/186840476?v=4",
       "profileUrl": "https://github.com/Euni-Bot",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 4,
-      "firstActivityAt": "2025-07-14T00:20:04Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-07-23T09:45:18Z",
       "mostRecentActivityAt": "2025-07-23T09:45:18Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24322,26 +24438,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/9678",
         "createdAt": "2025-07-14T12:25:08Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9678#issuecomment-3069295700"
-      }
-    },
-    {
-      "githubUserId": "12256205",
-      "login": "wi-ski",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/12256205?v=4",
-      "profileUrl": "https://github.com/wi-ski",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-07-14T02:33:33Z",
-      "mostRecentActivityAt": "2025-07-14T02:33:33Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 8951,
-        "title": "[Feature]: Voice to prompt button",
-        "url": "https://github.com/OpenHands/OpenHands/issues/8951",
-        "createdAt": "2025-07-14T02:33:33Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/8951#issuecomment-3067581123"
       }
     }
   ]
