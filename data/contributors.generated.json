@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-07-16T05:00:16.508Z",
+  "generatedAt": "2026-07-17T05:00:46.114Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2552,
+  "totalMergedPrs": 2553,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands-Cloud",
+        "number": 898,
+        "title": "fix(release): make lint pass --app [PLTF-3195]",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/898",
+        "mergedAt": "2026-07-16T16:04:54Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -772,22 +785,52 @@
         "url": "https://github.com/OpenHands/automation/pull/213",
         "mergedAt": "2026-06-25T12:15:21Z"
       }
-    },
-    {
-      "githubUserId": "230283659",
-      "login": "tomsen02",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/230283659?u=f664a1155721bd86d420f69014e783476cb1f1f8&v=4",
-      "profileUrl": "https://github.com/tomsen02",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 14975,
-        "title": "docs: fix dead link to self-hosting guide in README",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14975",
-        "mergedAt": "2026-06-25T07:20:38Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 898,
+        "title": "fix(release): make lint pass --app [PLTF-3195]",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/898",
+        "mergedAt": "2026-07-16T16:04:54Z"
+      },
+      "totalMergedPrs": 3,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 3,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 898,
+            "title": "fix(release): make lint pass --app [PLTF-3195]",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/898",
+            "mergedAt": "2026-07-16T16:04:54Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -863,49 +906,6 @@
             "title": "Fix REST API contract summary deduplication",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/3918",
             "mergedAt": "2026-07-15T19:16:12Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 15270,
-        "title": "fix(app-server): lower DB pool defaults and make them env-tunable",
-        "url": "https://github.com/OpenHands/OpenHands/pull/15270",
-        "mergedAt": "2026-07-15T15:09:47Z"
-      },
-      "totalMergedPrs": 2,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 2,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 15270,
-            "title": "fix(app-server): lower DB pool defaults and make them env-tunable",
-            "url": "https://github.com/OpenHands/OpenHands/pull/15270",
-            "mergedAt": "2026-07-15T15:09:47Z"
           }
         }
       }
