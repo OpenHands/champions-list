@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-18T05:09:01.642Z",
-  "windowStart": "2025-07-18T04:57:48.654Z",
-  "windowEnd": "2026-07-18T04:57:48.654Z",
+  "generatedAt": "2026-07-19T05:16:16.368Z",
+  "windowStart": "2025-07-19T05:03:50.231Z",
+  "windowEnd": "2026-07-19T05:03:50.231Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
   "totalIssuesOpened": 1119,
-  "totalIssueComments": 3326,
+  "totalIssueComments": 3325,
   "skippedRepos": [],
   "repos": [
     {
@@ -97,7 +97,7 @@
       "repo": "docs",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 10,
+      "issuesOpenedCount": 11,
       "issueCommentsCount": 12
     },
     {
@@ -160,8 +160,8 @@
       "repo": "OpenHands",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 594,
-      "issueCommentsCount": 1920
+      "issuesOpenedCount": 593,
+      "issueCommentsCount": 1919
     },
     {
       "repo": "openhands-aci",
@@ -314,6 +314,84 @@
   "recentActivities": [
     {
       "type": "issueComment",
+      "githubUserId": "116161265",
+      "login": "mdshzb04",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116161265?v=4",
+      "profileUrl": "https://github.com/mdshzb04",
+      "createdAt": "2026-07-19T02:43:08Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15199,
+        "title": "SERVE_FRONTEND / AWS_S3_SECURE env toggles treat '1' as false (violates documented ('true', '1') rule)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15199",
+        "createdAt": "2026-07-09T07:57:47Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15199#issuecomment-5013867110"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "116457912",
+      "login": "rahilisashaik",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116457912?v=4",
+      "profileUrl": "https://github.com/rahilisashaik",
+      "createdAt": "2026-07-18T19:48:33Z",
+      "issue": {
+        "repo": "docs",
+        "number": 635,
+        "title": "Moonshot provider documentation references a deprecated model, setup fails per doc recommendations",
+        "url": "https://github.com/OpenHands/docs/issues/635",
+        "createdAt": "2026-07-18T19:48:33Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "116457912",
+      "login": "rahilisashaik",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116457912?v=4",
+      "profileUrl": "https://github.com/rahilisashaik",
+      "createdAt": "2026-07-18T19:46:36Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15321,
+        "title": "Docs: Moonshot provider documentation references a deprecated model, setup fails per doc recommendations",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15321",
+        "createdAt": "2026-07-18T19:14:34Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15321#issuecomment-5012670088"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "116457912",
+      "login": "rahilisashaik",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116457912?v=4",
+      "profileUrl": "https://github.com/rahilisashaik",
+      "createdAt": "2026-07-18T19:14:34Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15321,
+        "title": "Docs: Moonshot provider documentation references a deprecated model, setup fails per doc recommendations",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15321",
+        "createdAt": "2026-07-18T19:14:34Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "createdAt": "2026-07-18T06:59:15Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 14698,
+        "title": "[Bug]: User message on finished/idle conversation never triggers /run, agent loop stays dormant (regression on main)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14698",
+        "createdAt": "2026-06-06T21:21:46Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14698#issuecomment-5010322621"
+    },
+    {
+      "type": "issueComment",
       "githubUserId": "99661288",
       "login": "saisharan0103",
       "avatarUrl": "https://avatars.githubusercontent.com/u/99661288?v=4",
@@ -415,7 +493,7 @@
       "issue": {
         "repo": "agent-canvas",
         "number": 348,
-        "title": "Desktop app experience: zero-friction startup with configurable sandboxing",
+        "title": "Ship Agent Canvas as a first-class desktop app",
         "url": "https://github.com/OpenHands/agent-canvas/issues/348",
         "createdAt": "2026-05-11T23:40:43Z"
       },
@@ -1165,101 +1243,107 @@
         "createdAt": "2026-07-08T15:34:45Z"
       },
       "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4032#issuecomment-4955919404"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-07-12T23:25:07Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 4096,
-        "title": "[Bug]: agent-server crash / Input should be a valid string [type=string_type, input_value=SecretStr('**********'), input_type=SecretStr]",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4096",
-        "createdAt": "2026-07-11T15:18:20Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4096#issuecomment-4953192503"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "1479804",
-      "login": "kripper",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1479804?v=4",
-      "profileUrl": "https://github.com/kripper",
-      "createdAt": "2026-07-12T19:33:04Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 4096,
-        "title": "[Bug]: agent-server crash / Input should be a valid string [type=string_type, input_value=SecretStr('**********'), input_type=SecretStr]",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4096",
-        "createdAt": "2026-07-11T15:18:20Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4096#issuecomment-4952498950"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "createdAt": "2026-07-12T15:05:59Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 4093,
-        "title": "ACP 0.11 drops Gemini model state from NewSessionResponse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4093",
-        "createdAt": "2026-07-12T15:05:59Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "67886761",
-      "login": "ShiHuiwen-creat",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/67886761?v=4",
-      "profileUrl": "https://github.com/ShiHuiwen-creat",
-      "createdAt": "2026-07-12T05:19:34Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15199,
-        "title": "SERVE_FRONTEND / AWS_S3_SECURE env toggles treat '1' as false (violates documented ('true', '1') rule)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15199",
-        "createdAt": "2026-07-09T07:57:47Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15199#issuecomment-4950068977"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "3053659",
-      "login": "azcoffeehabit",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/3053659?v=4",
-      "profileUrl": "https://github.com/azcoffeehabit",
-      "createdAt": "2026-07-12T02:04:37Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15249,
-        "title": "[Bug]: agent-server (No response from ACP server) when setting up automation using Local ACP, opencode, ollama",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15249",
-        "createdAt": "2026-07-12T02:04:37Z"
-      }
     }
   ],
   "yearlyTotals": {
     "2025": {
-      "issuesOpened": 447,
-      "issueComments": 1393,
+      "issuesOpened": 445,
+      "issueComments": 1389,
       "uniqueIssueOpeners": 218,
-      "uniqueCommenters": 314
+      "uniqueCommenters": 313
     },
     "2026": {
-      "issuesOpened": 672,
-      "issueComments": 1933,
-      "uniqueIssueOpeners": 323,
-      "uniqueCommenters": 405
+      "issuesOpened": 674,
+      "issueComments": 1936,
+      "uniqueIssueOpeners": 324,
+      "uniqueCommenters": 407
     }
   },
   "users": [
+    {
+      "githubUserId": "116161265",
+      "login": "mdshzb04",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116161265?v=4",
+      "profileUrl": "https://github.com/mdshzb04",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-07-19T02:43:08Z",
+      "mostRecentActivityAt": "2026-07-19T02:43:08Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15199,
+        "title": "SERVE_FRONTEND / AWS_S3_SECURE env toggles treat '1' as false (violates documented ('true', '1') rule)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15199",
+        "createdAt": "2026-07-19T02:43:08Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15199#issuecomment-5013867110"
+      }
+    },
+    {
+      "githubUserId": "116457912",
+      "login": "rahilisashaik",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116457912?v=4",
+      "profileUrl": "https://github.com/rahilisashaik",
+      "issuesOpenedCount": 2,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-07-18T19:14:34Z",
+      "mostRecentActivityAt": "2026-07-18T19:48:33Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 15321,
+        "title": "Docs: Moonshot provider documentation references a deprecated model, setup fails per doc recommendations",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15321",
+        "createdAt": "2026-07-18T19:14:34Z"
+      },
+      "mostRecentIssue": {
+        "repo": "docs",
+        "number": 635,
+        "title": "Moonshot provider documentation references a deprecated model, setup fails per doc recommendations",
+        "url": "https://github.com/OpenHands/docs/issues/635",
+        "createdAt": "2026-07-18T19:48:33Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15321,
+        "title": "Docs: Moonshot provider documentation references a deprecated model, setup fails per doc recommendations",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15321",
+        "createdAt": "2026-07-18T19:46:36Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15321#issuecomment-5012670088"
+      }
+    },
+    {
+      "githubUserId": "156683457",
+      "login": "shanemort1982",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
+      "profileUrl": "https://github.com/shanemort1982",
+      "issuesOpenedCount": 10,
+      "issueCommentsCount": 11,
+      "firstActivityAt": "2025-12-27T07:26:56Z",
+      "mostRecentActivityAt": "2026-07-18T06:59:15Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 12175,
+        "title": "Remote setup: CORS errors prevent file uploads in v1.0 (agent-server missing CORS support)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/12175",
+        "createdAt": "2025-12-27T07:26:56Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 3842,
+        "title": "agent-server: conversation wedges at execution_status=idle while /run returns 409 (stale _run_task never reaped, no self-heal)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3842",
+        "createdAt": "2026-06-22T16:50:29Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 14698,
+        "title": "[Bug]: User message on finished/idle conversation never triggers /run, agent loop stays dormant (regression on main)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14698",
+        "createdAt": "2026-07-18T06:59:15Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14698#issuecomment-5010322621"
+      }
+    },
     {
       "githubUserId": "99661288",
       "login": "saisharan0103",
@@ -1401,7 +1485,7 @@
       "mostRecentComment": {
         "repo": "agent-canvas",
         "number": 348,
-        "title": "Desktop app experience: zero-friction startup with configurable sandboxing",
+        "title": "Ship Agent Canvas as a first-class desktop app",
         "url": "https://github.com/OpenHands/agent-canvas/issues/348",
         "createdAt": "2026-07-17T05:44:34Z",
         "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/348#issuecomment-4999402712"
@@ -2867,38 +2951,6 @@
         "createdAt": "2026-07-04T18:31:10Z"
       },
       "mostRecentComment": null
-    },
-    {
-      "githubUserId": "156683457",
-      "login": "shanemort1982",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/156683457?v=4",
-      "profileUrl": "https://github.com/shanemort1982",
-      "issuesOpenedCount": 10,
-      "issueCommentsCount": 10,
-      "firstActivityAt": "2025-12-27T07:26:56Z",
-      "mostRecentActivityAt": "2026-07-04T10:00:28Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 12175,
-        "title": "Remote setup: CORS errors prevent file uploads in v1.0 (agent-server missing CORS support)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/12175",
-        "createdAt": "2025-12-27T07:26:56Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 3842,
-        "title": "agent-server: conversation wedges at execution_status=idle while /run returns 409 (stale _run_task never reaped, no self-heal)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3842",
-        "createdAt": "2026-06-22T16:50:29Z"
-      },
-      "mostRecentComment": {
-        "repo": "software-agent-sdk",
-        "number": 3842,
-        "title": "agent-server: conversation wedges at execution_status=idle while /run returns 409 (stale _run_task never reaped, no self-heal)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3842",
-        "createdAt": "2026-07-04T10:00:28Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3842#issuecomment-4881549543"
-      }
     },
     {
       "githubUserId": "76880977",
@@ -17289,8 +17341,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/1680659?v=4",
       "profileUrl": "https://github.com/wolfspyre",
       "issuesOpenedCount": 1,
-      "issueCommentsCount": 6,
-      "firstActivityAt": "2025-07-18T21:32:19Z",
+      "issueCommentsCount": 4,
+      "firstActivityAt": "2025-07-20T16:49:40Z",
       "mostRecentActivityAt": "2025-11-25T08:08:58Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -20673,8 +20725,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/38575406?v=4",
       "profileUrl": "https://github.com/FatheredPuma81",
       "issuesOpenedCount": 2,
-      "issueCommentsCount": 12,
-      "firstActivityAt": "2025-07-18T19:01:25Z",
+      "issueCommentsCount": 11,
+      "firstActivityAt": "2025-07-20T02:58:59Z",
       "mostRecentActivityAt": "2025-09-21T00:42:51Z",
       "firstIssue": {
         "repo": "software-agent-sdk",
@@ -20872,16 +20924,16 @@
       "login": "wyc1997",
       "avatarUrl": "https://avatars.githubusercontent.com/u/15965364?v=4",
       "profileUrl": "https://github.com/wyc1997",
-      "issuesOpenedCount": 4,
+      "issuesOpenedCount": 3,
       "issueCommentsCount": 0,
-      "firstActivityAt": "2025-07-19T02:16:58Z",
+      "firstActivityAt": "2025-08-07T01:23:50Z",
       "mostRecentActivityAt": "2025-09-18T00:15:16Z",
       "firstIssue": {
         "repo": "OpenHands",
-        "number": 9798,
-        "title": "[Bug]: LLM API retry waited for 30mins instead of 30s",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9798",
-        "createdAt": "2025-07-19T02:16:58Z"
+        "number": 10139,
+        "title": "[Bug]: Converting tool call to string adds additional newline at the start",
+        "url": "https://github.com/OpenHands/OpenHands/issues/10139",
+        "createdAt": "2025-08-07T01:23:50Z"
       },
       "mostRecentIssue": {
         "repo": "software-agent-sdk",
@@ -22404,16 +22456,16 @@
       "login": "DLNovice",
       "avatarUrl": "https://avatars.githubusercontent.com/u/84394874?v=4",
       "profileUrl": "https://github.com/DLNovice",
-      "issuesOpenedCount": 4,
+      "issuesOpenedCount": 3,
       "issueCommentsCount": 6,
-      "firstActivityAt": "2025-07-18T07:58:04Z",
+      "firstActivityAt": "2025-08-11T06:23:56Z",
       "mostRecentActivityAt": "2025-08-25T01:45:09Z",
       "firstIssue": {
         "repo": "OpenHands",
-        "number": 9782,
-        "title": "[Bug]: MCP Configuration",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9782",
-        "createdAt": "2025-07-18T07:58:04Z"
+        "number": 10203,
+        "title": "[Bug]: Image could not be pulled: image not found in registry.",
+        "url": "https://github.com/OpenHands/OpenHands/issues/10203",
+        "createdAt": "2025-08-11T06:23:56Z"
       },
       "mostRecentIssue": {
         "repo": "OpenHands",
@@ -24392,26 +24444,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/9059",
         "createdAt": "2025-07-19T06:33:28Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9059#issuecomment-3091943491"
-      }
-    },
-    {
-      "githubUserId": "207125612",
-      "login": "zhong1221",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/207125612?v=4",
-      "profileUrl": "https://github.com/zhong1221",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-07-18T08:20:41Z",
-      "mostRecentActivityAt": "2025-07-18T08:20:41Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 9753,
-        "title": "[Bug]: cannot connect runtime",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9753",
-        "createdAt": "2025-07-18T08:20:41Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9753#issuecomment-3088361379"
       }
     }
   ]
