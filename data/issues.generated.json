@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-19T05:16:16.368Z",
-  "windowStart": "2025-07-19T05:03:50.231Z",
-  "windowEnd": "2026-07-19T05:03:50.231Z",
+  "generatedAt": "2026-07-20T05:24:29.044Z",
+  "windowStart": "2025-07-20T05:13:16.367Z",
+  "windowEnd": "2026-07-20T05:13:16.367Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalIssuesOpened": 1119,
-  "totalIssueComments": 3325,
+  "totalIssuesOpened": 1118,
+  "totalIssueComments": 3321,
   "skippedRepos": [],
   "repos": [
     {
@@ -20,7 +20,7 @@
       "repo": "agent-canvas",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 42,
+      "issuesOpenedCount": 43,
       "issueCommentsCount": 126
     },
     {
@@ -160,8 +160,8 @@
       "repo": "OpenHands",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 593,
-      "issueCommentsCount": 1919
+      "issuesOpenedCount": 591,
+      "issueCommentsCount": 1915
     },
     {
       "repo": "openhands-aci",
@@ -312,6 +312,21 @@
     }
   ],
   "recentActivities": [
+    {
+      "type": "issueOpened",
+      "githubUserId": "290871893",
+      "login": "davidnichols-ops",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/290871893?v=4",
+      "profileUrl": "https://github.com/davidnichols-ops",
+      "createdAt": "2026-07-19T21:10:07Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1855,
+        "title": "Dev server infinite reload loop when OH_CANVAS_SAFE_STATE_DIR contains literal $HOME (Node --env-file does not expand shell variables)",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1855",
+        "createdAt": "2026-07-19T21:10:07Z"
+      }
+    },
     {
       "type": "issueComment",
       "githubUserId": "116161265",
@@ -1227,39 +1242,48 @@
         "createdAt": "2026-05-28T17:20:07Z"
       },
       "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/877#issuecomment-4957076412"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "99661288",
-      "login": "saisharan0103",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/99661288?v=4",
-      "profileUrl": "https://github.com/saisharan0103",
-      "createdAt": "2026-07-13T08:23:18Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 4032,
-        "title": "[Bug]: LLM profile timeout is reset after agent-server restart",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4032",
-        "createdAt": "2026-07-08T15:34:45Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4032#issuecomment-4955919404"
     }
   ],
   "yearlyTotals": {
     "2025": {
-      "issuesOpened": 445,
-      "issueComments": 1389,
+      "issuesOpened": 443,
+      "issueComments": 1385,
       "uniqueIssueOpeners": 218,
-      "uniqueCommenters": 313
+      "uniqueCommenters": 312
     },
     "2026": {
-      "issuesOpened": 674,
+      "issuesOpened": 675,
       "issueComments": 1936,
-      "uniqueIssueOpeners": 324,
+      "uniqueIssueOpeners": 325,
       "uniqueCommenters": 407
     }
   },
   "users": [
+    {
+      "githubUserId": "290871893",
+      "login": "davidnichols-ops",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/290871893?v=4",
+      "profileUrl": "https://github.com/davidnichols-ops",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-19T21:10:07Z",
+      "mostRecentActivityAt": "2026-07-19T21:10:07Z",
+      "firstIssue": {
+        "repo": "agent-canvas",
+        "number": 1855,
+        "title": "Dev server infinite reload loop when OH_CANVAS_SAFE_STATE_DIR contains literal $HOME (Node --env-file does not expand shell variables)",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1855",
+        "createdAt": "2026-07-19T21:10:07Z"
+      },
+      "mostRecentIssue": {
+        "repo": "agent-canvas",
+        "number": 1855,
+        "title": "Dev server infinite reload loop when OH_CANVAS_SAFE_STATE_DIR contains literal $HOME (Node --env-file does not expand shell variables)",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1855",
+        "createdAt": "2026-07-19T21:10:07Z"
+      },
+      "mostRecentComment": null
+    },
     {
       "githubUserId": "116161265",
       "login": "mdshzb04",
@@ -2533,16 +2557,16 @@
       "login": "afonsoft",
       "avatarUrl": "https://avatars.githubusercontent.com/u/11299396?v=4",
       "profileUrl": "https://github.com/afonsoft",
-      "issuesOpenedCount": 10,
+      "issuesOpenedCount": 9,
       "issueCommentsCount": 19,
-      "firstActivityAt": "2025-07-19T21:57:33Z",
+      "firstActivityAt": "2025-07-23T16:52:23Z",
       "mostRecentActivityAt": "2026-07-08T01:40:07Z",
       "firstIssue": {
         "repo": "OpenHands",
-        "number": 9808,
-        "title": "[Bug]: Initializing agent...",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9808",
-        "createdAt": "2025-07-19T21:57:33Z"
+        "number": 10185,
+        "title": "[Bug]: Error with ollama on localhost with deepseek-coder",
+        "url": "https://github.com/OpenHands/OpenHands/issues/10185",
+        "createdAt": "2025-08-09T17:50:41Z"
       },
       "mostRecentIssue": {
         "repo": "OpenHands",
@@ -3943,8 +3967,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/5833034?v=4",
       "profileUrl": "https://github.com/erkinalp",
       "issuesOpenedCount": 4,
-      "issueCommentsCount": 56,
-      "firstActivityAt": "2025-07-19T08:21:36Z",
+      "issueCommentsCount": 55,
+      "firstActivityAt": "2025-07-22T20:06:59Z",
       "mostRecentActivityAt": "2026-06-25T20:17:42Z",
       "firstIssue": {
         "repo": "software-agent-sdk",
@@ -17707,8 +17731,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/25746010?v=4",
       "profileUrl": "https://github.com/li-boxuan",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 9,
-      "firstActivityAt": "2025-07-19T16:46:58Z",
+      "issueCommentsCount": 8,
+      "firstActivityAt": "2025-09-01T17:37:38Z",
       "mostRecentActivityAt": "2025-11-12T23:51:55Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -18511,16 +18535,16 @@
       "login": "createthis",
       "avatarUrl": "https://avatars.githubusercontent.com/u/1695880?v=4",
       "profileUrl": "https://github.com/createthis",
-      "issuesOpenedCount": 7,
+      "issuesOpenedCount": 6,
       "issueCommentsCount": 18,
-      "firstActivityAt": "2025-07-19T15:50:54Z",
+      "firstActivityAt": "2025-07-22T15:13:00Z",
       "mostRecentActivityAt": "2025-10-31T02:34:57Z",
       "firstIssue": {
         "repo": "OpenHands",
-        "number": 9806,
-        "title": "feature request: ability to use windows docker runtime",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9806",
-        "createdAt": "2025-07-19T15:50:54Z"
+        "number": 9849,
+        "title": "Read feedback",
+        "url": "https://github.com/OpenHands/OpenHands/issues/9849",
+        "createdAt": "2025-07-22T15:13:00Z"
       },
       "mostRecentIssue": {
         "repo": "docs",
@@ -20725,8 +20749,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/38575406?v=4",
       "profileUrl": "https://github.com/FatheredPuma81",
       "issuesOpenedCount": 2,
-      "issueCommentsCount": 11,
-      "firstActivityAt": "2025-07-20T02:58:59Z",
+      "issueCommentsCount": 10,
+      "firstActivityAt": "2025-08-09T10:21:30Z",
       "mostRecentActivityAt": "2025-09-21T00:42:51Z",
       "firstIssue": {
         "repo": "software-agent-sdk",
@@ -24424,26 +24448,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/9808",
         "createdAt": "2025-07-21T02:52:51Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9808#issuecomment-3095077776"
-      }
-    },
-    {
-      "githubUserId": "21276809",
-      "login": "PAzter1101",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/21276809?v=4",
-      "profileUrl": "https://github.com/PAzter1101",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-07-19T06:33:28Z",
-      "mostRecentActivityAt": "2025-07-19T06:33:28Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 9059,
-        "title": "[Bug]: Adding self hosted gitlab",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9059",
-        "createdAt": "2025-07-19T06:33:28Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9059#issuecomment-3091943491"
       }
     }
   ]
