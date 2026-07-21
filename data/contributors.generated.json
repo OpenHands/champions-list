@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-07-20T05:11:46.108Z",
+  "generatedAt": "2026-07-21T05:02:01.021Z",
   "organization": "OpenHands",
   "repoCount": 43,
   "scannedRepoCount": 43,
-  "totalMergedPrs": 2554,
+  "totalMergedPrs": 2556,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 15333,
+        "title": "fix(app-server): restore previous DB pool_size default",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15333",
+        "mergedAt": "2026-07-20T19:44:36Z"
+      }
+    },
+    {
+      "githubUserId": "183583132",
+      "login": "rsd-darshan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/183583132?u=545e9075c9e66cc48d09c79e8709b5716ac2e8b5&v=4",
+      "profileUrl": "https://github.com/rsd-darshan",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4126,
+        "title": "fix(acp): bound ACP server startup with a timeout",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4126",
+        "mergedAt": "2026-07-20T12:47:05Z"
+      }
+    },
     {
       "githubUserId": "744063",
       "login": "georgeglarson",
@@ -759,35 +785,95 @@
         "url": "https://github.com/OpenHands/agent-canvas/pull/1499",
         "mergedAt": "2026-06-26T01:16:57Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3879,
-        "title": "Notify proj-agent when SDK release prep starts",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3879",
-        "mergedAt": "2026-06-25T14:47:14Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3880,
-        "title": "Skip integration setup for unrelated labels",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3880",
-        "mergedAt": "2026-06-25T14:42:01Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 15333,
+        "title": "fix(app-server): restore previous DB pool_size default",
+        "url": "https://github.com/OpenHands/OpenHands/pull/15333",
+        "mergedAt": "2026-07-20T19:44:36Z"
+      },
+      "totalMergedPrs": 4,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 4,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 15333,
+            "title": "fix(app-server): restore previous DB pool_size default",
+            "url": "https://github.com/OpenHands/OpenHands/pull/15333",
+            "mergedAt": "2026-07-20T19:44:36Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "183583132",
+      "login": "rsd-darshan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/183583132?u=545e9075c9e66cc48d09c79e8709b5716ac2e8b5&v=4",
+      "profileUrl": "https://github.com/rsd-darshan",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4087,
+        "title": "fix(skills): make marketplaces additive to public skills",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
+        "mergedAt": "2026-07-13T11:58:30Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4126,
+        "title": "fix(acp): bound ACP server startup with a timeout",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4126",
+        "mergedAt": "2026-07-20T12:47:05Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4087,
+            "title": "fix(skills): make marketplaces additive to public skills",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
+            "mergedAt": "2026-07-13T11:58:30Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4126,
+            "title": "fix(acp): bound ACP server startup with a timeout",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4126",
+            "mergedAt": "2026-07-20T12:47:05Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "744063",
       "login": "georgeglarson",
@@ -827,49 +913,6 @@
             "title": "feat(llm): add Kimi Code membership as a first-class Moonshot option",
             "url": "https://github.com/OpenHands/agent-canvas/pull/1844",
             "mergedAt": "2026-07-18T17:50:29Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 898,
-        "title": "fix(release): make lint pass --app [PLTF-3195]",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/898",
-        "mergedAt": "2026-07-16T16:04:54Z"
-      },
-      "totalMergedPrs": 3,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 3,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 898,
-            "title": "fix(release): make lint pass --app [PLTF-3195]",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/898",
-            "mergedAt": "2026-07-16T16:04:54Z"
           }
         }
       }
@@ -1096,49 +1139,6 @@
             "title": "fix(mcp): preserve nested object properties in LLM-facing tool schema",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4011",
             "mergedAt": "2026-07-13T15:16:21Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "183583132",
-      "login": "rsd-darshan",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/183583132?u=545e9075c9e66cc48d09c79e8709b5716ac2e8b5&v=4",
-      "profileUrl": "https://github.com/rsd-darshan",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4087,
-        "title": "fix(skills): make marketplaces additive to public skills",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
-        "mergedAt": "2026-07-13T11:58:30Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4087,
-        "title": "fix(skills): make marketplaces additive to public skills",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
-        "mergedAt": "2026-07-13T11:58:30Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4087,
-            "title": "fix(skills): make marketplaces additive to public skills",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
-            "mergedAt": "2026-07-13T11:58:30Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4087,
-            "title": "fix(skills): make marketplaces additive to public skills",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4087",
-            "mergedAt": "2026-07-13T11:58:30Z"
           }
         }
       }
