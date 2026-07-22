@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-07-21T05:02:01.021Z",
+  "generatedAt": "2026-07-22T05:01:50.011Z",
   "organization": "OpenHands",
-  "repoCount": 43,
-  "scannedRepoCount": 43,
-  "totalMergedPrs": 2556,
+  "repoCount": 44,
+  "scannedRepoCount": 44,
+  "totalMergedPrs": 2557,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "47117969",
+      "login": "dinmukhamedm",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/47117969?u=03680a5fcec389240a655f7b5e77f3e655d653be&v=4",
+      "profileUrl": "https://github.com/dinmukhamedm",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4179,
+        "title": "bump laminar to latest version, fix compat issues",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4179",
+        "mergedAt": "2026-07-21T18:12:06Z"
+      }
+    },
     {
       "githubUserId": "294240611",
       "login": "dylan-openhands",
@@ -772,22 +785,70 @@
         "url": "https://github.com/OpenHands/OpenHands/pull/13754",
         "mergedAt": "2026-06-26T01:46:26Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1499,
-        "title": "fix(settings): show ACP-disabled tooltip on desktop (drop pointer-events-none)",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1499",
-        "mergedAt": "2026-06-26T01:16:57Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "47117969",
+      "login": "dinmukhamedm",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/47117969?u=03680a5fcec389240a655f7b5e77f3e655d653be&v=4",
+      "profileUrl": "https://github.com/dinmukhamedm",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 935,
+        "title": "bump browser-use version, infer screenshot mime type dynamically",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/935",
+        "mergedAt": "2025-10-28T19:54:08Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4179,
+        "title": "bump laminar to latest version, fix compat issues",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4179",
+        "mergedAt": "2026-07-21T18:12:06Z"
+      },
+      "totalMergedPrs": 7,
+      "contributionYears": [
+        "2026",
+        "2025"
+      ],
+      "yearly": {
+        "2025": {
+          "totalMergedPrs": 3,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 935,
+            "title": "bump browser-use version, infer screenshot mime type dynamically",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/935",
+            "mergedAt": "2025-10-28T19:54:08Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 681,
+            "title": "Add OpenTelemetry with Laminar SDK",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/681",
+            "mergedAt": "2025-11-04T18:12:47Z"
+          }
+        },
+        "2026": {
+          "totalMergedPrs": 4,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 2871,
+            "title": "reduce noise in laminar observability",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2871",
+            "mergedAt": "2026-04-17T18:48:16Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4179,
+            "title": "bump laminar to latest version, fix compat issues",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4179",
+            "mergedAt": "2026-07-21T18:12:06Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "294240611",
       "login": "dylan-openhands",
@@ -3275,67 +3336,6 @@
             "title": "feat: Add workspace-specific prompt history with fuzzy search modal",
             "url": "https://github.com/OpenHands/OpenHands-CLI/pull/715",
             "mergedAt": "2026-05-13T17:40:43Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "47117969",
-      "login": "dinmukhamedm",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/47117969?u=03680a5fcec389240a655f7b5e77f3e655d653be&v=4",
-      "profileUrl": "https://github.com/dinmukhamedm",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 935,
-        "title": "bump browser-use version, infer screenshot mime type dynamically",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/935",
-        "mergedAt": "2025-10-28T19:54:08Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 3008,
-        "title": "Fix/laminar/remove litellm callback",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3008",
-        "mergedAt": "2026-05-13T13:19:37Z"
-      },
-      "totalMergedPrs": 6,
-      "contributionYears": [
-        "2026",
-        "2025"
-      ],
-      "yearly": {
-        "2025": {
-          "totalMergedPrs": 3,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 935,
-            "title": "bump browser-use version, infer screenshot mime type dynamically",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/935",
-            "mergedAt": "2025-10-28T19:54:08Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 681,
-            "title": "Add OpenTelemetry with Laminar SDK",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/681",
-            "mergedAt": "2025-11-04T18:12:47Z"
-          }
-        },
-        "2026": {
-          "totalMergedPrs": 3,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2871,
-            "title": "reduce noise in laminar observability",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2871",
-            "mergedAt": "2026-04-17T18:48:16Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 3008,
-            "title": "Fix/laminar/remove litellm callback",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/3008",
-            "mergedAt": "2026-05-13T13:19:37Z"
           }
         }
       }

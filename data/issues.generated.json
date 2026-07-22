@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-21T05:16:32.324Z",
-  "windowStart": "2025-07-21T05:03:35.751Z",
-  "windowEnd": "2026-07-21T05:03:35.751Z",
+  "generatedAt": "2026-07-22T05:16:40.831Z",
+  "windowStart": "2025-07-22T05:03:06.679Z",
+  "windowEnd": "2026-07-22T05:03:06.679Z",
   "organization": "OpenHands",
-  "repoCount": 43,
-  "scannedRepoCount": 43,
-  "totalIssuesOpened": 1118,
-  "totalIssueComments": 3337,
+  "repoCount": 44,
+  "scannedRepoCount": 44,
+  "totalIssuesOpened": 1119,
+  "totalIssueComments": 3334,
   "skippedRepos": [],
   "repos": [
     {
@@ -20,8 +20,8 @@
       "repo": "agent-canvas",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 42,
-      "issueCommentsCount": 129
+      "issuesOpenedCount": 43,
+      "issueCommentsCount": 132
     },
     {
       "repo": "amd-openhands-playbook",
@@ -115,6 +115,13 @@
       "issueCommentsCount": 35
     },
     {
+      "repo": "freeze-on-ready-test",
+      "isArchived": false,
+      "isFork": false,
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 0
+    },
+    {
       "repo": "homebrew-openhands",
       "isArchived": false,
       "isFork": false,
@@ -161,7 +168,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 589,
-      "issueCommentsCount": 1920
+      "issueCommentsCount": 1913
     },
     {
       "repo": "openhands-aci",
@@ -259,7 +266,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 331,
-      "issueCommentsCount": 890
+      "issueCommentsCount": 891
     },
     {
       "repo": "terraform-gcp-datadog-integration",
@@ -313,6 +320,132 @@
   ],
   "recentActivities": [
     {
+      "type": "issueOpened",
+      "githubUserId": "1370918",
+      "login": "harish-chandramowli",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1370918?v=4",
+      "profileUrl": "https://github.com/harish-chandramowli",
+      "createdAt": "2026-07-22T04:36:33Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1895,
+        "title": "Embedded VS Code button unreachable in self-hosted mode — advertised URL uses page origin while the server binds a separate port, with no config to reconcile them",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1895",
+        "createdAt": "2026-07-22T04:36:33Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-07-21T23:15:09Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1888,
+        "title": "Make chat LLM selector always visible; move agent-profile switching to new-conversation tools",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1888",
+        "createdAt": "2026-07-21T19:02:17Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1888#issuecomment-5040027455"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "67425364",
+      "login": "Solaris-star",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/67425364?v=4",
+      "profileUrl": "https://github.com/Solaris-star",
+      "createdAt": "2026-07-21T11:10:50Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15338,
+        "title": "[Bug]: GitHub credentials in git remote URLs are not redacted from terminal output",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15338",
+        "createdAt": "2026-07-21T06:17:12Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15338#issuecomment-5033230150"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "284904512",
+      "login": "gabriellias9655",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/284904512?v=4",
+      "profileUrl": "https://github.com/gabriellias9655",
+      "createdAt": "2026-07-21T09:44:59Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1684,
+        "title": "Legacy 'microagent' terminology still in use — finish the microagent→skill rename",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1684",
+        "createdAt": "2026-07-11T21:59:14Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1684#issuecomment-5032482354"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "284904512",
+      "login": "gabriellias9655",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/284904512?v=4",
+      "profileUrl": "https://github.com/gabriellias9655",
+      "createdAt": "2026-07-21T09:04:25Z",
+      "issue": {
+        "repo": "agent-canvas",
+        "number": 1423,
+        "title": "Conversation sidebar new-tab links can target the wrong backend",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1423",
+        "createdAt": "2026-06-18T14:16:31Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1423#issuecomment-5032106449"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "217509886",
+      "login": "eeee2345",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/217509886?v=4",
+      "profileUrl": "https://github.com/eeee2345",
+      "createdAt": "2026-07-21T08:26:53Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 3176,
+        "title": "Proposal: extend defense_in_depth PatternSecurityAnalyzer with Agent Threat Rules signatures",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3176",
+        "createdAt": "2026-05-09T16:01:04Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3176#issuecomment-5031769036"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "174524606",
+      "login": "K1ngzx20",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/174524606?v=4",
+      "profileUrl": "https://github.com/K1ngzx20",
+      "createdAt": "2026-07-21T06:18:43Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15338,
+        "title": "[Bug]: GitHub credentials in git remote URLs are not redacted from terminal output",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15338",
+        "createdAt": "2026-07-21T06:17:12Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15338#issuecomment-5030778874"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "174524606",
+      "login": "K1ngzx20",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/174524606?v=4",
+      "profileUrl": "https://github.com/K1ngzx20",
+      "createdAt": "2026-07-21T06:17:12Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15338,
+        "title": "[Bug]: GitHub credentials in git remote URLs are not redacted from terminal output",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15338",
+        "createdAt": "2026-07-21T06:17:12Z"
+      }
+    },
+    {
       "type": "issueComment",
       "githubUserId": "7101813",
       "login": "ofekron",
@@ -342,38 +475,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/15336",
         "createdAt": "2026-07-21T02:40:00Z"
       }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "151367491",
-      "login": "impeachmentright",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/151367491?v=4",
-      "profileUrl": "https://github.com/impeachmentright",
-      "createdAt": "2026-07-21T02:16:05Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 14717,
-        "title": "perf: page poll_agent_servers conversation read in batches to bound peak memory",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14717",
-        "createdAt": "2026-06-08T17:20:42Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14717#issuecomment-5029453264"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "151367491",
-      "login": "impeachmentright",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/151367491?v=4",
-      "profileUrl": "https://github.com/impeachmentright",
-      "createdAt": "2026-07-21T01:18:48Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15315,
-        "title": "[Feature]: Grok 0auth",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15315",
-        "createdAt": "2026-07-18T01:15:54Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15315#issuecomment-5029108335"
     },
     {
       "type": "issueComment",
@@ -422,70 +523,6 @@
         "createdAt": "2026-07-18T18:43:11Z"
       },
       "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1847#issuecomment-5028786229"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "151367491",
-      "login": "impeachmentright",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/151367491?v=4",
-      "profileUrl": "https://github.com/impeachmentright",
-      "createdAt": "2026-07-21T00:19:27Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 14720,
-        "title": "perf: RemoteSandboxService holds db_session across runtime-api network I/O + unbounded admin _secure_select (idle-in-transaction + full scans on v1_remote_sandbox)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14720",
-        "createdAt": "2026-06-08T21:16:03Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14720#issuecomment-5028724341"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "151367491",
-      "login": "impeachmentright",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/151367491?v=4",
-      "profileUrl": "https://github.com/impeachmentright",
-      "createdAt": "2026-07-20T23:40:11Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15298,
-        "title": "Design: reference-only credentials and safe runtime delivery",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15298",
-        "createdAt": "2026-07-16T09:56:41Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15298#issuecomment-5028390920"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "151367491",
-      "login": "impeachmentright",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/151367491?v=4",
-      "profileUrl": "https://github.com/impeachmentright",
-      "createdAt": "2026-07-20T23:35:13Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15288,
-        "title": "security: enforce request body limits before application buffering",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15288",
-        "createdAt": "2026-07-15T16:59:57Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15288#issuecomment-5028341179"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "151367491",
-      "login": "impeachmentright",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/151367491?v=4",
-      "profileUrl": "https://github.com/impeachmentright",
-      "createdAt": "2026-07-20T23:29:15Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 15046,
-        "title": "OHE - Organization shared secrets and MCP servers",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15046",
-        "createdAt": "2026-06-30T12:19:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15046#issuecomment-5028278625"
     },
     {
       "type": "issueComment",
@@ -1221,54 +1258,184 @@
         "url": "https://github.com/OpenHands/agent-canvas/issues/1813",
         "createdAt": "2026-07-15T08:41:39Z"
       }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "23738781",
-      "login": "eliphatfs",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/23738781?v=4",
-      "profileUrl": "https://github.com/eliphatfs",
-      "createdAt": "2026-07-15T03:26:20Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 12681,
-        "title": "[Bug]: High Client-Side GPU Usage (~30% RTX 5060 Ti) & UI Freeze caused by Frontend Rendering Loop",
-        "url": "https://github.com/OpenHands/OpenHands/issues/12681",
-        "createdAt": "2026-01-30T05:05:15Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/12681#issuecomment-4976563337"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-07-14T23:06:32Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 4118,
-        "title": "Define a migration path from Python custom tools to client-defined tools",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4118",
-        "createdAt": "2026-07-14T23:06:32Z"
-      }
     }
   ],
   "yearlyTotals": {
     "2025": {
-      "issuesOpened": 442,
-      "issueComments": 1380,
-      "uniqueIssueOpeners": 217,
-      "uniqueCommenters": 311
+      "issuesOpened": 441,
+      "issueComments": 1377,
+      "uniqueIssueOpeners": 216,
+      "uniqueCommenters": 310
     },
     "2026": {
-      "issuesOpened": 676,
+      "issuesOpened": 678,
       "issueComments": 1957,
-      "uniqueIssueOpeners": 326,
-      "uniqueCommenters": 412
+      "uniqueIssueOpeners": 328,
+      "uniqueCommenters": 413
     }
   },
   "users": [
+    {
+      "githubUserId": "1370918",
+      "login": "harish-chandramowli",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1370918?v=4",
+      "profileUrl": "https://github.com/harish-chandramowli",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-22T04:36:33Z",
+      "mostRecentActivityAt": "2026-07-22T04:36:33Z",
+      "firstIssue": {
+        "repo": "agent-canvas",
+        "number": 1895,
+        "title": "Embedded VS Code button unreachable in self-hosted mode — advertised URL uses page origin while the server binds a separate port, with no config to reconcile them",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1895",
+        "createdAt": "2026-07-22T04:36:33Z"
+      },
+      "mostRecentIssue": {
+        "repo": "agent-canvas",
+        "number": 1895,
+        "title": "Embedded VS Code button unreachable in self-hosted mode — advertised URL uses page origin while the server binds a separate port, with no config to reconcile them",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1895",
+        "createdAt": "2026-07-22T04:36:33Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "issuesOpenedCount": 256,
+      "issueCommentsCount": 1218,
+      "firstActivityAt": "2025-07-22T14:52:36Z",
+      "mostRecentActivityAt": "2026-07-21T23:15:09Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 9878,
+        "title": "[Microagents] Nested microagents (directory scope)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/9878",
+        "createdAt": "2025-07-23T20:10:50Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4130,
+        "title": "Feature: search_tool",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4130",
+        "createdAt": "2026-07-16T13:14:01Z"
+      },
+      "mostRecentComment": {
+        "repo": "agent-canvas",
+        "number": 1888,
+        "title": "Make chat LLM selector always visible; move agent-profile switching to new-conversation tools",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1888",
+        "createdAt": "2026-07-21T23:15:09Z",
+        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1888#issuecomment-5040027455"
+      }
+    },
+    {
+      "githubUserId": "67425364",
+      "login": "Solaris-star",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/67425364?v=4",
+      "profileUrl": "https://github.com/Solaris-star",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-07-21T11:10:50Z",
+      "mostRecentActivityAt": "2026-07-21T11:10:50Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15338,
+        "title": "[Bug]: GitHub credentials in git remote URLs are not redacted from terminal output",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15338",
+        "createdAt": "2026-07-21T11:10:50Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15338#issuecomment-5033230150"
+      }
+    },
+    {
+      "githubUserId": "284904512",
+      "login": "gabriellias9655",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/284904512?v=4",
+      "profileUrl": "https://github.com/gabriellias9655",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 3,
+      "firstActivityAt": "2026-06-18T14:34:40Z",
+      "mostRecentActivityAt": "2026-07-21T09:44:59Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "agent-canvas",
+        "number": 1684,
+        "title": "Legacy 'microagent' terminology still in use — finish the microagent→skill rename",
+        "url": "https://github.com/OpenHands/agent-canvas/issues/1684",
+        "createdAt": "2026-07-21T09:44:59Z",
+        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1684#issuecomment-5032482354"
+      }
+    },
+    {
+      "githubUserId": "217509886",
+      "login": "eeee2345",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/217509886?v=4",
+      "profileUrl": "https://github.com/eeee2345",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 12,
+      "firstActivityAt": "2026-05-09T16:01:04Z",
+      "mostRecentActivityAt": "2026-07-21T08:26:53Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 3176,
+        "title": "Proposal: extend defense_in_depth PatternSecurityAnalyzer with Agent Threat Rules signatures",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3176",
+        "createdAt": "2026-05-09T16:01:04Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 3176,
+        "title": "Proposal: extend defense_in_depth PatternSecurityAnalyzer with Agent Threat Rules signatures",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3176",
+        "createdAt": "2026-05-09T16:01:04Z"
+      },
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 3176,
+        "title": "Proposal: extend defense_in_depth PatternSecurityAnalyzer with Agent Threat Rules signatures",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3176",
+        "createdAt": "2026-07-21T08:26:53Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3176#issuecomment-5031769036"
+      }
+    },
+    {
+      "githubUserId": "174524606",
+      "login": "K1ngzx20",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/174524606?v=4",
+      "profileUrl": "https://github.com/K1ngzx20",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-07-21T06:17:12Z",
+      "mostRecentActivityAt": "2026-07-21T06:18:43Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 15338,
+        "title": "[Bug]: GitHub credentials in git remote URLs are not redacted from terminal output",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15338",
+        "createdAt": "2026-07-21T06:17:12Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 15338,
+        "title": "[Bug]: GitHub credentials in git remote URLs are not redacted from terminal output",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15338",
+        "createdAt": "2026-07-21T06:17:12Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15338,
+        "title": "[Bug]: GitHub credentials in git remote URLs are not redacted from terminal output",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15338",
+        "createdAt": "2026-07-21T06:18:43Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15338#issuecomment-5030778874"
+      }
+    },
     {
       "githubUserId": "7101813",
       "login": "ofekron",
@@ -1313,58 +1480,6 @@
         "createdAt": "2026-07-21T02:40:00Z"
       },
       "mostRecentComment": null
-    },
-    {
-      "githubUserId": "151367491",
-      "login": "impeachmentright",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/151367491?v=4",
-      "profileUrl": "https://github.com/impeachmentright",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 6,
-      "firstActivityAt": "2026-07-20T23:29:15Z",
-      "mostRecentActivityAt": "2026-07-21T02:16:05Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 14717,
-        "title": "perf: page poll_agent_servers conversation read in batches to bound peak memory",
-        "url": "https://github.com/OpenHands/OpenHands/issues/14717",
-        "createdAt": "2026-07-21T02:16:05Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14717#issuecomment-5029453264"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "issuesOpenedCount": 256,
-      "issueCommentsCount": 1217,
-      "firstActivityAt": "2025-07-22T14:52:36Z",
-      "mostRecentActivityAt": "2026-07-21T00:45:37Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9878,
-        "title": "[Microagents] Nested microagents (directory scope)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9878",
-        "createdAt": "2025-07-23T20:10:50Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 4130,
-        "title": "Feature: search_tool",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4130",
-        "createdAt": "2026-07-16T13:14:01Z"
-      },
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 15298,
-        "title": "Design: reference-only credentials and safe runtime delivery",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15298",
-        "createdAt": "2026-07-21T00:45:37Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15298#issuecomment-5028903456"
-      }
     },
     {
       "githubUserId": "148256405",
@@ -3304,38 +3419,6 @@
       }
     },
     {
-      "githubUserId": "217509886",
-      "login": "eeee2345",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/217509886?v=4",
-      "profileUrl": "https://github.com/eeee2345",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 11,
-      "firstActivityAt": "2026-05-09T16:01:04Z",
-      "mostRecentActivityAt": "2026-07-01T20:49:03Z",
-      "firstIssue": {
-        "repo": "software-agent-sdk",
-        "number": 3176,
-        "title": "Proposal: extend defense_in_depth PatternSecurityAnalyzer with Agent Threat Rules signatures",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3176",
-        "createdAt": "2026-05-09T16:01:04Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 3176,
-        "title": "Proposal: extend defense_in_depth PatternSecurityAnalyzer with Agent Threat Rules signatures",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3176",
-        "createdAt": "2026-05-09T16:01:04Z"
-      },
-      "mostRecentComment": {
-        "repo": "software-agent-sdk",
-        "number": 3176,
-        "title": "Proposal: extend defense_in_depth PatternSecurityAnalyzer with Agent Threat Rules signatures",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3176",
-        "createdAt": "2026-07-01T20:49:03Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3176#issuecomment-4859924067"
-      }
-    },
-    {
       "githubUserId": "98612432",
       "login": "Osraka",
       "avatarUrl": "https://avatars.githubusercontent.com/u/98612432?v=4",
@@ -4681,26 +4764,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/14416",
         "createdAt": "2026-06-18T17:31:28Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/14416#issuecomment-4744539280"
-      }
-    },
-    {
-      "githubUserId": "284904512",
-      "login": "gabriellias9655",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/284904512?v=4",
-      "profileUrl": "https://github.com/gabriellias9655",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2026-06-18T14:34:40Z",
-      "mostRecentActivityAt": "2026-06-18T14:34:40Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "agent-canvas",
-        "number": 1423,
-        "title": "Conversation sidebar new-tab links can target the wrong backend",
-        "url": "https://github.com/OpenHands/agent-canvas/issues/1423",
-        "createdAt": "2026-06-18T14:34:40Z",
-        "commentUrl": "https://github.com/OpenHands/agent-canvas/issues/1423#issuecomment-4743027833"
       }
     },
     {
@@ -15690,8 +15753,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/58927531?v=4",
       "profileUrl": "https://github.com/BradKML",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 58,
-      "firstActivityAt": "2025-07-22T05:00:38Z",
+      "issueCommentsCount": 57,
+      "firstActivityAt": "2025-07-23T02:18:35Z",
       "mostRecentActivityAt": "2026-01-05T06:04:18Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24290,8 +24353,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/1855368?v=4",
       "profileUrl": "https://github.com/joostvunderink",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 3,
-      "firstActivityAt": "2025-07-21T07:07:07Z",
+      "issueCommentsCount": 2,
+      "firstActivityAt": "2025-07-25T19:41:34Z",
       "mostRecentActivityAt": "2025-07-26T09:48:40Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24506,24 +24569,12 @@
       "login": "cslsolow",
       "avatarUrl": "https://avatars.githubusercontent.com/u/65756097?v=4",
       "profileUrl": "https://github.com/cslsolow",
-      "issuesOpenedCount": 1,
+      "issuesOpenedCount": 0,
       "issueCommentsCount": 1,
-      "firstActivityAt": "2025-07-22T01:30:37Z",
+      "firstActivityAt": "2025-07-22T05:25:11Z",
       "mostRecentActivityAt": "2025-07-22T05:25:11Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 9836,
-        "title": "Question about how to use the critic model",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9836",
-        "createdAt": "2025-07-22T01:30:37Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 9836,
-        "title": "Question about how to use the critic model",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9836",
-        "createdAt": "2025-07-22T01:30:37Z"
-      },
+      "firstIssue": null,
+      "mostRecentIssue": null,
       "mostRecentComment": {
         "repo": "OpenHands",
         "number": 9836,
@@ -24531,26 +24582,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/9836",
         "createdAt": "2025-07-22T05:25:11Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9836#issuecomment-3101102898"
-      }
-    },
-    {
-      "githubUserId": "172533995",
-      "login": "blakkd",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/172533995?v=4",
-      "profileUrl": "https://github.com/blakkd",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-07-22T03:23:05Z",
-      "mostRecentActivityAt": "2025-07-22T03:23:05Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 9813,
-        "title": "[Bug]: CLI \"invalid path\" cause the agent to stop",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9813",
-        "createdAt": "2025-07-22T03:23:05Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9813#issuecomment-3100669322"
       }
     }
   ]
