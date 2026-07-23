@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-07-22T05:01:50.011Z",
+  "generatedAt": "2026-07-23T05:02:26.149Z",
   "organization": "OpenHands",
   "repoCount": 44,
   "scannedRepoCount": 44,
-  "totalMergedPrs": 2557,
+  "totalMergedPrs": 2558,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?u=765da39759e3827f4f9047b7e6ae6e39438c7f42&v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4146,
+        "title": "fix(visualizer): show per-request token usage alongside cumulative to…",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4146",
+        "mergedAt": "2026-07-22T07:00:04Z"
+      }
+    },
     {
       "githubUserId": "47117969",
       "login": "dinmukhamedm",
@@ -772,22 +785,52 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/3382",
         "mergedAt": "2026-06-26T01:59:37Z"
       }
-    },
-    {
-      "githubUserId": "182316592",
-      "login": "nehaaprasad",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/182316592?u=d14e0edc59946c1398130fb981b8ddf7a3e5ef73&v=4",
-      "profileUrl": "https://github.com/nehaaprasad",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 13754,
-        "title": "chore(security): add Python dependency freshness guardrails",
-        "url": "https://github.com/OpenHands/OpenHands/pull/13754",
-        "mergedAt": "2026-06-26T01:46:26Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?u=765da39759e3827f4f9047b7e6ae6e39438c7f42&v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "firstMergedPr": {
+        "repo": "docs",
+        "number": 615,
+        "title": "docs: fix load_skills_from_dir import path",
+        "url": "https://github.com/OpenHands/docs/pull/615",
+        "mergedAt": "2026-07-10T05:17:56Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4146,
+        "title": "fix(visualizer): show per-request token usage alongside cumulative to…",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4146",
+        "mergedAt": "2026-07-22T07:00:04Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "docs",
+            "number": 615,
+            "title": "docs: fix load_skills_from_dir import path",
+            "url": "https://github.com/OpenHands/docs/pull/615",
+            "mergedAt": "2026-07-10T05:17:56Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4146,
+            "title": "fix(visualizer): show per-request token usage alongside cumulative to…",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4146",
+            "mergedAt": "2026-07-22T07:00:04Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "47117969",
       "login": "dinmukhamedm",
@@ -1329,49 +1372,6 @@
             "title": "fix(app-server): preserve observability context metadata",
             "url": "https://github.com/OpenHands/OpenHands/pull/15215",
             "mergedAt": "2026-07-10T06:59:58Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "148256405",
-      "login": "luciobaiocchi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?u=765da39759e3827f4f9047b7e6ae6e39438c7f42&v=4",
-      "profileUrl": "https://github.com/luciobaiocchi",
-      "firstMergedPr": {
-        "repo": "docs",
-        "number": 615,
-        "title": "docs: fix load_skills_from_dir import path",
-        "url": "https://github.com/OpenHands/docs/pull/615",
-        "mergedAt": "2026-07-10T05:17:56Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "docs",
-        "number": 615,
-        "title": "docs: fix load_skills_from_dir import path",
-        "url": "https://github.com/OpenHands/docs/pull/615",
-        "mergedAt": "2026-07-10T05:17:56Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "docs",
-            "number": 615,
-            "title": "docs: fix load_skills_from_dir import path",
-            "url": "https://github.com/OpenHands/docs/pull/615",
-            "mergedAt": "2026-07-10T05:17:56Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "docs",
-            "number": 615,
-            "title": "docs: fix load_skills_from_dir import path",
-            "url": "https://github.com/OpenHands/docs/pull/615",
-            "mergedAt": "2026-07-10T05:17:56Z"
           }
         }
       }
@@ -4801,9 +4801,9 @@
     },
     {
       "githubUserId": "94194147",
-      "login": "grnlemon",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/94194147?u=a50c58c2e18f948f3586f30345a519c028102cc6&v=4",
-      "profileUrl": "https://github.com/grnlemon",
+      "login": "e35mongo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/94194147?v=4",
+      "profileUrl": "https://github.com/e35mongo",
       "firstMergedPr": {
         "repo": "OpenHands",
         "number": 12439,
@@ -5834,7 +5834,7 @@
     {
       "githubUserId": "110803307",
       "login": "hobostay",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/110803307?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/110803307?u=65586d180dc6054f5302e2aaaca4320e9da84304&v=4",
       "profileUrl": "https://github.com/hobostay",
       "firstMergedPr": {
         "repo": "OpenHands",
