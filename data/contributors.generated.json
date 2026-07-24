@@ -1,11 +1,50 @@
 {
-  "generatedAt": "2026-07-23T05:02:26.149Z",
+  "generatedAt": "2026-07-24T05:01:49.193Z",
   "organization": "OpenHands",
   "repoCount": 44,
   "scannedRepoCount": 44,
-  "totalMergedPrs": 2558,
+  "totalMergedPrs": 2561,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4213,
+        "title": "fix(ci): accept the /api/vscode/url base_url documented-default removal",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4213",
+        "mergedAt": "2026-07-23T23:51:21Z"
+      }
+    },
+    {
+      "githubUserId": "1370918",
+      "login": "harish-chandramowli",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1370918?v=4",
+      "profileUrl": "https://github.com/harish-chandramowli",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4181,
+        "title": "fix(agent-server): /api/vscode/url without base_url advertises the configured VSCode port",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4181",
+        "mergedAt": "2026-07-23T21:11:46Z"
+      }
+    },
+    {
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?u=765da39759e3827f4f9047b7e6ae6e39438c7f42&v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4193,
+        "title": "fix: parallel tool metrics",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4193",
+        "mergedAt": "2026-07-23T09:24:29Z"
+      }
+    },
     {
       "githubUserId": "148256405",
       "login": "luciobaiocchi",
@@ -746,48 +785,95 @@
         "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
         "mergedAt": "2026-06-26T23:21:33Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "typescript-client",
-        "number": 234,
-        "title": "ci: add release ready gate",
-        "url": "https://github.com/OpenHands/typescript-client/pull/234",
-        "mergedAt": "2026-06-26T15:52:33Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "release-actions",
-        "number": 13,
-        "title": "feat: gate release PRs on ready for review",
-        "url": "https://github.com/OpenHands/release-actions/pull/13",
-        "mergedAt": "2026-06-26T15:34:36Z"
-      }
-    },
-    {
-      "githubUserId": "62649065",
-      "login": "heyitspratik",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/62649065?u=9347289a0e4d0e25914dffbcf20313263f8b4e79&v=4",
-      "profileUrl": "https://github.com/heyitspratik",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3382,
-        "title": "Replace silent assert failures with structured DiffError raises in apply_patch, and fixe a race condition and unhandled telemetry crash in event_service",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3382",
-        "mergedAt": "2026-06-26T01:59:37Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 2019,
+        "title": "docs: trim blustery wording in docs update prompt",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+        "mergedAt": "2026-02-12T01:10:56Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4213,
+        "title": "fix(ci): accept the /api/vscode/url base_url documented-default removal",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4213",
+        "mergedAt": "2026-07-23T23:51:21Z"
+      },
+      "totalMergedPrs": 19,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 19,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 2019,
+            "title": "docs: trim blustery wording in docs update prompt",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+            "mergedAt": "2026-02-12T01:10:56Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4213,
+            "title": "fix(ci): accept the /api/vscode/url base_url documented-default removal",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4213",
+            "mergedAt": "2026-07-23T23:51:21Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "1370918",
+      "login": "harish-chandramowli",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1370918?v=4",
+      "profileUrl": "https://github.com/harish-chandramowli",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4181,
+        "title": "fix(agent-server): /api/vscode/url without base_url advertises the configured VSCode port",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4181",
+        "mergedAt": "2026-07-23T21:11:46Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4181,
+        "title": "fix(agent-server): /api/vscode/url without base_url advertises the configured VSCode port",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4181",
+        "mergedAt": "2026-07-23T21:11:46Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4181,
+            "title": "fix(agent-server): /api/vscode/url without base_url advertises the configured VSCode port",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4181",
+            "mergedAt": "2026-07-23T21:11:46Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4181,
+            "title": "fix(agent-server): /api/vscode/url without base_url advertises the configured VSCode port",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4181",
+            "mergedAt": "2026-07-23T21:11:46Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "148256405",
       "login": "luciobaiocchi",
@@ -802,18 +888,18 @@
       },
       "mostRecentMergedPr": {
         "repo": "software-agent-sdk",
-        "number": 4146,
-        "title": "fix(visualizer): show per-request token usage alongside cumulative to…",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4146",
-        "mergedAt": "2026-07-22T07:00:04Z"
+        "number": 4193,
+        "title": "fix: parallel tool metrics",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4193",
+        "mergedAt": "2026-07-23T09:24:29Z"
       },
-      "totalMergedPrs": 2,
+      "totalMergedPrs": 3,
       "contributionYears": [
         "2026"
       ],
       "yearly": {
         "2026": {
-          "totalMergedPrs": 2,
+          "totalMergedPrs": 3,
           "firstMergedPr": {
             "repo": "docs",
             "number": 615,
@@ -823,10 +909,10 @@
           },
           "mostRecentMergedPr": {
             "repo": "software-agent-sdk",
-            "number": 4146,
-            "title": "fix(visualizer): show per-request token usage alongside cumulative to…",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4146",
-            "mergedAt": "2026-07-22T07:00:04Z"
+            "number": 4193,
+            "title": "fix: parallel tool metrics",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4193",
+            "mergedAt": "2026-07-23T09:24:29Z"
           }
         }
       }
@@ -1096,49 +1182,6 @@
             "title": "Fix REST API contract summary deduplication",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/3918",
             "mergedAt": "2026-07-15T19:16:12Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 2019,
-        "title": "docs: trim blustery wording in docs update prompt",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-        "mergedAt": "2026-02-12T01:10:56Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1797,
-        "title": "refactor: define canvas UI as an SDK client tool",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1797",
-        "mergedAt": "2026-07-15T09:40:58Z"
-      },
-      "totalMergedPrs": 18,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 18,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2019,
-            "title": "docs: trim blustery wording in docs update prompt",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-            "mergedAt": "2026-02-12T01:10:56Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1797,
-            "title": "refactor: define canvas UI as an SDK client tool",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1797",
-            "mergedAt": "2026-07-15T09:40:58Z"
           }
         }
       }
@@ -4802,7 +4845,7 @@
     {
       "githubUserId": "94194147",
       "login": "e35mongo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/94194147?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/94194147?u=3b4bbb9d3c89aa96f757a956e3c4f6037167a9b1&v=4",
       "profileUrl": "https://github.com/e35mongo",
       "firstMergedPr": {
         "repo": "OpenHands",
