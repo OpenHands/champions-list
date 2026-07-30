@@ -1,11 +1,50 @@
 {
-  "generatedAt": "2026-07-29T05:02:08.153Z",
+  "generatedAt": "2026-07-30T04:59:59.755Z",
   "organization": "OpenHands",
   "repoCount": 46,
   "scannedRepoCount": 46,
-  "totalMergedPrs": 2574,
+  "totalMergedPrs": 2577,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "455140",
+      "login": "mvanhorn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
+      "profileUrl": "https://github.com/mvanhorn",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16173,
+        "title": "fix(backend-registry): pick a healthy local backend as the fallback",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16173",
+        "mergedAt": "2026-07-30T02:22:26Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16154,
+        "title": "fix(settings): de-duplicate LLM Profile attributes in the \"All\" tab",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16154",
+        "mergedAt": "2026-07-29T18:39:28Z"
+      }
+    },
+    {
+      "githubUserId": "744063",
+      "login": "georgeglarson",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
+      "profileUrl": "https://github.com/georgeglarson",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16152,
+        "title": "fix(e2e): shut the mock-LLM stack down gracefully so it stops leaking processes",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16152",
+        "mergedAt": "2026-07-29T12:21:20Z"
+      }
+    },
     {
       "githubUserId": "255025612",
       "login": "smolpaws",
@@ -746,48 +785,52 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/3917",
         "mergedAt": "2026-07-02T14:46:15Z"
       }
-    },
-    {
-      "githubUserId": "52569890",
-      "login": "Anrahya",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/52569890?u=1e89b70fdaaa54bad5c1cc0d9f3e87ee5d706132&v=4",
-      "profileUrl": "https://github.com/Anrahya",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1556,
-        "title": "Show agent/model metadata by default",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1556",
-        "mergedAt": "2026-07-02T07:47:18Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 14987,
-        "title": "ci: add release ready gate",
-        "url": "https://github.com/OpenHands/OpenHands/pull/14987",
-        "mergedAt": "2026-07-02T00:56:20Z"
-      }
-    },
-    {
-      "githubUserId": "159117309",
-      "login": "StatPan",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/159117309?u=154ad6f8becbbec06535a44f18d1531db91d11e8&v=4",
-      "profileUrl": "https://github.com/StatPan",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3252,
-        "title": "feat(sdk): allow custom FileStore injection",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3252",
-        "mergedAt": "2026-07-01T22:53:12Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "455140",
+      "login": "mvanhorn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
+      "profileUrl": "https://github.com/mvanhorn",
+      "firstMergedPr": {
+        "repo": "agent-canvas",
+        "number": 643,
+        "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/643",
+        "mergedAt": "2026-05-20T14:15:49Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16173,
+        "title": "fix(backend-registry): pick a healthy local backend as the fallback",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16173",
+        "mergedAt": "2026-07-30T02:22:26Z"
+      },
+      "totalMergedPrs": 7,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 7,
+          "firstMergedPr": {
+            "repo": "agent-canvas",
+            "number": 643,
+            "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/643",
+            "mergedAt": "2026-05-20T14:15:49Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16173,
+            "title": "fix(backend-registry): pick a healthy local backend as the fallback",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16173",
+            "mergedAt": "2026-07-30T02:22:26Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "255025612",
       "login": "smolpaws",
@@ -801,19 +844,19 @@
         "mergedAt": "2026-02-12T01:10:56Z"
       },
       "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4291,
-        "title": "ci: drop unmonitored nightly schedules from integration & examples workflows",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4291",
-        "mergedAt": "2026-07-28T11:49:35Z"
+        "repo": "OpenHands",
+        "number": 16154,
+        "title": "fix(settings): de-duplicate LLM Profile attributes in the \"All\" tab",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16154",
+        "mergedAt": "2026-07-29T18:39:28Z"
       },
-      "totalMergedPrs": 23,
+      "totalMergedPrs": 24,
       "contributionYears": [
         "2026"
       ],
       "yearly": {
         "2026": {
-          "totalMergedPrs": 23,
+          "totalMergedPrs": 24,
           "firstMergedPr": {
             "repo": "software-agent-sdk",
             "number": 2019,
@@ -822,11 +865,54 @@
             "mergedAt": "2026-02-12T01:10:56Z"
           },
           "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4291,
-            "title": "ci: drop unmonitored nightly schedules from integration & examples workflows",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4291",
-            "mergedAt": "2026-07-28T11:49:35Z"
+            "repo": "OpenHands",
+            "number": 16154,
+            "title": "fix(settings): de-duplicate LLM Profile attributes in the \"All\" tab",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16154",
+            "mergedAt": "2026-07-29T18:39:28Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "744063",
+      "login": "georgeglarson",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
+      "profileUrl": "https://github.com/georgeglarson",
+      "firstMergedPr": {
+        "repo": "agent-canvas",
+        "number": 1434,
+        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
+        "mergedAt": "2026-06-26T23:21:33Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16152,
+        "title": "fix(e2e): shut the mock-LLM stack down gracefully so it stops leaking processes",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16152",
+        "mergedAt": "2026-07-29T12:21:20Z"
+      },
+      "totalMergedPrs": 4,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 4,
+          "firstMergedPr": {
+            "repo": "agent-canvas",
+            "number": 1434,
+            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
+            "mergedAt": "2026-06-26T23:21:33Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16152,
+            "title": "fix(e2e): shut the mock-LLM stack down gracefully so it stops leaking processes",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16152",
+            "mergedAt": "2026-07-29T12:21:20Z"
           }
         }
       }
@@ -1237,49 +1323,6 @@
       }
     },
     {
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "firstMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1434,
-        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-        "mergedAt": "2026-06-26T23:21:33Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1844,
-        "title": "feat(llm): add Kimi Code membership as a first-class Moonshot option",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1844",
-        "mergedAt": "2026-07-18T17:50:29Z"
-      },
-      "totalMergedPrs": 3,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 3,
-          "firstMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1434,
-            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-            "mergedAt": "2026-06-26T23:21:33Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1844,
-            "title": "feat(llm): add Kimi Code membership as a first-class Moonshot option",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1844",
-            "mergedAt": "2026-07-18T17:50:29Z"
-          }
-        }
-      }
-    },
-    {
       "githubUserId": "6080905",
       "login": "enyst",
       "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
@@ -1501,49 +1544,6 @@
             "title": "feat(security): add ToolShieldLLMSecurityAnalyzer",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/2911",
             "mergedAt": "2026-07-12T22:22:59Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "455140",
-      "login": "mvanhorn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
-      "profileUrl": "https://github.com/mvanhorn",
-      "firstMergedPr": {
-        "repo": "agent-canvas",
-        "number": 643,
-        "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/643",
-        "mergedAt": "2026-05-20T14:15:49Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1662,
-        "title": "feat(conversation): export transcript as Markdown or self-contained HTML",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1662",
-        "mergedAt": "2026-07-12T12:55:08Z"
-      },
-      "totalMergedPrs": 6,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 6,
-          "firstMergedPr": {
-            "repo": "agent-canvas",
-            "number": 643,
-            "title": "fix(onboarding): registry-driven icon lookup for ACP provider tiles",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/643",
-            "mergedAt": "2026-05-20T14:15:49Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1662,
-            "title": "feat(conversation): export transcript as Markdown or self-contained HTML",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1662",
-            "mergedAt": "2026-07-12T12:55:08Z"
           }
         }
       }
@@ -4973,9 +4973,9 @@
     },
     {
       "githubUserId": "94194147",
-      "login": "e35mongo",
+      "login": "mkdev5",
       "avatarUrl": "https://avatars.githubusercontent.com/u/94194147?u=3b4bbb9d3c89aa96f757a956e3c4f6037167a9b1&v=4",
-      "profileUrl": "https://github.com/e35mongo",
+      "profileUrl": "https://github.com/mkdev5",
       "firstMergedPr": {
         "repo": "OpenHands",
         "number": 12439,
