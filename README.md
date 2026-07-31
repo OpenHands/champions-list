@@ -10,14 +10,14 @@ This repository powers a lightweight, searchable contributor directory that:
 
 ## Contributor Directory
 
-The directory currently shows **557** visible contributors across **46** public repos, representing **2577** merged PRs.
+The directory currently shows **559** visible contributors across **46** public repos, representing **2583** merged PRs.
 
-A few recently active contributors: @mvanhorn, @smolpaws, @georgeglarson, @Sehlani042, @harish-chandramowli, @onatozmenn.
+A few recently active contributors: @arush73, @enyst, @d3f4w2, @Sehlani042, @georgeglarson, @smolpaws.
 
 The full searchable directory lives in the app in this repository. Want to add your full name, add a note about what you worked on, or hide your public entry? Open a PR using the templates in `.github/PULL_REQUEST_TEMPLATE/` or edit `data/contributors.overrides.json`.
 
-_Last synced: 2026-07-30_
+_Last synced: 2026-07-31_
 
 ## Contributor Wall
 
-<img src="https://champions-list.vercel.app/contributor-wall.svg?v=2026-07-30" alt="OpenHands Champions contributor avatar wall" />
+<img src="https://champions-list.vercel.app/contributor-wall.svg?v=2026-07-31" alt="OpenHands Champions contributor avatar wall" />
