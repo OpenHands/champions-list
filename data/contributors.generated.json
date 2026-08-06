@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-08-05T05:01:20.672Z",
+  "generatedAt": "2026-08-06T05:01:25.492Z",
   "organization": "OpenHands",
   "repoCount": 50,
   "scannedRepoCount": 50,
-  "totalMergedPrs": 2601,
+  "totalMergedPrs": 2603,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "142557582",
+      "login": "Linxiushen",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/142557582?u=f29110e3128c2172e307338b8e3183685d5dd0d8&v=4",
+      "profileUrl": "https://github.com/Linxiushen",
+      "pullRequest": {
+        "repo": "automation",
+        "number": 301,
+        "title": "fix: normalize SQLite telemetry timestamps",
+        "url": "https://github.com/OpenHands/automation/pull/301",
+        "mergedAt": "2026-08-06T02:23:09Z"
+      }
+    },
+    {
+      "githubUserId": "212128834",
+      "login": "onatozmenn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
+      "profileUrl": "https://github.com/onatozmenn",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4342,
+        "title": "fix(browser): a browser tool that cannot start should not fail the conversation",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4342",
+        "mergedAt": "2026-08-05T22:31:30Z"
+      }
+    },
     {
       "githubUserId": "30344294",
       "login": "sleeyax",
@@ -759,35 +785,95 @@
         "url": "https://github.com/OpenHands/extensions/pull/405",
         "mergedAt": "2026-07-13T03:22:47Z"
       }
-    },
-    {
-      "githubUserId": "142738467",
-      "login": "xli04",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/142738467?u=be0b699140521f3daab290f271f3baa480baf418&v=4",
-      "profileUrl": "https://github.com/xli04",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 2911,
-        "title": "feat(security): add ToolShieldLLMSecurityAnalyzer",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2911",
-        "mergedAt": "2026-07-12T22:22:59Z"
-      }
-    },
-    {
-      "githubUserId": "455140",
-      "login": "mvanhorn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
-      "profileUrl": "https://github.com/mvanhorn",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1662,
-        "title": "feat(conversation): export transcript as Markdown or self-contained HTML",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1662",
-        "mergedAt": "2026-07-12T12:55:08Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "142557582",
+      "login": "Linxiushen",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/142557582?u=f29110e3128c2172e307338b8e3183685d5dd0d8&v=4",
+      "profileUrl": "https://github.com/Linxiushen",
+      "firstMergedPr": {
+        "repo": "automation",
+        "number": 301,
+        "title": "fix: normalize SQLite telemetry timestamps",
+        "url": "https://github.com/OpenHands/automation/pull/301",
+        "mergedAt": "2026-08-06T02:23:09Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "automation",
+        "number": 301,
+        "title": "fix: normalize SQLite telemetry timestamps",
+        "url": "https://github.com/OpenHands/automation/pull/301",
+        "mergedAt": "2026-08-06T02:23:09Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "automation",
+            "number": 301,
+            "title": "fix: normalize SQLite telemetry timestamps",
+            "url": "https://github.com/OpenHands/automation/pull/301",
+            "mergedAt": "2026-08-06T02:23:09Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "automation",
+            "number": 301,
+            "title": "fix: normalize SQLite telemetry timestamps",
+            "url": "https://github.com/OpenHands/automation/pull/301",
+            "mergedAt": "2026-08-06T02:23:09Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "212128834",
+      "login": "onatozmenn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
+      "profileUrl": "https://github.com/onatozmenn",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4277,
+        "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
+        "mergedAt": "2026-07-27T17:09:29Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4342,
+        "title": "fix(browser): a browser tool that cannot start should not fail the conversation",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4342",
+        "mergedAt": "2026-08-05T22:31:30Z"
+      },
+      "totalMergedPrs": 4,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 4,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4277,
+            "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
+            "mergedAt": "2026-07-27T17:09:29Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4342,
+            "title": "fix(browser): a browser tool that cannot start should not fail the conversation",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4342",
+            "mergedAt": "2026-08-05T22:31:30Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "30344294",
       "login": "sleeyax",
@@ -1716,49 +1802,6 @@
             "title": "fix(agent-server): include server_base_path in the advertised VSCode URL",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4222",
             "mergedAt": "2026-07-28T08:50:30Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "212128834",
-      "login": "onatozmenn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
-      "profileUrl": "https://github.com/onatozmenn",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4277,
-        "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
-        "mergedAt": "2026-07-27T17:09:29Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4278,
-        "title": "Share the Gemini edit/write_file diff rendering",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4278",
-        "mergedAt": "2026-07-27T17:44:45Z"
-      },
-      "totalMergedPrs": 3,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 3,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4277,
-            "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
-            "mergedAt": "2026-07-27T17:09:29Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4278,
-            "title": "Share the Gemini edit/write_file diff rendering",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4278",
-            "mergedAt": "2026-07-27T17:44:45Z"
           }
         }
       }
