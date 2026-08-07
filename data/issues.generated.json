@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-06T05:15:35.631Z",
-  "windowStart": "2025-08-06T05:02:37.220Z",
-  "windowEnd": "2026-08-06T05:02:37.220Z",
+  "generatedAt": "2026-08-07T04:52:20.016Z",
+  "windowStart": "2025-08-07T04:39:29.712Z",
+  "windowEnd": "2026-08-07T04:39:29.712Z",
   "organization": "OpenHands",
   "repoCount": 50,
   "scannedRepoCount": 50,
-  "totalIssuesOpened": 1111,
-  "totalIssueComments": 3188,
+  "totalIssuesOpened": 1121,
+  "totalIssueComments": 3183,
   "skippedRepos": [],
   "repos": [
     {
@@ -188,8 +188,8 @@
       "repo": "OpenHands",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 556,
-      "issueCommentsCount": 1677
+      "issuesOpenedCount": 562,
+      "issueCommentsCount": 1670
     },
     {
       "repo": "openhands-aci",
@@ -307,8 +307,8 @@
       "repo": "software-agent-sdk",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 371,
-      "issueCommentsCount": 1031
+      "issuesOpenedCount": 375,
+      "issueCommentsCount": 1033
     },
     {
       "repo": "terraform-gcp-datadog-integration",
@@ -361,6 +361,394 @@
     }
   ],
   "recentActivities": [
+    {
+      "type": "issueComment",
+      "githubUserId": "66430880",
+      "login": "Deep070203",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/66430880?v=4",
+      "profileUrl": "https://github.com/Deep070203",
+      "createdAt": "2026-08-07T02:51:27Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16349,
+        "title": "Add tags/filtering for automations in the conversation panel",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16349",
+        "createdAt": "2026-08-06T00:09:32Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16349#issuecomment-5211580405"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "51403749",
+      "login": "srurora",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/51403749?v=4",
+      "profileUrl": "https://github.com/srurora",
+      "createdAt": "2026-08-07T00:55:24Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16355,
+        "title": "Hide edit and delete actions for system-managed secrets",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16355",
+        "createdAt": "2026-08-06T09:20:47Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16355#issuecomment-5210624667"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "123672028",
+      "login": "Shreyas0786",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123672028?v=4",
+      "profileUrl": "https://github.com/Shreyas0786",
+      "createdAt": "2026-08-06T23:24:56Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15677,
+        "title": "Group conversations by workspace by default",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15677",
+        "createdAt": "2026-06-04T18:48:14Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15677#issuecomment-5209895600"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-08-06T20:21:25Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4399,
+        "title": "[Bug]: CustomSecretsSection prompt example writes secrets into .git/config in plaintext",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4399",
+        "createdAt": "2026-08-06T15:28:24Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4399#issuecomment-5208873489"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-08-06T20:19:54Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4398,
+        "title": "Make conversation worktree root configurable (discussion for #4362)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4398",
+        "createdAt": "2026-08-06T14:09:03Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4398#issuecomment-5208864676"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "createdAt": "2026-08-06T19:39:08Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4288,
+        "title": "Design: reference-only credentials and safe runtime delivery",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4288",
+        "createdAt": "2026-07-28T08:59:30Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4288#issuecomment-5208629100"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "createdAt": "2026-08-06T18:46:24Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16369,
+        "title": "Replace user/repo with a clearer repository placeholder",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16369",
+        "createdAt": "2026-08-06T18:46:24Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "createdAt": "2026-08-06T17:56:37Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16367,
+        "title": "Background page remains scrollable while popups are open",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16367",
+        "createdAt": "2026-08-06T17:56:37Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "createdAt": "2026-08-06T17:37:26Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16366,
+        "title": "API Key creation dialog overflows on mobile",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16366",
+        "createdAt": "2026-08-06T17:37:26Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "13464048",
+      "login": "saranchyev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13464048?v=4",
+      "profileUrl": "https://github.com/saranchyev",
+      "createdAt": "2026-08-06T17:35:56Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16365,
+        "title": "[Bug]: OpenAI provider prefix is stripped twice for namespaced model IDs in Responses API",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16365",
+        "createdAt": "2026-08-06T17:35:56Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "312513713",
+      "login": "aakash7343",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/312513713?v=4",
+      "profileUrl": "https://github.com/aakash7343",
+      "createdAt": "2026-08-06T17:21:55Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16270,
+        "title": "[Bug]: AttributeError: 'Server' object has no attribute 'list_tools' when browser tool is used (breaks chat with 500 error)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16270",
+        "createdAt": "2026-08-03T17:57:30Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16270#issuecomment-5207778951"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "createdAt": "2026-08-06T17:05:52Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16363,
+        "title": "Mobile layout causes chat content and composer to overlap",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16363",
+        "createdAt": "2026-08-06T17:05:52Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "createdAt": "2026-08-06T15:52:35Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16360,
+        "title": "Agent status text overflows vertically on mobile",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16360",
+        "createdAt": "2026-08-06T15:52:35Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "createdAt": "2026-08-06T14:09:03Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4398,
+        "title": "Make conversation worktree root configurable (discussion for #4362)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4398",
+        "createdAt": "2026-08-06T14:09:03Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-08-06T13:59:06Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16315,
+        "title": "[Feature] Knowledge Base, Playbooks, and Skills system",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16315",
+        "createdAt": "2026-08-04T17:53:39Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16315#issuecomment-5205647945"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "102205211",
+      "login": "HurrairaBaloch",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/102205211?v=4",
+      "profileUrl": "https://github.com/HurrairaBaloch",
+      "createdAt": "2026-08-06T13:56:16Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16330,
+        "title": "Show the full workspace path in the Files view",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16330",
+        "createdAt": "2026-08-05T05:32:26Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16330#issuecomment-5205613282"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-08-06T13:45:57Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16315,
+        "title": "[Feature] Knowledge Base, Playbooks, and Skills system",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16315",
+        "createdAt": "2026-08-04T17:53:39Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16315#issuecomment-5205471697"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "167346074",
+      "login": "vnktadithya",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/167346074?v=4",
+      "profileUrl": "https://github.com/vnktadithya",
+      "createdAt": "2026-08-06T13:00:12Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 3746,
+        "title": "max_input_tokens in agent_settings.json does not take effect in headless CLI mode",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3746",
+        "createdAt": "2026-06-16T06:04:57Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3746#issuecomment-5204947382"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "3678887",
+      "login": "lee-b",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3678887?v=4",
+      "profileUrl": "https://github.com/lee-b",
+      "createdAt": "2026-08-06T12:31:24Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15677,
+        "title": "Group conversations by workspace by default",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15677",
+        "createdAt": "2026-06-04T18:48:14Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15677#issuecomment-5204657867"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "createdAt": "2026-08-06T09:20:47Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16355,
+        "title": "Hide edit and delete actions for system-managed secrets",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16355",
+        "createdAt": "2026-08-06T09:20:47Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "165036067",
+      "login": "inahus99",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/165036067?v=4",
+      "profileUrl": "https://github.com/inahus99",
+      "createdAt": "2026-08-06T07:35:03Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16331,
+        "title": "[Bug]: file preview panel stops working during streaming",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16331",
+        "createdAt": "2026-08-05T12:10:28Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16331#issuecomment-5201767962"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "4757816",
+      "login": "shinji62",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4757816?v=4",
+      "profileUrl": "https://github.com/shinji62",
+      "createdAt": "2026-08-06T07:31:34Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 16354,
+        "title": "feature: Support smolVM as backend for local operation",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16354",
+        "createdAt": "2026-08-06T07:31:34Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "35458439",
+      "login": "harsh4vardhan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/35458439?v=4",
+      "profileUrl": "https://github.com/harsh4vardhan",
+      "createdAt": "2026-08-06T07:29:07Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4388,
+        "title": "agent-server: search_bash_events pagination wrong when order__gt filter is active — pages undersized, clients loop on empty next-pages",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4388",
+        "createdAt": "2026-08-06T07:29:07Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "35458439",
+      "login": "harsh4vardhan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/35458439?v=4",
+      "profileUrl": "https://github.com/harsh4vardhan",
+      "createdAt": "2026-08-06T07:28:11Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4387,
+        "title": "agent-server: close() 10 s timeout < wait_for_pending 30 s ceiling — second cancel aborts finally-block, _publish_state_update never fires",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4387",
+        "createdAt": "2026-08-06T07:28:11Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "35458439",
+      "login": "harsh4vardhan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/35458439?v=4",
+      "profileUrl": "https://github.com/harsh4vardhan",
+      "createdAt": "2026-08-06T07:26:50Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4386,
+        "title": "agent-server: _emit_event_from_thread silently drops exceptions — stats and LLM-log events lost without any signal",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4386",
+        "createdAt": "2026-08-06T07:26:50Z"
+      }
+    },
     {
       "type": "issueComment",
       "githubUserId": "173987118",
@@ -904,418 +1292,379 @@
         "url": "https://github.com/OpenHands/extensions/issues/444",
         "createdAt": "2026-08-03T23:50:30Z"
       }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "createdAt": "2026-08-03T23:50:08Z",
-      "issue": {
-        "repo": "extensions",
-        "number": 443,
-        "title": "Add GitLab issue → MR automation (ticket→PR parity with Jira)",
-        "url": "https://github.com/OpenHands/extensions/issues/443",
-        "createdAt": "2026-08-03T23:50:08Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "298743892",
-      "login": "rzavx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/298743892?v=4",
-      "profileUrl": "https://github.com/rzavx",
-      "createdAt": "2026-08-03T23:15:25Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16275,
-        "title": "[Bug]: Agent server never comes up on Windows — ingress proxy fails with ECONNREFUSED ::1 (IPv6/IPv4 localhost resolution mismatch)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16275",
-        "createdAt": "2026-08-03T23:15:25Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "298743892",
-      "login": "rzavx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/298743892?v=4",
-      "profileUrl": "https://github.com/rzavx",
-      "createdAt": "2026-08-03T22:52:39Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16270,
-        "title": "[Bug]: AttributeError: 'Server' object has no attribute 'list_tools' when browser tool is used (breaks chat with 500 error)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16270",
-        "createdAt": "2026-08-03T17:57:30Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16270#issuecomment-5172587800"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "createdAt": "2026-08-03T21:29:54Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16170,
-        "title": "Add an always-visible context-window meter and consolidated Usage drawer",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16170",
-        "createdAt": "2026-07-29T15:00:48Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16170#issuecomment-5171943160"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "90290458",
-      "login": "PranavMishra28",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/90290458?v=4",
-      "profileUrl": "https://github.com/PranavMishra28",
-      "createdAt": "2026-08-03T20:10:35Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5171195064"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "249681850",
-      "login": "forevercrab321-svg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/249681850?v=4",
-      "profileUrl": "https://github.com/forevercrab321-svg",
-      "createdAt": "2026-08-03T20:02:22Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5171119688"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "90290458",
-      "login": "PranavMishra28",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/90290458?v=4",
-      "profileUrl": "https://github.com/PranavMishra28",
-      "createdAt": "2026-08-03T18:31:46Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5170263520"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "249681850",
-      "login": "forevercrab321-svg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/249681850?v=4",
-      "profileUrl": "https://github.com/forevercrab321-svg",
-      "createdAt": "2026-08-03T18:19:10Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5170144896"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "90290458",
-      "login": "PranavMishra28",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/90290458?v=4",
-      "profileUrl": "https://github.com/PranavMishra28",
-      "createdAt": "2026-08-03T18:11:17Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5170069642"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "298743892",
-      "login": "rzavx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/298743892?v=4",
-      "profileUrl": "https://github.com/rzavx",
-      "createdAt": "2026-08-03T17:57:30Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16270,
-        "title": "[Bug]: AttributeError: 'Server' object has no attribute 'list_tools' when browser tool is used (breaks chat with 500 error)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16270",
-        "createdAt": "2026-08-03T17:57:30Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "249681850",
-      "login": "forevercrab321-svg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/249681850?v=4",
-      "profileUrl": "https://github.com/forevercrab321-svg",
-      "createdAt": "2026-08-03T17:53:40Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5169900612"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "90290458",
-      "login": "PranavMishra28",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/90290458?v=4",
-      "profileUrl": "https://github.com/PranavMishra28",
-      "createdAt": "2026-08-03T17:07:52Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5169431949"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "249681850",
-      "login": "forevercrab321-svg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/249681850?v=4",
-      "profileUrl": "https://github.com/forevercrab321-svg",
-      "createdAt": "2026-08-03T16:55:19Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5169307659"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "90290458",
-      "login": "PranavMishra28",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/90290458?v=4",
-      "profileUrl": "https://github.com/PranavMishra28",
-      "createdAt": "2026-08-03T14:35:53Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5167760326"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "144555727",
-      "login": "Sakshamm-Goyal",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/144555727?v=4",
-      "profileUrl": "https://github.com/Sakshamm-Goyal",
-      "createdAt": "2026-08-03T13:38:00Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16257,
-        "title": "dev launch scripts install signal handlers as import-time side effects",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16257",
-        "createdAt": "2026-08-03T11:34:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16257#issuecomment-5167050962"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "238837418",
-      "login": "ankitkapur1992-hlido",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/238837418?v=4",
-      "profileUrl": "https://github.com/ankitkapur1992-hlido",
-      "createdAt": "2026-08-03T12:26:39Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16261,
-        "title": "OpenHands was independently reviewed on Hlido — scored 90/100, right of reply open",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16261",
-        "createdAt": "2026-08-03T12:26:39Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "createdAt": "2026-08-03T11:34:39Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16257,
-        "title": "dev launch scripts install signal handlers as import-time side effects",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16257",
-        "createdAt": "2026-08-03T11:34:39Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "90290458",
-      "login": "PranavMishra28",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/90290458?v=4",
-      "profileUrl": "https://github.com/PranavMishra28",
-      "createdAt": "2026-08-03T06:44:05Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5163163556"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "249681850",
-      "login": "forevercrab321-svg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/249681850?v=4",
-      "profileUrl": "https://github.com/forevercrab321-svg",
-      "createdAt": "2026-08-03T06:35:10Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5163101787"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "62817653",
-      "login": "sudarshansaxena2409",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/62817653?v=4",
-      "profileUrl": "https://github.com/sudarshansaxena2409",
-      "createdAt": "2026-08-03T06:34:41Z",
-      "issue": {
-        "repo": "OpenHands-Cloud",
-        "number": 613,
-        "title": "Slack agent context strips channel/team/per-message ts metadata, blocking permalink construction",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/issues/613",
-        "createdAt": "2026-05-06T15:18:29Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands-Cloud/issues/613#issuecomment-5163098680"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "90290458",
-      "login": "PranavMishra28",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/90290458?v=4",
-      "profileUrl": "https://github.com/PranavMishra28",
-      "createdAt": "2026-08-03T06:02:01Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5162856539"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "249681850",
-      "login": "forevercrab321-svg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/249681850?v=4",
-      "profileUrl": "https://github.com/forevercrab321-svg",
-      "createdAt": "2026-08-03T05:59:24Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5162840471"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "90290458",
-      "login": "PranavMishra28",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/90290458?v=4",
-      "profileUrl": "https://github.com/PranavMishra28",
-      "createdAt": "2026-08-03T05:30:13Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5162662130"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "249681850",
-      "login": "forevercrab321-svg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/249681850?v=4",
-      "profileUrl": "https://github.com/forevercrab321-svg",
-      "createdAt": "2026-08-03T05:14:28Z",
-      "issue": {
-        "repo": "benchmarks",
-        "number": 764,
-        "title": "RFC: a fault-injection reliability benchmark for agent runs",
-        "url": "https://github.com/OpenHands/benchmarks/issues/764",
-        "createdAt": "2026-07-30T21:26:39Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/benchmarks/issues/764#issuecomment-5162561017"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "265482669",
-      "login": "hegu-1",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/265482669?v=4",
-      "profileUrl": "https://github.com/hegu-1",
-      "createdAt": "2026-08-02T16:20:14Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16160,
-        "title": "Support externally attested migration governance for Agent Canvas forks",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16160",
-        "createdAt": "2026-07-29T12:43:29Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16160#issuecomment-5159178916"
     }
   ],
   "yearlyTotals": {
     "2025": {
-      "issuesOpened": 397,
-      "issueComments": 1186,
-      "uniqueIssueOpeners": 198,
-      "uniqueCommenters": 281
+      "issuesOpened": 394,
+      "issueComments": 1168,
+      "uniqueIssueOpeners": 197,
+      "uniqueCommenters": 276
     },
     "2026": {
-      "issuesOpened": 714,
-      "issueComments": 2002,
-      "uniqueIssueOpeners": 343,
-      "uniqueCommenters": 436
+      "issuesOpened": 727,
+      "issueComments": 2015,
+      "uniqueIssueOpeners": 347,
+      "uniqueCommenters": 443
     }
   },
   "users": [
+    {
+      "githubUserId": "66430880",
+      "login": "Deep070203",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/66430880?v=4",
+      "profileUrl": "https://github.com/Deep070203",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 2,
+      "firstActivityAt": "2026-07-31T19:46:49Z",
+      "mostRecentActivityAt": "2026-08-07T02:51:27Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 16349,
+        "title": "Add tags/filtering for automations in the conversation panel",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16349",
+        "createdAt": "2026-08-07T02:51:27Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16349#issuecomment-5211580405"
+      }
+    },
+    {
+      "githubUserId": "51403749",
+      "login": "srurora",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/51403749?v=4",
+      "profileUrl": "https://github.com/srurora",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-08-07T00:55:24Z",
+      "mostRecentActivityAt": "2026-08-07T00:55:24Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 16355,
+        "title": "Hide edit and delete actions for system-managed secrets",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16355",
+        "createdAt": "2026-08-07T00:55:24Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16355#issuecomment-5210624667"
+      }
+    },
+    {
+      "githubUserId": "123672028",
+      "login": "Shreyas0786",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123672028?v=4",
+      "profileUrl": "https://github.com/Shreyas0786",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-08-06T23:24:56Z",
+      "mostRecentActivityAt": "2026-08-06T23:24:56Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15677,
+        "title": "Group conversations by workspace by default",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15677",
+        "createdAt": "2026-08-06T23:24:56Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15677#issuecomment-5209895600"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "issuesOpenedCount": 251,
+      "issueCommentsCount": 1157,
+      "firstActivityAt": "2025-08-07T09:56:45Z",
+      "mostRecentActivityAt": "2026-08-06T20:21:25Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 10330,
+        "title": "[Bug]: White on white text in CLI cannot be read",
+        "url": "https://github.com/OpenHands/OpenHands/issues/10330",
+        "createdAt": "2025-08-14T19:00:51Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 16257,
+        "title": "dev launch scripts install signal handlers as import-time side effects",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16257",
+        "createdAt": "2026-08-03T11:34:39Z"
+      },
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 4399,
+        "title": "[Bug]: CustomSecretsSection prompt example writes secrets into .git/config in plaintext",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4399",
+        "createdAt": "2026-08-06T20:21:25Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4399#issuecomment-5208873489"
+      }
+    },
+    {
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "issuesOpenedCount": 5,
+      "issueCommentsCount": 6,
+      "firstActivityAt": "2026-07-13T14:37:08Z",
+      "mostRecentActivityAt": "2026-08-06T19:39:08Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4105,
+        "title": "Visualizer metrics subtitle shows only cumulative token usage, easily mistaken for per-request usage",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4105",
+        "createdAt": "2026-07-13T14:37:08Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4208,
+        "title": "check-pr-artifacts: `.pr/` from #4202 leaked into main, and the workflow hard-fails with 403 on fork PRs",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4208",
+        "createdAt": "2026-07-23T20:43:08Z"
+      },
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 4288,
+        "title": "Design: reference-only credentials and safe runtime delivery",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4288",
+        "createdAt": "2026-08-06T19:39:08Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4288#issuecomment-5208629100"
+      }
+    },
+    {
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "issuesOpenedCount": 7,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-07-15T11:34:25Z",
+      "mostRecentActivityAt": "2026-08-06T18:46:24Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 15280,
+        "title": "[Bug]: OpenHands Cloud chats fail with 401 token_not_found_in_db (Invalid proxy server token passed) for all OpenHands provider models",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15280",
+        "createdAt": "2026-07-15T11:34:25Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 16369,
+        "title": "Replace user/repo with a clearer repository placeholder",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16369",
+        "createdAt": "2026-08-06T18:46:24Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "13464048",
+      "login": "saranchyev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13464048?v=4",
+      "profileUrl": "https://github.com/saranchyev",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-08-06T17:35:56Z",
+      "mostRecentActivityAt": "2026-08-06T17:35:56Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 16365,
+        "title": "[Bug]: OpenAI provider prefix is stripped twice for namespaced model IDs in Responses API",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16365",
+        "createdAt": "2026-08-06T17:35:56Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 16365,
+        "title": "[Bug]: OpenAI provider prefix is stripped twice for namespaced model IDs in Responses API",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16365",
+        "createdAt": "2026-08-06T17:35:56Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "312513713",
+      "login": "aakash7343",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/312513713?v=4",
+      "profileUrl": "https://github.com/aakash7343",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-08-06T17:21:55Z",
+      "mostRecentActivityAt": "2026-08-06T17:21:55Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 16270,
+        "title": "[Bug]: AttributeError: 'Server' object has no attribute 'list_tools' when browser tool is used (breaks chat with 500 error)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16270",
+        "createdAt": "2026-08-06T17:21:55Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16270#issuecomment-5207778951"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "issuesOpenedCount": 35,
+      "issueCommentsCount": 29,
+      "firstActivityAt": "2026-01-15T19:57:54Z",
+      "mostRecentActivityAt": "2026-08-06T14:09:03Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 12451,
+        "title": "test issue via api",
+        "url": "https://github.com/OpenHands/OpenHands/issues/12451",
+        "createdAt": "2026-01-15T19:57:54Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4398,
+        "title": "Make conversation worktree root configurable (discussion for #4362)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4398",
+        "createdAt": "2026-08-06T14:09:03Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 16304,
+        "title": "Guideline: use a temporary .pr/ HTML design doc + htmlpreview link for non-trivial PRs",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16304",
+        "createdAt": "2026-08-04T18:03:31Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16304#issuecomment-5182797045"
+      }
+    },
+    {
+      "githubUserId": "102205211",
+      "login": "HurrairaBaloch",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/102205211?v=4",
+      "profileUrl": "https://github.com/HurrairaBaloch",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-08-06T13:56:16Z",
+      "mostRecentActivityAt": "2026-08-06T13:56:16Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 16330,
+        "title": "Show the full workspace path in the Files view",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16330",
+        "createdAt": "2026-08-06T13:56:16Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16330#issuecomment-5205613282"
+      }
+    },
+    {
+      "githubUserId": "167346074",
+      "login": "vnktadithya",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/167346074?v=4",
+      "profileUrl": "https://github.com/vnktadithya",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-08-06T13:00:12Z",
+      "mostRecentActivityAt": "2026-08-06T13:00:12Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 3746,
+        "title": "max_input_tokens in agent_settings.json does not take effect in headless CLI mode",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3746",
+        "createdAt": "2026-08-06T13:00:12Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3746#issuecomment-5204947382"
+      }
+    },
+    {
+      "githubUserId": "3678887",
+      "login": "lee-b",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3678887?v=4",
+      "profileUrl": "https://github.com/lee-b",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-08-06T12:31:24Z",
+      "mostRecentActivityAt": "2026-08-06T12:31:24Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15677,
+        "title": "Group conversations by workspace by default",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15677",
+        "createdAt": "2026-08-06T12:31:24Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15677#issuecomment-5204657867"
+      }
+    },
+    {
+      "githubUserId": "165036067",
+      "login": "inahus99",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/165036067?v=4",
+      "profileUrl": "https://github.com/inahus99",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-08-06T07:35:03Z",
+      "mostRecentActivityAt": "2026-08-06T07:35:03Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 16331,
+        "title": "[Bug]: file preview panel stops working during streaming",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16331",
+        "createdAt": "2026-08-06T07:35:03Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16331#issuecomment-5201767962"
+      }
+    },
+    {
+      "githubUserId": "4757816",
+      "login": "shinji62",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4757816?v=4",
+      "profileUrl": "https://github.com/shinji62",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-08-06T07:31:34Z",
+      "mostRecentActivityAt": "2026-08-06T07:31:34Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 16354,
+        "title": "feature: Support smolVM as backend for local operation",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16354",
+        "createdAt": "2026-08-06T07:31:34Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 16354,
+        "title": "feature: Support smolVM as backend for local operation",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16354",
+        "createdAt": "2026-08-06T07:31:34Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "35458439",
+      "login": "harsh4vardhan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/35458439?v=4",
+      "profileUrl": "https://github.com/harsh4vardhan",
+      "issuesOpenedCount": 3,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-08-06T07:26:50Z",
+      "mostRecentActivityAt": "2026-08-06T07:29:07Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4386,
+        "title": "agent-server: _emit_event_from_thread silently drops exceptions — stats and LLM-log events lost without any signal",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4386",
+        "createdAt": "2026-08-06T07:26:50Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4388,
+        "title": "agent-server: search_bash_events pagination wrong when order__gt filter is active — pages undersized, clients loop on empty next-pages",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4388",
+        "createdAt": "2026-08-06T07:29:07Z"
+      },
+      "mostRecentComment": null
+    },
     {
       "githubUserId": "173987118",
       "login": "Prithiv04",
@@ -1508,70 +1857,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/7752",
         "createdAt": "2026-08-04T19:49:14Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/7752#issuecomment-5183856122"
-      }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "issuesOpenedCount": 34,
-      "issueCommentsCount": 29,
-      "firstActivityAt": "2026-01-15T19:57:54Z",
-      "mostRecentActivityAt": "2026-08-04T18:03:31Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 12451,
-        "title": "test issue via api",
-        "url": "https://github.com/OpenHands/OpenHands/issues/12451",
-        "createdAt": "2026-01-15T19:57:54Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 16304,
-        "title": "Guideline: use a temporary .pr/ HTML design doc + htmlpreview link for non-trivial PRs",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16304",
-        "createdAt": "2026-08-04T17:20:51Z"
-      },
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 16304,
-        "title": "Guideline: use a temporary .pr/ HTML design doc + htmlpreview link for non-trivial PRs",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16304",
-        "createdAt": "2026-08-04T18:03:31Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16304#issuecomment-5182797045"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "issuesOpenedCount": 252,
-      "issueCommentsCount": 1155,
-      "firstActivityAt": "2025-08-06T18:37:29Z",
-      "mostRecentActivityAt": "2026-08-04T17:57:11Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 10136,
-        "title": "Show microagents names or content in CLI",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10136",
-        "createdAt": "2025-08-06T20:00:58Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 16257,
-        "title": "dev launch scripts install signal handlers as import-time side effects",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16257",
-        "createdAt": "2026-08-03T11:34:39Z"
-      },
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 16304,
-        "title": "Guideline: use a temporary .pr/ HTML design doc + htmlpreview link for non-trivial PRs",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16304",
-        "createdAt": "2026-08-04T17:57:11Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16304#issuecomment-5182733996"
       }
     },
     {
@@ -2014,26 +2299,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/15692",
         "createdAt": "2026-07-31T23:47:00Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15692#issuecomment-5148393612"
-      }
-    },
-    {
-      "githubUserId": "66430880",
-      "login": "Deep070203",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/66430880?v=4",
-      "profileUrl": "https://github.com/Deep070203",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2026-07-31T19:46:49Z",
-      "mostRecentActivityAt": "2026-07-31T19:46:49Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 16204,
-        "title": "[Feature] Support Pi as ACP Agent",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16204",
-        "createdAt": "2026-07-31T19:46:49Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16204#issuecomment-5146840143"
       }
     },
     {
@@ -2944,38 +3209,6 @@
       }
     },
     {
-      "githubUserId": "148256405",
-      "login": "luciobaiocchi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?v=4",
-      "profileUrl": "https://github.com/luciobaiocchi",
-      "issuesOpenedCount": 5,
-      "issueCommentsCount": 5,
-      "firstActivityAt": "2026-07-13T14:37:08Z",
-      "mostRecentActivityAt": "2026-07-23T20:43:08Z",
-      "firstIssue": {
-        "repo": "software-agent-sdk",
-        "number": 4105,
-        "title": "Visualizer metrics subtitle shows only cumulative token usage, easily mistaken for per-request usage",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4105",
-        "createdAt": "2026-07-13T14:37:08Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 4208,
-        "title": "check-pr-artifacts: `.pr/` from #4202 leaked into main, and the workflow hard-fails with 403 on fork PRs",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4208",
-        "createdAt": "2026-07-23T20:43:08Z"
-      },
-      "mostRecentComment": {
-        "repo": "software-agent-sdk",
-        "number": 3988,
-        "title": "Support OS keyring for secret storage",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/3988",
-        "createdAt": "2026-07-20T20:11:16Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/3988#issuecomment-5026818267"
-      }
-    },
-    {
       "githubUserId": "54019796",
       "login": "jayanth922",
       "avatarUrl": "https://avatars.githubusercontent.com/u/54019796?v=4",
@@ -3763,31 +3996,6 @@
         "createdAt": "2026-07-15T12:23:48Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15282#issuecomment-4980528318"
       }
-    },
-    {
-      "githubUserId": "64604745",
-      "login": "baldbuffalo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
-      "profileUrl": "https://github.com/baldbuffalo",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 0,
-      "firstActivityAt": "2026-07-15T11:34:25Z",
-      "mostRecentActivityAt": "2026-07-15T11:34:25Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 15280,
-        "title": "[Bug]: OpenHands Cloud chats fail with 401 token_not_found_in_db (Invalid proxy server token passed) for all OpenHands provider models",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15280",
-        "createdAt": "2026-07-15T11:34:25Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 15280,
-        "title": "[Bug]: OpenHands Cloud chats fail with 401 token_not_found_in_db (Invalid proxy server token passed) for all OpenHands provider models",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15280",
-        "createdAt": "2026-07-15T11:34:25Z"
-      },
-      "mostRecentComment": null
     },
     {
       "githubUserId": "23738781",
@@ -6247,6 +6455,31 @@
         "createdAt": "2026-06-13T09:02:49Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/13434#issuecomment-4698070457"
       }
+    },
+    {
+      "githubUserId": "66105983",
+      "login": "ankitzm",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/66105983?v=4",
+      "profileUrl": "https://github.com/ankitzm",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-06-12T12:08:41Z",
+      "mostRecentActivityAt": "2026-06-12T12:08:41Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 14778,
+        "title": "MCP to help OSS devs understand OpenHands/OpenHands",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14778",
+        "createdAt": "2026-06-12T12:08:41Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 14778,
+        "title": "MCP to help OSS devs understand OpenHands/OpenHands",
+        "url": "https://github.com/OpenHands/OpenHands/issues/14778",
+        "createdAt": "2026-06-12T12:08:41Z"
+      },
+      "mostRecentComment": null
     },
     {
       "githubUserId": "281532558",
@@ -16501,8 +16734,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/58927531?v=4",
       "profileUrl": "https://github.com/BradKML",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 49,
-      "firstActivityAt": "2025-08-07T02:24:27Z",
+      "issueCommentsCount": 48,
+      "firstActivityAt": "2025-08-08T06:23:27Z",
       "mostRecentActivityAt": "2026-01-05T06:04:18Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -20511,8 +20744,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/213239228?v=4",
       "profileUrl": "https://github.com/llamantino",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 9,
-      "firstActivityAt": "2025-08-06T13:54:23Z",
+      "issueCommentsCount": 8,
+      "firstActivityAt": "2025-08-15T21:19:40Z",
       "mostRecentActivityAt": "2025-10-13T23:32:58Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -21855,16 +22088,16 @@
       "login": "wyc1997",
       "avatarUrl": "https://avatars.githubusercontent.com/u/15965364?v=4",
       "profileUrl": "https://github.com/wyc1997",
-      "issuesOpenedCount": 3,
+      "issuesOpenedCount": 2,
       "issueCommentsCount": 0,
-      "firstActivityAt": "2025-08-07T01:23:50Z",
+      "firstActivityAt": "2025-08-11T21:29:00Z",
       "mostRecentActivityAt": "2025-09-18T00:15:16Z",
       "firstIssue": {
         "repo": "OpenHands",
-        "number": 10139,
-        "title": "[Bug]: Converting tool call to string adds additional newline at the start",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10139",
-        "createdAt": "2025-08-07T01:23:50Z"
+        "number": 10237,
+        "title": "[Bug]: AWS credentials in config.toml doesn't seem to work",
+        "url": "https://github.com/OpenHands/OpenHands/issues/10237",
+        "createdAt": "2025-08-11T21:29:00Z"
       },
       "mostRecentIssue": {
         "repo": "software-agent-sdk",
@@ -21881,8 +22114,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/1527962?v=4",
       "profileUrl": "https://github.com/patonw",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 2,
-      "firstActivityAt": "2025-08-07T02:24:03Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-09-17T18:47:07Z",
       "mostRecentActivityAt": "2025-09-17T18:47:07Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -23485,8 +23718,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/21154878?v=4",
       "profileUrl": "https://github.com/aeft",
       "issuesOpenedCount": 1,
-      "issueCommentsCount": 3,
-      "firstActivityAt": "2025-08-07T01:48:29Z",
+      "issueCommentsCount": 2,
+      "firstActivityAt": "2025-08-12T02:13:12Z",
       "mostRecentActivityAt": "2025-08-23T06:15:23Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -24104,8 +24337,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/1812094?v=4",
       "profileUrl": "https://github.com/cwirz",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 3,
-      "firstActivityAt": "2025-08-06T09:54:40Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-08-12T09:53:29Z",
       "mostRecentActivityAt": "2025-08-12T09:53:29Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24213,8 +24446,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/83415736?v=4",
       "profileUrl": "https://github.com/aravindan888",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 4,
-      "firstActivityAt": "2025-08-06T09:36:28Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-08-11T15:08:32Z",
       "mostRecentActivityAt": "2025-08-11T15:08:32Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24362,8 +24595,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/93366764?v=4",
       "profileUrl": "https://github.com/sp3ncerlan",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 3,
-      "firstActivityAt": "2025-08-07T04:26:17Z",
+      "issueCommentsCount": 2,
+      "firstActivityAt": "2025-08-08T00:29:13Z",
       "mostRecentActivityAt": "2025-08-08T06:32:01Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24382,8 +24615,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/3969083?v=4",
       "profileUrl": "https://github.com/dhirmadi",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 2,
-      "firstActivityAt": "2025-08-06T12:22:01Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-08-08T06:17:23Z",
       "mostRecentActivityAt": "2025-08-08T06:17:23Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -24415,131 +24648,6 @@
         "createdAt": "2025-08-07T08:17:39Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/10052#issuecomment-3163040496"
       }
-    },
-    {
-      "githubUserId": "443490",
-      "login": "highkay",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/443490?v=4",
-      "profileUrl": "https://github.com/highkay",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-08-07T04:34:07Z",
-      "mostRecentActivityAt": "2025-08-07T04:34:07Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 9354,
-        "title": "Gitea/Forgejo Support",
-        "url": "https://github.com/OpenHands/OpenHands/issues/9354",
-        "createdAt": "2025-08-07T04:34:07Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/9354#issuecomment-3162419809"
-      }
-    },
-    {
-      "githubUserId": "19567117",
-      "login": "lapplislazuli",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/19567117?v=4",
-      "profileUrl": "https://github.com/lapplislazuli",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-08-07T00:59:59Z",
-      "mostRecentActivityAt": "2025-08-07T00:59:59Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 10110,
-        "title": "[Bug]: docker image build failing during swe-bench eval run",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10110",
-        "createdAt": "2025-08-07T00:59:59Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/10110#issuecomment-3162062824"
-      }
-    },
-    {
-      "githubUserId": "30648421",
-      "login": "Aecroo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/30648421?v=4",
-      "profileUrl": "https://github.com/Aecroo",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-08-06T15:44:45Z",
-      "mostRecentActivityAt": "2025-08-06T15:44:45Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "software-agent-sdk",
-        "number": 1068,
-        "title": "Test with GPT-OSS",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/1068",
-        "createdAt": "2025-08-06T15:44:45Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/1068#issuecomment-3498703598"
-      }
-    },
-    {
-      "githubUserId": "77228922",
-      "login": "ysy-phoenix",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/77228922?v=4",
-      "profileUrl": "https://github.com/ysy-phoenix",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-08-06T09:21:06Z",
-      "mostRecentActivityAt": "2025-08-06T09:21:06Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 10110,
-        "title": "[Bug]: docker image build failing during swe-bench eval run",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10110",
-        "createdAt": "2025-08-06T09:21:06Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/10110#issuecomment-3158548394"
-      }
-    },
-    {
-      "githubUserId": "8324660",
-      "login": "jeffskla",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/8324660?v=4",
-      "profileUrl": "https://github.com/jeffskla",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-08-06T07:47:46Z",
-      "mostRecentActivityAt": "2025-08-06T07:47:46Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 6890,
-        "title": "[Bug]: Rate Limit Error",
-        "url": "https://github.com/OpenHands/OpenHands/issues/6890",
-        "createdAt": "2025-08-06T07:47:46Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/6890#issuecomment-3157869800"
-      }
-    },
-    {
-      "githubUserId": "60579067",
-      "login": "xinyu-dev",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/60579067?v=4",
-      "profileUrl": "https://github.com/xinyu-dev",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 0,
-      "firstActivityAt": "2025-08-06T05:43:37Z",
-      "mostRecentActivityAt": "2025-08-06T05:43:37Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 10113,
-        "title": "[Bug]: AttributeError: 'ActionExecutor' object has no attribute 'call_tool_mcp'",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10113",
-        "createdAt": "2025-08-06T05:43:37Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 10113,
-        "title": "[Bug]: AttributeError: 'ActionExecutor' object has no attribute 'call_tool_mcp'",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10113",
-        "createdAt": "2025-08-06T05:43:37Z"
-      },
-      "mostRecentComment": null
     }
   ]
 }
