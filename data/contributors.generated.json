@@ -1,11 +1,102 @@
 {
-  "generatedAt": "2026-08-10T04:30:30.951Z",
+  "generatedAt": "2026-08-11T04:27:56.104Z",
   "organization": "OpenHands",
   "repoCount": 50,
   "scannedRepoCount": 50,
-  "totalMergedPrs": 2610,
+  "totalMergedPrs": 2617,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "85188079",
+      "login": "lokesh75-kank",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/85188079?u=5526f795c818af4782f68fa7df12bb7bc375a430&v=4",
+      "profileUrl": "https://github.com/lokesh75-kank",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16324,
+        "title": "fix(automations): surface non-MCP-installable integrations instead of silently dropping them",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16324",
+        "mergedAt": "2026-08-11T02:25:09Z"
+      }
+    },
+    {
+      "githubUserId": "179799587",
+      "login": "Lothnic",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/179799587?u=94219dab8b14129bf191e1f8a0d905d457c63a9e&v=4",
+      "profileUrl": "https://github.com/Lothnic",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16500,
+        "title": "refactor: replace positional createConversation params with an options object (#1587)",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16500",
+        "mergedAt": "2026-08-10T23:32:37Z"
+      }
+    },
+    {
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?u=765da39759e3827f4f9047b7e6ae6e39438c7f42&v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 695,
+        "title": "docs(sdk): add structured output guide",
+        "url": "https://github.com/OpenHands/docs/pull/695",
+        "mergedAt": "2026-08-10T20:38:47Z"
+      }
+    },
+    {
+      "githubUserId": "744063",
+      "login": "georgeglarson",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
+      "profileUrl": "https://github.com/georgeglarson",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16311,
+        "title": "feat: context window usage meter, usage drawer, and manual compaction",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16311",
+        "mergedAt": "2026-08-10T16:04:30Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 715,
+        "title": "Adding doc links to Introduction page",
+        "url": "https://github.com/OpenHands/docs/pull/715",
+        "mergedAt": "2026-08-10T16:02:19Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 709,
+        "title": "docs: Kubernetes cluster upgrade guidance for Enterprise [PLTF-3308]",
+        "url": "https://github.com/OpenHands/docs/pull/709",
+        "mergedAt": "2026-08-10T15:18:34Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 710,
+        "title": "Add OpenHands Enterprise sizing guide [PLTF-3389]",
+        "url": "https://github.com/OpenHands/docs/pull/710",
+        "mergedAt": "2026-08-10T15:12:28Z"
+      }
+    },
     {
       "githubUserId": "33391300",
       "login": "Shimada666",
@@ -694,31 +785,136 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/4179",
         "mergedAt": "2026-07-21T18:12:06Z"
       }
-    },
+    }
+  ],
+  "contributors": [
     {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "pullRequest": {
+      "githubUserId": "85188079",
+      "login": "lokesh75-kank",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/85188079?u=5526f795c818af4782f68fa7df12bb7bc375a430&v=4",
+      "profileUrl": "https://github.com/lokesh75-kank",
+      "firstMergedPr": {
         "repo": "OpenHands",
-        "number": 15333,
-        "title": "fix(app-server): restore previous DB pool_size default",
-        "url": "https://github.com/OpenHands/OpenHands/pull/15333",
-        "mergedAt": "2026-07-20T19:44:36Z"
+        "number": 16324,
+        "title": "fix(automations): surface non-MCP-installable integrations instead of silently dropping them",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16324",
+        "mergedAt": "2026-08-11T02:25:09Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16324,
+        "title": "fix(automations): surface non-MCP-installable integrations instead of silently dropping them",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16324",
+        "mergedAt": "2026-08-11T02:25:09Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16324,
+            "title": "fix(automations): surface non-MCP-installable integrations instead of silently dropping them",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16324",
+            "mergedAt": "2026-08-11T02:25:09Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16324,
+            "title": "fix(automations): surface non-MCP-installable integrations instead of silently dropping them",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16324",
+            "mergedAt": "2026-08-11T02:25:09Z"
+          }
+        }
       }
     },
     {
-      "githubUserId": "183583132",
-      "login": "rsd-darshan",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/183583132?u=545e9075c9e66cc48d09c79e8709b5716ac2e8b5&v=4",
-      "profileUrl": "https://github.com/rsd-darshan",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4126,
-        "title": "fix(acp): bound ACP server startup with a timeout",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4126",
-        "mergedAt": "2026-07-20T12:47:05Z"
+      "githubUserId": "179799587",
+      "login": "Lothnic",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/179799587?u=94219dab8b14129bf191e1f8a0d905d457c63a9e&v=4",
+      "profileUrl": "https://github.com/Lothnic",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16500,
+        "title": "refactor: replace positional createConversation params with an options object (#1587)",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16500",
+        "mergedAt": "2026-08-10T23:32:37Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16500,
+        "title": "refactor: replace positional createConversation params with an options object (#1587)",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16500",
+        "mergedAt": "2026-08-10T23:32:37Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16500,
+            "title": "refactor: replace positional createConversation params with an options object (#1587)",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16500",
+            "mergedAt": "2026-08-10T23:32:37Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16500,
+            "title": "refactor: replace positional createConversation params with an options object (#1587)",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16500",
+            "mergedAt": "2026-08-10T23:32:37Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "148256405",
+      "login": "luciobaiocchi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?u=765da39759e3827f4f9047b7e6ae6e39438c7f42&v=4",
+      "profileUrl": "https://github.com/luciobaiocchi",
+      "firstMergedPr": {
+        "repo": "docs",
+        "number": 615,
+        "title": "docs: fix load_skills_from_dir import path",
+        "url": "https://github.com/OpenHands/docs/pull/615",
+        "mergedAt": "2026-07-10T05:17:56Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "docs",
+        "number": 695,
+        "title": "docs(sdk): add structured output guide",
+        "url": "https://github.com/OpenHands/docs/pull/695",
+        "mergedAt": "2026-08-10T20:38:47Z"
+      },
+      "totalMergedPrs": 6,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 6,
+          "firstMergedPr": {
+            "repo": "docs",
+            "number": 615,
+            "title": "docs: fix load_skills_from_dir import path",
+            "url": "https://github.com/OpenHands/docs/pull/615",
+            "mergedAt": "2026-07-10T05:17:56Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "docs",
+            "number": 695,
+            "title": "docs(sdk): add structured output guide",
+            "url": "https://github.com/OpenHands/docs/pull/695",
+            "mergedAt": "2026-08-10T20:38:47Z"
+          }
+        }
       }
     },
     {
@@ -726,68 +922,87 @@
       "login": "georgeglarson",
       "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
       "profileUrl": "https://github.com/georgeglarson",
-      "pullRequest": {
+      "firstMergedPr": {
         "repo": "agent-canvas",
-        "number": 1844,
-        "title": "feat(llm): add Kimi Code membership as a first-class Moonshot option",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1844",
-        "mergedAt": "2026-07-18T17:50:29Z"
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "pullRequest": {
-        "repo": "OpenHands-Cloud",
-        "number": 898,
-        "title": "fix(release): make lint pass --app [PLTF-3195]",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/898",
-        "mergedAt": "2026-07-16T16:04:54Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3918,
-        "title": "Fix REST API contract summary deduplication",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3918",
-        "mergedAt": "2026-07-15T19:16:12Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "agent-canvas",
-        "number": 1664,
-        "title": "fix: open LLM settings from model dropdown",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1664",
-        "mergedAt": "2026-07-15T19:11:43Z"
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "pullRequest": {
+        "number": 1434,
+        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
+        "mergedAt": "2026-06-26T23:21:33Z"
+      },
+      "mostRecentMergedPr": {
         "repo": "OpenHands",
-        "number": 15270,
-        "title": "fix(app-server): lower DB pool defaults and make them env-tunable",
-        "url": "https://github.com/OpenHands/OpenHands/pull/15270",
-        "mergedAt": "2026-07-15T15:09:47Z"
+        "number": 16311,
+        "title": "feat: context window usage meter, usage drawer, and manual compaction",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16311",
+        "mergedAt": "2026-08-10T16:04:30Z"
+      },
+      "totalMergedPrs": 8,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 8,
+          "firstMergedPr": {
+            "repo": "agent-canvas",
+            "number": 1434,
+            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
+            "mergedAt": "2026-06-26T23:21:33Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16311,
+            "title": "feat: context window usage meter, usage drawer, and manual compaction",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16311",
+            "mergedAt": "2026-08-10T16:04:30Z"
+          }
+        }
       }
-    }
-  ],
-  "contributors": [
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "docs",
+        "number": 715,
+        "title": "Adding doc links to Introduction page",
+        "url": "https://github.com/OpenHands/docs/pull/715",
+        "mergedAt": "2026-08-10T16:02:19Z"
+      },
+      "totalMergedPrs": 7,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 7,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "docs",
+            "number": 715,
+            "title": "Adding doc links to Introduction page",
+            "url": "https://github.com/OpenHands/docs/pull/715",
+            "mergedAt": "2026-08-10T16:02:19Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "33391300",
       "login": "Shimada666",
@@ -1071,49 +1286,6 @@
             "title": "agent-server: make conversation worktree root configurable",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4362",
             "mergedAt": "2026-08-06T17:21:31Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "148256405",
-      "login": "luciobaiocchi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/148256405?u=765da39759e3827f4f9047b7e6ae6e39438c7f42&v=4",
-      "profileUrl": "https://github.com/luciobaiocchi",
-      "firstMergedPr": {
-        "repo": "docs",
-        "number": 615,
-        "title": "docs: fix load_skills_from_dir import path",
-        "url": "https://github.com/OpenHands/docs/pull/615",
-        "mergedAt": "2026-07-10T05:17:56Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4207,
-        "title": "Feat: structured output",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4207",
-        "mergedAt": "2026-08-06T15:30:04Z"
-      },
-      "totalMergedPrs": 5,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 5,
-          "firstMergedPr": {
-            "repo": "docs",
-            "number": 615,
-            "title": "docs: fix load_skills_from_dir import path",
-            "url": "https://github.com/OpenHands/docs/pull/615",
-            "mergedAt": "2026-07-10T05:17:56Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4207,
-            "title": "Feat: structured output",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4207",
-            "mergedAt": "2026-08-06T15:30:04Z"
           }
         }
       }
@@ -1415,49 +1587,6 @@
             "title": "feat: activity log export",
             "url": "https://github.com/OpenHands/OpenHands/pull/16234",
             "mergedAt": "2026-08-03T22:13:04Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "firstMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1434,
-        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-        "mergedAt": "2026-06-26T23:21:33Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 16272,
-        "title": "chore: ignore all of /.tmp/, not three of its subdirectories",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16272",
-        "mergedAt": "2026-08-03T19:59:23Z"
-      },
-      "totalMergedPrs": 7,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 7,
-          "firstMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1434,
-            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-            "mergedAt": "2026-06-26T23:21:33Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 16272,
-            "title": "chore: ignore all of /.tmp/, not three of its subdirectories",
-            "url": "https://github.com/OpenHands/OpenHands/pull/16272",
-            "mergedAt": "2026-08-03T19:59:23Z"
           }
         }
       }
@@ -2078,49 +2207,6 @@
             "title": "bump laminar to latest version, fix compat issues",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4179",
             "mergedAt": "2026-07-21T18:12:06Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 15333,
-        "title": "fix(app-server): restore previous DB pool_size default",
-        "url": "https://github.com/OpenHands/OpenHands/pull/15333",
-        "mergedAt": "2026-07-20T19:44:36Z"
-      },
-      "totalMergedPrs": 4,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 4,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 15333,
-            "title": "fix(app-server): restore previous DB pool_size default",
-            "url": "https://github.com/OpenHands/OpenHands/pull/15333",
-            "mergedAt": "2026-07-20T19:44:36Z"
           }
         }
       }
@@ -7533,7 +7619,7 @@
     {
       "githubUserId": "128240629",
       "login": "Chesars",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/128240629?u=df91e680560a8e50443b187414d513f0a65b3afa&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/128240629?u=801a318da191ff2b1a522a863d7660bed100c9b4&v=4",
       "profileUrl": "https://github.com/Chesars",
       "firstMergedPr": {
         "repo": "OpenHands",
