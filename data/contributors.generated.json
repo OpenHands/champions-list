@@ -1,11 +1,89 @@
 {
-  "generatedAt": "2026-08-20T04:12:29.924Z",
+  "generatedAt": "2026-08-21T04:12:44.473Z",
   "organization": "OpenHands",
   "repoCount": 51,
   "scannedRepoCount": 51,
-  "totalMergedPrs": 2647,
+  "totalMergedPrs": 2653,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands-Cloud",
+        "number": 1132,
+        "title": "ci: fix unparseable expression in deploy-replicated, lint workflows in CI",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1132",
+        "mergedAt": "2026-08-20T22:58:50Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands-Cloud",
+        "number": 1131,
+        "title": "ci: name the Replicated release workflows consistently for README badges",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1131",
+        "mergedAt": "2026-08-20T22:42:16Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands-Cloud",
+        "number": 1123,
+        "title": "ci: auto-deploy Replicated releases to internal instances",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1123",
+        "mergedAt": "2026-08-20T22:14:39Z"
+      }
+    },
+    {
+      "githubUserId": "271345736",
+      "login": "marmar9615-cloud",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/271345736?u=947eb972f1b7c4fb93955a64b7d48162d134c509&v=4",
+      "profileUrl": "https://github.com/marmar9615-cloud",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16723,
+        "title": "fix(git): stop reading a remote URL's port as part of the repository path",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16723",
+        "mergedAt": "2026-08-20T15:39:25Z"
+      }
+    },
+    {
+      "githubUserId": "142557582",
+      "login": "Linxiushen",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/142557582?u=f29110e3128c2172e307338b8e3183685d5dd0d8&v=4",
+      "profileUrl": "https://github.com/Linxiushen",
+      "pullRequest": {
+        "repo": "automation",
+        "number": 303,
+        "title": "perf: remove redundant readiness query",
+        "url": "https://github.com/OpenHands/automation/pull/303",
+        "mergedAt": "2026-08-20T14:37:30Z"
+      }
+    },
+    {
+      "githubUserId": "99810755",
+      "login": "KXHXK",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/99810755?u=fbc0c11a3a674232b0bc811502f28c623d4beec2&v=4",
+      "profileUrl": "https://github.com/KXHXK",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16115,
+        "title": "fix(skills): keep modal actions visible for long descriptions",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16115",
+        "mergedAt": "2026-08-20T11:56:42Z"
+      }
+    },
     {
       "githubUserId": "744063",
       "login": "georgeglarson",
@@ -707,87 +785,181 @@
         "url": "https://github.com/OpenHands/OpenHands/pull/16272",
         "mergedAt": "2026-08-03T19:59:23Z"
       }
-    },
-    {
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16239,
-        "title": "fix: clean up dev services on SIGHUP",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16239",
-        "mergedAt": "2026-08-03T11:41:59Z"
-      }
-    },
-    {
-      "githubUserId": "148921754",
-      "login": "AzeelSajjad",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/148921754?v=4",
-      "profileUrl": "https://github.com/AzeelSajjad",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4328,
-        "title": "chore(sdk): deprecate AgentBase.model_dump_succint",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4328",
-        "mergedAt": "2026-08-03T10:22:36Z"
-      }
-    },
-    {
-      "githubUserId": "32419781",
-      "login": "emmanuel-adu",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/32419781?u=1ec0a9d1530dbeba40d98b36bd26bdd58c6d5806&v=4",
-      "profileUrl": "https://github.com/emmanuel-adu",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4319,
-        "title": "fix: PATCH /api/settings loads the profile's LLM when setting active_profile",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4319",
-        "mergedAt": "2026-08-03T10:22:10Z"
-      }
-    },
-    {
-      "githubUserId": "223382489",
-      "login": "nicolasdmolina",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/223382489?v=4",
-      "profileUrl": "https://github.com/nicolasdmolina",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4326,
-        "title": "fix(acp): surface Claude Opus 5 in Claude Code model picker",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4326",
-        "mergedAt": "2026-08-01T15:36:33Z"
-      }
-    },
-    {
-      "githubUserId": "69571456",
-      "login": "hi-neason",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/69571456?u=da95eef6b456aa224c6891a28c9b01f49e929037&v=4",
-      "profileUrl": "https://github.com/hi-neason",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16163,
-        "title": "docs: fix runtime modes table in architecture doc",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16163",
-        "mergedAt": "2026-08-01T00:47:38Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 2363,
-        "title": "refactor(llm): add LiteLLM-backed provider abstraction",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2363",
-        "mergedAt": "2026-07-31T20:20:09Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 1132,
+        "title": "ci: fix unparseable expression in deploy-replicated, lint workflows in CI",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1132",
+        "mergedAt": "2026-08-20T22:58:50Z"
+      },
+      "totalMergedPrs": 10,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 10,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 1132,
+            "title": "ci: fix unparseable expression in deploy-replicated, lint workflows in CI",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1132",
+            "mergedAt": "2026-08-20T22:58:50Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "271345736",
+      "login": "marmar9615-cloud",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/271345736?u=947eb972f1b7c4fb93955a64b7d48162d134c509&v=4",
+      "profileUrl": "https://github.com/marmar9615-cloud",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16408,
+        "title": "docs: add DefenseClaw and testing matrix to the docs index",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16408",
+        "mergedAt": "2026-08-18T12:50:43Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16723,
+        "title": "fix(git): stop reading a remote URL's port as part of the repository path",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16723",
+        "mergedAt": "2026-08-20T15:39:25Z"
+      },
+      "totalMergedPrs": 5,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 5,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16408,
+            "title": "docs: add DefenseClaw and testing matrix to the docs index",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16408",
+            "mergedAt": "2026-08-18T12:50:43Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16723,
+            "title": "fix(git): stop reading a remote URL's port as part of the repository path",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16723",
+            "mergedAt": "2026-08-20T15:39:25Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "142557582",
+      "login": "Linxiushen",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/142557582?u=f29110e3128c2172e307338b8e3183685d5dd0d8&v=4",
+      "profileUrl": "https://github.com/Linxiushen",
+      "firstMergedPr": {
+        "repo": "automation",
+        "number": 301,
+        "title": "fix: normalize SQLite telemetry timestamps",
+        "url": "https://github.com/OpenHands/automation/pull/301",
+        "mergedAt": "2026-08-06T02:23:09Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "automation",
+        "number": 303,
+        "title": "perf: remove redundant readiness query",
+        "url": "https://github.com/OpenHands/automation/pull/303",
+        "mergedAt": "2026-08-20T14:37:30Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "automation",
+            "number": 301,
+            "title": "fix: normalize SQLite telemetry timestamps",
+            "url": "https://github.com/OpenHands/automation/pull/301",
+            "mergedAt": "2026-08-06T02:23:09Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "automation",
+            "number": 303,
+            "title": "perf: remove redundant readiness query",
+            "url": "https://github.com/OpenHands/automation/pull/303",
+            "mergedAt": "2026-08-20T14:37:30Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "99810755",
+      "login": "KXHXK",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/99810755?u=fbc0c11a3a674232b0bc811502f28c623d4beec2&v=4",
+      "profileUrl": "https://github.com/KXHXK",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16115,
+        "title": "fix(skills): keep modal actions visible for long descriptions",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16115",
+        "mergedAt": "2026-08-20T11:56:42Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16115,
+        "title": "fix(skills): keep modal actions visible for long descriptions",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16115",
+        "mergedAt": "2026-08-20T11:56:42Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16115,
+            "title": "fix(skills): keep modal actions visible for long descriptions",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16115",
+            "mergedAt": "2026-08-20T11:56:42Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16115,
+            "title": "fix(skills): keep modal actions visible for long descriptions",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16115",
+            "mergedAt": "2026-08-20T11:56:42Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "744063",
       "login": "georgeglarson",
@@ -827,49 +999,6 @@
             "title": "test(sdk): pin send_message skill-activation wiring",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4536",
             "mergedAt": "2026-08-19T21:42:39Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "271345736",
-      "login": "marmar9615-cloud",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/271345736?u=947eb972f1b7c4fb93955a64b7d48162d134c509&v=4",
-      "profileUrl": "https://github.com/marmar9615-cloud",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 16408,
-        "title": "docs: add DefenseClaw and testing matrix to the docs index",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16408",
-        "mergedAt": "2026-08-18T12:50:43Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 16711,
-        "title": "docs(tests): point the router example at a test that exists",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16711",
-        "mergedAt": "2026-08-19T14:27:33Z"
-      },
-      "totalMergedPrs": 4,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 4,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 16408,
-            "title": "docs: add DefenseClaw and testing matrix to the docs index",
-            "url": "https://github.com/OpenHands/OpenHands/pull/16408",
-            "mergedAt": "2026-08-18T12:50:43Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 16711,
-            "title": "docs(tests): point the router example at a test that exists",
-            "url": "https://github.com/OpenHands/OpenHands/pull/16711",
-            "mergedAt": "2026-08-19T14:27:33Z"
           }
         }
       }
@@ -1728,49 +1857,6 @@
       }
     },
     {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "docs",
-        "number": 715,
-        "title": "Adding doc links to Introduction page",
-        "url": "https://github.com/OpenHands/docs/pull/715",
-        "mergedAt": "2026-08-10T16:02:19Z"
-      },
-      "totalMergedPrs": 7,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 7,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "docs",
-            "number": 715,
-            "title": "Adding doc links to Introduction page",
-            "url": "https://github.com/OpenHands/docs/pull/715",
-            "mergedAt": "2026-08-10T16:02:19Z"
-          }
-        }
-      }
-    },
-    {
       "githubUserId": "33391300",
       "login": "Shimada666",
       "avatarUrl": "https://avatars.githubusercontent.com/u/33391300?u=18e03ed304d8faebd116fd99e3b7746aed014b20&v=4",
@@ -1931,49 +2017,6 @@
             "title": "agent-server: make conversation worktree root configurable",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4362",
             "mergedAt": "2026-08-06T17:21:31Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "142557582",
-      "login": "Linxiushen",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/142557582?u=f29110e3128c2172e307338b8e3183685d5dd0d8&v=4",
-      "profileUrl": "https://github.com/Linxiushen",
-      "firstMergedPr": {
-        "repo": "automation",
-        "number": 301,
-        "title": "fix: normalize SQLite telemetry timestamps",
-        "url": "https://github.com/OpenHands/automation/pull/301",
-        "mergedAt": "2026-08-06T02:23:09Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "automation",
-        "number": 301,
-        "title": "fix: normalize SQLite telemetry timestamps",
-        "url": "https://github.com/OpenHands/automation/pull/301",
-        "mergedAt": "2026-08-06T02:23:09Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "automation",
-            "number": 301,
-            "title": "fix: normalize SQLite telemetry timestamps",
-            "url": "https://github.com/OpenHands/automation/pull/301",
-            "mergedAt": "2026-08-06T02:23:09Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "automation",
-            "number": 301,
-            "title": "fix: normalize SQLite telemetry timestamps",
-            "url": "https://github.com/OpenHands/automation/pull/301",
-            "mergedAt": "2026-08-06T02:23:09Z"
           }
         }
       }
