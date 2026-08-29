@@ -1,11 +1,50 @@
 {
-  "generatedAt": "2026-08-28T06:31:13.868Z",
+  "generatedAt": "2026-08-29T04:04:17.482Z",
   "organization": "OpenHands",
   "repoCount": 52,
   "scannedRepoCount": 52,
-  "totalMergedPrs": 2683,
+  "totalMergedPrs": 2686,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "744063",
+      "login": "georgeglarson",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
+      "profileUrl": "https://github.com/georgeglarson",
+      "pullRequest": {
+        "repo": "typescript-client",
+        "number": 364,
+        "title": "ci: grant contents: write to the release-ready caller",
+        "url": "https://github.com/OpenHands/typescript-client/pull/364",
+        "mergedAt": "2026-08-28T21:16:23Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands-Cloud",
+        "number": 1175,
+        "title": "fix(replicated): drop the KOTS update check that ruins the target cursor",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1175",
+        "mergedAt": "2026-08-28T18:57:16Z"
+      }
+    },
+    {
+      "githubUserId": "744063",
+      "login": "georgeglarson",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
+      "profileUrl": "https://github.com/georgeglarson",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16439,
+        "title": "fix(chat): re-derive active profile stamp from event history on reload",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16439",
+        "mergedAt": "2026-08-28T12:12:25Z"
+      }
+    },
     {
       "githubUserId": "149861804",
       "login": "JatinJain703",
@@ -746,48 +785,95 @@
         "url": "https://github.com/OpenHands/extensions/pull/475",
         "mergedAt": "2026-08-15T02:02:12Z"
       }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16612,
-        "title": "docs(agents): add a repository map clarifying what belongs where",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16612",
-        "mergedAt": "2026-08-14T22:48:49Z"
-      }
-    },
-    {
-      "githubUserId": "217509886",
-      "login": "eeee2345",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/217509886?u=41d28066cf8a5ded4be556458b45cecb0058f680&v=4",
-      "profileUrl": "https://github.com/eeee2345",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 3944,
-        "title": "feat(security): AST-backed shell command-name resolution (#2721 Phase 2b)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3944",
-        "mergedAt": "2026-08-14T16:24:57Z"
-      }
-    },
+    }
+  ],
+  "contributors": [
     {
       "githubUserId": "744063",
       "login": "georgeglarson",
       "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
       "profileUrl": "https://github.com/georgeglarson",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4482,
-        "title": "feat(file-router): add POST /file/create_directory",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4482",
-        "mergedAt": "2026-08-13T12:10:33Z"
+      "firstMergedPr": {
+        "repo": "agent-canvas",
+        "number": 1434,
+        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
+        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
+        "mergedAt": "2026-06-26T23:21:33Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "typescript-client",
+        "number": 364,
+        "title": "ci: grant contents: write to the release-ready caller",
+        "url": "https://github.com/OpenHands/typescript-client/pull/364",
+        "mergedAt": "2026-08-28T21:16:23Z"
+      },
+      "totalMergedPrs": 21,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 21,
+          "firstMergedPr": {
+            "repo": "agent-canvas",
+            "number": 1434,
+            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
+            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
+            "mergedAt": "2026-06-26T23:21:33Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "typescript-client",
+            "number": 364,
+            "title": "ci: grant contents: write to the release-ready caller",
+            "url": "https://github.com/OpenHands/typescript-client/pull/364",
+            "mergedAt": "2026-08-28T21:16:23Z"
+          }
+        }
       }
-    }
-  ],
-  "contributors": [
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 1175,
+        "title": "fix(replicated): drop the KOTS update check that ruins the target cursor",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1175",
+        "mergedAt": "2026-08-28T18:57:16Z"
+      },
+      "totalMergedPrs": 13,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 13,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 1175,
+            "title": "fix(replicated): drop the KOTS update check that ruins the target cursor",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1175",
+            "mergedAt": "2026-08-28T18:57:16Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "149861804",
       "login": "JatinJain703",
@@ -1035,92 +1121,6 @@
             "title": "feat: link chat file paths to the Files drawer",
             "url": "https://github.com/OpenHands/OpenHands/pull/16181",
             "mergedAt": "2026-08-24T21:27:14Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 1141,
-        "title": "fix(deploy): tolerate a restarting kotsadm in replicated_deploy.sh",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1141",
-        "mergedAt": "2026-08-24T16:01:59Z"
-      },
-      "totalMergedPrs": 12,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 12,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 1141,
-            "title": "fix(deploy): tolerate a restarting kotsadm in replicated_deploy.sh",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1141",
-            "mergedAt": "2026-08-24T16:01:59Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "firstMergedPr": {
-        "repo": "agent-canvas",
-        "number": 1434,
-        "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-        "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-        "mergedAt": "2026-06-26T23:21:33Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 16441,
-        "title": "feat(settings): expose the LLM-switching toggle in Agent settings",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16441",
-        "mergedAt": "2026-08-24T13:47:59Z"
-      },
-      "totalMergedPrs": 19,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 19,
-          "firstMergedPr": {
-            "repo": "agent-canvas",
-            "number": 1434,
-            "title": "fix(examples): inherit acp-docker image from config/defaults.json",
-            "url": "https://github.com/OpenHands/agent-canvas/pull/1434",
-            "mergedAt": "2026-06-26T23:21:33Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 16441,
-            "title": "feat(settings): expose the LLM-switching toggle in Agent settings",
-            "url": "https://github.com/OpenHands/OpenHands/pull/16441",
-            "mergedAt": "2026-08-24T13:47:59Z"
           }
         }
       }
