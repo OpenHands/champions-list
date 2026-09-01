@@ -1,11 +1,50 @@
 {
-  "generatedAt": "2026-08-31T04:05:23.021Z",
+  "generatedAt": "2026-09-01T04:05:01.924Z",
   "organization": "OpenHands",
   "repoCount": 52,
   "scannedRepoCount": 52,
-  "totalMergedPrs": 2687,
+  "totalMergedPrs": 2690,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "263162109",
+      "login": "alanhuangyoo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/263162109?v=4",
+      "profileUrl": "https://github.com/alanhuangyoo",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4767,
+        "title": "fix(sdk): match nested repo paths by ancestry, not string prefix",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4767",
+        "mergedAt": "2026-08-31T16:46:18Z"
+      }
+    },
+    {
+      "githubUserId": "263162109",
+      "login": "alanhuangyoo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/263162109?v=4",
+      "profileUrl": "https://github.com/alanhuangyoo",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16891,
+        "title": "fix: scope plugin queries to the active backend",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16891",
+        "mergedAt": "2026-08-31T10:15:05Z"
+      }
+    },
+    {
+      "githubUserId": "89645338",
+      "login": "simpleqt",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/89645338?v=4",
+      "profileUrl": "https://github.com/simpleqt",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16961,
+        "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16961",
+        "mergedAt": "2026-08-31T09:56:29Z"
+      }
+    },
     {
       "githubUserId": "71784456",
       "login": "ShashwatXD",
@@ -746,48 +785,95 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/3503",
         "mergedAt": "2026-08-17T17:48:19Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4440,
-        "title": "fix(agent-server): base_state.json as single source of truth for the agent (end meta.json duplication)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4440",
-        "mergedAt": "2026-08-17T16:57:43Z"
-      }
-    },
-    {
-      "githubUserId": "50806123",
-      "login": "adbcodes",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/50806123?u=b2954d8e8b8b985f86c255afd2384b9d68e1db57&v=4",
-      "profileUrl": "https://github.com/adbcodes",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16332,
-        "title": "fix(automations): set local responder URL from browser origin",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16332",
-        "mergedAt": "2026-08-17T08:02:32Z"
-      }
-    },
-    {
-      "githubUserId": "48587709",
-      "login": "chintan-diwakar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/48587709?u=55e09efb3b6685d216ba25949f0debda1609fe49&v=4",
-      "profileUrl": "https://github.com/chintan-diwakar",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4508,
-        "title": "fix: make dict-entry secret redaction case-insensitive",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4508",
-        "mergedAt": "2026-08-16T19:37:58Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "263162109",
+      "login": "alanhuangyoo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/263162109?v=4",
+      "profileUrl": "https://github.com/alanhuangyoo",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16891,
+        "title": "fix: scope plugin queries to the active backend",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16891",
+        "mergedAt": "2026-08-31T10:15:05Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4767,
+        "title": "fix(sdk): match nested repo paths by ancestry, not string prefix",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4767",
+        "mergedAt": "2026-08-31T16:46:18Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16891,
+            "title": "fix: scope plugin queries to the active backend",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16891",
+            "mergedAt": "2026-08-31T10:15:05Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4767,
+            "title": "fix(sdk): match nested repo paths by ancestry, not string prefix",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4767",
+            "mergedAt": "2026-08-31T16:46:18Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "89645338",
+      "login": "simpleqt",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/89645338?v=4",
+      "profileUrl": "https://github.com/simpleqt",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16961,
+        "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16961",
+        "mergedAt": "2026-08-31T09:56:29Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16961,
+        "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16961",
+        "mergedAt": "2026-08-31T09:56:29Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16961,
+            "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16961",
+            "mergedAt": "2026-08-31T09:56:29Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16961,
+            "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16961",
+            "mergedAt": "2026-08-31T09:56:29Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "71784456",
       "login": "ShashwatXD",
@@ -3246,7 +3332,7 @@
     {
       "githubUserId": "202552852",
       "login": "ixchio",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=ab5fb3560559a317553f0617b1c3ce787304d26a&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=8b0edafde0a1e62b264c9817131ccb0f24f4c94a&v=4",
       "profileUrl": "https://github.com/ixchio",
       "firstMergedPr": {
         "repo": "software-agent-sdk",
