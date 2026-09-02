@@ -1,11 +1,89 @@
 {
-  "generatedAt": "2026-09-01T04:05:01.924Z",
+  "generatedAt": "2026-09-02T04:05:09.169Z",
   "organization": "OpenHands",
   "repoCount": 52,
   "scannedRepoCount": 52,
-  "totalMergedPrs": 2690,
+  "totalMergedPrs": 2696,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "33391300",
+      "login": "Shimada666",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/33391300?u=18e03ed304d8faebd116fd99e3b7746aed014b20&v=4",
+      "profileUrl": "https://github.com/Shimada666",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4434,
+        "title": "feat(observability): allow selecting Laminar instruments",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4434",
+        "mergedAt": "2026-09-02T02:18:30Z"
+      }
+    },
+    {
+      "githubUserId": "35493221",
+      "login": "lzhan011",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
+      "profileUrl": "https://github.com/lzhan011",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 17060,
+        "title": "fix(deps): patch DOMPurify sanitization bypass",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17060",
+        "mergedAt": "2026-09-01T15:10:04Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands-Cloud",
+        "number": 1187,
+        "title": "ci: make the Replicated deploy check blocking, with a break-glass label [PLTF-3535]",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1187",
+        "mergedAt": "2026-09-01T13:15:46Z"
+      }
+    },
+    {
+      "githubUserId": "170066760",
+      "login": "Prakhar00001",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/170066760?u=97455e9ec858ec637a2999a3a788be15c734b62a&v=4",
+      "profileUrl": "https://github.com/Prakhar00001",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 17071,
+        "title": "fix(utils): correctly count diff stats for hunk lines starting with -- or ++ (#16979)",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17071",
+        "mergedAt": "2026-09-01T12:12:15Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4801,
+        "title": "fix(sdk): remove secrets from subprocess env",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4801",
+        "mergedAt": "2026-09-01T10:41:31Z"
+      }
+    },
+    {
+      "githubUserId": "168887283",
+      "login": "aashikantkumar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/168887283?v=4",
+      "profileUrl": "https://github.com/aashikantkumar",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16971,
+        "title": "fix(api): auto-load workspace hooks on conversation start",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16971",
+        "mergedAt": "2026-09-01T07:00:00Z"
+      }
+    },
     {
       "githubUserId": "263162109",
       "login": "alanhuangyoo",
@@ -707,18 +785,215 @@
         "url": "https://github.com/OpenHands/OpenHands/pull/16700",
         "mergedAt": "2026-08-19T05:38:32Z"
       }
+    }
+  ],
+  "contributors": [
+    {
+      "githubUserId": "33391300",
+      "login": "Shimada666",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/33391300?u=18e03ed304d8faebd116fd99e3b7746aed014b20&v=4",
+      "profileUrl": "https://github.com/Shimada666",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 1510,
+        "title": "fix: update correct troubleshooting doc url",
+        "url": "https://github.com/OpenHands/OpenHands/pull/1510",
+        "mergedAt": "2024-05-02T14:09:05Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4434,
+        "title": "feat(observability): allow selecting Laminar instruments",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4434",
+        "mergedAt": "2026-09-02T02:18:30Z"
+      },
+      "totalMergedPrs": 36,
+      "contributionYears": [
+        "2026",
+        "2025",
+        "2024"
+      ],
+      "yearly": {
+        "2024": {
+          "totalMergedPrs": 26,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 1510,
+            "title": "fix: update correct troubleshooting doc url",
+            "url": "https://github.com/OpenHands/OpenHands/pull/1510",
+            "mergedAt": "2024-05-02T14:09:05Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 2830,
+            "title": "Display real-time build logs for the agnostic image",
+            "url": "https://github.com/OpenHands/OpenHands/pull/2830",
+            "mergedAt": "2024-07-07T20:35:17Z"
+          }
+        },
+        "2025": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 8193,
+            "title": "Add Lunr search plugin with multi-language support",
+            "url": "https://github.com/OpenHands/OpenHands/pull/8193",
+            "mergedAt": "2025-05-01T12:15:57Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 8201,
+            "title": "Switch to using only npm as package manager",
+            "url": "https://github.com/OpenHands/OpenHands/pull/8201",
+            "mergedAt": "2025-05-01T13:12:54Z"
+          }
+        },
+        "2026": {
+          "totalMergedPrs": 8,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 2447,
+            "title": "feat(observability): support custom ports for self-hosted Laminar",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2447",
+            "mergedAt": "2026-03-30T15:30:47Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4434,
+            "title": "feat(observability): allow selecting Laminar instruments",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4434",
+            "mergedAt": "2026-09-02T02:18:30Z"
+          }
+        }
+      }
     },
     {
-      "githubUserId": "271345736",
-      "login": "marmar9615-cloud",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/271345736?u=947eb972f1b7c4fb93955a64b7d48162d134c509&v=4",
-      "profileUrl": "https://github.com/marmar9615-cloud",
-      "pullRequest": {
+      "githubUserId": "35493221",
+      "login": "lzhan011",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
+      "profileUrl": "https://github.com/lzhan011",
+      "firstMergedPr": {
         "repo": "OpenHands",
-        "number": 16693,
-        "title": "fix(ci): stop treating markdown as frontend evidence-bearing code",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16693",
-        "mergedAt": "2026-08-19T05:31:21Z"
+        "number": 17060,
+        "title": "fix(deps): patch DOMPurify sanitization bypass",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17060",
+        "mergedAt": "2026-09-01T15:10:04Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 17060,
+        "title": "fix(deps): patch DOMPurify sanitization bypass",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17060",
+        "mergedAt": "2026-09-01T15:10:04Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 17060,
+            "title": "fix(deps): patch DOMPurify sanitization bypass",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17060",
+            "mergedAt": "2026-09-01T15:10:04Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 17060,
+            "title": "fix(deps): patch DOMPurify sanitization bypass",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17060",
+            "mergedAt": "2026-09-01T15:10:04Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 1187,
+        "title": "ci: make the Replicated deploy check blocking, with a break-glass label [PLTF-3535]",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1187",
+        "mergedAt": "2026-09-01T13:15:46Z"
+      },
+      "totalMergedPrs": 14,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 14,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 1187,
+            "title": "ci: make the Replicated deploy check blocking, with a break-glass label [PLTF-3535]",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1187",
+            "mergedAt": "2026-09-01T13:15:46Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "170066760",
+      "login": "Prakhar00001",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/170066760?u=97455e9ec858ec637a2999a3a788be15c734b62a&v=4",
+      "profileUrl": "https://github.com/Prakhar00001",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 17071,
+        "title": "fix(utils): correctly count diff stats for hunk lines starting with -- or ++ (#16979)",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17071",
+        "mergedAt": "2026-09-01T12:12:15Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 17071,
+        "title": "fix(utils): correctly count diff stats for hunk lines starting with -- or ++ (#16979)",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17071",
+        "mergedAt": "2026-09-01T12:12:15Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 17071,
+            "title": "fix(utils): correctly count diff stats for hunk lines starting with -- or ++ (#16979)",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17071",
+            "mergedAt": "2026-09-01T12:12:15Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 17071,
+            "title": "fix(utils): correctly count diff stats for hunk lines starting with -- or ++ (#16979)",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17071",
+            "mergedAt": "2026-09-01T12:12:15Z"
+          }
+        }
       }
     },
     {
@@ -726,68 +1001,87 @@
       "login": "smolpaws",
       "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
       "profileUrl": "https://github.com/smolpaws",
-      "pullRequest": {
+      "firstMergedPr": {
         "repo": "software-agent-sdk",
-        "number": 4344,
-        "title": "feat(sdk): add cleanup LLM profile for outward agent text",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4344",
-        "mergedAt": "2026-08-18T18:28:47Z"
-      }
-    },
-    {
-      "githubUserId": "271345736",
-      "login": "marmar9615-cloud",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/271345736?u=947eb972f1b7c4fb93955a64b7d48162d134c509&v=4",
-      "profileUrl": "https://github.com/marmar9615-cloud",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16408,
-        "title": "docs: add DefenseClaw and testing matrix to the docs index",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16408",
-        "mergedAt": "2026-08-18T12:50:43Z"
-      }
-    },
-    {
-      "githubUserId": "28305019",
-      "login": "karan-963",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/28305019?u=1b9b4856e85dac36c43a02c96928cddd5e8642f7&v=4",
-      "profileUrl": "https://github.com/karan-963",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16627,
-        "title": "docs: fix broken internal links",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16627",
-        "mergedAt": "2026-08-18T09:41:58Z"
-      }
-    },
-    {
-      "githubUserId": "93594454",
-      "login": "mohitdebian",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/93594454?u=35d33c74191fb1fdfba80e16996d29a014080e50&v=4",
-      "profileUrl": "https://github.com/mohitdebian",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16444,
-        "title": "fix: always show all workspace folders in grouped view regardless of pagination",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16444",
-        "mergedAt": "2026-08-17T21:56:56Z"
-      }
-    },
-    {
-      "githubUserId": "455140",
-      "login": "mvanhorn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/455140?u=ca70dc656c8256c47d6739e4347937bf139c28e7&v=4",
-      "profileUrl": "https://github.com/mvanhorn",
-      "pullRequest": {
+        "number": 2019,
+        "title": "docs: trim blustery wording in docs update prompt",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+        "mergedAt": "2026-02-12T01:10:56Z"
+      },
+      "mostRecentMergedPr": {
         "repo": "software-agent-sdk",
-        "number": 3503,
-        "title": "feat: add public from_persisted() entry point to AgentSettingsBase",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/3503",
-        "mergedAt": "2026-08-17T17:48:19Z"
+        "number": 4801,
+        "title": "fix(sdk): remove secrets from subprocess env",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4801",
+        "mergedAt": "2026-09-01T10:41:31Z"
+      },
+      "totalMergedPrs": 33,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 33,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 2019,
+            "title": "docs: trim blustery wording in docs update prompt",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+            "mergedAt": "2026-02-12T01:10:56Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4801,
+            "title": "fix(sdk): remove secrets from subprocess env",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4801",
+            "mergedAt": "2026-09-01T10:41:31Z"
+          }
+        }
       }
-    }
-  ],
-  "contributors": [
+    },
+    {
+      "githubUserId": "168887283",
+      "login": "aashikantkumar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/168887283?v=4",
+      "profileUrl": "https://github.com/aashikantkumar",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16971,
+        "title": "fix(api): auto-load workspace hooks on conversation start",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16971",
+        "mergedAt": "2026-09-01T07:00:00Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16971,
+        "title": "fix(api): auto-load workspace hooks on conversation start",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16971",
+        "mergedAt": "2026-09-01T07:00:00Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16971,
+            "title": "fix(api): auto-load workspace hooks on conversation start",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16971",
+            "mergedAt": "2026-09-01T07:00:00Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16971,
+            "title": "fix(api): auto-load workspace hooks on conversation start",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16971",
+            "mergedAt": "2026-09-01T07:00:00Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "263162109",
       "login": "alanhuangyoo",
@@ -961,49 +1255,6 @@
       }
     },
     {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 1175,
-        "title": "fix(replicated): drop the KOTS update check that ruins the target cursor",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1175",
-        "mergedAt": "2026-08-28T18:57:16Z"
-      },
-      "totalMergedPrs": 13,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 13,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 1175,
-            "title": "fix(replicated): drop the KOTS update check that ruins the target cursor",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1175",
-            "mergedAt": "2026-08-28T18:57:16Z"
-          }
-        }
-      }
-    },
-    {
       "githubUserId": "149861804",
       "login": "JatinJain703",
       "avatarUrl": "https://avatars.githubusercontent.com/u/149861804?v=4",
@@ -1121,49 +1372,6 @@
             "title": "docs(sdk): document ask_oracle tool",
             "url": "https://github.com/OpenHands/docs/pull/566",
             "mergedAt": "2026-08-27T02:27:21Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 2019,
-        "title": "docs: trim blustery wording in docs update prompt",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-        "mergedAt": "2026-02-12T01:10:56Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "extensions",
-        "number": 474,
-        "title": "feat(pr-reviewer): read the repo's AGENTS.md and guideline docs before reviewing",
-        "url": "https://github.com/OpenHands/extensions/pull/474",
-        "mergedAt": "2026-08-27T02:24:27Z"
-      },
-      "totalMergedPrs": 32,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 32,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2019,
-            "title": "docs: trim blustery wording in docs update prompt",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-            "mergedAt": "2026-02-12T01:10:56Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "extensions",
-            "number": 474,
-            "title": "feat(pr-reviewer): read the repo's AGENTS.md and guideline docs before reviewing",
-            "url": "https://github.com/OpenHands/extensions/pull/474",
-            "mergedAt": "2026-08-27T02:24:27Z"
           }
         }
       }
@@ -2454,85 +2662,6 @@
             "title": "refactor: replace positional createConversation params with an options object (#1587)",
             "url": "https://github.com/OpenHands/OpenHands/pull/16500",
             "mergedAt": "2026-08-10T23:32:37Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "33391300",
-      "login": "Shimada666",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/33391300?u=18e03ed304d8faebd116fd99e3b7746aed014b20&v=4",
-      "profileUrl": "https://github.com/Shimada666",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 1510,
-        "title": "fix: update correct troubleshooting doc url",
-        "url": "https://github.com/OpenHands/OpenHands/pull/1510",
-        "mergedAt": "2024-05-02T14:09:05Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4426,
-        "title": "fix(agent-server): initialize observability after deferred env",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4426",
-        "mergedAt": "2026-08-10T00:03:17Z"
-      },
-      "totalMergedPrs": 35,
-      "contributionYears": [
-        "2026",
-        "2025",
-        "2024"
-      ],
-      "yearly": {
-        "2024": {
-          "totalMergedPrs": 26,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 1510,
-            "title": "fix: update correct troubleshooting doc url",
-            "url": "https://github.com/OpenHands/OpenHands/pull/1510",
-            "mergedAt": "2024-05-02T14:09:05Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 2830,
-            "title": "Display real-time build logs for the agnostic image",
-            "url": "https://github.com/OpenHands/OpenHands/pull/2830",
-            "mergedAt": "2024-07-07T20:35:17Z"
-          }
-        },
-        "2025": {
-          "totalMergedPrs": 2,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 8193,
-            "title": "Add Lunr search plugin with multi-language support",
-            "url": "https://github.com/OpenHands/OpenHands/pull/8193",
-            "mergedAt": "2025-05-01T12:15:57Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 8201,
-            "title": "Switch to using only npm as package manager",
-            "url": "https://github.com/OpenHands/OpenHands/pull/8201",
-            "mergedAt": "2025-05-01T13:12:54Z"
-          }
-        },
-        "2026": {
-          "totalMergedPrs": 7,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2447,
-            "title": "feat(observability): support custom ports for self-hosted Laminar",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2447",
-            "mergedAt": "2026-03-30T15:30:47Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4426,
-            "title": "fix(agent-server): initialize observability after deferred env",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4426",
-            "mergedAt": "2026-08-10T00:03:17Z"
           }
         }
       }
@@ -18413,7 +18542,7 @@
     {
       "githubUserId": "14838729",
       "login": "ryanpeach",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/14838729?u=0849abc90e6fc504d8bfca601ba804396119476c&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/14838729?u=52b1d7b4e97d7d102deab7528775b0c164d7ca98&v=4",
       "profileUrl": "https://github.com/ryanpeach",
       "firstMergedPr": {
         "repo": "OpenHands",
