@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-09-05T04:04:33.076Z",
+  "generatedAt": "2026-09-06T04:04:49.294Z",
   "organization": "OpenHands",
   "repoCount": 53,
   "scannedRepoCount": 53,
-  "totalMergedPrs": 2710,
+  "totalMergedPrs": 2711,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "89645338",
+      "login": "simpleqt",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/89645338?v=4",
+      "profileUrl": "https://github.com/simpleqt",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 17167,
+        "title": "docs: correct OH_*_GIT_REF defaults and merge duplicated bullet in DEVELOPMENT.md",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17167",
+        "mergedAt": "2026-09-05T21:28:28Z"
+      }
+    },
     {
       "githubUserId": "14306627",
       "login": "BSmick6",
@@ -772,22 +785,52 @@
         "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1123",
         "mergedAt": "2026-08-20T22:14:39Z"
       }
-    },
-    {
-      "githubUserId": "271345736",
-      "login": "marmar9615-cloud",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/271345736?u=947eb972f1b7c4fb93955a64b7d48162d134c509&v=4",
-      "profileUrl": "https://github.com/marmar9615-cloud",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16723,
-        "title": "fix(git): stop reading a remote URL's port as part of the repository path",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16723",
-        "mergedAt": "2026-08-20T15:39:25Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "89645338",
+      "login": "simpleqt",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/89645338?v=4",
+      "profileUrl": "https://github.com/simpleqt",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16961,
+        "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16961",
+        "mergedAt": "2026-08-31T09:56:29Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 17167,
+        "title": "docs: correct OH_*_GIT_REF defaults and merge duplicated bullet in DEVELOPMENT.md",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17167",
+        "mergedAt": "2026-09-05T21:28:28Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16961,
+            "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16961",
+            "mergedAt": "2026-08-31T09:56:29Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 17167,
+            "title": "docs: correct OH_*_GIT_REF defaults and merge duplicated bullet in DEVELOPMENT.md",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17167",
+            "mergedAt": "2026-09-05T21:28:28Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "14306627",
       "login": "BSmick6",
@@ -1637,49 +1680,6 @@
             "title": "fix(sdk): match nested repo paths by ancestry, not string prefix",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4767",
             "mergedAt": "2026-08-31T16:46:18Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "89645338",
-      "login": "simpleqt",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/89645338?v=4",
-      "profileUrl": "https://github.com/simpleqt",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 16961,
-        "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16961",
-        "mergedAt": "2026-08-31T09:56:29Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 16961,
-        "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16961",
-        "mergedAt": "2026-08-31T09:56:29Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 16961,
-            "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
-            "url": "https://github.com/OpenHands/OpenHands/pull/16961",
-            "mergedAt": "2026-08-31T09:56:29Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 16961,
-            "title": "fix(desktop): parse window-open URLs instead of prefix-matching localhost",
-            "url": "https://github.com/OpenHands/OpenHands/pull/16961",
-            "mergedAt": "2026-08-31T09:56:29Z"
           }
         }
       }
