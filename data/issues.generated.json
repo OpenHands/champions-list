@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-08T04:22:58.871Z",
-  "windowStart": "2025-09-08T04:06:19.272Z",
-  "windowEnd": "2026-09-08T04:06:19.272Z",
+  "generatedAt": "2026-09-09T04:21:28.444Z",
+  "windowStart": "2025-09-09T04:06:09.137Z",
+  "windowEnd": "2026-09-09T04:06:09.137Z",
   "organization": "OpenHands",
   "repoCount": 53,
   "scannedRepoCount": 53,
-  "totalIssuesOpened": 1304,
-  "totalIssueComments": 3330,
+  "totalIssuesOpened": 1312,
+  "totalIssueComments": 3328,
   "skippedRepos": [],
   "repos": [
     {
@@ -139,7 +139,7 @@
       "repo": "extensions",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 26,
+      "issuesOpenedCount": 27,
       "issueCommentsCount": 48
     },
     {
@@ -209,8 +209,8 @@
       "repo": "OpenHands",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 633,
-      "issueCommentsCount": 1656
+      "issuesOpenedCount": 637,
+      "issueCommentsCount": 1654
     },
     {
       "repo": "openhands-aci",
@@ -238,7 +238,7 @@
       "isArchived": false,
       "isFork": false,
       "issuesOpenedCount": 72,
-      "issueCommentsCount": 223
+      "issueCommentsCount": 222
     },
     {
       "repo": "OpenHands-Cloud",
@@ -328,8 +328,8 @@
       "repo": "software-agent-sdk",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 454,
-      "issueCommentsCount": 1107
+      "issuesOpenedCount": 457,
+      "issueCommentsCount": 1108
     },
     {
       "repo": "terraform-gcp-datadog-integration",
@@ -382,6 +382,282 @@
     }
   ],
   "recentActivities": [
+    {
+      "type": "issueOpened",
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "createdAt": "2026-09-09T02:49:06Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4916,
+        "title": "Proposal: notes + live history-retrieval condensation (adapt Codex/Astra's compaction to the agent-sdk)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4916",
+        "createdAt": "2026-09-09T02:49:06Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "createdAt": "2026-09-08T23:44:45Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4849,
+        "title": "[Feature]: Derive ConversationInfo from ConversationState + StoredConversation instead of re-declaring fields",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4849",
+        "createdAt": "2026-09-03T18:40:40Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4849#issuecomment-5593488010"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "254789223",
+      "login": "fedorBa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/254789223?v=4",
+      "profileUrl": "https://github.com/fedorBa",
+      "createdAt": "2026-09-08T23:26:37Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 17213,
+        "title": "Rootless Podman without subuid/subgid cannot build OpenHands runtime image",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17213",
+        "createdAt": "2026-09-08T23:26:37Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "72580335",
+      "login": "connerkup",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/72580335?v=4",
+      "profileUrl": "https://github.com/connerkup",
+      "createdAt": "2026-09-08T19:34:11Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4901,
+        "title": "ACP subprocess leaf process orphaned on shutdown (POSIX) — process-group teardown gap, separate from #4409's Windows fix",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4901",
+        "createdAt": "2026-09-08T10:32:34Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4901#issuecomment-5590720493"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "72580335",
+      "login": "connerkup",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/72580335?v=4",
+      "profileUrl": "https://github.com/connerkup",
+      "createdAt": "2026-09-08T19:32:05Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4910,
+        "title": "[Bug]: ACP subprocess leaf process orphaned on shutdown on POSIX systems",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4910",
+        "createdAt": "2026-09-08T19:32:05Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "213506761",
+      "login": "astrovvv",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/213506761?v=4",
+      "profileUrl": "https://github.com/astrovvv",
+      "createdAt": "2026-09-08T19:01:17Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 17206,
+        "title": "[Bug]: Switching to an OpenRouter profile linked to a provider connection loses API credentials",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17206",
+        "createdAt": "2026-09-08T19:01:17Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "109409341",
+      "login": "ankurO7",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/109409341?v=4",
+      "profileUrl": "https://github.com/ankurO7",
+      "createdAt": "2026-09-08T18:39:35Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 17205,
+        "title": "[Feature]: Token Chart for AI models",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17205",
+        "createdAt": "2026-09-08T18:39:35Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "14306627",
+      "login": "BSmick6",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/14306627?v=4",
+      "profileUrl": "https://github.com/BSmick6",
+      "createdAt": "2026-09-08T18:34:03Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 17204,
+        "title": "[Feature]: Enable acp_isolate_data_dir to prevent HOME races in concurrent ACP conversations",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17204",
+        "createdAt": "2026-09-08T18:34:03Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "14306627",
+      "login": "BSmick6",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/14306627?v=4",
+      "profileUrl": "https://github.com/BSmick6",
+      "createdAt": "2026-09-08T18:33:39Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4907,
+        "title": "[Feature]: Add acp_isolate_data_dir to ACP_SETTINGS_KEYS in the TypeScript client",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4907",
+        "createdAt": "2026-09-08T18:33:39Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "186266503",
+      "login": "Jucode08",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/186266503?v=4",
+      "profileUrl": "https://github.com/Jucode08",
+      "createdAt": "2026-09-08T15:00:00Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 17198,
+        "title": "[Bug]: Agent can't access terminal / file system properly: [Command finished execution with no output]",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17198",
+        "createdAt": "2026-09-08T15:00:00Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "122204762",
+      "login": "denis-sj",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/122204762?v=4",
+      "profileUrl": "https://github.com/denis-sj",
+      "createdAt": "2026-09-08T14:43:18Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 17197,
+        "title": "[Feature]: Clarify connecting Agent Canvas to OpenHands Cloud in README",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17197",
+        "createdAt": "2026-09-08T14:43:18Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "71832907",
+      "login": "eskayML",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/71832907?v=4",
+      "profileUrl": "https://github.com/eskayML",
+      "createdAt": "2026-09-08T11:53:10Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15532,
+        "title": "Consolidate the duplicate src/context/ and src/contexts/ directories",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15532",
+        "createdAt": "2026-06-29T21:42:26Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15532#issuecomment-5584708921"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "294486129",
+      "login": "AgentTanuki",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294486129?v=4",
+      "profileUrl": "https://github.com/AgentTanuki",
+      "createdAt": "2026-09-08T11:03:14Z",
+      "issue": {
+        "repo": "extensions",
+        "number": 543,
+        "title": "[Enhancement] Optional read-only Agent Guild trust-check skill",
+        "url": "https://github.com/OpenHands/extensions/issues/543",
+        "createdAt": "2026-09-08T11:03:14Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "13964878",
+      "login": "jondycz",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13964878?v=4",
+      "profileUrl": "https://github.com/jondycz",
+      "createdAt": "2026-09-08T10:59:26Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 17195,
+        "title": "[Bug]: Unable to use 9Router as a custom LLM connection proxying Ollama",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17195",
+        "createdAt": "2026-09-08T10:59:26Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "15627604",
+      "login": "MadMaksim",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/15627604?v=4",
+      "profileUrl": "https://github.com/MadMaksim",
+      "createdAt": "2026-09-08T10:32:34Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 4901,
+        "title": "ACP subprocess leaf process orphaned on shutdown (POSIX) — process-group teardown gap, separate from #4409's Windows fix",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4901",
+        "createdAt": "2026-09-08T10:32:34Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "193325620",
+      "login": "modelpath-dev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/193325620?v=4",
+      "profileUrl": "https://github.com/modelpath-dev",
+      "createdAt": "2026-09-08T10:05:01Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 17128,
+        "title": "[Bug]: automation menu is cut off and some options are unreachable",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17128",
+        "createdAt": "2026-09-03T17:22:48Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17128#issuecomment-5583335570"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "220328687",
+      "login": "patrickstar179",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/220328687?v=4",
+      "profileUrl": "https://github.com/patrickstar179",
+      "createdAt": "2026-09-08T06:44:25Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15694,
+        "title": "Bug: Enable/disable skills toggle resets to enabled state unexpectedly",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15694",
+        "createdAt": "2026-06-03T17:08:26Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15694#issuecomment-5580518631"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "220328687",
+      "login": "patrickstar179",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/220328687?v=4",
+      "profileUrl": "https://github.com/patrickstar179",
+      "createdAt": "2026-09-08T06:32:35Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 15694,
+        "title": "Bug: Enable/disable skills toggle resets to enabled state unexpectedly",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15694",
+        "createdAt": "2026-06-03T17:08:26Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15694#issuecomment-5580384362"
+    },
     {
       "type": "issueComment",
       "githubUserId": "255025612",
@@ -1041,300 +1317,20 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/17168",
         "createdAt": "2026-09-05T18:19:53Z"
       }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "66430880",
-      "login": "Deep070203",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/66430880?v=4",
-      "profileUrl": "https://github.com/Deep070203",
-      "createdAt": "2026-09-05T15:52:10Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 4820,
-        "title": "[Epic] Built-in ACP harness parity: Kimi, OpenCode, Pi, Hermes, Antigravity",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4820",
-        "createdAt": "2026-09-02T09:46:01Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4820#issuecomment-5552969037"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "56081584",
-      "login": "hsnice16",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/56081584?v=4",
-      "profileUrl": "https://github.com/hsnice16",
-      "createdAt": "2026-09-05T14:49:58Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17166,
-        "title": "Embed Agent-Friendly Score badge in README",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17166",
-        "createdAt": "2026-09-05T14:49:58Z"
-      }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "167346074",
-      "login": "vnktadithya",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/167346074?v=4",
-      "profileUrl": "https://github.com/vnktadithya",
-      "createdAt": "2026-09-05T13:38:00Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 4863,
-        "title": "[Bug]: RemoteWorkspace.load_skills_from_agent_server() discards the caller's AgentContext, resetting skill preferences beyond load_public_skills",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4863",
-        "createdAt": "2026-09-05T13:38:00Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "154359",
-      "login": "mdziczkowski",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/154359?v=4",
-      "profileUrl": "https://github.com/mdziczkowski",
-      "createdAt": "2026-09-05T12:03:03Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17163,
-        "title": "[Bug] [Website]: Access denied to model in Cloud (online) - Free account",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17163",
-        "createdAt": "2026-09-05T08:21:51Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17163#issuecomment-5551656448"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "211104332",
-      "login": "AbarnaaSree",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/211104332?v=4",
-      "profileUrl": "https://github.com/AbarnaaSree",
-      "createdAt": "2026-09-05T09:28:23Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17163,
-        "title": "[Bug] [Website]: Access denied to model in Cloud (online) - Free account",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17163",
-        "createdAt": "2026-09-05T08:21:51Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17163#issuecomment-5550883619"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "154359",
-      "login": "mdziczkowski",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/154359?v=4",
-      "profileUrl": "https://github.com/mdziczkowski",
-      "createdAt": "2026-09-05T08:21:51Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17163,
-        "title": "[Bug] [Website]: Access denied to model in Cloud (online) - Free account",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17163",
-        "createdAt": "2026-09-05T08:21:51Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "35493221",
-      "login": "lzhan011",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
-      "profileUrl": "https://github.com/lzhan011",
-      "createdAt": "2026-09-05T08:12:35Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17157,
-        "title": "[Bug]: /launch trust prompt shows an attacker-controlled source as a GitHub repo coordinate",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17157",
-        "createdAt": "2026-09-05T07:45:31Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17157#issuecomment-5550509711"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "35493221",
-      "login": "lzhan011",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
-      "profileUrl": "https://github.com/lzhan011",
-      "createdAt": "2026-09-05T08:10:49Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17162,
-        "title": "[Bug]: /launch trust prompt shows an attacker-controlled source as a GitHub repo coordinate",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17162",
-        "createdAt": "2026-09-05T08:10:49Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "35493221",
-      "login": "lzhan011",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
-      "profileUrl": "https://github.com/lzhan011",
-      "createdAt": "2026-09-05T08:10:20Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17155,
-        "title": "[Bug]: markdown sanitizer lets untrusted content set rel=\"opener\" and any target on links",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17155",
-        "createdAt": "2026-09-05T07:30:41Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17155#issuecomment-5550498146"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "35493221",
-      "login": "lzhan011",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
-      "profileUrl": "https://github.com/lzhan011",
-      "createdAt": "2026-09-05T08:09:39Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17161,
-        "title": "[Bug]: markdown sanitizer lets untrusted content set rel=\"opener\" and any target on links",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17161",
-        "createdAt": "2026-09-05T08:09:39Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "35493221",
-      "login": "lzhan011",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
-      "profileUrl": "https://github.com/lzhan011",
-      "createdAt": "2026-09-05T07:47:17Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17157,
-        "title": "[Bug]: /launch trust prompt shows an attacker-controlled source as a GitHub repo coordinate",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17157",
-        "createdAt": "2026-09-05T07:45:31Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17157#issuecomment-5550382858"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "35493221",
-      "login": "lzhan011",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
-      "profileUrl": "https://github.com/lzhan011",
-      "createdAt": "2026-09-05T07:45:31Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17157,
-        "title": "[Bug]: /launch trust prompt shows an attacker-controlled source as a GitHub repo coordinate",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17157",
-        "createdAt": "2026-09-05T07:45:31Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "35493221",
-      "login": "lzhan011",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
-      "profileUrl": "https://github.com/lzhan011",
-      "createdAt": "2026-09-05T07:35:24Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17155,
-        "title": "[Bug]: markdown sanitizer lets untrusted content set rel=\"opener\" and any target on links",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17155",
-        "createdAt": "2026-09-05T07:30:41Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17155#issuecomment-5550324758"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "85677626",
-      "login": "AlSh007",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/85677626?v=4",
-      "profileUrl": "https://github.com/AlSh007",
-      "createdAt": "2026-09-05T07:34:14Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16871,
-        "title": "[Bug]: Reverse tabnabbing in conversation card's VS Code action — window.open without noopener plus scheme-agnostic URL transformer",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16871",
-        "createdAt": "2026-08-24T17:10:40Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16871#issuecomment-5550319178"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "35493221",
-      "login": "lzhan011",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/35493221?v=4",
-      "profileUrl": "https://github.com/lzhan011",
-      "createdAt": "2026-09-05T07:30:41Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17155,
-        "title": "[Bug]: markdown sanitizer lets untrusted content set rel=\"opener\" and any target on links",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17155",
-        "createdAt": "2026-09-05T07:30:41Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "85677626",
-      "login": "AlSh007",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/85677626?v=4",
-      "profileUrl": "https://github.com/AlSh007",
-      "createdAt": "2026-09-05T07:20:42Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 17148,
-        "title": "test-and-build (windows) reports green while lint, typecheck and the test suite are gated off",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17148",
-        "createdAt": "2026-09-04T14:33:33Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17148#issuecomment-5550252172"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "194927794",
-      "login": "tonydzi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/194927794?v=4",
-      "profileUrl": "https://github.com/tonydzi",
-      "createdAt": "2026-09-05T06:38:42Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 16308,
-        "title": "[Feature] Usage metrics dashboard for token, ACU, and cost tracking",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16308",
-        "createdAt": "2026-08-04T17:22:42Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16308#issuecomment-5550028010"
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "5067446",
-      "login": "lkshrk",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/5067446?v=4",
-      "profileUrl": "https://github.com/lkshrk",
-      "createdAt": "2026-09-04T23:10:30Z",
-      "issue": {
-        "repo": "automation",
-        "number": 422,
-        "title": "Local backend never removes automation run workspaces; each run leaves a full uv environment behind",
-        "url": "https://github.com/OpenHands/automation/issues/422",
-        "createdAt": "2026-09-04T23:10:30Z"
-      }
     }
   ],
   "yearlyTotals": {
     "2025": {
-      "issuesOpened": 290,
-      "issueComments": 806,
-      "uniqueIssueOpeners": 147,
-      "uniqueCommenters": 212
+      "issuesOpened": 286,
+      "issueComments": 798,
+      "uniqueIssueOpeners": 144,
+      "uniqueCommenters": 209
     },
     "2026": {
-      "issuesOpened": 1014,
-      "issueComments": 2524,
-      "uniqueIssueOpeners": 457,
-      "uniqueCommenters": 600
+      "issuesOpened": 1026,
+      "issueComments": 2530,
+      "uniqueIssueOpeners": 465,
+      "uniqueCommenters": 602
     }
   },
   "users": [
@@ -1343,10 +1339,10 @@
       "login": "smolpaws",
       "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?v=4",
       "profileUrl": "https://github.com/smolpaws",
-      "issuesOpenedCount": 51,
+      "issuesOpenedCount": 52,
       "issueCommentsCount": 46,
       "firstActivityAt": "2026-01-15T19:57:54Z",
-      "mostRecentActivityAt": "2026-09-08T03:52:25Z",
+      "mostRecentActivityAt": "2026-09-09T02:49:06Z",
       "firstIssue": {
         "repo": "OpenHands",
         "number": 12451,
@@ -1356,10 +1352,10 @@
       },
       "mostRecentIssue": {
         "repo": "software-agent-sdk",
-        "number": 4893,
-        "title": "agent-server: conversation stuck in execution_status=RUNNING after sandbox is paused/stopped mid-run (unresumable via API)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4893",
-        "createdAt": "2026-09-08T00:30:58Z"
+        "number": 4916,
+        "title": "Proposal: notes + live history-retrieval condensation (adapt Codex/Astra's compaction to the agent-sdk)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4916",
+        "createdAt": "2026-09-09T02:49:06Z"
       },
       "mostRecentComment": {
         "repo": "software-agent-sdk",
@@ -1371,14 +1367,71 @@
       }
     },
     {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
+      "profileUrl": "https://github.com/enyst",
+      "issuesOpenedCount": 264,
+      "issueCommentsCount": 1095,
+      "firstActivityAt": "2025-09-09T17:55:52Z",
+      "mostRecentActivityAt": "2026-09-08T23:44:45Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 172,
+        "title": "Add reasoning with Anthropic models",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/172",
+        "createdAt": "2025-09-09T17:55:52Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 16981,
+        "title": "Refactor automation SDK version hook to use React Query",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16981",
+        "createdAt": "2026-08-28T05:15:23Z"
+      },
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 4849,
+        "title": "[Feature]: Derive ConversationInfo from ConversationState + StoredConversation instead of re-declaring fields",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4849",
+        "createdAt": "2026-09-08T23:44:45Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4849#issuecomment-5593488010"
+      }
+    },
+    {
+      "githubUserId": "254789223",
+      "login": "fedorBa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/254789223?v=4",
+      "profileUrl": "https://github.com/fedorBa",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-09-08T23:26:37Z",
+      "mostRecentActivityAt": "2026-09-08T23:26:37Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 17213,
+        "title": "Rootless Podman without subuid/subgid cannot build OpenHands runtime image",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17213",
+        "createdAt": "2026-09-08T23:26:37Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 17213,
+        "title": "Rootless Podman without subuid/subgid cannot build OpenHands runtime image",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17213",
+        "createdAt": "2026-09-08T23:26:37Z"
+      },
+      "mostRecentComment": null
+    },
+    {
       "githubUserId": "72580335",
       "login": "connerkup",
       "avatarUrl": "https://avatars.githubusercontent.com/u/72580335?v=4",
       "profileUrl": "https://github.com/connerkup",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 1,
+      "issuesOpenedCount": 2,
+      "issueCommentsCount": 2,
       "firstActivityAt": "2026-09-08T01:32:56Z",
-      "mostRecentActivityAt": "2026-09-08T01:33:50Z",
+      "mostRecentActivityAt": "2026-09-08T19:34:11Z",
       "firstIssue": {
         "repo": "software-agent-sdk",
         "number": 4894,
@@ -1388,18 +1441,285 @@
       },
       "mostRecentIssue": {
         "repo": "software-agent-sdk",
-        "number": 4894,
-        "title": "[Feature]: Add DAG task execution (run_dag) with dependency barriers to WorkflowContext",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4894",
-        "createdAt": "2026-09-08T01:32:56Z"
+        "number": 4910,
+        "title": "[Bug]: ACP subprocess leaf process orphaned on shutdown on POSIX systems",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4910",
+        "createdAt": "2026-09-08T19:32:05Z"
       },
       "mostRecentComment": {
         "repo": "software-agent-sdk",
-        "number": 4894,
-        "title": "[Feature]: Add DAG task execution (run_dag) with dependency barriers to WorkflowContext",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4894",
-        "createdAt": "2026-09-08T01:33:50Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4894#issuecomment-5577741420"
+        "number": 4901,
+        "title": "ACP subprocess leaf process orphaned on shutdown (POSIX) — process-group teardown gap, separate from #4409's Windows fix",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4901",
+        "createdAt": "2026-09-08T19:34:11Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4901#issuecomment-5590720493"
+      }
+    },
+    {
+      "githubUserId": "213506761",
+      "login": "astrovvv",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/213506761?v=4",
+      "profileUrl": "https://github.com/astrovvv",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-09-08T19:01:17Z",
+      "mostRecentActivityAt": "2026-09-08T19:01:17Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 17206,
+        "title": "[Bug]: Switching to an OpenRouter profile linked to a provider connection loses API credentials",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17206",
+        "createdAt": "2026-09-08T19:01:17Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 17206,
+        "title": "[Bug]: Switching to an OpenRouter profile linked to a provider connection loses API credentials",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17206",
+        "createdAt": "2026-09-08T19:01:17Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "109409341",
+      "login": "ankurO7",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/109409341?v=4",
+      "profileUrl": "https://github.com/ankurO7",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-09-08T18:39:35Z",
+      "mostRecentActivityAt": "2026-09-08T18:39:35Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 17205,
+        "title": "[Feature]: Token Chart for AI models",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17205",
+        "createdAt": "2026-09-08T18:39:35Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 17205,
+        "title": "[Feature]: Token Chart for AI models",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17205",
+        "createdAt": "2026-09-08T18:39:35Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "14306627",
+      "login": "BSmick6",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/14306627?v=4",
+      "profileUrl": "https://github.com/BSmick6",
+      "issuesOpenedCount": 10,
+      "issueCommentsCount": 31,
+      "firstActivityAt": "2026-08-12T20:43:17Z",
+      "mostRecentActivityAt": "2026-09-08T18:34:03Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 16797,
+        "title": "Flaky mock-LLM E2E: automation spec times out waiting for automation ID in events (30s window too short for CI)",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16797",
+        "createdAt": "2026-08-21T22:10:50Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 17204,
+        "title": "[Feature]: Enable acp_isolate_data_dir to prevent HOME races in concurrent ACP conversations",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17204",
+        "createdAt": "2026-09-08T18:34:03Z"
+      },
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 4093,
+        "title": "ACP 0.11 drops Gemini model state from NewSessionResponse",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4093",
+        "createdAt": "2026-09-07T13:46:36Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4093#issuecomment-5571574806"
+      }
+    },
+    {
+      "githubUserId": "186266503",
+      "login": "Jucode08",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/186266503?v=4",
+      "profileUrl": "https://github.com/Jucode08",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-09-08T15:00:00Z",
+      "mostRecentActivityAt": "2026-09-08T15:00:00Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 17198,
+        "title": "[Bug]: Agent can't access terminal / file system properly: [Command finished execution with no output]",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17198",
+        "createdAt": "2026-09-08T15:00:00Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 17198,
+        "title": "[Bug]: Agent can't access terminal / file system properly: [Command finished execution with no output]",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17198",
+        "createdAt": "2026-09-08T15:00:00Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "122204762",
+      "login": "denis-sj",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/122204762?v=4",
+      "profileUrl": "https://github.com/denis-sj",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-09-08T14:43:18Z",
+      "mostRecentActivityAt": "2026-09-08T14:43:18Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 17197,
+        "title": "[Feature]: Clarify connecting Agent Canvas to OpenHands Cloud in README",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17197",
+        "createdAt": "2026-09-08T14:43:18Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 17197,
+        "title": "[Feature]: Clarify connecting Agent Canvas to OpenHands Cloud in README",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17197",
+        "createdAt": "2026-09-08T14:43:18Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "71832907",
+      "login": "eskayML",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/71832907?v=4",
+      "profileUrl": "https://github.com/eskayML",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-09-08T11:53:10Z",
+      "mostRecentActivityAt": "2026-09-08T11:53:10Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15532,
+        "title": "Consolidate the duplicate src/context/ and src/contexts/ directories",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15532",
+        "createdAt": "2026-09-08T11:53:10Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15532#issuecomment-5584708921"
+      }
+    },
+    {
+      "githubUserId": "294486129",
+      "login": "AgentTanuki",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294486129?v=4",
+      "profileUrl": "https://github.com/AgentTanuki",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-09-08T11:03:14Z",
+      "mostRecentActivityAt": "2026-09-08T11:03:14Z",
+      "firstIssue": {
+        "repo": "extensions",
+        "number": 543,
+        "title": "[Enhancement] Optional read-only Agent Guild trust-check skill",
+        "url": "https://github.com/OpenHands/extensions/issues/543",
+        "createdAt": "2026-09-08T11:03:14Z"
+      },
+      "mostRecentIssue": {
+        "repo": "extensions",
+        "number": 543,
+        "title": "[Enhancement] Optional read-only Agent Guild trust-check skill",
+        "url": "https://github.com/OpenHands/extensions/issues/543",
+        "createdAt": "2026-09-08T11:03:14Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "13964878",
+      "login": "jondycz",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13964878?v=4",
+      "profileUrl": "https://github.com/jondycz",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-09-08T10:59:26Z",
+      "mostRecentActivityAt": "2026-09-08T10:59:26Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 17195,
+        "title": "[Bug]: Unable to use 9Router as a custom LLM connection proxying Ollama",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17195",
+        "createdAt": "2026-09-08T10:59:26Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 17195,
+        "title": "[Bug]: Unable to use 9Router as a custom LLM connection proxying Ollama",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17195",
+        "createdAt": "2026-09-08T10:59:26Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "15627604",
+      "login": "MadMaksim",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/15627604?v=4",
+      "profileUrl": "https://github.com/MadMaksim",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-09-08T10:32:34Z",
+      "mostRecentActivityAt": "2026-09-08T10:32:34Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4901,
+        "title": "ACP subprocess leaf process orphaned on shutdown (POSIX) — process-group teardown gap, separate from #4409's Windows fix",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4901",
+        "createdAt": "2026-09-08T10:32:34Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 4901,
+        "title": "ACP subprocess leaf process orphaned on shutdown (POSIX) — process-group teardown gap, separate from #4409's Windows fix",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4901",
+        "createdAt": "2026-09-08T10:32:34Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "193325620",
+      "login": "modelpath-dev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/193325620?v=4",
+      "profileUrl": "https://github.com/modelpath-dev",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 3,
+      "firstActivityAt": "2026-09-04T08:48:48Z",
+      "mostRecentActivityAt": "2026-09-08T10:05:01Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 17128,
+        "title": "[Bug]: automation menu is cut off and some options are unreachable",
+        "url": "https://github.com/OpenHands/OpenHands/issues/17128",
+        "createdAt": "2026-09-08T10:05:01Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17128#issuecomment-5583335570"
+      }
+    },
+    {
+      "githubUserId": "220328687",
+      "login": "patrickstar179",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/220328687?v=4",
+      "profileUrl": "https://github.com/patrickstar179",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 2,
+      "firstActivityAt": "2026-09-08T06:32:35Z",
+      "mostRecentActivityAt": "2026-09-08T06:44:25Z",
+      "firstIssue": null,
+      "mostRecentIssue": null,
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 15694,
+        "title": "Bug: Enable/disable skills toggle resets to enabled state unexpectedly",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15694",
+        "createdAt": "2026-09-08T06:44:25Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/15694#issuecomment-5580518631"
       }
     },
     {
@@ -1458,38 +1778,6 @@
         "createdAt": "2026-09-07T14:01:43Z"
       },
       "mostRecentComment": null
-    },
-    {
-      "githubUserId": "14306627",
-      "login": "BSmick6",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/14306627?v=4",
-      "profileUrl": "https://github.com/BSmick6",
-      "issuesOpenedCount": 8,
-      "issueCommentsCount": 31,
-      "firstActivityAt": "2026-08-12T20:43:17Z",
-      "mostRecentActivityAt": "2026-09-07T13:46:36Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 16797,
-        "title": "Flaky mock-LLM E2E: automation spec times out waiting for automation ID in events (30s window too short for CI)",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16797",
-        "createdAt": "2026-08-21T22:10:50Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 4849,
-        "title": "[Feature]: Derive ConversationInfo from ConversationState + StoredConversation instead of re-declaring fields",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4849",
-        "createdAt": "2026-09-03T18:40:40Z"
-      },
-      "mostRecentComment": {
-        "repo": "software-agent-sdk",
-        "number": 4093,
-        "title": "ACP 0.11 drops Gemini model state from NewSessionResponse",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4093",
-        "createdAt": "2026-09-07T13:46:36Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4093#issuecomment-5571574806"
-      }
     },
     {
       "githubUserId": "5665724",
@@ -1762,26 +2050,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/17176",
         "createdAt": "2026-09-06T17:04:02Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17176#issuecomment-5560777996"
-      }
-    },
-    {
-      "githubUserId": "193325620",
-      "login": "modelpath-dev",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/193325620?v=4",
-      "profileUrl": "https://github.com/modelpath-dev",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 2,
-      "firstActivityAt": "2026-09-04T08:48:48Z",
-      "mostRecentActivityAt": "2026-09-06T09:51:48Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 17128,
-        "title": "[Bug]: automation menu is cut off and some options are unreachable",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17128",
-        "createdAt": "2026-09-06T09:51:48Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17128#issuecomment-5558443616"
       }
     },
     {
@@ -2157,38 +2425,6 @@
         "url": "https://github.com/OpenHands/OpenHands/issues/16308",
         "createdAt": "2026-09-05T06:38:42Z",
         "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16308#issuecomment-5550028010"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?v=4",
-      "profileUrl": "https://github.com/enyst",
-      "issuesOpenedCount": 264,
-      "issueCommentsCount": 1095,
-      "firstActivityAt": "2025-09-08T19:06:06Z",
-      "mostRecentActivityAt": "2026-09-04T22:46:03Z",
-      "firstIssue": {
-        "repo": "software-agent-sdk",
-        "number": 172,
-        "title": "Add reasoning with Anthropic models",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/172",
-        "createdAt": "2025-09-09T17:55:52Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 16981,
-        "title": "Refactor automation SDK version hook to use React Query",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16981",
-        "createdAt": "2026-08-28T05:15:23Z"
-      },
-      "mostRecentComment": {
-        "repo": "automation",
-        "number": 418,
-        "title": "[pr-review-bot] Improvements and Bug Fixes for the pr-review-bot",
-        "url": "https://github.com/OpenHands/automation/issues/418",
-        "createdAt": "2026-09-04T22:46:03Z",
-        "commentUrl": "https://github.com/OpenHands/automation/issues/418#issuecomment-5547299062"
       }
     },
     {
@@ -23774,8 +24010,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/1680659?v=4",
       "profileUrl": "https://github.com/wolfspyre",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 2,
-      "firstActivityAt": "2025-09-08T19:36:49Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-11-25T08:08:58Z",
       "mostRecentActivityAt": "2025-11-25T08:08:58Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -25415,24 +25651,12 @@
       "login": "sstante",
       "avatarUrl": "https://avatars.githubusercontent.com/u/43146694?v=4",
       "profileUrl": "https://github.com/sstante",
-      "issuesOpenedCount": 2,
+      "issuesOpenedCount": 0,
       "issueCommentsCount": 3,
-      "firstActivityAt": "2025-09-08T09:40:00Z",
+      "firstActivityAt": "2025-09-09T07:25:50Z",
       "mostRecentActivityAt": "2025-10-20T09:41:27Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 10871,
-        "title": "[Bug]: `$PATH` contains literal \":$PATH\"",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10871",
-        "createdAt": "2025-09-08T09:40:00Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 1070,
-        "title": "[Bug]: `$REPO_PATH` not set for LocAgent",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/1070",
-        "createdAt": "2025-09-08T11:17:05Z"
-      },
+      "firstIssue": null,
+      "mostRecentIssue": null,
       "mostRecentComment": {
         "repo": "software-agent-sdk",
         "number": 1070,
@@ -27596,24 +27820,12 @@
       "login": "pietrushnic",
       "avatarUrl": "https://avatars.githubusercontent.com/u/1071894?v=4",
       "profileUrl": "https://github.com/pietrushnic",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 4,
-      "firstActivityAt": "2025-09-08T11:20:45Z",
+      "issuesOpenedCount": 0,
+      "issueCommentsCount": 2,
+      "firstActivityAt": "2025-09-11T12:55:13Z",
       "mostRecentActivityAt": "2025-09-11T14:25:45Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 10873,
-        "title": "[Bug]: CONDENSATION_REQUEST loop after switching models",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10873",
-        "createdAt": "2025-09-08T11:20:45Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 10873,
-        "title": "[Bug]: CONDENSATION_REQUEST loop after switching models",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10873",
-        "createdAt": "2025-09-08T11:20:45Z"
-      },
+      "firstIssue": null,
+      "mostRecentIssue": null,
       "mostRecentComment": {
         "repo": "OpenHands",
         "number": 9497,
@@ -27737,91 +27949,6 @@
         "createdAt": "2025-09-10T13:46:48Z"
       },
       "mostRecentComment": null
-    },
-    {
-      "githubUserId": "10800669",
-      "login": "daniel-piatkowski-ai",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/10800669?v=4",
-      "profileUrl": "https://github.com/daniel-piatkowski-ai",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 2,
-      "firstActivityAt": "2025-09-09T03:39:21Z",
-      "mostRecentActivityAt": "2025-09-09T03:43:09Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 10571,
-        "title": "[Bug]: CLI stopped due to max iteration, instead of ask for whether to continue",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10571",
-        "createdAt": "2025-09-09T03:43:09Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/10571#issuecomment-3268756836"
-      }
-    },
-    {
-      "githubUserId": "8900998",
-      "login": "shenyuefeng",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/8900998?v=4",
-      "profileUrl": "https://github.com/shenyuefeng",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-09-08T14:14:27Z",
-      "mostRecentActivityAt": "2025-09-08T14:14:27Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 10781,
-        "title": "[Bug]: Task status changes aren't being properly incorporated into the conversation history that gets sent to the LLM",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10781",
-        "createdAt": "2025-09-08T14:14:27Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/10781#issuecomment-3266543793"
-      }
-    },
-    {
-      "githubUserId": "74486342",
-      "login": "caocao-sys",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/74486342?v=4",
-      "profileUrl": "https://github.com/caocao-sys",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 0,
-      "firstActivityAt": "2025-09-08T13:10:54Z",
-      "mostRecentActivityAt": "2025-09-08T13:10:54Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 10874,
-        "title": "[Bug]: RollingLogger move_back method ignoring amount parameter",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10874",
-        "createdAt": "2025-09-08T13:10:54Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 10874,
-        "title": "[Bug]: RollingLogger move_back method ignoring amount parameter",
-        "url": "https://github.com/OpenHands/OpenHands/issues/10874",
-        "createdAt": "2025-09-08T13:10:54Z"
-      },
-      "mostRecentComment": null
-    },
-    {
-      "githubUserId": "5027866",
-      "login": "simonfr",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/5027866?v=4",
-      "profileUrl": "https://github.com/simonfr",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-09-08T05:12:27Z",
-      "mostRecentActivityAt": "2025-09-08T05:12:27Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 11661,
-        "title": "[Bug]: Missing required parameters for function 'str_replace_editor': {'security_risk'}",
-        "url": "https://github.com/OpenHands/OpenHands/issues/11661",
-        "createdAt": "2025-09-08T05:12:27Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/11661#issuecomment-3498933800"
-      }
     }
   ]
 }
