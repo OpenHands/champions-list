@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-09-12T04:04:47.944Z",
+  "generatedAt": "2026-09-13T04:04:31.613Z",
   "organization": "OpenHands",
   "repoCount": 53,
   "scannedRepoCount": 53,
-  "totalMergedPrs": 2727,
+  "totalMergedPrs": 2731,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "252577530",
+      "login": "BORAN002",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/252577530?v=4",
+      "profileUrl": "https://github.com/BORAN002",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4982,
+        "title": "fix(ts-client): reject browser-only downloads early in Node.js",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
+        "mergedAt": "2026-09-13T03:02:23Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands-Cloud",
+        "number": 1243,
+        "title": "fix(replicated-deploy): Make the Replicated deploy job re-runnable and its failures more legible",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1243",
+        "mergedAt": "2026-09-13T00:27:28Z"
+      }
+    },
+    {
+      "githubUserId": "104281681",
+      "login": "Tyagiquamar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/104281681?u=fec62c96c582a9e4cb30bb4a0c796550211dda47&v=4",
+      "profileUrl": "https://github.com/Tyagiquamar",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 17175,
+        "title": "fix(static-server): HTML-escape injected runtime config and set Cache-Control: no-store on credential injection",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17175",
+        "mergedAt": "2026-09-12T16:09:53Z"
+      }
+    },
+    {
+      "githubUserId": "73189720",
+      "login": "Chocolatine75",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/73189720?u=0fd0e7d08f9f8a35298df8ce6a32ec5644acb2d9&v=4",
+      "profileUrl": "https://github.com/Chocolatine75",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 17375,
+        "title": "fix: recognize Azure DevOps SSH remotes",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17375",
+        "mergedAt": "2026-09-12T15:54:59Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -733,61 +785,181 @@
         "url": "https://github.com/OpenHands/OpenHands/pull/16441",
         "mergedAt": "2026-08-24T13:47:59Z"
       }
-    },
-    {
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16279,
-        "title": "fix: clean up dev:minimal services on SIGHUP",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16279",
-        "mergedAt": "2026-08-24T12:25:14Z"
-      }
-    },
-    {
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16280,
-        "title": "fix: clean up dev:extra-backend agent-server on SIGHUP",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16280",
-        "mergedAt": "2026-08-24T12:25:03Z"
-      }
-    },
-    {
-      "githubUserId": "26367363",
-      "login": "aartem1",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/26367363?u=9bfd0bfa83346cbcc48761835e32ad51faa42e46&v=4",
-      "profileUrl": "https://github.com/aartem1",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16740,
-        "title": "feat(automations): show a run's live phase",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16740",
-        "mergedAt": "2026-08-24T10:24:49Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16759,
-        "title": "fix(agent-canvas): scope baked working_dir to the default-local backend",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16759",
-        "mergedAt": "2026-08-24T03:00:55Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "252577530",
+      "login": "BORAN002",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/252577530?v=4",
+      "profileUrl": "https://github.com/BORAN002",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4982,
+        "title": "fix(ts-client): reject browser-only downloads early in Node.js",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
+        "mergedAt": "2026-09-13T03:02:23Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4982,
+        "title": "fix(ts-client): reject browser-only downloads early in Node.js",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
+        "mergedAt": "2026-09-13T03:02:23Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4982,
+            "title": "fix(ts-client): reject browser-only downloads early in Node.js",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
+            "mergedAt": "2026-09-13T03:02:23Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4982,
+            "title": "fix(ts-client): reject browser-only downloads early in Node.js",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
+            "mergedAt": "2026-09-13T03:02:23Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 1243,
+        "title": "fix(replicated-deploy): Make the Replicated deploy job re-runnable and its failures more legible",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1243",
+        "mergedAt": "2026-09-13T00:27:28Z"
+      },
+      "totalMergedPrs": 17,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 17,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 1243,
+            "title": "fix(replicated-deploy): Make the Replicated deploy job re-runnable and its failures more legible",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1243",
+            "mergedAt": "2026-09-13T00:27:28Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "104281681",
+      "login": "Tyagiquamar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/104281681?u=fec62c96c582a9e4cb30bb4a0c796550211dda47&v=4",
+      "profileUrl": "https://github.com/Tyagiquamar",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 17175,
+        "title": "fix(static-server): HTML-escape injected runtime config and set Cache-Control: no-store on credential injection",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17175",
+        "mergedAt": "2026-09-12T16:09:53Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 17175,
+        "title": "fix(static-server): HTML-escape injected runtime config and set Cache-Control: no-store on credential injection",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17175",
+        "mergedAt": "2026-09-12T16:09:53Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 17175,
+            "title": "fix(static-server): HTML-escape injected runtime config and set Cache-Control: no-store on credential injection",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17175",
+            "mergedAt": "2026-09-12T16:09:53Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 17175,
+            "title": "fix(static-server): HTML-escape injected runtime config and set Cache-Control: no-store on credential injection",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17175",
+            "mergedAt": "2026-09-12T16:09:53Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "73189720",
+      "login": "Chocolatine75",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/73189720?u=0fd0e7d08f9f8a35298df8ce6a32ec5644acb2d9&v=4",
+      "profileUrl": "https://github.com/Chocolatine75",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 17375,
+        "title": "fix: recognize Azure DevOps SSH remotes",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17375",
+        "mergedAt": "2026-09-12T15:54:59Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 17375,
+        "title": "fix: recognize Azure DevOps SSH remotes",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17375",
+        "mergedAt": "2026-09-12T15:54:59Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 17375,
+            "title": "fix: recognize Azure DevOps SSH remotes",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17375",
+            "mergedAt": "2026-09-12T15:54:59Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 17375,
+            "title": "fix: recognize Azure DevOps SSH remotes",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17375",
+            "mergedAt": "2026-09-12T15:54:59Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -863,49 +1035,6 @@
             "title": "fix(llm): remove LLM.modify_params past its v1.47.0 removal deadline",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4954",
             "mergedAt": "2026-09-11T15:08:40Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 1228,
-        "title": "fix(ci): send the run identifiers the E2E binding selects on [ref PLTF-3540]",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1228",
-        "mergedAt": "2026-09-11T02:07:53Z"
-      },
-      "totalMergedPrs": 16,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 16,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 1228,
-            "title": "fix(ci): send the run identifiers the E2E binding selects on [ref PLTF-3540]",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1228",
-            "mergedAt": "2026-09-11T02:07:53Z"
           }
         }
       }
