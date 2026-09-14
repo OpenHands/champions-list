@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-09-13T04:04:31.613Z",
+  "generatedAt": "2026-09-14T04:05:33.518Z",
   "organization": "OpenHands",
   "repoCount": 53,
   "scannedRepoCount": 53,
-  "totalMergedPrs": 2731,
+  "totalMergedPrs": 2733,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "295385088",
+      "login": "workvahedi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/295385088?v=4",
+      "profileUrl": "https://github.com/workvahedi",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16991,
+        "title": "fix: avoid redundant automation SDK version refetches",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16991",
+        "mergedAt": "2026-09-14T03:31:04Z"
+      }
+    },
+    {
+      "githubUserId": "40069230",
+      "login": "palrohitg",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40069230?u=d096e556f19071b14f0e68710082ac6659b35cf0&v=4",
+      "profileUrl": "https://github.com/palrohitg",
+      "pullRequest": {
+        "repo": "automation",
+        "number": 447,
+        "title": "fix(ci): pull MinIO test image from Quay",
+        "url": "https://github.com/OpenHands/automation/pull/447",
+        "mergedAt": "2026-09-13T17:08:44Z"
+      }
+    },
     {
       "githubUserId": "252577530",
       "login": "BORAN002",
@@ -48,7 +74,7 @@
     {
       "githubUserId": "73189720",
       "login": "Chocolatine75",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/73189720?u=0fd0e7d08f9f8a35298df8ce6a32ec5644acb2d9&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/73189720?u=4ccb94896144e04192f00a3d3dd8319bfc7441b5&v=4",
       "profileUrl": "https://github.com/Chocolatine75",
       "pullRequest": {
         "repo": "OpenHands",
@@ -759,35 +785,95 @@
         "url": "https://github.com/OpenHands/OpenHands/pull/16181",
         "mergedAt": "2026-08-24T21:27:14Z"
       }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "pullRequest": {
-        "repo": "OpenHands-Cloud",
-        "number": 1141,
-        "title": "fix(deploy): tolerate a restarting kotsadm in replicated_deploy.sh",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1141",
-        "mergedAt": "2026-08-24T16:01:59Z"
-      }
-    },
-    {
-      "githubUserId": "744063",
-      "login": "georgeglarson",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/744063?u=ad5785aa66eb8ad36e89f34e3608a7c28c2d13bd&v=4",
-      "profileUrl": "https://github.com/georgeglarson",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16441,
-        "title": "feat(settings): expose the LLM-switching toggle in Agent settings",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16441",
-        "mergedAt": "2026-08-24T13:47:59Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "295385088",
+      "login": "workvahedi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/295385088?v=4",
+      "profileUrl": "https://github.com/workvahedi",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16991,
+        "title": "fix: avoid redundant automation SDK version refetches",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16991",
+        "mergedAt": "2026-09-14T03:31:04Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16991,
+        "title": "fix: avoid redundant automation SDK version refetches",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16991",
+        "mergedAt": "2026-09-14T03:31:04Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16991,
+            "title": "fix: avoid redundant automation SDK version refetches",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16991",
+            "mergedAt": "2026-09-14T03:31:04Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16991,
+            "title": "fix: avoid redundant automation SDK version refetches",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16991",
+            "mergedAt": "2026-09-14T03:31:04Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "40069230",
+      "login": "palrohitg",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40069230?u=d096e556f19071b14f0e68710082ac6659b35cf0&v=4",
+      "profileUrl": "https://github.com/palrohitg",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 17179,
+        "title": "feat: click an image attachment to open it full size",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17179",
+        "mergedAt": "2026-09-09T21:05:12Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "automation",
+        "number": 447,
+        "title": "fix(ci): pull MinIO test image from Quay",
+        "url": "https://github.com/OpenHands/automation/pull/447",
+        "mergedAt": "2026-09-13T17:08:44Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 17179,
+            "title": "feat: click an image attachment to open it full size",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17179",
+            "mergedAt": "2026-09-09T21:05:12Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "automation",
+            "number": 447,
+            "title": "fix(ci): pull MinIO test image from Quay",
+            "url": "https://github.com/OpenHands/automation/pull/447",
+            "mergedAt": "2026-09-13T17:08:44Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "252577530",
       "login": "BORAN002",
@@ -920,7 +1006,7 @@
     {
       "githubUserId": "73189720",
       "login": "Chocolatine75",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/73189720?u=0fd0e7d08f9f8a35298df8ce6a32ec5644acb2d9&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/73189720?u=4ccb94896144e04192f00a3d3dd8319bfc7441b5&v=4",
       "profileUrl": "https://github.com/Chocolatine75",
       "firstMergedPr": {
         "repo": "OpenHands",
@@ -1035,49 +1121,6 @@
             "title": "fix(llm): remove LLM.modify_params past its v1.47.0 removal deadline",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4954",
             "mergedAt": "2026-09-11T15:08:40Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "40069230",
-      "login": "palrohitg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/40069230?u=d096e556f19071b14f0e68710082ac6659b35cf0&v=4",
-      "profileUrl": "https://github.com/palrohitg",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 17179,
-        "title": "feat: click an image attachment to open it full size",
-        "url": "https://github.com/OpenHands/OpenHands/pull/17179",
-        "mergedAt": "2026-09-09T21:05:12Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 17179,
-        "title": "feat: click an image attachment to open it full size",
-        "url": "https://github.com/OpenHands/OpenHands/pull/17179",
-        "mergedAt": "2026-09-09T21:05:12Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 17179,
-            "title": "feat: click an image attachment to open it full size",
-            "url": "https://github.com/OpenHands/OpenHands/pull/17179",
-            "mergedAt": "2026-09-09T21:05:12Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 17179,
-            "title": "feat: click an image attachment to open it full size",
-            "url": "https://github.com/OpenHands/OpenHands/pull/17179",
-            "mergedAt": "2026-09-09T21:05:12Z"
           }
         }
       }
