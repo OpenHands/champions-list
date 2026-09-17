@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-09-16T04:04:53.066Z",
+  "generatedAt": "2026-09-17T04:05:00.913Z",
   "organization": "OpenHands",
-  "repoCount": 55,
-  "scannedRepoCount": 55,
-  "totalMergedPrs": 2739,
+  "repoCount": 56,
+  "scannedRepoCount": 56,
+  "totalMergedPrs": 2741,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 5102,
+        "title": "Prune verified model lists to the two latest versions per line",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5102",
+        "mergedAt": "2026-09-16T21:01:56Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 5105,
+        "title": "chore(agent-server): remove deprecated desktop URL endpoint past its 1.49.0 deadline",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5105",
+        "mergedAt": "2026-09-16T20:40:59Z"
+      }
+    },
     {
       "githubUserId": "876355",
       "login": "mkuri",
@@ -759,35 +785,88 @@
         "url": "https://github.com/OpenHands/docs/pull/566",
         "mergedAt": "2026-08-27T02:27:21Z"
       }
-    },
+    }
+  ],
+  "contributors": [
     {
       "githubUserId": "6080905",
       "login": "enyst",
       "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
       "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 232,
+        "title": "Make lint happy",
+        "url": "https://github.com/OpenHands/OpenHands/pull/232",
+        "mergedAt": "2024-03-27T03:03:23Z"
+      },
+      "mostRecentMergedPr": {
         "repo": "software-agent-sdk",
-        "number": 4655,
-        "title": "docs(examples): align Ask Oracle conventions",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4655",
-        "mergedAt": "2026-08-27T02:26:41Z"
+        "number": 5102,
+        "title": "Prune verified model lists to the two latest versions per line",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5102",
+        "mergedAt": "2026-09-16T21:01:56Z"
+      },
+      "totalMergedPrs": 783,
+      "contributionYears": [
+        "2026",
+        "2025",
+        "2024"
+      ],
+      "yearly": {
+        "2024": {
+          "totalMergedPrs": 152,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 232,
+            "title": "Make lint happy",
+            "url": "https://github.com/OpenHands/OpenHands/pull/232",
+            "mergedAt": "2024-03-27T03:03:23Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 5948,
+            "title": "Load the event stream fix after it's no longer a dataclass",
+            "url": "https://github.com/OpenHands/OpenHands/pull/5948",
+            "mergedAt": "2024-12-31T22:03:57Z"
+          }
+        },
+        "2025": {
+          "totalMergedPrs": 286,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 5992,
+            "title": "Enable/disable function calling by user configuration",
+            "url": "https://github.com/OpenHands/OpenHands/pull/5992",
+            "mergedAt": "2025-01-03T00:40:49Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 12165,
+            "title": "chore: Mark V0 legacy files with clear headers and V1 pointers",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12165",
+            "mergedAt": "2025-12-29T23:21:29Z"
+          }
+        },
+        "2026": {
+          "totalMergedPrs": 345,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 12234,
+            "title": "Remove VSCode extension integration from OpenHands repo",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12234",
+            "mergedAt": "2026-01-01T18:28:05Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 5102,
+            "title": "Prune verified model lists to the two latest versions per line",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/5102",
+            "mergedAt": "2026-09-16T21:01:56Z"
+          }
+        }
       }
     },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "pullRequest": {
-        "repo": "extensions",
-        "number": 474,
-        "title": "feat(pr-reviewer): read the repo's AGENTS.md and guideline docs before reviewing",
-        "url": "https://github.com/OpenHands/extensions/pull/474",
-        "mergedAt": "2026-08-27T02:24:27Z"
-      }
-    }
-  ],
-  "contributors": [
     {
       "githubUserId": "876355",
       "login": "mkuri",
@@ -870,85 +949,6 @@
             "title": "fix(sdk): strip inline reasoning from LLM-generated titles",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4703",
             "mergedAt": "2026-09-15T03:53:57Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 232,
-        "title": "Make lint happy",
-        "url": "https://github.com/OpenHands/OpenHands/pull/232",
-        "mergedAt": "2024-03-27T03:03:23Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 17218,
-        "title": "fix(ci): apply inferred issue type labels",
-        "url": "https://github.com/OpenHands/OpenHands/pull/17218",
-        "mergedAt": "2026-09-14T22:49:32Z"
-      },
-      "totalMergedPrs": 781,
-      "contributionYears": [
-        "2026",
-        "2025",
-        "2024"
-      ],
-      "yearly": {
-        "2024": {
-          "totalMergedPrs": 152,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 232,
-            "title": "Make lint happy",
-            "url": "https://github.com/OpenHands/OpenHands/pull/232",
-            "mergedAt": "2024-03-27T03:03:23Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 5948,
-            "title": "Load the event stream fix after it's no longer a dataclass",
-            "url": "https://github.com/OpenHands/OpenHands/pull/5948",
-            "mergedAt": "2024-12-31T22:03:57Z"
-          }
-        },
-        "2025": {
-          "totalMergedPrs": 286,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 5992,
-            "title": "Enable/disable function calling by user configuration",
-            "url": "https://github.com/OpenHands/OpenHands/pull/5992",
-            "mergedAt": "2025-01-03T00:40:49Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 12165,
-            "title": "chore: Mark V0 legacy files with clear headers and V1 pointers",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12165",
-            "mergedAt": "2025-12-29T23:21:29Z"
-          }
-        },
-        "2026": {
-          "totalMergedPrs": 343,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 12234,
-            "title": "Remove VSCode extension integration from OpenHands repo",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12234",
-            "mergedAt": "2026-01-01T18:28:05Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 17218,
-            "title": "fix(ci): apply inferred issue type labels",
-            "url": "https://github.com/OpenHands/OpenHands/pull/17218",
-            "mergedAt": "2026-09-14T22:49:32Z"
           }
         }
       }
