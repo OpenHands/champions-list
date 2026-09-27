@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-09-26T04:04:46.514Z",
+  "generatedAt": "2026-09-27T04:04:45.702Z",
   "organization": "OpenHands",
   "repoCount": 57,
   "scannedRepoCount": 57,
-  "totalMergedPrs": 2785,
+  "totalMergedPrs": 2786,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "212128834",
+      "login": "onatozmenn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
+      "profileUrl": "https://github.com/onatozmenn",
+      "pullRequest": {
+        "repo": "extensions",
+        "number": 606,
+        "title": "fix(repo-monitor): honor AUTOMATION_MODEL profile",
+        "url": "https://github.com/OpenHands/extensions/pull/606",
+        "mergedAt": "2026-09-26T14:10:15Z"
+      }
+    },
     {
       "githubUserId": "744063",
       "login": "georgeglarson",
@@ -772,22 +785,52 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/4954",
         "mergedAt": "2026-09-11T15:08:40Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "docs",
-        "number": 788,
-        "title": "docs(sdk): document the agent-server OpenAI-compatible Responses gateway",
-        "url": "https://github.com/OpenHands/docs/pull/788",
-        "mergedAt": "2026-09-11T03:48:35Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "212128834",
+      "login": "onatozmenn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
+      "profileUrl": "https://github.com/onatozmenn",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4277,
+        "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
+        "mergedAt": "2026-07-27T17:09:29Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "extensions",
+        "number": 606,
+        "title": "fix(repo-monitor): honor AUTOMATION_MODEL profile",
+        "url": "https://github.com/OpenHands/extensions/pull/606",
+        "mergedAt": "2026-09-26T14:10:15Z"
+      },
+      "totalMergedPrs": 10,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 10,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4277,
+            "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
+            "mergedAt": "2026-07-27T17:09:29Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "extensions",
+            "number": 606,
+            "title": "fix(repo-monitor): honor AUTOMATION_MODEL profile",
+            "url": "https://github.com/OpenHands/extensions/pull/606",
+            "mergedAt": "2026-09-26T14:10:15Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "744063",
       "login": "georgeglarson",
@@ -1859,49 +1902,6 @@
             "title": "feat(desktop): universal macOS DMG with per-arch bundled runtimes",
             "url": "https://github.com/OpenHands/OpenHands/pull/17225",
             "mergedAt": "2026-09-23T05:34:57Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "212128834",
-      "login": "onatozmenn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
-      "profileUrl": "https://github.com/onatozmenn",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4277,
-        "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
-        "mergedAt": "2026-07-27T17:09:29Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 5172,
-        "title": "fix(typescript): forward ACP data-dir isolation flag",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5172",
-        "mergedAt": "2026-09-23T01:12:17Z"
-      },
-      "totalMergedPrs": 9,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 9,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4277,
-            "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
-            "mergedAt": "2026-07-27T17:09:29Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 5172,
-            "title": "fix(typescript): forward ACP data-dir isolation flag",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/5172",
-            "mergedAt": "2026-09-23T01:12:17Z"
           }
         }
       }
