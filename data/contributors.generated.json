@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-09-27T04:04:45.702Z",
+  "generatedAt": "2026-09-28T04:05:53.052Z",
   "organization": "OpenHands",
   "repoCount": 57,
   "scannedRepoCount": 57,
-  "totalMergedPrs": 2786,
+  "totalMergedPrs": 2788,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "252577530",
+      "login": "BORAN002",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/252577530?v=4",
+      "profileUrl": "https://github.com/BORAN002",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 4656,
+        "title": "docs(agent): add docstrings for image helper functions",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4656",
+        "mergedAt": "2026-09-27T13:45:03Z"
+      }
+    },
+    {
+      "githubUserId": "99810755",
+      "login": "KXHXK",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/99810755?u=fbc0c11a3a674232b0bc811502f28c623d4beec2&v=4",
+      "profileUrl": "https://github.com/KXHXK",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 16116,
+        "title": "fix(chat): make long /btw responses scrollable",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16116",
+        "mergedAt": "2026-09-27T11:53:06Z"
+      }
+    },
     {
       "githubUserId": "212128834",
       "login": "onatozmenn",
@@ -759,35 +785,95 @@
         "url": "https://github.com/OpenHands/OpenHands/pull/17175",
         "mergedAt": "2026-09-12T16:09:53Z"
       }
-    },
-    {
-      "githubUserId": "73189720",
-      "login": "Chocolatine75",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/73189720?u=4ccb94896144e04192f00a3d3dd8319bfc7441b5&v=4",
-      "profileUrl": "https://github.com/Chocolatine75",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 17375,
-        "title": "fix: recognize Azure DevOps SSH remotes",
-        "url": "https://github.com/OpenHands/OpenHands/pull/17375",
-        "mergedAt": "2026-09-12T15:54:59Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4954,
-        "title": "fix(llm): remove LLM.modify_params past its v1.47.0 removal deadline",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4954",
-        "mergedAt": "2026-09-11T15:08:40Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "252577530",
+      "login": "BORAN002",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/252577530?v=4",
+      "profileUrl": "https://github.com/BORAN002",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4982,
+        "title": "fix(ts-client): reject browser-only downloads early in Node.js",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
+        "mergedAt": "2026-09-13T03:02:23Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4656,
+        "title": "docs(agent): add docstrings for image helper functions",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4656",
+        "mergedAt": "2026-09-27T13:45:03Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4982,
+            "title": "fix(ts-client): reject browser-only downloads early in Node.js",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
+            "mergedAt": "2026-09-13T03:02:23Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4656,
+            "title": "docs(agent): add docstrings for image helper functions",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4656",
+            "mergedAt": "2026-09-27T13:45:03Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "99810755",
+      "login": "KXHXK",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/99810755?u=fbc0c11a3a674232b0bc811502f28c623d4beec2&v=4",
+      "profileUrl": "https://github.com/KXHXK",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 16115,
+        "title": "fix(skills): keep modal actions visible for long descriptions",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16115",
+        "mergedAt": "2026-08-20T11:56:42Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 16116,
+        "title": "fix(chat): make long /btw responses scrollable",
+        "url": "https://github.com/OpenHands/OpenHands/pull/16116",
+        "mergedAt": "2026-09-27T11:53:06Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 16115,
+            "title": "fix(skills): keep modal actions visible for long descriptions",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16115",
+            "mergedAt": "2026-08-20T11:56:42Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 16116,
+            "title": "fix(chat): make long /btw responses scrollable",
+            "url": "https://github.com/OpenHands/OpenHands/pull/16116",
+            "mergedAt": "2026-09-27T11:53:06Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "212128834",
       "login": "onatozmenn",
@@ -2502,49 +2588,6 @@
       }
     },
     {
-      "githubUserId": "252577530",
-      "login": "BORAN002",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/252577530?v=4",
-      "profileUrl": "https://github.com/BORAN002",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4982,
-        "title": "fix(ts-client): reject browser-only downloads early in Node.js",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
-        "mergedAt": "2026-09-13T03:02:23Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4982,
-        "title": "fix(ts-client): reject browser-only downloads early in Node.js",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
-        "mergedAt": "2026-09-13T03:02:23Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4982,
-            "title": "fix(ts-client): reject browser-only downloads early in Node.js",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
-            "mergedAt": "2026-09-13T03:02:23Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4982,
-            "title": "fix(ts-client): reject browser-only downloads early in Node.js",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
-            "mergedAt": "2026-09-13T03:02:23Z"
-          }
-        }
-      }
-    },
-    {
       "githubUserId": "104281681",
       "login": "Tyagiquamar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/104281681?u=fec62c96c582a9e4cb30bb4a0c796550211dda47&v=4",
@@ -3737,49 +3780,6 @@
             "title": "fix: render the VSCode button on self-hosted (local) backends",
             "url": "https://github.com/OpenHands/OpenHands/pull/16106",
             "mergedAt": "2026-08-21T15:38:43Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "99810755",
-      "login": "KXHXK",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/99810755?u=fbc0c11a3a674232b0bc811502f28c623d4beec2&v=4",
-      "profileUrl": "https://github.com/KXHXK",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 16115,
-        "title": "fix(skills): keep modal actions visible for long descriptions",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16115",
-        "mergedAt": "2026-08-20T11:56:42Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 16115,
-        "title": "fix(skills): keep modal actions visible for long descriptions",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16115",
-        "mergedAt": "2026-08-20T11:56:42Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 16115,
-            "title": "fix(skills): keep modal actions visible for long descriptions",
-            "url": "https://github.com/OpenHands/OpenHands/pull/16115",
-            "mergedAt": "2026-08-20T11:56:42Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 16115,
-            "title": "fix(skills): keep modal actions visible for long descriptions",
-            "url": "https://github.com/OpenHands/OpenHands/pull/16115",
-            "mergedAt": "2026-08-20T11:56:42Z"
           }
         }
       }
