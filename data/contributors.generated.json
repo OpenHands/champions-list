@@ -1,11 +1,50 @@
 {
-  "generatedAt": "2026-09-29T04:04:54.613Z",
+  "generatedAt": "2026-09-30T04:04:48.378Z",
   "organization": "OpenHands",
   "repoCount": 57,
   "scannedRepoCount": 57,
-  "totalMergedPrs": 2788,
+  "totalMergedPrs": 2791,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 17769,
+        "title": "docs: multiple docker sandboxes",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17769",
+        "mergedAt": "2026-09-29T15:02:12Z"
+      }
+    },
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "OpenHands-Cloud",
+        "number": 1292,
+        "title": "feat(automation): expose auto-disable and sandbox cleanup settings, default off",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1292",
+        "mergedAt": "2026-09-29T14:10:39Z"
+      }
+    },
+    {
+      "githubUserId": "212128834",
+      "login": "onatozmenn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
+      "profileUrl": "https://github.com/onatozmenn",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 5345,
+        "title": "fix(sdk): keep conversations alive when MCP startup fails",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5345",
+        "mergedAt": "2026-09-29T11:42:13Z"
+      }
+    },
     {
       "githubUserId": "252577530",
       "login": "BORAN002",
@@ -746,18 +785,86 @@
         "url": "https://github.com/OpenHands/automation/pull/447",
         "mergedAt": "2026-09-13T17:08:44Z"
       }
-    },
+    }
+  ],
+  "contributors": [
     {
-      "githubUserId": "252577530",
-      "login": "BORAN002",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/252577530?v=4",
-      "profileUrl": "https://github.com/BORAN002",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4982,
-        "title": "fix(ts-client): reject browser-only downloads early in Node.js",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4982",
-        "mergedAt": "2026-09-13T03:02:23Z"
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 232,
+        "title": "Make lint happy",
+        "url": "https://github.com/OpenHands/OpenHands/pull/232",
+        "mergedAt": "2024-03-27T03:03:23Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 17769,
+        "title": "docs: multiple docker sandboxes",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17769",
+        "mergedAt": "2026-09-29T15:02:12Z"
+      },
+      "totalMergedPrs": 784,
+      "contributionYears": [
+        "2026",
+        "2025",
+        "2024"
+      ],
+      "yearly": {
+        "2024": {
+          "totalMergedPrs": 152,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 232,
+            "title": "Make lint happy",
+            "url": "https://github.com/OpenHands/OpenHands/pull/232",
+            "mergedAt": "2024-03-27T03:03:23Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 5948,
+            "title": "Load the event stream fix after it's no longer a dataclass",
+            "url": "https://github.com/OpenHands/OpenHands/pull/5948",
+            "mergedAt": "2024-12-31T22:03:57Z"
+          }
+        },
+        "2025": {
+          "totalMergedPrs": 286,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 5992,
+            "title": "Enable/disable function calling by user configuration",
+            "url": "https://github.com/OpenHands/OpenHands/pull/5992",
+            "mergedAt": "2025-01-03T00:40:49Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 12165,
+            "title": "chore: Mark V0 legacy files with clear headers and V1 pointers",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12165",
+            "mergedAt": "2025-12-29T23:21:29Z"
+          }
+        },
+        "2026": {
+          "totalMergedPrs": 346,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 12234,
+            "title": "Remove VSCode extension integration from OpenHands repo",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12234",
+            "mergedAt": "2026-01-01T18:28:05Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 17769,
+            "title": "docs: multiple docker sandboxes",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17769",
+            "mergedAt": "2026-09-29T15:02:12Z"
+          }
+        }
       }
     },
     {
@@ -765,29 +872,87 @@
       "login": "dylan-openhands",
       "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
       "profileUrl": "https://github.com/dylan-openhands",
-      "pullRequest": {
+      "firstMergedPr": {
         "repo": "OpenHands-Cloud",
-        "number": 1243,
-        "title": "fix(replicated-deploy): Make the Replicated deploy job re-runnable and its failures more legible",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1243",
-        "mergedAt": "2026-09-13T00:27:28Z"
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 1292,
+        "title": "feat(automation): expose auto-disable and sandbox cleanup settings, default off",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1292",
+        "mergedAt": "2026-09-29T14:10:39Z"
+      },
+      "totalMergedPrs": 19,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 19,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 1292,
+            "title": "feat(automation): expose auto-disable and sandbox cleanup settings, default off",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1292",
+            "mergedAt": "2026-09-29T14:10:39Z"
+          }
+        }
       }
     },
     {
-      "githubUserId": "104281681",
-      "login": "Tyagiquamar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/104281681?u=fec62c96c582a9e4cb30bb4a0c796550211dda47&v=4",
-      "profileUrl": "https://github.com/Tyagiquamar",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 17175,
-        "title": "fix(static-server): HTML-escape injected runtime config and set Cache-Control: no-store on credential injection",
-        "url": "https://github.com/OpenHands/OpenHands/pull/17175",
-        "mergedAt": "2026-09-12T16:09:53Z"
+      "githubUserId": "212128834",
+      "login": "onatozmenn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
+      "profileUrl": "https://github.com/onatozmenn",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4277,
+        "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
+        "mergedAt": "2026-07-27T17:09:29Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 5345,
+        "title": "fix(sdk): keep conversations alive when MCP startup fails",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5345",
+        "mergedAt": "2026-09-29T11:42:13Z"
+      },
+      "totalMergedPrs": 11,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 11,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4277,
+            "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
+            "mergedAt": "2026-07-27T17:09:29Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 5345,
+            "title": "fix(sdk): keep conversations alive when MCP startup fails",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/5345",
+            "mergedAt": "2026-09-29T11:42:13Z"
+          }
+        }
       }
-    }
-  ],
-  "contributors": [
+    },
     {
       "githubUserId": "252577530",
       "login": "BORAN002",
@@ -870,49 +1035,6 @@
             "title": "fix(chat): make long /btw responses scrollable",
             "url": "https://github.com/OpenHands/OpenHands/pull/16116",
             "mergedAt": "2026-09-27T11:53:06Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "212128834",
-      "login": "onatozmenn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
-      "profileUrl": "https://github.com/onatozmenn",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4277,
-        "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
-        "mergedAt": "2026-07-27T17:09:29Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "extensions",
-        "number": 606,
-        "title": "fix(repo-monitor): honor AUTOMATION_MODEL profile",
-        "url": "https://github.com/OpenHands/extensions/pull/606",
-        "mergedAt": "2026-09-26T14:10:15Z"
-      },
-      "totalMergedPrs": 10,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 10,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4277,
-            "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
-            "mergedAt": "2026-07-27T17:09:29Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "extensions",
-            "number": 606,
-            "title": "fix(repo-monitor): honor AUTOMATION_MODEL profile",
-            "url": "https://github.com/OpenHands/extensions/pull/606",
-            "mergedAt": "2026-09-26T14:10:15Z"
           }
         }
       }
@@ -1429,49 +1551,6 @@
             "title": "feat: toggle all workspace folders from the Conversations header",
             "url": "https://github.com/OpenHands/OpenHands/pull/17409",
             "mergedAt": "2026-09-25T06:43:10Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "automation",
-        "number": 521,
-        "title": "fix(ci): pull MinIO test image from Chainguard",
-        "url": "https://github.com/OpenHands/automation/pull/521",
-        "mergedAt": "2026-09-25T06:06:36Z"
-      },
-      "totalMergedPrs": 18,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 18,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "automation",
-            "number": 521,
-            "title": "fix(ci): pull MinIO test image from Chainguard",
-            "url": "https://github.com/OpenHands/automation/pull/521",
-            "mergedAt": "2026-09-25T06:06:36Z"
           }
         }
       }
@@ -2332,85 +2411,6 @@
             "title": "fix: prevent stale conversation history merges",
             "url": "https://github.com/OpenHands/OpenHands/pull/16913",
             "mergedAt": "2026-09-17T14:34:31Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 232,
-        "title": "Make lint happy",
-        "url": "https://github.com/OpenHands/OpenHands/pull/232",
-        "mergedAt": "2024-03-27T03:03:23Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 5102,
-        "title": "Prune verified model lists to the two latest versions per line",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5102",
-        "mergedAt": "2026-09-16T21:01:56Z"
-      },
-      "totalMergedPrs": 783,
-      "contributionYears": [
-        "2026",
-        "2025",
-        "2024"
-      ],
-      "yearly": {
-        "2024": {
-          "totalMergedPrs": 152,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 232,
-            "title": "Make lint happy",
-            "url": "https://github.com/OpenHands/OpenHands/pull/232",
-            "mergedAt": "2024-03-27T03:03:23Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 5948,
-            "title": "Load the event stream fix after it's no longer a dataclass",
-            "url": "https://github.com/OpenHands/OpenHands/pull/5948",
-            "mergedAt": "2024-12-31T22:03:57Z"
-          }
-        },
-        "2025": {
-          "totalMergedPrs": 286,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 5992,
-            "title": "Enable/disable function calling by user configuration",
-            "url": "https://github.com/OpenHands/OpenHands/pull/5992",
-            "mergedAt": "2025-01-03T00:40:49Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 12165,
-            "title": "chore: Mark V0 legacy files with clear headers and V1 pointers",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12165",
-            "mergedAt": "2025-12-29T23:21:29Z"
-          }
-        },
-        "2026": {
-          "totalMergedPrs": 345,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 12234,
-            "title": "Remove VSCode extension integration from OpenHands repo",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12234",
-            "mergedAt": "2026-01-01T18:28:05Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 5102,
-            "title": "Prune verified model lists to the two latest versions per line",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/5102",
-            "mergedAt": "2026-09-16T21:01:56Z"
           }
         }
       }
