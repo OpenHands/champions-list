@@ -1,11 +1,37 @@
 {
-  "generatedAt": "2026-09-30T04:04:48.378Z",
+  "generatedAt": "2026-10-01T04:05:48.011Z",
   "organization": "OpenHands",
   "repoCount": 57,
   "scannedRepoCount": 57,
-  "totalMergedPrs": 2791,
+  "totalMergedPrs": 2793,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "docs",
+        "number": 862,
+        "title": "docs(enterprise): add 0.74.0 release notes",
+        "url": "https://github.com/OpenHands/docs/pull/862",
+        "mergedAt": "2026-09-30T21:51:40Z"
+      }
+    },
+    {
+      "githubUserId": "212128834",
+      "login": "onatozmenn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
+      "profileUrl": "https://github.com/onatozmenn",
+      "pullRequest": {
+        "repo": "extensions",
+        "number": 607,
+        "title": "fix(iterate): ship real vendor manifest dirs for Codex install",
+        "url": "https://github.com/OpenHands/extensions/pull/607",
+        "mergedAt": "2026-09-30T20:12:02Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -759,35 +785,95 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/4516",
         "mergedAt": "2026-09-14T19:38:07Z"
       }
-    },
-    {
-      "githubUserId": "295385088",
-      "login": "workvahedi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/295385088?v=4",
-      "profileUrl": "https://github.com/workvahedi",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 16991,
-        "title": "fix: avoid redundant automation SDK version refetches",
-        "url": "https://github.com/OpenHands/OpenHands/pull/16991",
-        "mergedAt": "2026-09-14T03:31:04Z"
-      }
-    },
-    {
-      "githubUserId": "40069230",
-      "login": "palrohitg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/40069230?u=d096e556f19071b14f0e68710082ac6659b35cf0&v=4",
-      "profileUrl": "https://github.com/palrohitg",
-      "pullRequest": {
-        "repo": "automation",
-        "number": 447,
-        "title": "fix(ci): pull MinIO test image from Quay",
-        "url": "https://github.com/OpenHands/automation/pull/447",
-        "mergedAt": "2026-09-13T17:08:44Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "docs",
+        "number": 862,
+        "title": "docs(enterprise): add 0.74.0 release notes",
+        "url": "https://github.com/OpenHands/docs/pull/862",
+        "mergedAt": "2026-09-30T21:51:40Z"
+      },
+      "totalMergedPrs": 20,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 20,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "docs",
+            "number": 862,
+            "title": "docs(enterprise): add 0.74.0 release notes",
+            "url": "https://github.com/OpenHands/docs/pull/862",
+            "mergedAt": "2026-09-30T21:51:40Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "212128834",
+      "login": "onatozmenn",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
+      "profileUrl": "https://github.com/onatozmenn",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 4277,
+        "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
+        "mergedAt": "2026-07-27T17:09:29Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "extensions",
+        "number": 607,
+        "title": "fix(iterate): ship real vendor manifest dirs for Codex install",
+        "url": "https://github.com/OpenHands/extensions/pull/607",
+        "mergedAt": "2026-09-30T20:12:02Z"
+      },
+      "totalMergedPrs": 12,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 12,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 4277,
+            "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
+            "mergedAt": "2026-07-27T17:09:29Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "extensions",
+            "number": 607,
+            "title": "fix(iterate): ship real vendor manifest dirs for Codex install",
+            "url": "https://github.com/OpenHands/extensions/pull/607",
+            "mergedAt": "2026-09-30T20:12:02Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -863,92 +949,6 @@
             "title": "docs: multiple docker sandboxes",
             "url": "https://github.com/OpenHands/OpenHands/pull/17769",
             "mergedAt": "2026-09-29T15:02:12Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 1292,
-        "title": "feat(automation): expose auto-disable and sandbox cleanup settings, default off",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1292",
-        "mergedAt": "2026-09-29T14:10:39Z"
-      },
-      "totalMergedPrs": 19,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 19,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 1292,
-            "title": "feat(automation): expose auto-disable and sandbox cleanup settings, default off",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/1292",
-            "mergedAt": "2026-09-29T14:10:39Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "212128834",
-      "login": "onatozmenn",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/212128834?u=1050266d9d7f1866fd489bb6a5d9d5a431ed0928&v=4",
-      "profileUrl": "https://github.com/onatozmenn",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 4277,
-        "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
-        "mergedAt": "2026-07-27T17:09:29Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 5345,
-        "title": "fix(sdk): keep conversations alive when MCP startup fails",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5345",
-        "mergedAt": "2026-09-29T11:42:13Z"
-      },
-      "totalMergedPrs": 11,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 11,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 4277,
-            "title": "Import SkillInfo from the SDK instead of redefining it in skills_router",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/4277",
-            "mergedAt": "2026-07-27T17:09:29Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 5345,
-            "title": "fix(sdk): keep conversations alive when MCP startup fails",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/5345",
-            "mergedAt": "2026-09-29T11:42:13Z"
           }
         }
       }
@@ -16535,7 +16535,7 @@
     {
       "githubUserId": "39046570",
       "login": "zzzzzhowie",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/39046570?u=1bc6a9c0e0c0e1d7772eca0a260633163254d7c8&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39046570?u=fa828d62a4762b5494ca6ead748176a679f7b4f0&v=4",
       "profileUrl": "https://github.com/zzzzzhowie",
       "firstMergedPr": {
         "repo": "OpenHands",
