@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-10-01T04:05:48.011Z",
+  "generatedAt": "2026-10-02T04:04:55.937Z",
   "organization": "OpenHands",
   "repoCount": 57,
   "scannedRepoCount": 57,
-  "totalMergedPrs": 2793,
+  "totalMergedPrs": 2794,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "extensions",
+        "number": 617,
+        "title": "feat(use-jev): introduce Jev with examples and upstream guidance",
+        "url": "https://github.com/OpenHands/extensions/pull/617",
+        "mergedAt": "2026-10-01T15:27:38Z"
+      }
+    },
     {
       "githubUserId": "294240611",
       "login": "dylan-openhands",
@@ -772,22 +785,52 @@
         "url": "https://github.com/OpenHands/automation/pull/460",
         "mergedAt": "2026-09-14T20:24:47Z"
       }
-    },
-    {
-      "githubUserId": "206087519",
-      "login": "aleks-stefanovic",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/206087519?u=bc4b0af732d90803891e865437c69f822b641403&v=4",
-      "profileUrl": "https://github.com/aleks-stefanovic",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 4516,
-        "title": "feat(workspace): add AgentSandboxWorkspace (Kubernetes, kubernetes-sigs/agent-sandbox)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/4516",
-        "mergedAt": "2026-09-14T19:38:07Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 2019,
+        "title": "docs: trim blustery wording in docs update prompt",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+        "mergedAt": "2026-02-12T01:10:56Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "extensions",
+        "number": 617,
+        "title": "feat(use-jev): introduce Jev with examples and upstream guidance",
+        "url": "https://github.com/OpenHands/extensions/pull/617",
+        "mergedAt": "2026-10-01T15:27:38Z"
+      },
+      "totalMergedPrs": 38,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 38,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 2019,
+            "title": "docs: trim blustery wording in docs update prompt",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+            "mergedAt": "2026-02-12T01:10:56Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "extensions",
+            "number": 617,
+            "title": "feat(use-jev): introduce Jev with examples and upstream guidance",
+            "url": "https://github.com/OpenHands/extensions/pull/617",
+            "mergedAt": "2026-10-01T15:27:38Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "294240611",
       "login": "dylan-openhands",
@@ -2282,49 +2325,6 @@
             "title": "fix(secret): resolve this server's own LookupSecret URLs in-process",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/5026",
             "mergedAt": "2026-09-22T00:58:35Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 2019,
-        "title": "docs: trim blustery wording in docs update prompt",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-        "mergedAt": "2026-02-12T01:10:56Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 17435,
-        "title": "refactor(shadcn-lint): agentic linting - first pass, map --oh-* tokens into the Tailwind theme",
-        "url": "https://github.com/OpenHands/OpenHands/pull/17435",
-        "mergedAt": "2026-09-21T14:21:49Z"
-      },
-      "totalMergedPrs": 37,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 37,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2019,
-            "title": "docs: trim blustery wording in docs update prompt",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-            "mergedAt": "2026-02-12T01:10:56Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 17435,
-            "title": "refactor(shadcn-lint): agentic linting - first pass, map --oh-* tokens into the Tailwind theme",
-            "url": "https://github.com/OpenHands/OpenHands/pull/17435",
-            "mergedAt": "2026-09-21T14:21:49Z"
           }
         }
       }
@@ -8543,7 +8543,7 @@
     {
       "githubUserId": "94194147",
       "login": "mkdev5",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/94194147?u=3b4bbb9d3c89aa96f757a956e3c4f6037167a9b1&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/94194147?u=f9d653e7b0c6cf1241e107e4f430be3ce1dfb4f8&v=4",
       "profileUrl": "https://github.com/mkdev5",
       "firstMergedPr": {
         "repo": "OpenHands",
