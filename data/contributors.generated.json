@@ -1,11 +1,193 @@
 {
-  "generatedAt": "2026-11-12T04:03:18.650Z",
+  "generatedAt": "2026-11-13T04:03:25.001Z",
   "organization": "OpenHands",
   "repoCount": 62,
   "scannedRepoCount": 62,
-  "totalMergedPrs": 3481,
+  "totalMergedPrs": 3495,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "pullRequest": {
+        "repo": "enterprise",
+        "number": 1373,
+        "title": "fix(deps): bump oauthlib to 4.0.1",
+        "url": "https://github.com/OpenHands/enterprise/pull/1373",
+        "mergedAt": "2026-11-12T22:35:55Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "automation",
+        "number": 664,
+        "title": "ci: absorb review artifact cleanup into release PRs",
+        "url": "https://github.com/OpenHands/automation/pull/664",
+        "mergedAt": "2026-11-12T15:23:23Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19670,
+        "title": "feat(verify-openhands): scenarios beyond the happy path, `map controls`, `browser timezone`",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19670",
+        "mergedAt": "2026-11-12T14:44:59Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19653,
+        "title": "docs(verify-openhands): map maintenance 2026-11-11",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19653",
+        "mergedAt": "2026-11-12T14:20:59Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6784,
+        "title": "fix(llm): preserve the caller's role and session during fallback",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6784",
+        "mergedAt": "2026-11-12T14:20:30Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6668,
+        "title": "fix(conversation): let run() resume a detector-STUCK conversation",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6668",
+        "mergedAt": "2026-11-12T13:25:54Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6676,
+        "title": "fix(task): key the task tool examples by the built-in agents' names",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6676",
+        "mergedAt": "2026-11-12T13:09:35Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6783,
+        "title": "fix(sdk): return a user reaction with the parent_id it is stored with",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6783",
+        "mergedAt": "2026-11-12T13:07:51Z"
+      }
+    },
+    {
+      "githubUserId": "46926852",
+      "login": "marcello-pichini",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/46926852?u=dae602e390eb144b4cd72a3d6e132d2380a3a99c&v=4",
+      "profileUrl": "https://github.com/marcello-pichini",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19382,
+        "title": "fix(chat): prevent delayed echoes from deleting newer drafts",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19382",
+        "mergedAt": "2026-11-12T11:54:24Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 5757,
+        "title": "fix(agent-server): close conversation sockets on delete and shutdown",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5757",
+        "mergedAt": "2026-11-12T11:48:46Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 5756,
+        "title": "fix(sdk): drop a since-disabled ambient plugin's skills and MCP servers on resume",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5756",
+        "mergedAt": "2026-11-12T10:55:20Z"
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19109,
+        "title": "ci: absorb review artifact cleanup into release PRs",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19109",
+        "mergedAt": "2026-11-12T10:46:07Z"
+      }
+    },
+    {
+      "githubUserId": "220909633",
+      "login": "analisaperlengkapan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/220909633?v=4",
+      "profileUrl": "https://github.com/analisaperlengkapan",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 5524,
+        "title": "fix(sdk): detect deepseek-v4.1-flash as vision-capable",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5524",
+        "mergedAt": "2026-11-12T10:14:02Z"
+      }
+    },
+    {
+      "githubUserId": "127122981",
+      "login": "xunjizhe",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/127122981?u=99a6d79e1536c6b65341773be1a53050c01de1f6&v=4",
+      "profileUrl": "https://github.com/xunjizhe",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 17194,
+        "title": "feat: improve Codex subscription authentication guidance",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17194",
+        "mergedAt": "2026-11-12T08:41:07Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -603,191 +785,95 @@
         "url": "https://github.com/OpenHands/OpenHands/pull/19534",
         "mergedAt": "2026-11-09T10:48:03Z"
       }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19533,
-        "title": "refactor(ui): name exact Canvas letter-spacing metrics",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19533",
-        "mergedAt": "2026-11-09T10:47:26Z"
-      }
-    },
-    {
-      "githubUserId": "198468199",
-      "login": "yftx293",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/198468199?u=ed3bf228f68752e853943b566ba3f0f9dd831c61&v=4",
-      "profileUrl": "https://github.com/yftx293",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6581,
-        "title": "fix(sdk): forget a removed LLM's metrics id",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6581",
-        "mergedAt": "2026-11-09T09:34:10Z"
-      }
-    },
-    {
-      "githubUserId": "198468199",
-      "login": "yftx293",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/198468199?u=ed3bf228f68752e853943b566ba3f0f9dd831c61&v=4",
-      "profileUrl": "https://github.com/yftx293",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6580,
-        "title": "fix(sdk): treat a JSON null hook reason as no reason",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6580",
-        "mergedAt": "2026-11-09T09:33:58Z"
-      }
-    },
-    {
-      "githubUserId": "198468199",
-      "login": "yftx293",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/198468199?u=ed3bf228f68752e853943b566ba3f0f9dd831c61&v=4",
-      "profileUrl": "https://github.com/yftx293",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6535,
-        "title": "fix(sdk): report a malformed hooks wrapper as a validation error",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6535",
-        "mergedAt": "2026-11-09T09:33:49Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 5750,
-        "title": "Add verify-sdk: an executable feature map of the in-process SDK",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5750",
-        "mergedAt": "2026-11-09T06:56:41Z"
-      }
-    },
-    {
-      "githubUserId": "316136531",
-      "login": "phatloi0010",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/316136531?v=4",
-      "profileUrl": "https://github.com/phatloi0010",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19228,
-        "title": "refactor(frontend): scope home route-at-start suppression to home composer and active backend (#19138)",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19228",
-        "mergedAt": "2026-11-08T23:53:39Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19529,
-        "title": "chore(lint): enforce clean palette and completed recipe boundaries",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19529",
-        "mergedAt": "2026-11-08T19:52:28Z"
-      }
-    },
-    {
-      "githubUserId": "198468199",
-      "login": "yftx293",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/198468199?u=ed3bf228f68752e853943b566ba3f0f9dd831c61&v=4",
-      "profileUrl": "https://github.com/yftx293",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6386,
-        "title": "fix(sdk): keep nested structure for nullable type lists",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6386",
-        "mergedAt": "2026-11-08T19:44:03Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19493,
-        "title": "refactor(ui): use spacing-scale aliases for rem layout limits",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19493",
-        "mergedAt": "2026-11-08T10:28:06Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19518,
-        "title": "fix(chat): blend wide-table fades into message bubbles",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19518",
-        "mergedAt": "2026-11-08T10:27:26Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19519,
-        "title": "docs(verify-openhands): map maintenance 2026-11-08",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19519",
-        "mergedAt": "2026-11-08T10:26:08Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19494,
-        "title": "feat(chat): show a resolved banner for project conversations",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19494",
-        "mergedAt": "2026-11-08T04:37:06Z"
-      }
-    },
-    {
-      "githubUserId": "229157273",
-      "login": "wangxuzhou666-arch",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/229157273?u=4164f36df6d2b490d25e70eda14529d810d69bec&v=4",
-      "profileUrl": "https://github.com/wangxuzhou666-arch",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6451,
-        "title": "fix(llm): preserve whitespace in multiline non-fncall parameter values",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6451",
-        "mergedAt": "2026-11-07T22:25:13Z"
-      }
-    },
-    {
-      "githubUserId": "198468199",
-      "login": "yftx293",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/198468199?u=ed3bf228f68752e853943b566ba3f0f9dd831c61&v=4",
-      "profileUrl": "https://github.com/yftx293",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6429,
-        "title": "fix(tools): refuse str_replace when old_str matches at overlapping offsets",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6429",
-        "mergedAt": "2026-11-07T22:05:26Z"
-      }
     }
   ],
   "contributors": [
+    {
+      "githubUserId": "294240611",
+      "login": "dylan-openhands",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
+      "profileUrl": "https://github.com/dylan-openhands",
+      "firstMergedPr": {
+        "repo": "OpenHands-Cloud",
+        "number": 833,
+        "title": "feat: Add replicated vendor portal links in release workflows",
+        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+        "mergedAt": "2026-07-11T00:10:41Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "enterprise",
+        "number": 1373,
+        "title": "fix(deps): bump oauthlib to 4.0.1",
+        "url": "https://github.com/OpenHands/enterprise/pull/1373",
+        "mergedAt": "2026-11-12T22:35:55Z"
+      },
+      "totalMergedPrs": 51,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 51,
+          "firstMergedPr": {
+            "repo": "OpenHands-Cloud",
+            "number": 833,
+            "title": "feat: Add replicated vendor portal links in release workflows",
+            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
+            "mergedAt": "2026-07-11T00:10:41Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "enterprise",
+            "number": 1373,
+            "title": "fix(deps): bump oauthlib to 4.0.1",
+            "url": "https://github.com/OpenHands/enterprise/pull/1373",
+            "mergedAt": "2026-11-12T22:35:55Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "255025612",
+      "login": "smolpaws",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
+      "profileUrl": "https://github.com/smolpaws",
+      "firstMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 2019,
+        "title": "docs: trim blustery wording in docs update prompt",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+        "mergedAt": "2026-02-12T01:10:56Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "automation",
+        "number": 664,
+        "title": "ci: absorb review artifact cleanup into release PRs",
+        "url": "https://github.com/OpenHands/automation/pull/664",
+        "mergedAt": "2026-11-12T15:23:23Z"
+      },
+      "totalMergedPrs": 94,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 94,
+          "firstMergedPr": {
+            "repo": "software-agent-sdk",
+            "number": 2019,
+            "title": "docs: trim blustery wording in docs update prompt",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
+            "mergedAt": "2026-02-12T01:10:56Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "automation",
+            "number": 664,
+            "title": "ci: absorb review artifact cleanup into release PRs",
+            "url": "https://github.com/OpenHands/automation/pull/664",
+            "mergedAt": "2026-11-12T15:23:23Z"
+          }
+        }
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -801,13 +887,13 @@
         "mergedAt": "2024-03-27T03:03:23Z"
       },
       "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 6609,
-        "title": "feat(agent-server): Conversation reactions, the first experimental feature",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6609",
-        "mergedAt": "2026-11-12T01:01:23Z"
+        "repo": "OpenHands",
+        "number": 19670,
+        "title": "feat(verify-openhands): scenarios beyond the happy path, `map controls`, `browser timezone`",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19670",
+        "mergedAt": "2026-11-12T14:44:59Z"
       },
-      "totalMergedPrs": 1214,
+      "totalMergedPrs": 1222,
       "contributionYears": [
         "2026",
         "2025",
@@ -849,7 +935,7 @@
           }
         },
         "2026": {
-          "totalMergedPrs": 776,
+          "totalMergedPrs": 784,
           "firstMergedPr": {
             "repo": "OpenHands",
             "number": 12234,
@@ -858,11 +944,140 @@
             "mergedAt": "2026-01-01T18:28:05Z"
           },
           "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 19670,
+            "title": "feat(verify-openhands): scenarios beyond the happy path, `map controls`, `browser timezone`",
+            "url": "https://github.com/OpenHands/OpenHands/pull/19670",
+            "mergedAt": "2026-11-12T14:44:59Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "46926852",
+      "login": "marcello-pichini",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/46926852?u=dae602e390eb144b4cd72a3d6e132d2380a3a99c&v=4",
+      "profileUrl": "https://github.com/marcello-pichini",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 19382,
+        "title": "fix(chat): prevent delayed echoes from deleting newer drafts",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19382",
+        "mergedAt": "2026-11-12T11:54:24Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 19382,
+        "title": "fix(chat): prevent delayed echoes from deleting newer drafts",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19382",
+        "mergedAt": "2026-11-12T11:54:24Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 19382,
+            "title": "fix(chat): prevent delayed echoes from deleting newer drafts",
+            "url": "https://github.com/OpenHands/OpenHands/pull/19382",
+            "mergedAt": "2026-11-12T11:54:24Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 19382,
+            "title": "fix(chat): prevent delayed echoes from deleting newer drafts",
+            "url": "https://github.com/OpenHands/OpenHands/pull/19382",
+            "mergedAt": "2026-11-12T11:54:24Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "220909633",
+      "login": "analisaperlengkapan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/220909633?v=4",
+      "profileUrl": "https://github.com/analisaperlengkapan",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 18067,
+        "title": "feat(i18n): add Bahasa Indonesia (id) locale",
+        "url": "https://github.com/OpenHands/OpenHands/pull/18067",
+        "mergedAt": "2026-10-13T01:56:38Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 5524,
+        "title": "fix(sdk): detect deepseek-v4.1-flash as vision-capable",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5524",
+        "mergedAt": "2026-11-12T10:14:02Z"
+      },
+      "totalMergedPrs": 3,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 3,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 18067,
+            "title": "feat(i18n): add Bahasa Indonesia (id) locale",
+            "url": "https://github.com/OpenHands/OpenHands/pull/18067",
+            "mergedAt": "2026-10-13T01:56:38Z"
+          },
+          "mostRecentMergedPr": {
             "repo": "software-agent-sdk",
-            "number": 6609,
-            "title": "feat(agent-server): Conversation reactions, the first experimental feature",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/6609",
-            "mergedAt": "2026-11-12T01:01:23Z"
+            "number": 5524,
+            "title": "fix(sdk): detect deepseek-v4.1-flash as vision-capable",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/5524",
+            "mergedAt": "2026-11-12T10:14:02Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "127122981",
+      "login": "xunjizhe",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/127122981?u=99a6d79e1536c6b65341773be1a53050c01de1f6&v=4",
+      "profileUrl": "https://github.com/xunjizhe",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 17194,
+        "title": "feat: improve Codex subscription authentication guidance",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17194",
+        "mergedAt": "2026-11-12T08:41:07Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 17194,
+        "title": "feat: improve Codex subscription authentication guidance",
+        "url": "https://github.com/OpenHands/OpenHands/pull/17194",
+        "mergedAt": "2026-11-12T08:41:07Z"
+      },
+      "totalMergedPrs": 1,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 1,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 17194,
+            "title": "feat: improve Codex subscription authentication guidance",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17194",
+            "mergedAt": "2026-11-12T08:41:07Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 17194,
+            "title": "feat: improve Codex subscription authentication guidance",
+            "url": "https://github.com/OpenHands/OpenHands/pull/17194",
+            "mergedAt": "2026-11-12T08:41:07Z"
           }
         }
       }
@@ -992,92 +1207,6 @@
             "title": "fix(browser): prefer Playwright Chromium on Windows",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/4502",
             "mergedAt": "2026-11-10T23:11:07Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "294240611",
-      "login": "dylan-openhands",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/294240611?u=91855578897f10370e0aa9613111450dd66daeaf&v=4",
-      "profileUrl": "https://github.com/dylan-openhands",
-      "firstMergedPr": {
-        "repo": "OpenHands-Cloud",
-        "number": 833,
-        "title": "feat: Add replicated vendor portal links in release workflows",
-        "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-        "mergedAt": "2026-07-11T00:10:41Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "enterprise",
-        "number": 1248,
-        "title": "fix(rate-limit): use redis-py for the limits backend and drop coredis",
-        "url": "https://github.com/OpenHands/enterprise/pull/1248",
-        "mergedAt": "2026-11-10T14:26:51Z"
-      },
-      "totalMergedPrs": 50,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 50,
-          "firstMergedPr": {
-            "repo": "OpenHands-Cloud",
-            "number": 833,
-            "title": "feat: Add replicated vendor portal links in release workflows",
-            "url": "https://github.com/OpenHands/OpenHands-Cloud/pull/833",
-            "mergedAt": "2026-07-11T00:10:41Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "enterprise",
-            "number": 1248,
-            "title": "fix(rate-limit): use redis-py for the limits backend and drop coredis",
-            "url": "https://github.com/OpenHands/enterprise/pull/1248",
-            "mergedAt": "2026-11-10T14:26:51Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "firstMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 2019,
-        "title": "docs: trim blustery wording in docs update prompt",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-        "mergedAt": "2026-02-12T01:10:56Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 19607,
-        "title": "test(automations): complete dashboard cloud config fixture",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19607",
-        "mergedAt": "2026-11-10T13:48:06Z"
-      },
-      "totalMergedPrs": 92,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 92,
-          "firstMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 2019,
-            "title": "docs: trim blustery wording in docs update prompt",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/2019",
-            "mergedAt": "2026-02-12T01:10:56Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 19607,
-            "title": "test(automations): complete dashboard cloud config fixture",
-            "url": "https://github.com/OpenHands/OpenHands/pull/19607",
-            "mergedAt": "2026-11-10T13:48:06Z"
           }
         }
       }
@@ -2644,49 +2773,6 @@
             "title": "fix(security): ship Node.js fixed for CVE-2026-111497 (Brotli) in agent-server images",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/6200",
             "mergedAt": "2026-10-25T00:35:14Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "220909633",
-      "login": "analisaperlengkapan",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/220909633?v=4",
-      "profileUrl": "https://github.com/analisaperlengkapan",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 18067,
-        "title": "feat(i18n): add Bahasa Indonesia (id) locale",
-        "url": "https://github.com/OpenHands/OpenHands/pull/18067",
-        "mergedAt": "2026-10-13T01:56:38Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 18680,
-        "title": "fix(chat): keep drag-selection inside the message feed",
-        "url": "https://github.com/OpenHands/OpenHands/pull/18680",
-        "mergedAt": "2026-10-23T17:18:59Z"
-      },
-      "totalMergedPrs": 2,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 2,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 18067,
-            "title": "feat(i18n): add Bahasa Indonesia (id) locale",
-            "url": "https://github.com/OpenHands/OpenHands/pull/18067",
-            "mergedAt": "2026-10-13T01:56:38Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 18680,
-            "title": "fix(chat): keep drag-selection inside the message feed",
-            "url": "https://github.com/OpenHands/OpenHands/pull/18680",
-            "mergedAt": "2026-10-23T17:18:59Z"
           }
         }
       }
@@ -7539,7 +7625,7 @@
     {
       "githubUserId": "202552852",
       "login": "ixchio",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=03bc46f9331557f8e48c2facf294fc8d67a4baf0&v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202552852?u=826c56d54e066b211455a62f306cd9135a6020d0&v=4",
       "profileUrl": "https://github.com/ixchio",
       "firstMergedPr": {
         "repo": "software-agent-sdk",
