@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-11-17T04:03:17.061Z",
+  "generatedAt": "2026-11-18T04:03:25.473Z",
   "organization": "OpenHands",
   "repoCount": 62,
   "scannedRepoCount": 62,
-  "totalMergedPrs": 3540,
+  "totalMergedPrs": 3544,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19817,
+        "title": "fix(filters): close EnumFilterDropdown menus on Escape",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19817",
+        "mergedAt": "2026-11-17T16:23:19Z"
+      }
+    },
+    {
+      "githubUserId": "202828230",
+      "login": "Fieldnote-Echo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=96586dcc2e0ffe56c1ff9872635ecf19a32e43de&v=4",
+      "profileUrl": "https://github.com/Fieldnote-Echo",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6547,
+        "title": "Prevent automatic retry after gateway timeout",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6547",
+        "mergedAt": "2026-11-17T11:57:49Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6928,
+        "title": "fix(agent-server): answer 400 when an added MCP server fails to start",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6928",
+        "mergedAt": "2026-11-17T11:12:55Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19818,
+        "title": "docs(verify-openhands): map maintenance 2026-11-17",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19818",
+        "mergedAt": "2026-11-17T10:38:17Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -733,58 +785,6 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/5756",
         "mergedAt": "2026-11-12T10:55:20Z"
       }
-    },
-    {
-      "githubUserId": "255025612",
-      "login": "smolpaws",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/255025612?u=c1984947859aac74d2e2485913b4a85aad76dd97&v=4",
-      "profileUrl": "https://github.com/smolpaws",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19109,
-        "title": "ci: absorb review artifact cleanup into release PRs",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19109",
-        "mergedAt": "2026-11-12T10:46:07Z"
-      }
-    },
-    {
-      "githubUserId": "220909633",
-      "login": "analisaperlengkapan",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/220909633?v=4",
-      "profileUrl": "https://github.com/analisaperlengkapan",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 5524,
-        "title": "fix(sdk): detect deepseek-v4.1-flash as vision-capable",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5524",
-        "mergedAt": "2026-11-12T10:14:02Z"
-      }
-    },
-    {
-      "githubUserId": "127122981",
-      "login": "xunjizhe",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/127122981?u=99a6d79e1536c6b65341773be1a53050c01de1f6&v=4",
-      "profileUrl": "https://github.com/xunjizhe",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 17194,
-        "title": "feat: improve Codex subscription authentication guidance",
-        "url": "https://github.com/OpenHands/OpenHands/pull/17194",
-        "mergedAt": "2026-11-12T08:41:07Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6609,
-        "title": "feat(agent-server): Conversation reactions, the first experimental feature",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6609",
-        "mergedAt": "2026-11-12T01:01:23Z"
-      }
     }
   ],
   "contributors": [
@@ -801,13 +801,13 @@
         "mergedAt": "2024-03-27T03:03:23Z"
       },
       "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 6910,
-        "title": "refactor(agent-server): typed ServiceInactive instead of the \"inactive_service\" string",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6910",
-        "mergedAt": "2026-11-16T23:23:46Z"
+        "repo": "OpenHands",
+        "number": 19817,
+        "title": "fix(filters): close EnumFilterDropdown menus on Escape",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19817",
+        "mergedAt": "2026-11-17T16:23:19Z"
       },
-      "totalMergedPrs": 1251,
+      "totalMergedPrs": 1254,
       "contributionYears": [
         "2026",
         "2025",
@@ -849,7 +849,7 @@
           }
         },
         "2026": {
-          "totalMergedPrs": 813,
+          "totalMergedPrs": 816,
           "firstMergedPr": {
             "repo": "OpenHands",
             "number": 12234,
@@ -858,11 +858,54 @@
             "mergedAt": "2026-01-01T18:28:05Z"
           },
           "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 19817,
+            "title": "fix(filters): close EnumFilterDropdown menus on Escape",
+            "url": "https://github.com/OpenHands/OpenHands/pull/19817",
+            "mergedAt": "2026-11-17T16:23:19Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "202828230",
+      "login": "Fieldnote-Echo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=96586dcc2e0ffe56c1ff9872635ecf19a32e43de&v=4",
+      "profileUrl": "https://github.com/Fieldnote-Echo",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 12870,
+        "title": "fix(security): extend action type coverage in security check",
+        "url": "https://github.com/OpenHands/OpenHands/pull/12870",
+        "mergedAt": "2026-02-28T04:44:29Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "software-agent-sdk",
+        "number": 6547,
+        "title": "Prevent automatic retry after gateway timeout",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6547",
+        "mergedAt": "2026-11-17T11:57:49Z"
+      },
+      "totalMergedPrs": 26,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 26,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 12870,
+            "title": "fix(security): extend action type coverage in security check",
+            "url": "https://github.com/OpenHands/OpenHands/pull/12870",
+            "mergedAt": "2026-02-28T04:44:29Z"
+          },
+          "mostRecentMergedPr": {
             "repo": "software-agent-sdk",
-            "number": 6910,
-            "title": "refactor(agent-server): typed ServiceInactive instead of the \"inactive_service\" string",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/6910",
-            "mergedAt": "2026-11-16T23:23:46Z"
+            "number": 6547,
+            "title": "Prevent automatic retry after gateway timeout",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/6547",
+            "mergedAt": "2026-11-17T11:57:49Z"
           }
         }
       }
@@ -1379,49 +1422,6 @@
             "title": "fix(agent-server): support public MCP OAuth callbacks",
             "url": "https://github.com/OpenHands/software-agent-sdk/pull/6221",
             "mergedAt": "2026-11-15T03:51:59Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "202828230",
-      "login": "Fieldnote-Echo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/202828230?u=96586dcc2e0ffe56c1ff9872635ecf19a32e43de&v=4",
-      "profileUrl": "https://github.com/Fieldnote-Echo",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 12870,
-        "title": "fix(security): extend action type coverage in security check",
-        "url": "https://github.com/OpenHands/OpenHands/pull/12870",
-        "mergedAt": "2026-02-28T04:44:29Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "software-agent-sdk",
-        "number": 6549,
-        "title": "Keep direct events out of gateway replies",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6549",
-        "mergedAt": "2026-11-13T20:01:56Z"
-      },
-      "totalMergedPrs": 25,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 25,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 12870,
-            "title": "fix(security): extend action type coverage in security check",
-            "url": "https://github.com/OpenHands/OpenHands/pull/12870",
-            "mergedAt": "2026-02-28T04:44:29Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "software-agent-sdk",
-            "number": 6549,
-            "title": "Keep direct events out of gateway replies",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/6549",
-            "mergedAt": "2026-11-13T20:01:56Z"
           }
         }
       }
