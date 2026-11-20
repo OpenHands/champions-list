@@ -1,11 +1,193 @@
 {
-  "generatedAt": "2026-11-19T04:03:25.512Z",
+  "generatedAt": "2026-11-20T04:03:21.666Z",
   "organization": "OpenHands",
   "repoCount": 62,
   "scannedRepoCount": 62,
-  "totalMergedPrs": 3561,
+  "totalMergedPrs": 3575,
   "skippedRepos": [],
   "recentMergedPrs": [
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6678,
+        "title": "fix(llm): classify orphan tool messages as a malformed history",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6678",
+        "mergedAt": "2026-11-20T01:16:29Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6786,
+        "title": "fix(browser): return from close_tab once the tab list no longer shows it",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6786",
+        "mergedAt": "2026-11-19T23:41:46Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 7006,
+        "title": "docs(verify): map maintenance 2026-11-19",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/7006",
+        "mergedAt": "2026-11-19T23:41:02Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 7015,
+        "title": "fix(sdk): keep openhands-sdk importable on a fresh litellm install",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/7015",
+        "mergedAt": "2026-11-19T23:40:30Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19882,
+        "title": "docs(verify-openhands): map Settings → Experimental and reactions as F30",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19882",
+        "mergedAt": "2026-11-19T23:16:48Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19794,
+        "title": "feat(chat): show the agent's message edits (experimental)",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19794",
+        "mergedAt": "2026-11-19T23:13:05Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19881,
+        "title": "fix(settings): list Experimental last, after Secrets",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19881",
+        "mergedAt": "2026-11-19T22:03:35Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19789,
+        "title": "feat(chat): render experimental decision cards",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19789",
+        "mergedAt": "2026-11-19T21:53:37Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19503,
+        "title": "feat(settings): Features page for experimental user feature flags, with Conversation reactions",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19503",
+        "mergedAt": "2026-11-19T21:19:36Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 7012,
+        "title": "Projects: sender lines, not headers",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/7012",
+        "mergedAt": "2026-11-19T18:52:21Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 7007,
+        "title": "refactor(agent-server): typed \"already running\" errors instead of string matching",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/7007",
+        "mergedAt": "2026-11-19T18:49:52Z"
+      }
+    },
+    {
+      "githubUserId": "177207606",
+      "login": "SaltGardenia",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/177207606?u=f95ffed971ba779783c692587004d4fe3532b9cd&v=4",
+      "profileUrl": "https://github.com/SaltGardenia",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19769,
+        "title": "feat(automations): create automations enabled from the setup wizard",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19769",
+        "mergedAt": "2026-11-19T16:23:44Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "software-agent-sdk",
+        "number": 6984,
+        "title": "Verify conversation search at scale with verify-agent-server",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6984",
+        "mergedAt": "2026-11-19T10:23:10Z"
+      }
+    },
+    {
+      "githubUserId": "6080905",
+      "login": "enyst",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
+      "profileUrl": "https://github.com/enyst",
+      "pullRequest": {
+        "repo": "OpenHands",
+        "number": 19873,
+        "title": "docs(verify-openhands): map maintenance 2026-11-19",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19873",
+        "mergedAt": "2026-11-19T10:14:28Z"
+      }
+    },
     {
       "githubUserId": "6080905",
       "login": "enyst",
@@ -603,188 +785,6 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/pull/6178",
         "mergedAt": "2026-11-15T05:03:16Z"
       }
-    },
-    {
-      "githubUserId": "146090222",
-      "login": "Userrober",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/146090222?v=4",
-      "profileUrl": "https://github.com/Userrober",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6760,
-        "title": "fix(agent-server): SameSite=Lax for workspace cookie on plain HTTP",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6760",
-        "mergedAt": "2026-11-15T05:02:18Z"
-      }
-    },
-    {
-      "githubUserId": "87996366",
-      "login": "Guts1005",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/87996366?v=4",
-      "profileUrl": "https://github.com/Guts1005",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6468,
-        "title": "fix(terminal): terminate Windows process before closing pipes to prevent deadlock",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6468",
-        "mergedAt": "2026-11-15T04:30:17Z"
-      }
-    },
-    {
-      "githubUserId": "238638168",
-      "login": "2Zest",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/238638168?u=6b5b8a8dd9601b82d8df118afedffabf814331c7&v=4",
-      "profileUrl": "https://github.com/2Zest",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6221,
-        "title": "fix(agent-server): support public MCP OAuth callbacks",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6221",
-        "mergedAt": "2026-11-15T03:51:59Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6847,
-        "title": "docs(verify): map maintenance 2026-11-14",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6847",
-        "mergedAt": "2026-11-14T22:30:06Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6843,
-        "title": "fix(agent-server): answer a gateway turn on a paused conversation with its own run",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6843",
-        "mergedAt": "2026-11-14T22:26:44Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6845,
-        "title": "fix(sdk): save ask_agent usage with the conversation state",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6845",
-        "mergedAt": "2026-11-14T22:25:21Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6839,
-        "title": "fix(sdk): keep the signature on thinking blocks masking did not change",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6839",
-        "mergedAt": "2026-11-14T22:23:53Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6841,
-        "title": "fix(llm): report DeepSeek image loss as a bad request, without retries",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6841",
-        "mergedAt": "2026-11-14T22:21:16Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 19728,
-        "title": "refactor(ui): name the catalog remove icon stroke",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19728",
-        "mergedAt": "2026-11-14T06:18:23Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 18366,
-        "title": "feat(hooks): name the workspace and user hooks files in the Available Hooks dialog",
-        "url": "https://github.com/OpenHands/OpenHands/pull/18366",
-        "mergedAt": "2026-11-14T04:23:09Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 6753,
-        "title": "docs(verify): map maintenance 2026-11-12",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6753",
-        "mergedAt": "2026-11-14T04:03:34Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "software-agent-sdk",
-        "number": 5776,
-        "title": "fix(sdk): persist state changes made while a step waits on the model",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/5776",
-        "mergedAt": "2026-11-13T21:15:58Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 18540,
-        "title": "fix(theme): keep confirmation modal descriptions readable",
-        "url": "https://github.com/OpenHands/OpenHands/pull/18540",
-        "mergedAt": "2026-11-13T20:53:51Z"
-      }
-    },
-    {
-      "githubUserId": "6080905",
-      "login": "enyst",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/6080905?u=c4daa7e0231a2998b9b17a062250d6dcfa86ab20&v=4",
-      "profileUrl": "https://github.com/enyst",
-      "pullRequest": {
-        "repo": "OpenHands",
-        "number": 18367,
-        "title": "fix(conversations): delete all pages with one captured backend scope",
-        "url": "https://github.com/OpenHands/OpenHands/pull/18367",
-        "mergedAt": "2026-11-13T20:48:28Z"
-      }
     }
   ],
   "contributors": [
@@ -802,12 +802,12 @@
       },
       "mostRecentMergedPr": {
         "repo": "software-agent-sdk",
-        "number": 6981,
-        "title": "Put the AI disclosure first in external posts",
-        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6981",
-        "mergedAt": "2026-11-19T01:00:00Z"
+        "number": 6678,
+        "title": "fix(llm): classify orphan tool messages as a malformed history",
+        "url": "https://github.com/OpenHands/software-agent-sdk/pull/6678",
+        "mergedAt": "2026-11-20T01:16:29Z"
       },
-      "totalMergedPrs": 1267,
+      "totalMergedPrs": 1280,
       "contributionYears": [
         "2026",
         "2025",
@@ -849,7 +849,7 @@
           }
         },
         "2026": {
-          "totalMergedPrs": 829,
+          "totalMergedPrs": 842,
           "firstMergedPr": {
             "repo": "OpenHands",
             "number": 12234,
@@ -859,10 +859,53 @@
           },
           "mostRecentMergedPr": {
             "repo": "software-agent-sdk",
-            "number": 6981,
-            "title": "Put the AI disclosure first in external posts",
-            "url": "https://github.com/OpenHands/software-agent-sdk/pull/6981",
-            "mergedAt": "2026-11-19T01:00:00Z"
+            "number": 6678,
+            "title": "fix(llm): classify orphan tool messages as a malformed history",
+            "url": "https://github.com/OpenHands/software-agent-sdk/pull/6678",
+            "mergedAt": "2026-11-20T01:16:29Z"
+          }
+        }
+      }
+    },
+    {
+      "githubUserId": "177207606",
+      "login": "SaltGardenia",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/177207606?u=f95ffed971ba779783c692587004d4fe3532b9cd&v=4",
+      "profileUrl": "https://github.com/SaltGardenia",
+      "firstMergedPr": {
+        "repo": "OpenHands",
+        "number": 19688,
+        "title": "fix(modals): let an open combobox listbox take Escape before the dialog closes",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19688",
+        "mergedAt": "2026-11-16T11:13:45Z"
+      },
+      "mostRecentMergedPr": {
+        "repo": "OpenHands",
+        "number": 19769,
+        "title": "feat(automations): create automations enabled from the setup wizard",
+        "url": "https://github.com/OpenHands/OpenHands/pull/19769",
+        "mergedAt": "2026-11-19T16:23:44Z"
+      },
+      "totalMergedPrs": 2,
+      "contributionYears": [
+        "2026"
+      ],
+      "yearly": {
+        "2026": {
+          "totalMergedPrs": 2,
+          "firstMergedPr": {
+            "repo": "OpenHands",
+            "number": 19688,
+            "title": "fix(modals): let an open combobox listbox take Escape before the dialog closes",
+            "url": "https://github.com/OpenHands/OpenHands/pull/19688",
+            "mergedAt": "2026-11-16T11:13:45Z"
+          },
+          "mostRecentMergedPr": {
+            "repo": "OpenHands",
+            "number": 19769,
+            "title": "feat(automations): create automations enabled from the setup wizard",
+            "url": "https://github.com/OpenHands/OpenHands/pull/19769",
+            "mergedAt": "2026-11-19T16:23:44Z"
           }
         }
       }
@@ -1250,49 +1293,6 @@
             "title": "fix: keep mobile conversation navigation visible",
             "url": "https://github.com/OpenHands/OpenHands/pull/19711",
             "mergedAt": "2026-11-16T11:27:07Z"
-          }
-        }
-      }
-    },
-    {
-      "githubUserId": "177207606",
-      "login": "SaltGardenia",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/177207606?u=f95ffed971ba779783c692587004d4fe3532b9cd&v=4",
-      "profileUrl": "https://github.com/SaltGardenia",
-      "firstMergedPr": {
-        "repo": "OpenHands",
-        "number": 19688,
-        "title": "fix(modals): let an open combobox listbox take Escape before the dialog closes",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19688",
-        "mergedAt": "2026-11-16T11:13:45Z"
-      },
-      "mostRecentMergedPr": {
-        "repo": "OpenHands",
-        "number": 19688,
-        "title": "fix(modals): let an open combobox listbox take Escape before the dialog closes",
-        "url": "https://github.com/OpenHands/OpenHands/pull/19688",
-        "mergedAt": "2026-11-16T11:13:45Z"
-      },
-      "totalMergedPrs": 1,
-      "contributionYears": [
-        "2026"
-      ],
-      "yearly": {
-        "2026": {
-          "totalMergedPrs": 1,
-          "firstMergedPr": {
-            "repo": "OpenHands",
-            "number": 19688,
-            "title": "fix(modals): let an open combobox listbox take Escape before the dialog closes",
-            "url": "https://github.com/OpenHands/OpenHands/pull/19688",
-            "mergedAt": "2026-11-16T11:13:45Z"
-          },
-          "mostRecentMergedPr": {
-            "repo": "OpenHands",
-            "number": 19688,
-            "title": "fix(modals): let an open combobox listbox take Escape before the dialog closes",
-            "url": "https://github.com/OpenHands/OpenHands/pull/19688",
-            "mergedAt": "2026-11-16T11:13:45Z"
           }
         }
       }
