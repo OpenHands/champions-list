@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-27T04:27:13.975Z",
-  "windowStart": "2025-11-27T04:05:04.953Z",
-  "windowEnd": "2026-11-27T04:05:04.953Z",
+  "generatedAt": "2026-11-28T04:25:50.161Z",
+  "windowStart": "2025-11-28T04:04:47.792Z",
+  "windowEnd": "2026-11-28T04:04:47.792Z",
   "organization": "OpenHands",
   "repoCount": 62,
   "scannedRepoCount": 62,
-  "totalIssuesOpened": 2439,
-  "totalIssueComments": 4119,
+  "totalIssuesOpened": 2444,
+  "totalIssueComments": 4114,
   "skippedRepos": [],
   "repos": [
     {
@@ -160,7 +160,7 @@
       "repo": "extensions",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 102,
+      "issuesOpenedCount": 103,
       "issueCommentsCount": 58
     },
     {
@@ -244,8 +244,8 @@
       "repo": "OpenHands",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 1234,
-      "issueCommentsCount": 2150
+      "issuesOpenedCount": 1235,
+      "issueCommentsCount": 2145
     },
     {
       "repo": "openhands-aci",
@@ -384,7 +384,7 @@
       "repo": "software-agent-sdk",
       "isArchived": false,
       "isFork": false,
-      "issuesOpenedCount": 880,
+      "issuesOpenedCount": 883,
       "issueCommentsCount": 1399
     },
     {
@@ -445,6 +445,129 @@
     }
   ],
   "recentActivities": [
+    {
+      "type": "issueOpened",
+      "githubUserId": "53290691",
+      "login": "kobago",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/53290691?v=4",
+      "profileUrl": "https://github.com/kobago",
+      "createdAt": "2026-11-28T03:04:48Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 7183,
+        "title": "[Bug]: Hyphenated deepseek-v4-1-flash ids are misclassified as text-only and reject images",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7183",
+        "createdAt": "2026-11-28T03:04:48Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "161206657",
+      "login": "Jaisev-Sachdev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/161206657?v=4",
+      "profileUrl": "https://github.com/Jaisev-Sachdev",
+      "createdAt": "2026-11-28T02:14:21Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 7172,
+        "title": "[Feature]: Warn when an Anthropic model is not matched for prompt caching (with cache hit rate data across 10 releases)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7172",
+        "createdAt": "2026-11-27T12:03:15Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/7172#issuecomment-7232227080"
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "175494844",
+      "login": "vibewrk",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/175494844?v=4",
+      "profileUrl": "https://github.com/vibewrk",
+      "createdAt": "2026-11-27T19:31:49Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 5480,
+        "title": "[Feature]: Let ACP clients answer permission requests instead of always selecting the first option",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/5480",
+        "createdAt": "2026-10-03T17:26:47Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/5480#issuecomment-7226617585"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "181562451",
+      "login": "kote028",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/181562451?v=4",
+      "profileUrl": "https://github.com/kote028",
+      "createdAt": "2026-11-27T12:25:47Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 7174,
+        "title": "Remote workspace can miss timeouts enforced by the agent server",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7174",
+        "createdAt": "2026-11-27T12:25:47Z"
+      }
+    },
+    {
+      "type": "issueComment",
+      "githubUserId": "181562451",
+      "login": "kote028",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/181562451?v=4",
+      "profileUrl": "https://github.com/kote028",
+      "createdAt": "2026-11-27T12:19:52Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 20128,
+        "title": "OpenHands Cloud automation fails to clone large GitHub repositories without providing a clear error message",
+        "url": "https://github.com/OpenHands/OpenHands/issues/20128",
+        "createdAt": "2026-11-27T10:08:55Z"
+      },
+      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/20128#issuecomment-7218114354"
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "94706243",
+      "login": "Musti7even",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/94706243?v=4",
+      "profileUrl": "https://github.com/Musti7even",
+      "createdAt": "2026-11-27T12:05:14Z",
+      "issue": {
+        "repo": "extensions",
+        "number": 1003,
+        "title": "Add Mobilebox's hosted MCP server (cloud Android phones and iOS simulators) to the integration catalog",
+        "url": "https://github.com/OpenHands/extensions/issues/1003",
+        "createdAt": "2026-11-27T12:05:14Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "161206657",
+      "login": "Jaisev-Sachdev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/161206657?v=4",
+      "profileUrl": "https://github.com/Jaisev-Sachdev",
+      "createdAt": "2026-11-27T12:03:15Z",
+      "issue": {
+        "repo": "software-agent-sdk",
+        "number": 7172,
+        "title": "[Feature]: Warn when an Anthropic model is not matched for prompt caching (with cache hit rate data across 10 releases)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7172",
+        "createdAt": "2026-11-27T12:03:15Z"
+      }
+    },
+    {
+      "type": "issueOpened",
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "createdAt": "2026-11-27T10:08:55Z",
+      "issue": {
+        "repo": "OpenHands",
+        "number": 20128,
+        "title": "OpenHands Cloud automation fails to clone large GitHub repositories without providing a clear error message",
+        "url": "https://github.com/OpenHands/OpenHands/issues/20128",
+        "createdAt": "2026-11-27T10:08:55Z"
+      }
+    },
     {
       "type": "issueComment",
       "githubUserId": "189540702",
@@ -1248,150 +1371,201 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/issues/7120",
         "createdAt": "2026-11-24T19:39:41Z"
       }
-    },
-    {
-      "type": "issueOpened",
-      "githubUserId": "132591575",
-      "login": "luciano665",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/132591575?v=4",
-      "profileUrl": "https://github.com/luciano665",
-      "createdAt": "2026-11-24T17:48:18Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 7118,
-        "title": "[Bug]: zai/ models lose max_output_tokens (or every call fails with drop_params=False)",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7118",
-        "createdAt": "2026-11-24T17:48:18Z"
-      }
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "274829133",
-      "login": "abisheakp197",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/274829133?v=4",
-      "profileUrl": "https://github.com/abisheakp197",
-      "createdAt": "2026-11-24T17:45:18Z",
-      "issue": {
-        "repo": "extensions",
-        "number": 988,
-        "title": "Add NTI Guard plugin for post-quantum attestation",
-        "url": "https://github.com/OpenHands/extensions/issues/988",
-        "createdAt": "2026-11-24T13:50:02Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/extensions/issues/988#issuecomment-7139656466"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "240666948",
-      "login": "k39139215-gif",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/240666948?v=4",
-      "profileUrl": "https://github.com/k39139215-gif",
-      "createdAt": "2026-11-24T16:13:58Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 19874,
-        "title": "[Bug]: MCP error scrubbing does not redact OpenAI, Anthropic, Gemini, or Hugging Face API keys",
-        "url": "https://github.com/OpenHands/OpenHands/issues/19874",
-        "createdAt": "2026-11-19T13:47:43Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/19874#issuecomment-7137330297"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "41635121",
-      "login": "495696116",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/41635121?v=4",
-      "profileUrl": "https://github.com/495696116",
-      "createdAt": "2026-11-24T16:12:15Z",
-      "issue": {
-        "repo": "software-agent-sdk",
-        "number": 7107,
-        "title": "[Bug]: An explicit plugin that cannot be fetched makes the first message return a raw 500, and the conversation cannot be fixed",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7107",
-        "createdAt": "2026-11-24T15:01:03Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/7107#issuecomment-7137283988"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "274829133",
-      "login": "abisheakp197",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/274829133?v=4",
-      "profileUrl": "https://github.com/abisheakp197",
-      "createdAt": "2026-11-24T15:27:37Z",
-      "issue": {
-        "repo": "extensions",
-        "number": 988,
-        "title": "Add NTI Guard plugin for post-quantum attestation",
-        "url": "https://github.com/OpenHands/extensions/issues/988",
-        "createdAt": "2026-11-24T13:50:02Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/extensions/issues/988#issuecomment-7136062723"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "44364167",
-      "login": "todoroki-raimei",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/44364167?v=4",
-      "profileUrl": "https://github.com/todoroki-raimei",
-      "createdAt": "2026-11-24T14:30:06Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 19943,
-        "title": "Feature Request: Plain-Language Change Reports That Help Humans Notice Unexpected Changes During Autonomous Execution",
-        "url": "https://github.com/OpenHands/OpenHands/issues/19943",
-        "createdAt": "2026-11-21T16:25:29Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/19943#issuecomment-7134477623"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "274829133",
-      "login": "abisheakp197",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/274829133?v=4",
-      "profileUrl": "https://github.com/abisheakp197",
-      "createdAt": "2026-11-24T14:04:49Z",
-      "issue": {
-        "repo": "extensions",
-        "number": 988,
-        "title": "Add NTI Guard plugin for post-quantum attestation",
-        "url": "https://github.com/OpenHands/extensions/issues/988",
-        "createdAt": "2026-11-24T13:50:02Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/extensions/issues/988#issuecomment-7133807825"
-    },
-    {
-      "type": "issueComment",
-      "githubUserId": "217154229",
-      "login": "juemimgcd",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/217154229?v=4",
-      "profileUrl": "https://github.com/juemimgcd",
-      "createdAt": "2026-11-24T13:52:52Z",
-      "issue": {
-        "repo": "OpenHands",
-        "number": 20046,
-        "title": "A failed Git commit-history read shows \"No commits\" (and a zero count) instead of an error",
-        "url": "https://github.com/OpenHands/OpenHands/issues/20046",
-        "createdAt": "2026-11-24T13:06:13Z"
-      },
-      "commentUrl": "https://github.com/OpenHands/OpenHands/issues/20046#issuecomment-7133474949"
     }
   ],
   "yearlyTotals": {
     "2025": {
       "issuesOpened": 80,
-      "issueComments": 266,
+      "issueComments": 258,
       "uniqueIssueOpeners": 41,
-      "uniqueCommenters": 71
+      "uniqueCommenters": 70
     },
     "2026": {
-      "issuesOpened": 2359,
-      "issueComments": 3853,
-      "uniqueIssueOpeners": 795,
-      "uniqueCommenters": 970
+      "issuesOpened": 2364,
+      "issueComments": 3856,
+      "uniqueIssueOpeners": 799,
+      "uniqueCommenters": 972
     }
   },
   "users": [
+    {
+      "githubUserId": "53290691",
+      "login": "kobago",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/53290691?v=4",
+      "profileUrl": "https://github.com/kobago",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-11-28T03:04:48Z",
+      "mostRecentActivityAt": "2026-11-28T03:04:48Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 7183,
+        "title": "[Bug]: Hyphenated deepseek-v4-1-flash ids are misclassified as text-only and reject images",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7183",
+        "createdAt": "2026-11-28T03:04:48Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 7183,
+        "title": "[Bug]: Hyphenated deepseek-v4-1-flash ids are misclassified as text-only and reject images",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7183",
+        "createdAt": "2026-11-28T03:04:48Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "161206657",
+      "login": "Jaisev-Sachdev",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/161206657?v=4",
+      "profileUrl": "https://github.com/Jaisev-Sachdev",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-11-27T12:03:15Z",
+      "mostRecentActivityAt": "2026-11-28T02:14:21Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 7172,
+        "title": "[Feature]: Warn when an Anthropic model is not matched for prompt caching (with cache hit rate data across 10 releases)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7172",
+        "createdAt": "2026-11-27T12:03:15Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 7172,
+        "title": "[Feature]: Warn when an Anthropic model is not matched for prompt caching (with cache hit rate data across 10 releases)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7172",
+        "createdAt": "2026-11-27T12:03:15Z"
+      },
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 7172,
+        "title": "[Feature]: Warn when an Anthropic model is not matched for prompt caching (with cache hit rate data across 10 releases)",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7172",
+        "createdAt": "2026-11-28T02:14:21Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/7172#issuecomment-7232227080"
+      }
+    },
+    {
+      "githubUserId": "175494844",
+      "login": "vibewrk",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/175494844?v=4",
+      "profileUrl": "https://github.com/vibewrk",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 2,
+      "firstActivityAt": "2026-10-03T17:26:47Z",
+      "mostRecentActivityAt": "2026-11-27T19:31:49Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 5480,
+        "title": "[Feature]: Let ACP clients answer permission requests instead of always selecting the first option",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/5480",
+        "createdAt": "2026-10-03T17:26:47Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 5480,
+        "title": "[Feature]: Let ACP clients answer permission requests instead of always selecting the first option",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/5480",
+        "createdAt": "2026-10-03T17:26:47Z"
+      },
+      "mostRecentComment": {
+        "repo": "software-agent-sdk",
+        "number": 5480,
+        "title": "[Feature]: Let ACP clients answer permission requests instead of always selecting the first option",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/5480",
+        "createdAt": "2026-11-27T19:31:49Z",
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/5480#issuecomment-7226617585"
+      }
+    },
+    {
+      "githubUserId": "181562451",
+      "login": "kote028",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/181562451?v=4",
+      "profileUrl": "https://github.com/kote028",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2026-11-27T12:19:52Z",
+      "mostRecentActivityAt": "2026-11-27T12:25:47Z",
+      "firstIssue": {
+        "repo": "software-agent-sdk",
+        "number": 7174,
+        "title": "Remote workspace can miss timeouts enforced by the agent server",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7174",
+        "createdAt": "2026-11-27T12:25:47Z"
+      },
+      "mostRecentIssue": {
+        "repo": "software-agent-sdk",
+        "number": 7174,
+        "title": "Remote workspace can miss timeouts enforced by the agent server",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/7174",
+        "createdAt": "2026-11-27T12:25:47Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 20128,
+        "title": "OpenHands Cloud automation fails to clone large GitHub repositories without providing a clear error message",
+        "url": "https://github.com/OpenHands/OpenHands/issues/20128",
+        "createdAt": "2026-11-27T12:19:52Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/20128#issuecomment-7218114354"
+      }
+    },
+    {
+      "githubUserId": "94706243",
+      "login": "Musti7even",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/94706243?v=4",
+      "profileUrl": "https://github.com/Musti7even",
+      "issuesOpenedCount": 1,
+      "issueCommentsCount": 0,
+      "firstActivityAt": "2026-11-27T12:05:14Z",
+      "mostRecentActivityAt": "2026-11-27T12:05:14Z",
+      "firstIssue": {
+        "repo": "extensions",
+        "number": 1003,
+        "title": "Add Mobilebox's hosted MCP server (cloud Android phones and iOS simulators) to the integration catalog",
+        "url": "https://github.com/OpenHands/extensions/issues/1003",
+        "createdAt": "2026-11-27T12:05:14Z"
+      },
+      "mostRecentIssue": {
+        "repo": "extensions",
+        "number": 1003,
+        "title": "Add Mobilebox's hosted MCP server (cloud Android phones and iOS simulators) to the integration catalog",
+        "url": "https://github.com/OpenHands/extensions/issues/1003",
+        "createdAt": "2026-11-27T12:05:14Z"
+      },
+      "mostRecentComment": null
+    },
+    {
+      "githubUserId": "64604745",
+      "login": "baldbuffalo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
+      "profileUrl": "https://github.com/baldbuffalo",
+      "issuesOpenedCount": 24,
+      "issueCommentsCount": 7,
+      "firstActivityAt": "2026-07-15T11:34:25Z",
+      "mostRecentActivityAt": "2026-11-27T10:08:55Z",
+      "firstIssue": {
+        "repo": "OpenHands",
+        "number": 15280,
+        "title": "[Bug]: OpenHands Cloud chats fail with 401 token_not_found_in_db (Invalid proxy server token passed) for all OpenHands provider models",
+        "url": "https://github.com/OpenHands/OpenHands/issues/15280",
+        "createdAt": "2026-07-15T11:34:25Z"
+      },
+      "mostRecentIssue": {
+        "repo": "OpenHands",
+        "number": 20128,
+        "title": "OpenHands Cloud automation fails to clone large GitHub repositories without providing a clear error message",
+        "url": "https://github.com/OpenHands/OpenHands/issues/20128",
+        "createdAt": "2026-11-27T10:08:55Z"
+      },
+      "mostRecentComment": {
+        "repo": "OpenHands",
+        "number": 16526,
+        "title": "403 error when selecting an agent in the onboarding agent selection modal",
+        "url": "https://github.com/OpenHands/OpenHands/issues/16526",
+        "createdAt": "2026-08-24T21:09:50Z",
+        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16526#issuecomment-5401417206"
+      }
+    },
     {
       "githubUserId": "189540702",
       "login": "linqiang-max",
@@ -11425,38 +11599,6 @@
       }
     },
     {
-      "githubUserId": "64604745",
-      "login": "baldbuffalo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/64604745?v=4",
-      "profileUrl": "https://github.com/baldbuffalo",
-      "issuesOpenedCount": 23,
-      "issueCommentsCount": 7,
-      "firstActivityAt": "2026-07-15T11:34:25Z",
-      "mostRecentActivityAt": "2026-10-09T09:33:47Z",
-      "firstIssue": {
-        "repo": "OpenHands",
-        "number": 15280,
-        "title": "[Bug]: OpenHands Cloud chats fail with 401 token_not_found_in_db (Invalid proxy server token passed) for all OpenHands provider models",
-        "url": "https://github.com/OpenHands/OpenHands/issues/15280",
-        "createdAt": "2026-07-15T11:34:25Z"
-      },
-      "mostRecentIssue": {
-        "repo": "OpenHands",
-        "number": 18239,
-        "title": "Large conversations take long to load",
-        "url": "https://github.com/OpenHands/OpenHands/issues/18239",
-        "createdAt": "2026-10-09T09:33:47Z"
-      },
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 16526,
-        "title": "403 error when selecting an agent in the onboarding agent selection modal",
-        "url": "https://github.com/OpenHands/OpenHands/issues/16526",
-        "createdAt": "2026-08-24T21:09:50Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/16526#issuecomment-5401417206"
-      }
-    },
-    {
       "githubUserId": "214230346",
       "login": "Hub8ai",
       "avatarUrl": "https://avatars.githubusercontent.com/u/214230346?v=4",
@@ -12568,38 +12710,6 @@
         "createdAt": "2026-10-03T17:49:07Z"
       },
       "mostRecentComment": null
-    },
-    {
-      "githubUserId": "175494844",
-      "login": "vibewrk",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/175494844?v=4",
-      "profileUrl": "https://github.com/vibewrk",
-      "issuesOpenedCount": 1,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2026-10-03T17:26:47Z",
-      "mostRecentActivityAt": "2026-10-03T17:26:54Z",
-      "firstIssue": {
-        "repo": "software-agent-sdk",
-        "number": 5480,
-        "title": "[Feature]: Let ACP clients answer permission requests instead of always selecting the first option",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/5480",
-        "createdAt": "2026-10-03T17:26:47Z"
-      },
-      "mostRecentIssue": {
-        "repo": "software-agent-sdk",
-        "number": 5480,
-        "title": "[Feature]: Let ACP clients answer permission requests instead of always selecting the first option",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/5480",
-        "createdAt": "2026-10-03T17:26:47Z"
-      },
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 17878,
-        "title": "OpenHands Agent Canvas Desktop Client — Unauthenticated Session Key Disclosure Leading to Remote Code Execution",
-        "url": "https://github.com/OpenHands/OpenHands/issues/17878",
-        "createdAt": "2026-10-03T17:26:54Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/17878#issuecomment-5971644355"
-      }
     },
     {
       "githubUserId": "1511275",
@@ -18243,11 +18353,11 @@
       "mostRecentIssue": null,
       "mostRecentComment": {
         "repo": "software-agent-sdk",
-        "number": 4665,
-        "title": "[Bug]: Skills marketplace returns empty against the current extensions manifest layout",
-        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4665",
+        "number": 4667,
+        "title": "[Bug]: Tom processing history can checkpoint events that were never indexed",
+        "url": "https://github.com/OpenHands/software-agent-sdk/issues/4667",
         "createdAt": "2026-08-31T10:25:17Z",
-        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4665#issuecomment-5477007117"
+        "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/4667#issuecomment-5477007127"
       }
     },
     {
@@ -35794,8 +35904,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/58927531?v=4",
       "profileUrl": "https://github.com/BradKML",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 4,
-      "firstActivityAt": "2025-11-28T02:35:21Z",
+      "issueCommentsCount": 3,
+      "firstActivityAt": "2025-12-04T04:03:13Z",
       "mostRecentActivityAt": "2026-01-05T06:04:18Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -36376,8 +36486,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/2631799?v=4",
       "profileUrl": "https://github.com/GuyPaddock",
       "issuesOpenedCount": 2,
-      "issueCommentsCount": 13,
-      "firstActivityAt": "2025-11-27T18:40:23Z",
+      "issueCommentsCount": 10,
+      "firstActivityAt": "2025-11-28T05:18:03Z",
       "mostRecentActivityAt": "2025-12-23T06:42:04Z",
       "firstIssue": {
         "repo": "OpenHands",
@@ -37127,8 +37237,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/136805224?v=4",
       "profileUrl": "https://github.com/Shizoqua",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 3,
-      "firstActivityAt": "2025-11-27T11:59:40Z",
+      "issueCommentsCount": 1,
+      "firstActivityAt": "2025-12-05T14:18:58Z",
       "mostRecentActivityAt": "2025-12-05T14:18:58Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -37424,8 +37534,8 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/6885761?v=4",
       "profileUrl": "https://github.com/vinisdl",
       "issuesOpenedCount": 0,
-      "issueCommentsCount": 4,
-      "firstActivityAt": "2025-11-27T20:58:09Z",
+      "issueCommentsCount": 3,
+      "firstActivityAt": "2025-11-28T13:34:32Z",
       "mostRecentActivityAt": "2025-11-30T01:16:21Z",
       "firstIssue": null,
       "mostRecentIssue": null,
@@ -37436,26 +37546,6 @@
         "url": "https://github.com/OpenHands/software-agent-sdk/issues/1062",
         "createdAt": "2025-11-30T01:16:21Z",
         "commentUrl": "https://github.com/OpenHands/software-agent-sdk/issues/1062#issuecomment-3592084269"
-      }
-    },
-    {
-      "githubUserId": "2270440",
-      "login": "ye7iaserag",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/2270440?v=4",
-      "profileUrl": "https://github.com/ye7iaserag",
-      "issuesOpenedCount": 0,
-      "issueCommentsCount": 1,
-      "firstActivityAt": "2025-11-27T20:15:51Z",
-      "mostRecentActivityAt": "2025-11-27T20:15:51Z",
-      "firstIssue": null,
-      "mostRecentIssue": null,
-      "mostRecentComment": {
-        "repo": "OpenHands",
-        "number": 6468,
-        "title": "Add GitHub Copilot provider",
-        "url": "https://github.com/OpenHands/OpenHands/issues/6468",
-        "createdAt": "2025-11-27T20:15:51Z",
-        "commentUrl": "https://github.com/OpenHands/OpenHands/issues/6468#issuecomment-3587181429"
       }
     }
   ]
